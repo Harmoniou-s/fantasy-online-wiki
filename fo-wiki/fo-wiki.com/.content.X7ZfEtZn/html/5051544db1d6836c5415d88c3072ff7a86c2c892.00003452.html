@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Quest Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+  body,td,th {
+        font-size: 12px;
+  }
+  -->
+  /*]]>*/
+  </style>
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; left:0px; top: 60px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <table class="maintable">
+    <thead>
+      <tr>
+        <th colspan='6'>Quest! (<a href='?'>Quest database</a>)</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan='6'><a href='?do=edit&amp;id=144'><img class='button' src="img/edit.jpg" width="47" height="19" /></a> <a href='?do=delitem&id=144'><img class='button' src='img/delete.jpg' width='66' height='19' /></a> <a href='javascript:history.back()'><img class='button' src="img/back.jpg" width="47" height="19" /></a></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td colspan='6'>&nbsp;What's that smell?&nbsp;[ 5 ]</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Start NPC</td>
+        <td width='300px' colspan='2' class='val'><a href='../npc/?do=dispitem&id=81'><img title='Guardsman Warren' class='icon2' src='../npc/img.php?id=81' /></a></td>
+        <td class='attr' width='150px'>Typ</td>
+        <td width='300px' class='val' colspan='2'>kill</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Exp-gain</td>
+        <td width='300px' colspan='2' class='val'>425</td>
+        <td class='attr' width='150px'>Coin-gain</td>
+        <td width='300px' colspan='2' class='val'>75</td>
+      </tr>
+      <tr>
+        <td class='attr'>Summary</td>
+        <td colspan='5'>Kill 5 of Smallish Ogres</td>
+      </tr>
+      <tr>
+        <td class='attr'>Details</td>
+        <td colspan='5'>
+          After completing the <a href='../quest/?do=dispitem&id=142'>Angry Angry Skeles</a> quest, this quest becomes available.<br />
+          <br />
+          Talk to <a href='../npc/?do=dispitem&id=81'><img title='Guardsman Warren' src='../npc/img.php?id=81' /></a> again. He'll tell you (<img style='cursor: pointer' onmouseover="SetContent('label','There\'s a bunch of Ogres up the hill Northeast of here. Ugh, I can smell them from here. Would you mind killing a bunch of them? Believe it or not, they smell better dead than alive.&lt;br /&gt;'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />) to go kill some <a href='../bestiary/?do=dispitem&id=225'><img title='Smallish Ogre' src='../bestiary/img.php?id=225' /></a>s on the hill. Its up the hill to the northeast, pass the <a href='../bestiary/?do=dispitem&id=141'><img title='Armed Skele' src='../bestiary/img.php?id=141' /></a> hangout to get up to them.<br />
+          <br />
+          Kill 5 of the <a href='../bestiary/?do=dispitem&id=225'><img title='Smallish Ogre' src='../bestiary/img.php?id=225' /></a>s and talk to <a href='../npc/?do=dispitem&id=81'><img title='Guardsman Warren' src='../npc/img.php?id=81' /></a> again. He'll thank you (<img style='cursor: pointer' onmouseover="SetContent('label','That\'s better. Here\'s something for your troubles.'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />) and give you a reward. 
+          <script src="/content/label.js" type="text/javascript"></script>
+          <div id="label" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 1px; max-width: 300px; border-width:1px;">
+            Content goes here.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class='attr'>Note</td>
+        <td colspan='5'>-</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

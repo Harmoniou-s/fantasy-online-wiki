@@ -1,0 +1,190 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Item Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; left:0px; top: 60px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <script type="text/javascript">
+  //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=sort&desc=1&by=ITlvlreq&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+  //]]>
+  </script>
+  <table class="maintable">
+    <thead>
+      <tr>
+        <th colspan="12">Item Database (<a href="../?menu=database">Main Page</a>)</th>
+      </tr>
+      <tr>
+        <th class='toleft' colspan="10"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="bow" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=1&by=ITlvlreq&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=sort&desc=1&by=ITlvlreq'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-9</span> ] ( 1 Page for search "bow" )</th>
+        <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+      </tr>
+      <tr class="c0">
+        <th>Icon</th>
+        <th><a href='?do=sort&byclass=1&desc=0&by=ITname&ind=0&search=bow'>Name</a></th>
+        <th><a href='?do=sort&byclass=1&desc=0&by=ITlvlreq&ind=0&search=bow'>Lvl. req</a></th>
+        <th width="200px">Description</th>
+        <th width="60px"><a href='?do=sort&byclass=1&desc=0&by=ITuse&ind=0&search=bow'>Use</a></th>
+        <th width="60px">Bonus</th>
+        <th><a href='?do=sort&byclass=1&desc=0&by=ITsell&ind=0&search=bow'>Sell Price</a></th>
+        <th><a href='?do=sort&byclass=1&desc=0&by=ITbuy&ind=0&search=bow'>Buy Price</a></th>
+        <th width="50px">Status Req.</th>
+        <th><a href='?do=sort&byclass=1&desc=0&by=ITdmgps&ind=0&search=bow'>Dmg. / sec.</a></th>
+        <th>Dropped by</th>
+        <th>Obtained from</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th colspan="10" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="bow" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=1&by=ITlvlreq&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=sort&desc=1&by=ITlvlreq'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-9</span> ] ( 1 Page for search "bow" )</th>
+        <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+      </tr>
+      <tr>
+        <th class="bottomnote" colspan="12">Last update 01/08/10</th>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr class="c1">
+        <td><a href='?do=dispitem&id=453'><img class='icon' src="img.php?id=453" /></a></td>
+        <td><a href='?do=dispitem&id=453'>Standard Longbow</a></td>
+        <td>17</td>
+        <td>It's like a bow, only longer. Now you can go all Agincourt on your enemies.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Str: 28, Agi: 42</td>
+        <td>12.2</td>
+        <td>-</td>
+        <td><a href='../npc/?do=dispitem&id=116'><img title='The Risky Salesman Shop' class='icon2' src='../npc/img.php?id=116' /></a></td>
+      </tr>
+      <tr class="c2">
+        <td><a href='?do=dispitem&id=604'><img class='icon' src="img.php?id=604" /></a></td>
+        <td><a href='?do=dispitem&id=604'>Spider Bow</a></td>
+        <td>16</td>
+        <td>Spider bow, spider bow... does whatever a spider bow can...</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>Agi +2</td>
+        <td>200</td>
+        <td>-</td>
+        <td>Agi: 40</td>
+        <td>12.2</td>
+        <td><a href='../bestiary/?do=dispitem&id=291'><img title='Dirt Spider' class='icon2' src='../bestiary/img.php?id=291' /></a> <a href='../bestiary/?do=dispitem&id=268'><img title='Giant Skull Spider' class='icon2' src='../bestiary/img.php?id=268' /></a></td>
+        <td>-</td>
+      </tr>
+      <tr class="c1">
+        <td><a href='?do=dispitem&id=438'><img class='icon' src="img.php?id=438" /></a></td>
+        <td><a href='?do=dispitem&id=438'>Quality Standard Bow</a></td>
+        <td>13</td>
+        <td>Exceeds most of the minimum standards of the NlBMC: fewer worms in the wood.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>200</td>
+        <td>-</td>
+        <td>Agi: 37</td>
+        <td>10</td>
+        <td><a href='../bestiary/?do=dispitem&id=291'><img title='Dirt Spider' class='icon2' src='../bestiary/img.php?id=291' /></a></td>
+        <td><a href='../npc/?do=dispitem&id=108'><img title='The Pirate Trader Shop' class='icon2' src='../npc/img.php?id=108' /></a></td>
+      </tr>
+      <tr class="c2">
+        <td><a href='?do=dispitem&id=508'><img class='icon' src="img.php?id=508" /></a></td>
+        <td><a href='?do=dispitem&id=508'>Broken Longbow</a></td>
+        <td>12</td>
+        <td>This way, even enemies that are far away can know you equipped trash.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>20</td>
+        <td>-</td>
+        <td>Agi: 38</td>
+        <td>4.7</td>
+        <td><a href='../bestiary/?do=dispitem&id=265'><img title='Angry Skull Spider' class='icon2' src='../bestiary/img.php?id=265' /></a></td>
+        <td>-</td>
+      </tr>
+      <tr class="c1">
+        <td><a href='?do=dispitem&id=368'><img class='icon' src="img.php?id=368" /></a></td>
+        <td><a href='?do=dispitem&id=368'>Standard Bow</a></td>
+        <td>10</td>
+        <td>Meets most of the minimum standards of the Noob lsland Bow Monitoring Commission.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>150</td>
+        <td>600</td>
+        <td>Agi: 36</td>
+        <td>8.5</td>
+        <td><a href='../bestiary/?do=dispitem&id=299'><img title='Green Slime' class='icon2' src='../bestiary/img.php?id=299' /></a></td>
+        <td><a href='../npc/?do=dispitem&id=62'><img title='The Shopkeep Gil Shop' class='icon2' src='../npc/img.php?id=62' /></a></td>
+      </tr>
+      <tr class="c2">
+        <td><a href='?do=dispitem&id=525'><img class='icon' src="img.php?id=525" /></a></td>
+        <td><a href='?do=dispitem&id=525'>Small Bow of Arrowness</a></td>
+        <td>7</td>
+        <td>Is "arrowness" a word? Maybe it's the brand name.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>150</td>
+        <td>550</td>
+        <td>Agi: 30</td>
+        <td>5.8</td>
+        <td>-</td>
+        <td><a href='../npc/?do=dispitem&id=119'><img title='The Salesman Wynn Shop' class='icon2' src='../npc/img.php?id=119' /></a></td>
+      </tr>
+      <tr class="c1">
+        <td><a href='?do=dispitem&id=531'><img class='icon' src="img.php?id=531" /></a></td>
+        <td><a href='?do=dispitem&id=531'>Broken Bow</a></td>
+        <td>7</td>
+        <td>It's a poor musician that blames his instrument. But you're not a musician, and this thing just blows.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>100</td>
+        <td>-</td>
+        <td>Agi: 30</td>
+        <td>4.5</td>
+        <td><a href='../bestiary/?do=dispitem&id=324'><img title='Zombie Crab' class='icon2' src='../bestiary/img.php?id=324' /></a></td>
+        <td>-</td>
+      </tr>
+      <tr class="c2">
+        <td><a href='?do=dispitem&id=524'><img class='icon' src="img.php?id=524" /></a></td>
+        <td><a href='?do=dispitem&id=524'>Small Basic Bow</a></td>
+        <td>4</td>
+        <td>Bows allow you to attack at a distance. You probably knew that already.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>25</td>
+        <td>100</td>
+        <td>Agi: 26</td>
+        <td>3.2</td>
+        <td>-</td>
+        <td><a href='../npc/?do=dispitem&id=118'><img title='The Shopkeep Sal Shop' class='icon2' src='../npc/img.php?id=118' /></a></td>
+      </tr>
+      <tr class="c1">
+        <td><a href='?do=dispitem&id=539'><img class='icon' src="img.php?id=539" /></a></td>
+        <td><a href='?do=dispitem&id=539'>Toy Bow</a></td>
+        <td>2</td>
+        <td>The suction cups have been removed from the ends of the arrows for extra damage.</td>
+        <td><a href='?search=bow&byclass=1'>bow</a></td>
+        <td>-</td>
+        <td>15</td>
+        <td>50</td>
+        <td>-</td>
+        <td>2.1</td>
+        <td><a href='../bestiary/?do=dispitem&id=316'><img title='Soft Shelled Crab' class='icon2' src='../bestiary/img.php?id=316' /></a> <a href='../bestiary/?do=dispitem&id=143'><img title='Forest Whelp' class='icon2' src='../bestiary/img.php?id=143' /></a></td>
+        <td><a href='../npc/?do=dispitem&id=49'><img title='The Timmeh Shop' class='icon2' src='../npc/img.php?id=49' /></a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

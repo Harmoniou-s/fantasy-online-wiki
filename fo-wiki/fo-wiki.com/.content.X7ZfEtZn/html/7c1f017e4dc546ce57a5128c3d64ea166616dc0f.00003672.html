@@ -1,0 +1,594 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Quest Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+  body,td,th {
+        font-size: 12px;
+  }
+  -->
+  /*]]>*/
+  </style>
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=sort&desc=0&by=QUstartnpc&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="7">Quest Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='7' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="5"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=0&by=QUstartnpc&search='+document.getElementById('search1').value;" alt="Search" />[ <a href='?desc=0&by=QUstartnpc&byclass=&do=sort&search=&ind=0'>1-50</a>, <a href='?desc=0&by=QUstartnpc&byclass=&do=sort&search=&ind=50'>51-100</a>, <span class='active'>101-150</span>, <a href='?desc=0&by=QUstartnpc&byclass=&do=sort&search=&ind=150'>151-177</a> ] ( 4 Pages )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addquest.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=QUname&amp;ind=100&amp;search='>Name</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=QUlvlreq&amp;ind=100&amp;search='>Level Req.</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=QUtyp&amp;ind=100&amp;search='>Typ</a></th>
+          <th>Summary</th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=QUexp&amp;ind=100&amp;search='>Total Exp</a></th>
+          <th width="60px"><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=QUcoin&amp;ind=100&amp;search='>Total Coins</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=1&amp;by=QUstartnpc&amp;ind=100&amp;search='>Start-NPC</a></th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="5" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=0&by=QUstartnpc&search='+document.getElementById('search2').value;" alt="Search" />[ <a href='?desc=0&by=QUstartnpc&byclass=&do=sort&search=&ind=0'>1-50</a>, <a href='?desc=0&by=QUstartnpc&byclass=&do=sort&search=&ind=50'>51-100</a>, <span class='active'>101-150</span>, <a href='?desc=0&by=QUstartnpc&byclass=&do=sort&search=&ind=150'>151-177</a> ] ( 4 Pages )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addquest.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="7">Last update 23/09/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=665'>Boulder Colorado</a></td>
+          <td>18</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill a Boulder Colorado</td>
+          <td>4500</td>
+          <td>200</td>
+          <td><a href='../npc/?do=dispitem&id=113'><img title='Miner Jonas' class='icon2' src='../npc/img.php?id=113' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=273'>Too many scorps</a></td>
+          <td>19</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 30 small scorps</td>
+          <td>1400</td>
+          <td>150</td>
+          <td><a href='../npc/?do=dispitem&id=137'><img title='Miner McGroot' class='icon2' src='../npc/img.php?id=137' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=274'>Miners? They are Ex Miners now.</a></td>
+          <td>19</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Disgruntled Ex Miner</td>
+          <td>1600</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=137'><img title='Miner McGroot' class='icon2' src='../npc/img.php?id=137' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=320'>Got the Stones for it?</a></td>
+          <td>18</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 10 stones.</td>
+          <td>3000</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=191'><img title='Miner Patrick' class='icon2' src='../npc/img.php?id=191' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=369'>Pebbles!</a></td>
+          <td>16</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 pebbles</td>
+          <td>2000</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=191'><img title='Miner Patrick' class='icon2' src='../npc/img.php?id=191' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=321'>Lost Lunch</a></td>
+          <td>18</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Find Qunicey's Missing Lunch</td>
+          <td>3000</td>
+          <td>1500</td>
+          <td><a href='../npc/?do=dispitem&id=184'><img title='Miner Quincy' class='icon2' src='../npc/img.php?id=184' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=360'>Coverage Rescinded</a></td>
+          <td>18</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Get 20 Insurances Cards from Ex-Miners</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=184'><img title='Miner Quincy' class='icon2' src='../npc/img.php?id=184' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=368'>Creepy babies</a></td>
+          <td>16</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 30 baby skull spiders.</td>
+          <td>2000</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=180'><img title='Miner Skippy' class='icon2' src='../npc/img.php?id=180' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=262'>Kill 30 Red Slimes</a></td>
+          <td>18</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>kill 30 small red slimes</td>
+          <td>4000</td>
+          <td>20</td>
+          <td><a href='../npc/?do=dispitem&id=141'><img title='Miner Yossarian' class='icon2' src='../npc/img.php?id=141' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=634'>Hunt The Archers</a></td>
+          <td>46</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Dark Elf Archers</td>
+          <td>5000</td>
+          <td>2000</td>
+          <td><a href='../npc/?do=dispitem&id=363'><img title='Mirky Guard' class='icon2' src='../npc/img.php?id=363' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=637'>Exterminate The Archers</a></td>
+          <td>46</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 40 Dark Elf Archers</td>
+          <td>8000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=363'><img title='Mirky Guard' class='icon2' src='../npc/img.php?id=363' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=644'>Mossy Epidemic</a></td>
+          <td>46</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 100 Mossras</td>
+          <td>14000</td>
+          <td>14000</td>
+          <td><a href='../npc/?do=dispitem&id=375'><img title='Mirky Guardess' class='icon2' src='../npc/img.php?id=375' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=653'>Mossy Problem</a></td>
+          <td>46</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 30 Mossras</td>
+          <td>10000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=375'><img title='Mirky Guardess' class='icon2' src='../npc/img.php?id=375' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=600'>Samples For Science</a></td>
+          <td>36</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 10 Data Cards from Cyclops</td>
+          <td>8000</td>
+          <td>2000</td>
+          <td><a href='../npc/?do=dispitem&id=289'><img title='Mr Freeman' class='icon2' src='../npc/img.php?id=289' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=603'>Science Rules</a></td>
+          <td>36</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 40 Cyclopes</td>
+          <td>10000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=289'><img title='Mr Freeman' class='icon2' src='../npc/img.php?id=289' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=598'>Alien Crab Threat</a></td>
+          <td>37</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Alien Crabs.</td>
+          <td>8000</td>
+          <td>1000</td>
+          <td><a href='../npc/?do=dispitem&id=292'><img title='Mulder' class='icon2' src='../npc/img.php?id=292' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=611'>Alien Crab Takeover</a></td>
+          <td>37</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 40 Alien Crabs.</td>
+          <td>8000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=292'><img title='Mulder' class='icon2' src='../npc/img.php?id=292' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=326'>Little Girl Hungry</a></td>
+          <td>2</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Feed the children. Okay, feed one child. Collect 5 turnips from your farmyard slaughter before she passes right out.</td>
+          <td>200</td>
+          <td>5</td>
+          <td><a href='../npc/?do=dispitem&id=133'><img title='Nicole' class='icon2' src='../npc/img.php?id=133' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=428'>Betrayal</a></td>
+          <td>32</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 30 Cacti</td>
+          <td>10000</td>
+          <td>2000</td>
+          <td><a href='../npc/?do=dispitem&id=267'><img title='Not A Cactus' class='icon2' src='../npc/img.php?id=267' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=531'>Thirst for Cactus</a></td>
+          <td>32</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 100 Cactus</td>
+          <td>10000</td>
+          <td>10000</td>
+          <td><a href='../npc/?do=dispitem&id=267'><img title='Not A Cactus' class='icon2' src='../npc/img.php?id=267' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=444'>Help For Sister</a></td>
+          <td>30</td>
+          <td><a href='?search=deliver&byclass=1'>deliver</a></td>
+          <td width='240px'>Deliver a note to sister</td>
+          <td>1000</td>
+          <td>400</td>
+          <td><a href='../npc/?do=dispitem&id=220'><img title='Not scared boy' class='icon2' src='../npc/img.php?id=220' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=441'>Help For Other brother</a></td>
+          <td>30</td>
+          <td><a href='?search=deliver&byclass=1'>deliver</a></td>
+          <td width='240px'>How many brothers does this kid have?</td>
+          <td>600</td>
+          <td>200</td>
+          <td><a href='../npc/?do=dispitem&id=217'><img title='Not so scared boy' class='icon2' src='../npc/img.php?id=217' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=264'>Get off my lawn!</a></td>
+          <td>3</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill the Domesticated Ogre</td>
+          <td>600</td>
+          <td>20</td>
+          <td><a href='../npc/?do=dispitem&id=53'><img title='Old Lady' class='icon2' src='../npc/img.php?id=53' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=288'>Pretty Fly for a Fly Guy</a></td>
+          <td>2</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Show Fly Guy that he ain't so fly. He's just Northwest of the town on the hill.</td>
+          <td>600</td>
+          <td>50</td>
+          <td><a href='../npc/?do=dispitem&id=53'><img title='Old Lady' class='icon2' src='../npc/img.php?id=53' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=331'>Dead (Pumpkin) Rising</a></td>
+          <td>3</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 5 Pumpkinheads by the abandoned farm. Why? Hell... why not?</td>
+          <td>500</td>
+          <td>15</td>
+          <td><a href='../npc/?do=dispitem&id=53'><img title='Old Lady' class='icon2' src='../npc/img.php?id=53' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=353'>Slimy Beet Stealers</a></td>
+          <td>11</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 10 Slimy Zombeets from the Green Slime.</td>
+          <td>600</td>
+          <td>50</td>
+          <td><a href='../npc/?do=dispitem&id=89'><img title='Old Lady Olga' class='icon2' src='../npc/img.php?id=89' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=454'>Zombeet Defense</a></td>
+          <td>11</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 25 Yellow slimes</td>
+          <td>500</td>
+          <td>40</td>
+          <td><a href='../npc/?do=dispitem&id=89'><img title='Old Lady Olga' class='icon2' src='../npc/img.php?id=89' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=661'>The Mirage</a></td>
+          <td>12</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 1 treasure... Necessary: Standard Lockpick</td>
+          <td>1000</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=157'><img title='Pirate Harley' class='icon2' src='../npc/img.php?id=157' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=223'>Booty Camp</a></td>
+          <td>15</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 40 Better Booty.... Necessary: Standard Lockpick</td>
+          <td>2000</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=155'><img title='Pirate Josh' class='icon2' src='../npc/img.php?id=155' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=663'>Booty Call</a></td>
+          <td>12</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 20 Booty.... Necessary: Standard Lockpick</td>
+          <td>1000</td>
+          <td>50</td>
+          <td><a href='../npc/?do=dispitem&id=155'><img title='Pirate Josh' class='icon2' src='../npc/img.php?id=155' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=291'>Insert Clever n00b Pun Here</a></td>
+          <td>14</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 60 Noob Treasure Hunters.</td>
+          <td>1100</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=94'><img title='Pirate Patrick' class='icon2' src='../npc/img.php?id=94' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=660'>Bad n00b Treasure Hunters</a></td>
+          <td>12</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Noob Treasure Hunters</td>
+          <td>800</td>
+          <td>50</td>
+          <td><a href='../npc/?do=dispitem&id=94'><img title='Pirate Patrick' class='icon2' src='../npc/img.php?id=94' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=626'>Destroy The Punks</a></td>
+          <td>44</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 10 Dark Elf Punks</td>
+          <td>4000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=366'><img title='Punk Hater' class='icon2' src='../npc/img.php?id=366' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=666'>Obliterate the Punks</a></td>
+          <td>44</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 30 Dark Elf Punks</td>
+          <td>8000</td>
+          <td>8000</td>
+          <td><a href='../npc/?do=dispitem&id=366'><img title='Punk Hater' class='icon2' src='../npc/img.php?id=366' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=407'>Remove the Elder Threat</a></td>
+          <td>32</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Elder Skeles</td>
+          <td>4000</td>
+          <td>2000</td>
+          <td><a href='../npc/?do=dispitem&id=241'><img title='Recruit Tifa' class='icon2' src='../npc/img.php?id=241' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=426'>Elder Threat Continues</a></td>
+          <td>32</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 40 Elder Skeles</td>
+          <td>8000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=241'><img title='Recruit Tifa' class='icon2' src='../npc/img.php?id=241' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=625'>The Lost Diary</a></td>
+          <td>44</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Find The Lost Diary from Skele Ghouls.</td>
+          <td>6000</td>
+          <td>2000</td>
+          <td><a href='../npc/?do=dispitem&id=364'><img title='Scandalous Girl' class='icon2' src='../npc/img.php?id=364' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=628'>Kill Them</a></td>
+          <td>44</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 10 Skele Ghouls</td>
+          <td>4000</td>
+          <td>1000</td>
+          <td><a href='../npc/?do=dispitem&id=364'><img title='Scandalous Girl' class='icon2' src='../npc/img.php?id=364' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=635'>SPIDERS EEK</a></td>
+          <td>46</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 30 Forest Spiders</td>
+          <td>8000</td>
+          <td>6000</td>
+          <td><a href='../npc/?do=dispitem&id=382'><img title='Scared Banker' class='icon2' src='../npc/img.php?id=382' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=642'>SPIDERS NO</a></td>
+          <td>46</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 80 Forest Spiders</td>
+          <td>12000</td>
+          <td>8000</td>
+          <td><a href='../npc/?do=dispitem&id=382'><img title='Scared Banker' class='icon2' src='../npc/img.php?id=382' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=440'>Clear the bats</a></td>
+          <td>30</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Evil bats.</td>
+          <td>2000</td>
+          <td>200</td>
+          <td><a href='../npc/?do=dispitem&id=214'><img title='Scared Boy' class='icon2' src='../npc/img.php?id=214' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=445'>Help for brother</a></td>
+          <td>30</td>
+          <td><a href='?search=deliver&byclass=1'>deliver</a></td>
+          <td width='240px'>Humor this boy and give this note to his brother</td>
+          <td>400</td>
+          <td>100</td>
+          <td><a href='../npc/?do=dispitem&id=214'><img title='Scared Boy' class='icon2' src='../npc/img.php?id=214' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=438'>Kill The Ogres</a></td>
+          <td>30</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 ogre miners</td>
+          <td>2000</td>
+          <td>600</td>
+          <td><a href='../npc/?do=dispitem&id=225'><img title='Scared Captain' class='icon2' src='../npc/img.php?id=225' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=439'>Too many Ogres</a></td>
+          <td>30</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 40 Ogre miner</td>
+          <td>2000</td>
+          <td>800</td>
+          <td><a href='../npc/?do=dispitem&id=225'><img title='Scared Captain' class='icon2' src='../npc/img.php?id=225' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=433'>Clear the lost skeles</a></td>
+          <td>30</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 lost skeles</td>
+          <td>2000</td>
+          <td>400</td>
+          <td><a href='../npc/?do=dispitem&id=216'><img title='Scared Miner' class='icon2' src='../npc/img.php?id=216' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=437'>Evil Skeles Be Gone</a></td>
+          <td>30</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Evil skeles</td>
+          <td>3000</td>
+          <td>700</td>
+          <td><a href='../npc/?do=dispitem&id=216'><img title='Scared Miner' class='icon2' src='../npc/img.php?id=216' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=457'>Way too many spiders</a></td>
+          <td>31</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 40 silver crabs</td>
+          <td>4000</td>
+          <td>400</td>
+          <td><a href='../npc/?do=dispitem&id=258'><img title='Scared Ogre' class='icon2' src='../npc/img.php?id=258' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=591'>Silver Crabs 1</a></td>
+          <td>31</td>
+          <td><a href='?search=kill&byclass=1'>kill</a></td>
+          <td width='240px'>Kill 20 Silver Crabs</td>
+          <td>2000</td>
+          <td>200</td>
+          <td><a href='../npc/?do=dispitem&id=258'><img title='Scared Ogre' class='icon2' src='../npc/img.php?id=258' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=604'>Data, Data, Data</a></td>
+          <td>38</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 10 CD's from the UFOs</td>
+          <td>8000</td>
+          <td>4000</td>
+          <td><a href='../npc/?do=dispitem&id=342'><img title='Scared Scientist' class='icon2' src='../npc/img.php?id=342' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=633'>Research</a></td>
+          <td>44</td>
+          <td><a href='?search=collect&byclass=1'>collect</a></td>
+          <td width='240px'>Collect 20 Alien Books from Robo Eyes.</td>
+          <td>8000</td>
+          <td>3000</td>
+          <td><a href='../npc/?do=dispitem&id=322'><img title='Scientist Ted' class='icon2' src='../npc/img.php?id=322' /></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

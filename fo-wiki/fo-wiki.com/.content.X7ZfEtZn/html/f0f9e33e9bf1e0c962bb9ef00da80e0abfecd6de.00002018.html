@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="description" content="Free Flash based MMORPG that takes you back to the good ol' days of console RPGS!" />
+  <title>Fantasy Online - The Flash Based MMORPG</title>
+  <base href="http://www.fantasy-mmorpg.com/" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link type="text/css" href="/css/FO_main.css" rel="stylesheet" />
+  <link type="text/css" media="screen" rel="stylesheet" href="/css/colorbox.css" />
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/rc.js"></script>
+  <script src="http://static.ak.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+  <script src="/js/swfobject.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+         
+        
+
+        
+  var flashvars = {
+  as_swf_name: "FO"
+  };
+  var params = {
+  'allowFullScreen': 'true',
+
+  'bgcolor': '#000000',
+
+  'quality': 'autohigh'
+  };
+  var attributes = {
+  'id': 'FO',
+  'name': 'FO'
+  };
+  swfobject.embedSWF("FO49.swf", "myFO", "760", "480", "10.0.0", "/js/expressInstall.swf", flashvars, params, attributes);
+
+  function getFlashMovieObject(movieName)
+  {
+  if (window.document[movieName]) 
+  {
+      return window.document[movieName];
+  }
+  if (navigator.appName.indexOf("Microsoft Internet")==-1)
+  {
+    if (document.embeds && document.embeds[movieName])
+      return document.embeds[movieName]; 
+  }
+  else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
+  {
+    return document.getElementById(movieName);
+  }
+  }
+  function fbInit(pApi_key,pReceiver){
+        FB.init(pApi_key,pReceiver);
+  }
+  function login(){
+        FB.Connect.requireSession( onLoginHandler );
+  }
+  function onLoginHandler(){
+        flashCallBack( "onLogIn" );
+  }
+  function flashCallBack ( func ) {
+  getFlashMovieObject("FO")["onLogIn"]();
+  }
+
+  fbInit("d9e8fe367676f090ea1e63ac0487b3e2", "/js/xd_receiver.htm");
+
+
+  $(document).ready(function(){
+  $("a[rel='screens']").colorbox();
+  });
+  //]]>
+  </script>
+</head>
+<body>
+  <div id="maincontainer" style="width:760px;height:480px;">
+    <div id="myFO" style="width:760px;height:480px;text-align:center;">
+      <p><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></p>
+    </div>
+    <div style="border: 2px solid #013; padding: 30px; margin: 20px auto;">
+      <div style="text-align:center; margin: 0px 0px 0px 40px; float: right; width: 250px;">
+        <iframe src="/fb/fan.php" width="280" height="350" frameborder="0" scrolling="no"></iframe><br />
+        <br />
+        <a href="forums/"><img src="/images/forums.gif" width="119" height="18" alt="Fantasy Online Forums" /></a> &nbsp;&nbsp; <img src="/images/twitter_logo.png" width="103" height="24" alt="Follow Fantasy Online on Twitter!" border="0" /><br />
+        <br />
+        <a href="/screens/town.png" rel="screens">A view of the town</a><br />
+        <a href="/screens/beets.png" rel="screens">Killer beets on the prowl</a><br />
+        <a href="/screens/coast.png" rel="screens">Ahh relaxing on the coast</a>
+      </div>
+      <div style="width: 380px; float: left;">
+        <h2>Welcome to Fantasy Online!</h2><br />
+        <p>Fantasy Online is a free online Flash-based multiplayer RPG. We're in "Open Beta", which means that you can play, but some things might not work quite right. You can register and play it here, but we strongly recommed you play on Facebook where there are extra features like gifts and fellowships. We welcome your feedback and help identifying problems in the <a href="forums/">forums</a>. See you in the game!</p><br />
+        <h2>All Aboard for Pirate Shores!</h2><b>May 23, 2010</b><br />
+        <p>Are ye ready to set sail for advent-arr? No? Well, ye&#8217;re too scurvy for Pirate Shores, then.</p>
+        <p>If you&#8217;ve explored all there is to explore on the Crab Coast, just head west of the King Crab to get your fill of chests and booty. It&#8217;s so hot, it&#8217;s rated&#8230; ARR!</p>
+        <p>Whilst you&#8217;re having a swashbuckling good time, don&#8217;t forget to check out new Facebook features like free gifts and let us know what you think in the <a href="forums/" target="_blank">forums</a>!</p><br />
+        <br />
+        <br />
+        <a href="blog/">More news...</a>
+      </div>
+      <div style="clear: both; float: none;">
+        &nbsp;
+      </div>
+    </div><span style="font-size: 10px; color: #999;">&copy; 2010 Pixelated Games, LLC. All rights reserved. <a href="terms-of-service.php">Terms of Service</a> | <a href="privacy-policy.php">Privacy Policy</a></span>
+  </div>
+  <script type="text/javascript">
+  //<![CDATA[
+
+    try {
+    var pageTracker = _gat._getTracker("UA-2441074-5");
+    pageTracker._trackPageview();
+    } catch(err) {}
+  //]]>
+  </script> 
+  <script type="text/javascript">
+  //<![CDATA[
+
+
+  var sc_project=4391263; 
+  var sc_invisible=1; 
+  var sc_partition=55; 
+  var sc_click_stat=1; 
+  var sc_security="9fb2dc51"; 
+  //]]>
+  </script> <noscript>
+  <div class="statcounter"></div></noscript>
+</body>
+</html>

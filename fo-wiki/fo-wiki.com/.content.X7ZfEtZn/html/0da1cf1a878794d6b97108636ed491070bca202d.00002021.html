@@ -1,0 +1,564 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="This is a Fansite for the game Fantasy Online." />
+  <meta name="keywords" content="Fantasy Online, Database, Map, Monster Database, Item Database, Skill Database, NPC Database, Fanpage, Quest Database, Fantasy, Online, MMORPG, Multiplayer, Logger, AmY" />
+  <title>Fantasy Online Fansite</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="./content/trasfade.js" type="text/javascript"></script>
+  <script src="./content/hideshow.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+  //<![CDATA[
+  <!--
+        cursor = new Array("img/background-menu-btn1-active.jpg",
+                                           "img/background-menu-btn2-active.jpg",
+                                           "img/background-menu-btn3-active.jpg",
+                                           "img/background-menu-btn4-active.jpg",
+                                           "img/background-menu-btn5-active.jpg");
+  function preload(images) {
+        var i = 0;
+        var imageObj = new Array();
+        for(i=0; i != images.length; i+=1) {
+                        imageObj[i]= new Image();
+            imageObj[i].src=images[i];
+        }}
+  preload(cursor);
+  -->
+  //]]>
+  </script>
+  <div class="center">
+    <div class='myDiv sur'>
+      <div class='myDiv top'></div>
+      <div class='myDiv menuleft'></div>
+      <div class='myDiv menuleftin'></div>
+      <div class='myDiv menubtn1'>
+        <a href="?" class="blank"><img id='btn1' onmouseover="FadeOpacity('btn1',0,100,300,20);" onmouseout="FadeOpacity('btn1',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn1-active.jpg" width="91" height="30" name="btn1" /></a>
+      </div>
+      <div class='myDiv menubtn2'>
+        <a href="?menu=database" class="blank"><img id='btn2' onmouseover="FadeOpacity('btn2',0,100,300,20);" onmouseout="FadeOpacity('btn2',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn2-active.jpg" width="144" height="30" name="btn2" /></a>
+      </div>
+      <div class='myDiv menubtn3'>
+        <a href="?menu=logger" class="blank"><img id='btn3' onmouseover="FadeOpacity('btn3',0,100,300,20);" onmouseout="FadeOpacity('btn3',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn3-active.jpg" width="116" height="30" name="btn3" /></a>
+      </div>
+      <div class='myDiv menubtn4'>
+        <a href="?menu=map" class="blank"><img id='btn4' onmouseover="FadeOpacity('btn4',0,100,300,20);" onmouseout="FadeOpacity('btn4',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn4-active.jpg" width="75" height="30" name="btn4" /></a>
+      </div>
+      <div class='myDiv menubtn5'>
+        <a href="?menu=help" class="blank"><img id='btn5' onmouseover="FadeOpacity('btn5',0,100,300,20);" onmouseout="FadeOpacity('btn5',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn5-active.jpg" width="99" height="30" name="btn5" /></a>
+      </div>
+      <div class='myDiv menurightin'></div>
+      <div class='myDiv menumid'></div>
+      <div class='myDiv aboveshoutbox'></div>
+      <div class='myDiv menuright'></div>
+    </div>
+    <div class='myDiv sur2'>
+      <div style="overflow:hidden;">
+        <div class="myDiv lowermidleft">
+          <div class="myDiv lowertopleft"></div>
+          <div class="myDiv lowerbottomleft"></div>
+        </div>
+        <div class="myDiv paintleft" align="left">
+          <div style="margin:10px;">
+            <script language="javascript">
+            <![CDATA[
+            <!--
+            function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+
+            if (expires)
+            expires = expires * 1000 * 60;
+
+            var expires_date = new Date(today.getTime() + expires);
+
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+            }
+
+            var vc_freq_cap = 15; // Frequency cap in minutes
+
+            var vc_rand = Math.floor(Math.random() * 7777);
+
+            // Used to verify that we can set cookies
+            //
+            document.cookie = 'h2=o; path=/;';
+
+            // Get the current window size to ensure we can view our ad
+            //
+            var vc_window_wt = 0;
+            var vc_window_ht = 0;
+            if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+            }
+            else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+            }
+            else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+
+            if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+            }
+            }
+
+            if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+            }
+            // -->
+            ]]>
+            </script>
+            <div align="center">
+              <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=s&c=1" width="468" height="60" border="1" /></noscript>
+            </div>
+            <div align="center">
+              <strong>The Help Section</strong>
+            </div><br />
+            <b>Useful Links</b><br />
+            <div style='display:none' id='x1'>
+              <blockquote>
+                Fantasy Online Homepage<br />
+                Fantasy Online Forums<br />
+                <a onclick="pageTracker._trackPageview ('/outgoing/http_www_fo_wiki_com_');" href="/" target="_blank">Fantasy Online Fansite</a><br />
+                Fantasy Online Map<br />
+                Item Database<br />
+                Monster Database<br />
+                NPC Database<br />
+                Skill Database<br />
+                Quest Database<br />
+                Logger<br />
+                Fantasy Online Twitter<br />
+                Fantasy Online Facebook<br />
+                Character Ranking<br />
+                Purchase Gems<br />
+                Download the Logger<br />
+                Forum Guidelines<br />
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('1')" id='1'>show</span><br />
+            <br />
+            <b>Questions and Answers, Part 1</b><br />
+            <div style='display:none' id='x2'>
+              <blockquote>
+                <span><i>1. Who develops Fantasy Online?</i></span>
+                <div style='display:none' id='x4'>
+                  <blockquote>
+                    Gamer controls the server, programming and coding, Lucky produces sprites and graphics, Lori creates all the item descriptions and NPC speech.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('4')" id='4'>show</span><br />
+                <span><i>2. Is it free?</i></span>
+                <div style='display:none' id='x5'>
+                  <blockquote>
+                    Yes. Fantasy Online is free forever, however donations would still be appreciated to take care of server costs e.t.c.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('5')" id='5'>show</span><br />
+                <span><i>3. How can I donate?</i></span>
+                <div style='display:none' id='x6'>
+                  <blockquote>
+                    You can donate by clicking here.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('6')" id='6'>show</span><br />
+                <span><i>4. How can provide ideas for improvements to the game?</i></span>
+                <div style='display:none' id='x7'>
+                  <blockquote>
+                    Please use this thread for all your suggestions regarding the game.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('7')" id='7'>show</span><br />
+                <span><i>5. When will the game be released?</i></span>
+                <div style='display:none' id='x8'>
+                  <blockquote>
+                    If I told you I'd have to kill you.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('8')" id='8'>show</span><br />
+                <span><i>6. When will Open-Beta be released?</i></span>
+                <div style='display:none' id='x9'>
+                  <blockquote>
+                    This question is irrelevant. Open-Beta is released.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('9')" id='9'>show</span><br />
+                <span><i>7. Why is my character level 1 again?</i></span>
+                <div style='display:none' id='x10'>
+                  <blockquote>
+                    This question is irrelevant. Constant resets are over, now that Open-Beta is out.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('10')" id='10'>show</span><br />
+                <span><i>8. What is the Logger?</i></span>
+                <div style='display:none' id='x11'>
+                  <blockquote>
+                    The Logger is a program that has many functions to support your game play. It was originally developed to help balancing the game. However, its functionality has grown and currently it supports character upload to the ranking on the fansite, map recording, a gamelog, and video recording.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('11')" id='11'>show</span><br />
+                <span><i>9. The Logger doesn't work!</i></span>
+                <div style='display:none' id='x12'>
+                  <blockquote>
+                    The Logger can only be used when playing through this link with Firefox. If it still doesn't work please try updating your firefox to the latest version.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('12')" id='12'>show</span><br />
+                <span><i>10. What are Gems and what are they for?</i></span>
+                <div style='display:none' id='x13'>
+                  <blockquote>
+                    Gems are currency bought with real money, to help support server costs and they can be used in-game to purchase premium items, like extra bags and XP Potions. Gems do not have to be bought! Obtain them by doing surveys or signing up to services on the Add Gems page.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('13')" id='13'>show</span><br />
+                <span><i>11. How can I upload my character to the ranking?</i></span>
+                <div style='display:none' id='x14'>
+                  <blockquote>
+                    When the Logger is running, make sure the icon in the right on the taskbar at the bottom of your screen is green. Right click on it, and select Upload Character. Your character's Level, XP and Coins will then be instantly uploaded to a public database availiable on the Fansite.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('14')" id='14'>show</span><br />
+                <span><i>12. Why can't I log in?</i></span>
+                <div style='display:none' id='x15'>
+                  <blockquote>
+                    Your username and password are incorrect, or the server is going through a reset/reboot or is down. If the game won't load you may need to update or download Flash Player.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('15')" id='15'>show</span><br />
+                <span><i>13. Do I lose XP or Coins or Gems when I die in-game?</i></span>
+                <div style='display:none' id='x16'>
+                  <blockquote>
+                    You do not lose any XP, Coins or Gems when you die.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('16')" id='16'>show</span><br />
+                <span><i>14. How do I get Gems?</i></span>
+                <div style='display:none' id='x17'>
+                  <blockquote>
+                    You can obtain Gems by playing the game on the Fantasy Online Facebook, and clicking on the Add Gems tab.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('17')" id='17'>show</span><br />
+                <span><i>15. I don't have an account and I can't register!</i></span>
+                <div style='display:none' id='x18'>
+                  <blockquote>
+                    You can register here.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('18')" id='18'>show</span><br />
+                <span><i>16. I'm a huge fan of the game and I want to contribute!</i></span>
+                <div style='display:none' id='x19'>
+                  <blockquote>
+                    You can easily contribute to the game by making an account on the Fansite and improving the Databases there, or you can submit your own thoughts on improving the game in this thread. If you want to create artwork feel free to post some samples on the web site and the developer team might be in contact with you. Don't expect anything though. Most stuff is already covert. There is especially no need for coders!<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('19')" id='19'>show</span><br />
+                <span><i>17. How much XP do I need to level 100?</i></span>
+                <div style='display:none' id='x20'>
+                  <blockquote>
+                    Using this thread and the table on it, you can find out that the XP needed for every level from 2 to 100. The XP needed for level 100 is 436000!<br />
+                    You can also find the XP needed using the formula:<br />
+                    exp_tnl = 40*(cur_level^2+9*cur_level);<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('20')" id='20'>show</span><br />
+                <span><i>18. What do I do if there is something wrong with one of the Databases?</i></span>
+                <div style='display:none' id='x21'>
+                  <blockquote>
+                    Change it! You can easily make an account (same as your FO username and password) and change it. Once the changes have been reviewed by an administrator on the Fansite as acceptable, it will be accepted. You can change it by clicking on it and pressing the Edit button.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('21')" id='21'>show</span><br />
+                <span><i>19. Who are the admins on the Fansite?</i></span>
+                <div style='display:none' id='x22'>
+                  <blockquote>
+                    AmY, DrakeMidnight and xBlazeUK.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('22')" id='22'>show</span><br />
+                <span><i>20. I experienced a bug! What should I do?</i></span>
+                <div style='display:none' id='x23'>
+                  <blockquote>
+                    Make a new thread in the Bugs section of the forums, with a relevant title, and, in detail, explain exactly what happened when the bug occured, providing screenshots if necessary.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('23')" id='23'>show</span><br />
+                <span><i>21. I don't like my hairstyle! What can I do?</i></span>
+                <div style='display:none' id='x24'>
+                  <blockquote>
+                    Unfortunately, you cannot change your hairstyle unless there is another reset, so choose a character model that you like! A change appearance potion will be avaliable to buy with Gems soon.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('24')" id='24'>show</span><br />
+                <span><i>22. Where can I buy and sell items?</i></span>
+                <div style='display:none' id='x25'>
+                  <blockquote>
+                    You can buy and sell items at any of the item shops.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('25')" id='25'>show</span><br />
+                <span><i>23. Where can I buy skills?</i></span>
+                <div style='display:none' id='x26'>
+                  <blockquote>
+                    You can buy skills at any of the skill shops.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('26')" id='26'>show</span><br />
+                <span><i>24. Why is the in-game help section not working?</i></span>
+                <div style='display:none' id='x27'>
+                  <blockquote>
+                    This question is irrelevant. The in-game help is working<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('27')" id='27'>show</span><br />
+                <span><i>25. How can I change where I put my stat points?</i></span>
+                <div style='display:none' id='x28'>
+                  <blockquote>
+                    In-game, you can reset your stat points for 5 Gems, you can do this by clicking a button belox to your stat points in the character &amp; equipment screen.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('28')" id='28'>show</span><br />
+                <span><i>26. How can I remove spells from the spell bar?</i></span>
+                <div style='display:none' id='x29'>
+                  <blockquote>
+                    You can add or remove spells or skills from the skill bar by dragging-and-dropping to and from your spell/skill book.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('29')" id='29'>show</span><br />
+                <span><i>27. I want to add a new monster/item/spell/npcs to the Databases! Is there an easy way to create the icons?</i></span>
+                <div style='display:none' id='x30'>
+                  <blockquote>
+                    Using the Logger you can select an option so that the icons of everything in your inventory/skill book are saved. The save destination will be whichever folder the Logger is saved in. You can make .gifs if the monsters by downloading this small program which will allow you to make transparent .gifs of the monsters.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('30')" id='30'>show</span>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('2')" id='2'>show</span><br />
+            <br />
+            <b>Questions and Answers, Part 2</b><br />
+            <div style='display:none' id='x3'>
+              <blockquote>
+                <span><i>28. What do AGI/INT/STR/STA do? Where should I put my stat points?</i></span>
+                <div style='display:none' id='x31'>
+                  <blockquote>
+                    <br />
+                    One point in Agility (AGI)gives you +2 Armor and +0.07 Critical %, some Weapons also require Agility to equip, to get 100% Critical you need 1330 Agility. One point in Intellect (INT) gives you +15 Maximum MP and increases your MP recovery rate, some Spells also require Intellect to use. One point in Strength gives you +1 ATK Power, some Weapons also require Strength to equip.One point in Stamina (STA)gives you +10 Maximum HP. Some Armors also require Stamina to equip.<br />
+                    Put your points into STR for a warrior, AGI for an archer and INT for a mage.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('31')" id='31'>show</span><br />
+                <span><i>29. What language is the game written in?</i></span>
+                <div style='display:none' id='x32'>
+                  <blockquote>
+                    <br />
+                    The game is made in Adobe Flash CS3.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('32')" id='32'>show</span><br />
+                <span><i>30. Are there any in-game commands?</i></span>
+                <div style='display:none' id='x33'>
+                  <blockquote>
+                    <br />
+                    Yes, there are several. Just type them in the chatbox and press enter.<br />
+                    <br />
+                    <br />
+                    /w [name] [message] --- This will whisper to the person with your message. Noone will be able to read it but them.<br />
+                    /t [name] [message] --- This will whisper to the person with your message. Noone will be able to read it but them.<br />
+                    /g [message] --- This will talk so everyone can read it.<br />
+                    /online --- This will tell you how many players are online.<br />
+                    /pos --- Tells your position on the map in the form of coordinates.<br />
+                    Shift + R --- Whispers back to the last person who whispered to you.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('33')" id='33'>show</span><br />
+                <span><i>31. What is the Rest System?</i></span>
+                <div style='display:none' id='x34'>
+                  <blockquote>
+                    <br />
+                    The rest system is a feature that simulates player exhaustion. This is because it is very hard to fight evil monsters every day. So you need to rest.<br />
+                    There are three different states: &quot;Rested&quot;, &quot;Tired&quot; and &quot;Exhausted&quot;.<br />
+                    You start with 2 x xp gain when you are &quot;Rested&quot;.<br />
+                    At a certain point you will get tired and it will go down to 1 x xp gain when you are &quot;Tired&quot;.<br />
+                    Then it becomes 1/2 x xp gain when you are &quot;Exhausted&quot;.<br />
+                    <br />
+                    When you rest you will get either 10K rested xp or the current level's xp requirement as rested xp.<br />
+                    <br />
+                    Every 3 hours (on relog/login) you will be given 1/8 of the total current rest possible, with a full refresh at 24 hours.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('34')" id='34'>show</span><br />
+                <span><i>32. What Hotkeys are there?</i></span>
+                <div style='display:none' id='x35'>
+                  <blockquote>
+                    <br />
+                    [C] for Character and Equipment<br />
+                    [S] for Skill Book<br />
+                    [Q] for Quest Log<br />
+                    [F] for Friends and Groups<br />
+                    [G] for Gem Shop<br />
+                    [H] for Help<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('35')" id='35'>show</span><br />
+                <span><i>33. How can I sell items on Mac OS X?</i></span>
+                <div style='display:none' id='x36'>
+                  <blockquote>
+                    <br />
+                    Shift+left click as normal.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('36')" id='36'>show</span><br />
+                <span><i>34. Is there a level cap?</i></span>
+                <div style='display:none' id='x37'>
+                  <blockquote>
+                    <br />
+                    Currently, we do not know if there is a level cap. In v1 the level cap was 50, but you level a lot faster in the new game, so it will probably be higher, or maybe there won't be one at all!<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('37')" id='37'>show</span><br />
+                <span><i>35. Is there a was to increase character speed, or travel?</i></span>
+                <div style='display:none' id='x38'>
+                  <blockquote>
+                    <br />
+                    There is going to be some sort of teleportation available to players, which will allow you to travel insantly, but there are no plans to be able to increase character speed as of now.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('38')" id='38'>show</span><br />
+                <span><i>36. How does the Bank system work?</i></span>
+                <div style='display:none' id='x39'>
+                  <blockquote>
+                    <br />
+                    All you have to do is pay 40 Gems, and then you can store any items you want in the bank, forever. This is especially useful if you need a lot of space in your inventory!<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('39')" id='39'>show</span><br />
+                <span><i>37. How do bags work?</i></span>
+                <div style='display:none' id='x40'>
+                  <blockquote>
+                    <br />
+                    You can buy bags from the Gem Shop for a price of 10 Gems each, and have up to 4 extra bags. These allow you to have a lot more space (8 slots per bag), which can be very useful.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('40')" id='40'>show</span><br />
+                <span><i>38. Why can't I register on the Wiki?</i></span>
+                <div style='display:none' id='x41'>
+                  <blockquote>
+                    <br />
+                    If you are a facebook user you'll need to register on the forum. Use that account then to register on the Wiki. Make sure that you check upper and lower case when you register. The name is case sensitive!<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('41')" id='41'>show</span><br />
+                <span><i>39. Will there ever be any future resets?</i></span>
+                <div style='display:none' id='x42'>
+                  <blockquote>
+                    <br />
+                    No.<br />
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('42')" id='42'>show</span>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('3')" id='3'>show</span><br />
+            <p style='color:#777777'>Last update 27/01/11 19:36:02 by xBlazeUK</p>
+            <div align="right" style="bottom:0; left:735px; position:absolute; padding-top:20px; padding-bottom:10px;">
+              <a href='?menu=privacypolicy'>Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="myDiv lowermidmid">
+          <div class="myDiv lowertopmid"></div>
+          <div class="myDiv lowerbottommid"></div>
+        </div>
+        <div class="myDiv paintright">
+          <div style="margin:10px">
+            <script type="text/javascript">
+            //<![CDATA[
+            <!--
+            function check() {
+                if (document.shoutform.shouttext.value == '') {
+                        alert('Please enter a message!');
+                        return false;
+                } 
+                if (document.shoutform.shoutname.value == '') {
+                        alert('Please enter your name!');
+                        return false;
+                }
+                if (document.shoutform.shouttext.value.length > 100) {
+                        alert('Your text is to long!');
+                        return false;
+                }
+                if (document.shoutform.shoutname.value.length > 15) {
+                        alert('Your name is to long!');
+                        return false;
+                }
+            }
+
+            function set(id,col)
+            {
+            //document.getElementById(id).style.color=col;
+            <!-- document.getElementById(id+'b').style.color=col; //-->
+            if (col=="#000000") {
+            document.getElementById(id).style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            document.getElementById(id+'b').style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            } else {
+            document.getElementById(id).style.backgroundColor='';   
+            document.getElementById(id+'b').style.backgroundColor='';       
+            }
+            }
+
+            function imposeMaxLength(Event, Object, MaxLen)
+            {
+            return (Object.value.length < MaxLen)||(Event.keyCode == 8 ||Event.keyCode==46||(Event.keyCode>=35&&Event.keyCode<=40))
+            }
+            -->
+            //]]>
+            </script>
+            <form onsubmit="return check();" name='shoutform' action="?" method="post" id="shoutform">
+              <input type="hidden" value="1" name="shout" />
+              <table class='shouttable'>
+                <tr>
+                  <td id='d1240' onmouseout="set('d1240','#ffffff');" onmouseover="set('d1240','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (08/09/11 15:08:39):</td>
+                </tr>
+                <tr>
+                  <td id='d1240b' onmouseout="set('d1240','#ffffff');" onmouseover="set('d1240','#000000');" class='shouttd'>the monster name to the 'dropped by' list.</td>
+                </tr>
+                <tr>
+                  <td id='d1241' onmouseout="set('d1241','#ffffff');" onmouseover="set('d1241','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (08/09/11 15:09:27):</td>
+                </tr>
+                <tr>
+                  <td id='d1241b' onmouseout="set('d1241','#ffffff');" onmouseover="set('d1241','#000000');" class='shouttd'>*by adding [mons] Monstername [/mons].</td>
+                </tr>
+                <tr>
+                  <td id='d1242' onmouseout="set('d1242','#ffffff');" onmouseover="set('d1242','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Gansteo</b> (12/09/11 23:41:36):</td>
+                </tr>
+                <tr>
+                  <td id='d1242b' onmouseout="set('d1242','#ffffff');" onmouseover="set('d1242','#000000');" class='shouttd'>Logger isn't working ;c</td>
+                </tr>
+                <tr>
+                  <td id='d1243' onmouseout="set('d1243','#ffffff');" onmouseover="set('d1243','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (13/09/11 14:31:34):</td>
+                </tr>
+                <tr>
+                  <td id='d1243b' onmouseout="set('d1243','#ffffff');" onmouseover="set('d1243','#000000');" class='shouttd'>Look at the top of the page 'I'm not supporting this program any more.'</td>
+                </tr>
+                <tr>
+                  <td id='d1244' onmouseout="set('d1244','#ffffff');" onmouseover="set('d1244','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>babbal</b> (17/09/11 19:21:06):</td>
+                </tr>
+                <tr>
+                  <td id='d1244b' onmouseout="set('d1244','#ffffff');" onmouseover="set('d1244','#000000');" class='shouttd'>you don't have the bearserker hammer of doom</td>
+                </tr>
+                <tr>
+                  <td id='d1245' onmouseout="set('d1245','#ffffff');" onmouseover="set('d1245','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (17/09/11 19:41:44):</td>
+                </tr>
+                <tr>
+                  <td id='d1245b' onmouseout="set('d1245','#ffffff');" onmouseover="set('d1245','#000000');" class='shouttd'>I know. You can add it, if you like to.</td>
+                </tr>
+                <tr>
+                  <td id='d1246' onmouseout="set('d1246','#ffffff');" onmouseover="set('d1246','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Kulkka</b> (17/09/11 21:13:44):</td>
+                </tr>
+                <tr>
+                  <td id='d1246b' onmouseout="set('d1246','#ffffff');" onmouseover="set('d1246','#000000');" class='shouttd'>O hai thar fansite.Lulz.</td>
+                </tr>
+                <tr>
+                  <td id='d1247' onmouseout="set('d1247','#ffffff');" onmouseover="set('d1247','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (18/09/11 10:09:47):</td>
+                </tr>
+                <tr>
+                  <td id='d1247b' onmouseout="set('d1247','#ffffff');" onmouseover="set('d1247','#000000');" class='shouttd'>Things added/updated.</td>
+                </tr>
+                <tr>
+                  <td id='d1248' onmouseout="set('d1248','#ffffff');" onmouseover="set('d1248','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (30/09/11 19:43:46):</td>
+                </tr>
+                <tr>
+                  <td id='d1248b' onmouseout="set('d1248','#ffffff');" onmouseover="set('d1248','#000000');" class='shouttd'>AmY, when do you think you'll publish V2? Can you tell us in % how complete it is atm?</td>
+                </tr>
+                <tr>
+                  <td class='shouttd'></td>
+                </tr>
+                <tr>
+                  <td class='shouttd'>
+                    <div style="font-size:11px; text-align:center; font-weight:bold; border-top-width:1px; border-top-color:#999; border-top-style:solid;">
+                      <b>please <a href='?menu=reg'>register</a> / <a href='?'>login</a> to shout</b>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+        <div class="myDiv lowermidright">
+          <div class="myDiv lowertopright"></div>
+          <div class="myDiv lowerbottomright"></div>
+        </div>
+      </div>
+    </div>
+    <div class="myDiv bottom"></div>
+  </div>
+</body>
+</html>

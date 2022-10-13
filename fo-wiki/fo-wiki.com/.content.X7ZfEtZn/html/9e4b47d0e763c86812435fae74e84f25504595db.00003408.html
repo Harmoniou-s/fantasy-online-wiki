@@ -1,0 +1,294 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fantasy Online - Item Ranking</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/ajax.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class='top_cont'>
+    <div class="nav_icon">
+      <img title='nav' class='nav_img' src="img/nav.png" width="32" height="32" /><a href='.'>Navigation</a>
+    </div>
+    <div class="user_div">
+      <script src="js/md5.js" type="text/javascript"></script> 
+      <script language="javascript" type="text/javascript">
+      //<![CDATA[
+
+
+                                      <!--
+                                      function converttohash() {
+                                          document.getElementById('hash').value
+                                                  = MD5(document.getElementById('pw').value);
+                                          document.getElementById('pw').value='';
+                                          
+                                          if (document.getElementById('pw').value=='') {
+                                            return true;
+                                          }
+                                          return false;
+                                      }
+                                      // -->
+      //]]>
+      </script>
+      <form onsubmit="return converttohash();" method='post' action='/ps3k/index.php?menu=showUser&amp;userName=cwazymaniac'>
+        <div>
+          User Name: <input value='' class='bginput' size="10" type='text' id='username' name='username' />
+        </div>
+        <div>
+          Password: <input class='bginput' size="10" type='password' id='pw' /><input type='hidden' id='hash' name='hash' />
+        </div>
+        <div>
+          <input type="submit" value="Log In" class='button' />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='menu'>
+    <table class='menu_table'>
+      <tr>
+        <td><a href='.'>Latest Uploads</a></td>
+        <td><a href='?menu=stars_total'>Top 100 (rating)</a></td>
+        <td><a href='?menu=likes_total'>Top 100 (likes abs.)</a></td>
+        <td><a href='?menu=likes'>Top 100 (likes rel.)</a></td>
+        <td><a href='?menu=browseAll'>Browse All</a></td>
+        <td><a href='?menu=ingame'>Ingame</a></td>
+        <td><a href='?menu=search'>Search</a></td>
+        <td><a href='?menu=userRanking'>User Ranking</a></td>
+        <td><a href='?menu=showLottery'>Lottery</a></td>
+        <td><a href='?menu=myCreations'>My Creations</a></td>
+        <td>Register</td>
+      </tr>
+    </table>
+  </div>
+  <div class='info_cont'>
+    <div class='title'>
+      <img class='nav_img' src='img/user.png' width='32' height='32' alt='user' />What cwazymaniac published (<a href='?menu=showUserLikes&amp;userName=cwazymaniac'>-&gt; What cwazymaniac likes</a>)
+    </div>
+    <table class='itemlist'>
+      <tr class='legend'>
+        <td>Icon</td>
+        <td>Name</td>
+        <td>Rating</td>
+        <td>Likes</td>
+        <td>Posts</td>
+        <td>Set</td>
+        <td>Type</td>
+        <td>By</td>
+        <td>Created</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=418957049'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_418957049_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=418957049'>scrap shoulders <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td>-</td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>38 min ago</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=418174951'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_418174951_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=418174951'>Willyjay SSC <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td>-</td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>9 hours ago</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=224260886'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_224260886_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=224260886'>gladiator helm</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=224260886'>gladiator</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>29/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=596888892'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_596888892_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=596888892'>gladiator body</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=596888892'>gladiator</a></td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>29/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=654474577'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_654474577_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=654474577'>gladiator pants</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=654474577'>gladiator</a></td>
+        <td>Legs</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>29/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=80849000'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_80849000_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=80849000'>gladiator shield</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=80849000'>gladiator</a></td>
+        <td>Off-Hand</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>29/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=707941794'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_707941794_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=707941794'>gladius</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=707941794'>gladiator</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>29/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=714947732'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_714947732_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=714947732'>gladiator box</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=714947732'>gladiator</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>29/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=670238750'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_670238750_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=670238750'>turtleneck &amp; chain</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:64px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.06)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=670238750'>lonely island</a></td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>26/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=691175260'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_691175260_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=691175260'>gold trident</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:72px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=691175260'>underwater</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>18/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=655393898'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_655393898_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=655393898'>popcorn</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:61px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.06)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=655393898'>movie</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>13/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=263760887'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_263760887_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=263760887'>movie guy</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:51px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.03)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=263760887'>movie</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>13/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=31638329'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_31638329_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=31638329'>3d glasses</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:61px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.06)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=31638329'>movie</a></td>
+        <td>Face</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>13/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=368150266'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_368150266_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=368150266'>rock vein</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:62px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.02)</span></td>
+        <td class='like'>2</td>
+        <td><a href='?menu=showItem&amp;uid=368150266'>Ruins area</a></td>
+        <td>NPC</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>14/12/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=351899017'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_351899017_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=351899017'>reinforced rock plate</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:60px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=351899017'>Ruins area</a></td>
+        <td>Crafting</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>12/12/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=328428174'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_328428174_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=328428174'>rock plate</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:56px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=328428174'>Ruins area</a></td>
+        <td>Crafting</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>12/12/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=141777110'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_141777110_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=141777110'>rock slab</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:64px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.02)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=141777110'>Ruins area</a></td>
+        <td>Crafting</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>12/12/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=24294480'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_24294480_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=24294480'>rock chunk</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:68px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.02)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=24294480'>Ruins area</a></td>
+        <td>Crafting</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>12/12/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=996724385'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_996724385_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=996724385'>rock ore</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:56px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.02)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=996724385'>Ruins area</a></td>
+        <td>Crafting</td>
+        <td><a href='?menu=showUser&amp;userName=cwazymaniac'>cwazymaniac</a></td>
+        <td>12/12/11</td>
+      </tr>
+    </table>
+  </div>
+  <div class='bottom_cont'>
+    [13/02/12 23:18:23 | <a style='color:#fff;' target='_blank' href='priv.html'>Privacy Policy</a> ]
+  </div>
+</body>
+</html>

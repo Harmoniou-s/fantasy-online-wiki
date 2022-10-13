@@ -1,0 +1,235 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Skill Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script src="../content/sha256.js" type="text/javascript"></script> 
+    <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+
+
+                                                                function check()
+                                                                {
+                                                                        if ( document.form.SKILLname.value == '' )
+                                                                        {
+                                                                                alert('Please enter the Skill name!')
+                                                                                return false;
+                                                                        }
+                                                                        if ( document.form.SKILLicon.value == '' )
+                                                                        {
+                                                                                alert('Please select the Skill image!')
+                                                                                return false;
+                                                                        }
+                                                                        if ( document.form.SKILLrank.value == '' )
+                                                                        {
+                                                                                alert('Please enter the Rank!')
+                                                                                return false;
+                                                                        }
+                                                                        if ( document.form.username.value == '' )
+                                                                        {
+                                                                                alert('Please enter your username!')
+                                                                                return false;
+                                                                        }
+                                                                        if ( document.form.userpw.value == '' )
+                                                                        {
+                                                                                alert('Please enter your password!')
+                                                                                return false;
+                                                                        } else {
+                                                                                document.form.userpw.value = SHA256(document.form.userpw.value);
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <form action="?do=post" name='form' onsubmit="return check();" method="post" target="_self" enctype="multipart/form-data" id="form">
+      <table class="maintable">
+        <thead>
+          <tr>
+            <th colspan="2">Add Skill to Database</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="2"><input name="" type="image" class="button" value="submit" src="img/submit.jpg" alt="submit" /><a href='?'><img class='button' src="img/cancel.jpg" width="66" height="19" /></a></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td width="359px">Skill Name:</td>
+            <td><input name="SKILLname" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Icon ( jpeg and max 26x26 only ):</td>
+            <td><input name="SKILLicon" type="file" /></td>
+          </tr>
+          <tr>
+            <td>Skill text:</td>
+            <td>
+            <textarea name="SKILLtext" cols="30" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td>Skill typ:</td>
+            <td><select name="SKILLtyp">
+              <option value="other" selected="selected">
+                other
+              </option>
+              <option value="heal">
+                heal
+              </option>
+              <option value="attack">
+                attack
+              </option>
+              <option value="def-boost">
+                def-boost
+              </option>
+              <option value="stat-boost">
+                stat-boost
+              </option>
+              <option value="pet">
+                pet
+              </option>
+            </select></td>
+          </tr>
+          <tr>
+            <td>Skill min dmg:</td>
+            <td><input name="SKILLmindmg" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Skill max dmg:</td>
+            <td><input name="SKILLmaxdmg" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Rank:</td>
+            <td><input name="SKILLrank" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sp cost:</td>
+            <td><input name="SKILLspcost" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Lvl required:</td>
+            <td><input name="SKILLlvlreq" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Skill requirements (except lvl, eg. "Int 81; Sta 22" ):</td>
+            <td>
+            <textarea name="SKILLreq" rows="3" cols="30"></textarea></td>
+          </tr>
+          <tr>
+            <td>Obtained from ( eg. "The Sergeant Slippy Shop; Thinning the Ranks Quest" ):</td>
+            <td><input name="SKILLobtfrom" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Buy price:</td>
+            <td><input name="SKILLbuyprice" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Currency:</td>
+            <td><select name="SKILLusesgems">
+              <option value="0" selected="selected">
+                Coins
+              </option>
+              <option value="1">
+                Gems
+              </option>
+            </select></td>
+          </tr>
+          <tr>
+            <td>Note (if it fits nowhere else):</td>
+            <td>
+            <textarea name="SKILLnote" rows="3" cols="30"></textarea></td>
+          </tr>
+          <tr>
+            <td class="topic" colspan="2">Confirm your Identity</td>
+          </tr>
+          <tr>
+            <td>Username:</td>
+            <td><input name="username" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input name="userpw" type="password" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

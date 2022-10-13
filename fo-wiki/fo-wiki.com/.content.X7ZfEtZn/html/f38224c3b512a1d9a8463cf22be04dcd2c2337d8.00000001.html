@@ -1,0 +1,364 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="This is a Fansite for the game Fantasy Online." />
+  <meta name="keywords" content="Fantasy Online, Database, Map, Monster Database, Item Database, Skill Database, NPC Database, Fanpage, Quest Database, Fantasy, Online, MMORPG, Multiplayer, Logger, AmY" />
+  <title>Fantasy Online Fansite</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="./content/trasfade.js" type="text/javascript"></script>
+  <script src="./content/hideshow.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+  //<![CDATA[
+  <!--
+        cursor = new Array("img/background-menu-btn1-active.jpg",
+                                           "img/background-menu-btn2-active.jpg",
+                                           "img/background-menu-btn3-active.jpg",
+                                           "img/background-menu-btn4-active.jpg",
+                                           "img/background-menu-btn5-active.jpg");
+  function preload(images) {
+        var i = 0;
+        var imageObj = new Array();
+        for(i=0; i != images.length; i+=1) {
+                        imageObj[i]= new Image();
+            imageObj[i].src=images[i];
+        }}
+  preload(cursor);
+  -->
+  //]]>
+  </script>
+  <div class="center">
+    <div class='myDiv sur'>
+      <div class='myDiv top'></div>
+      <div class='myDiv menuleft'></div>
+      <div class='myDiv menuleftin'></div>
+      <div class='myDiv menubtn1'>
+        <a href="?" class="blank"><img id='btn1' onmouseover="FadeOpacity('btn1',0,100,300,20);" onmouseout="FadeOpacity('btn1',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn1-active.jpg" width="91" height="30" name="btn1" /></a>
+      </div>
+      <div class='myDiv menubtn2'>
+        <a href="?menu=database" class="blank"><img id='btn2' onmouseover="FadeOpacity('btn2',0,100,300,20);" onmouseout="FadeOpacity('btn2',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn2-active.jpg" width="144" height="30" name="btn2" /></a>
+      </div>
+      <div class='myDiv menubtn3'>
+        <a href="?menu=logger" class="blank"><img id='btn3' onmouseover="FadeOpacity('btn3',0,100,300,20);" onmouseout="FadeOpacity('btn3',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn3-active.jpg" width="116" height="30" name="btn3" /></a>
+      </div>
+      <div class='myDiv menubtn4'>
+        <a href="?menu=map" class="blank"><img id='btn4' onmouseover="FadeOpacity('btn4',0,100,300,20);" onmouseout="FadeOpacity('btn4',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn4-active.jpg" width="75" height="30" name="btn4" /></a>
+      </div>
+      <div class='myDiv menubtn5'>
+        <a href="?menu=help" class="blank"><img id='btn5' onmouseover="FadeOpacity('btn5',0,100,300,20);" onmouseout="FadeOpacity('btn5',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn5-active.jpg" width="99" height="30" name="btn5" /></a>
+      </div>
+      <div class='myDiv menurightin'></div>
+      <div class='myDiv menumid'></div>
+      <div class='myDiv aboveshoutbox'></div>
+      <div class='myDiv menuright'></div>
+    </div>
+    <div class='myDiv sur2'>
+      <div style="overflow:hidden;">
+        <div class="myDiv lowermidleft">
+          <div class="myDiv lowertopleft"></div>
+          <div class="myDiv lowerbottomleft"></div>
+        </div>
+        <div class="myDiv paintleft" align="left">
+          <div style="margin:10px;">
+            <script language="javascript">
+            <![CDATA[
+            <!--
+            function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+
+            if (expires)
+            expires = expires * 1000 * 60;
+
+            var expires_date = new Date(today.getTime() + expires);
+
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+            }
+
+            var vc_freq_cap = 15; // Frequency cap in minutes
+
+            var vc_rand = Math.floor(Math.random() * 7777);
+
+            // Used to verify that we can set cookies
+            //
+            document.cookie = 'h2=o; path=/;';
+
+            // Get the current window size to ensure we can view our ad
+            //
+            var vc_window_wt = 0;
+            var vc_window_ht = 0;
+            if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+            }
+            else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+            }
+            else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+
+            if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+            }
+            }
+
+            if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+            }
+            // -->
+            ]]>
+            </script>
+            <div align="center">
+              <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=s&c=1" width="468" height="60" border="1" /></noscript>
+            </div>
+            <p><strong>Hey</strong> you!<br />
+            This is a Fansite for the game <strong>Fantasy Online</strong>.<br />
+            You are visitor number 299430 (There are 2 users online).</p>
+            <div style="cursor:default; font-size:14px; font-family:'Arial Black', Gadget, sans-serif; font-weight:bold; padding-bottom:5px; text-align:center">
+              <div style="border-style:solid; border-width:3px; padding:3px; border-color:#900; display:inline-block; text-align:center; background-color:#FFF">
+                <b style="color:#700101;">Note:</b> Want this page completely <b style="color:#700101">add free</b>? <img style="vertical-align:text-bottom" src="img/smileys/smiley-dance013.gif" alt="*dance*" width="42" height="25" /><br />
+                Just <a href='?menu=reg'>register</a>, login and update one entry in the wiki!
+              </div>
+            </div>
+            <script src="./content/sha256.js" type="text/javascript"></script> 
+            <script language="javascript">
+            <![CDATA[
+
+
+            <!--
+            function converttosha256() {
+            document.getElementById('sha256id').value=SHA256(document.getElementById('pwid').value); 
+            document.getElementById('pwid').value='';
+
+            if (document.getElementById('pwid').value=='') {
+            return true;
+            }
+            return false;
+
+            }
+            // -->
+            ]]>
+            </script>
+            <form action="?menu=login" onsubmit="return converttosha256();" method="post" enctype="multipart/form-data">
+              <fieldset style="background-color:#D1E6CA">
+                <legend style="font-weight:bold">Login</legend>
+                <table width="490px">
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Login:</td>
+                    <td><input name="login" type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td>Password*:</td>
+                    <td><input id="pwid" type="password" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="hidden" name="sha256" id="sha256id" /><input name="" type="submit" value="login" />&nbsp; <a href="?menu=reg"><input name="" type="button" value="register" /></a></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">*The password is never transferred in the clear. Only the sha256 hash is sent.</td>
+                  </tr>
+                </table>
+              </fieldset>
+            </form>
+            <div style="padding-top:10px">
+              <b>Recently changed Items:</b>
+            </div><a href='items/?do=dispitem&id=3350'><img title='Aeon Hair' class='icon' src="items/img.php?id=3350" /></a>&nbsp;<a href='items/?do=dispitem&id=3349'><img title='Wand Base' class='icon' src="items/img.php?id=3349" /></a>&nbsp;<a href='items/?do=dispitem&id=3348'><img title='Wrench' class='icon' src="items/img.php?id=3348" /></a>&nbsp;<a href='items/?do=dispitem&id=3347'><img title='Satchel' class='icon' src="items/img.php?id=3347" /></a>&nbsp;<a href='items/?do=dispitem&id=3346'><img title='Ancient Templar Helm' class='icon' src="items/img.php?id=3346" /></a>&nbsp;<a href='items/?do=dispitem&id=3345'><img title='Ancient Templar Body' class='icon' src="items/img.php?id=3345" /></a>&nbsp;<a href='items/?do=dispitem&id=3344'><img title='Ancient Templar Legs' class='icon' src="items/img.php?id=3344" /></a>&nbsp;<a href='items/?do=dispitem&id=3343'><img title='Ancient Dragon Helmet' class='icon' src="items/img.php?id=3343" /></a>&nbsp;<a href='items/?do=dispitem&id=3342'><img title='Ancient Dragon Body' class='icon' src="items/img.php?id=3342" /></a>&nbsp;<a href='items/?do=dispitem&id=3341'><img title='Ancient Dragon Legs' class='icon' src="items/img.php?id=3341" /></a>&nbsp;
+            <table style="margin-top:10px">
+              <tr>
+                <td style="vertical-align:top">Members: 1165, Shouts: 1293<br />
+                Recently active: <b>joppelarius</b>(19m 13s), <b>Takuari</b>(54m 19s), <b>MasterX</b>(1h 43m 19s), <b>gogoran</b>(2h 12m 19s), <b>Zopherus</b>(3h 52m 19s), <b>rainbowfish1</b>(3h 56m 36s), <b>MasterodX</b>(3h 59m 19s), <b>sam64mcd</b>(4h 4m 45s), <b>Thenumbers</b>(4h 46m 19s), <b>Glitch019</b>(4h 49m 19s), <b>Kaldonious</b>(4h 54m 19s), <b>Mota85</b>(5h 1m 27s), <b>AitchTwo</b>(5h 12m 19s), <b>JSRF</b>(5h 18m 19s), <b>Xalace</b>(6h 37m 19s), <b>Bearstach</b>(7h 24m 19s), <b>Gamer</b>(7h 26m 19s), <b>dsx2000</b>(7h 28m 19s), <b>Reaper999999</b>(7h 39m 19s), <b>Teban100</b>(8h 50m 19s), <b>Hillyman</b>(9h 15m 19s), <b>destructor7</b>(9h 17m 58s), <b>Ace3408</b>(9h 24m 19s), <b>electricwolf</b>(9h 28m 19s), <b>Terrazer</b>(9h 36m 19s), <b>Kendzi</b>(9h 37m 2s), <b>sunkendragon</b>(9h 37m 19s), <b>baileywng</b>(9h 40m 19s), <b>AConspiracy</b>(9h 43m 51s), <b>Jimmedy</b>(9h 55m 15s), <b>Sendoo</b>(10h 11m 19s), <b>pheoinx</b>(10h 15m 19s), <b>DoomofDeath</b>(10h 15m 19s), <b>knight43234</b>(10h 48m 19s), <b>Claudius</b>(11h 16m 19s), <b>OceanZero</b>(11h 31m 36s), <b>mdccxxvii</b>(11h 45m 19s), <b>Torious</b>(11h 46m 19s), <b>Time4taco</b>(11h 59m 19s), <b>Illuminisin</b>(12h 31m 19s), <b>kikissima</b>(12h 40m 19s), <b>Irtemed</b>(13h 39m 13s), <b>kinja</b>(13h 42m 19s), <b>harald12321</b>(14h 2m 36s), <b>Jman12390</b>(14h 51m 19s), <b>JayIvan2010</b>(15h 11m 19s), <b>Bubber</b>(15h 23m 19s), <b>MrArcher</b>(15h 26m 19s), <b>enrico75</b>(18h 17m 19s), <b>phantom23</b>(19h 17m 19s), <b>meow43</b>(20h 11m 19s), <b>sandsou</b>(20h 32m 19s), <b>Vanhallen</b>(21h 19m 19s), <b>Apocalyptic6</b>(21h 35m 19s), <b>Alekhzandr</b>(21h 54m 19s), <b>Livian</b>(22h 28m 19s), <b>Bamboozle</b>(22h 29m 19s), <b>liverpool397</b>(22h 34m 19s), <b>DarkInfinity</b>(22h 39m 19s), <b>aaaaaaa12</b>(23h 5m 19s), <b>s987654r</b>(23h 20m 19s)</td>
+                <td style="vertical-align:top" width='300px'>
+                  <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=6&tp=8&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=6&tp=8&d=s&c=1" width="300" height="250" border="1" /></noscript>
+                </td>
+              </tr>
+            </table><span style="cursor:pointer" onmousedown="document.getElementById('stat').style.display='block'; this.style.display='none';"><a style="font-weight:bold;">Show developer statistic</a></span>
+            <p id="stat" style="text-align:left; display:none;"><img src="http://www.unfine.de/tmp/pie.png" /> <img src="http://www.unfine.de/tmp/fohour.png" /> <img src="http://www.unfine.de/tmp/chart.png" /></p>
+            <table class="tab1">
+              <tr>
+                <td style="vertical-align:top">
+                  <br />
+                  <script src="content/javascript/twitter.min.js" type="text/javascript"></script> 
+                  <script type="text/javascript" charset="utf-8">
+                  //<![CDATA[
+
+
+                  window.onload = function() {
+                  getTwitters('tweet', { 
+                  id: 'fowiki', 
+                  count: 10, 
+                  enableLinks: true, 
+                  ignoreReplies: true, 
+                  clearContents: true,
+                  template: '%text%, <i>%time%<\/a><\/i>'
+                  });
+                  }
+                  //]]>
+                  </script>
+                  <div class="styled">
+                    <b>Info (<a href='http://twitter.com/fowiki'>view all):</a></b>
+                    <div id="tweet">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+                    </div>
+                  </div><br />
+                </td>
+              </tr>
+            </table>
+            <div align="right" style="bottom:0; left:735px; position:absolute; padding-top:20px; padding-bottom:10px;">
+              <a href='?menu=privacypolicy'>Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="myDiv lowermidmid">
+          <div class="myDiv lowertopmid"></div>
+          <div class="myDiv lowerbottommid"></div>
+        </div>
+        <div class="myDiv paintright">
+          <div style="margin:10px">
+            <script type="text/javascript">
+            //<![CDATA[
+            <!--
+            function check() {
+                if (document.shoutform.shouttext.value == '') {
+                        alert('Please enter a message!');
+                        return false;
+                } 
+                if (document.shoutform.shoutname.value == '') {
+                        alert('Please enter your name!');
+                        return false;
+                }
+                if (document.shoutform.shouttext.value.length > 100) {
+                        alert('Your text is to long!');
+                        return false;
+                }
+                if (document.shoutform.shoutname.value.length > 15) {
+                        alert('Your name is to long!');
+                        return false;
+                }
+            }
+
+            function set(id,col)
+            {
+            //document.getElementById(id).style.color=col;
+            <!-- document.getElementById(id+'b').style.color=col; //-->
+            if (col=="#000000") {
+            document.getElementById(id).style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            document.getElementById(id+'b').style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            } else {
+            document.getElementById(id).style.backgroundColor='';   
+            document.getElementById(id+'b').style.backgroundColor='';       
+            }
+            }
+
+            function imposeMaxLength(Event, Object, MaxLen)
+            {
+            return (Object.value.length < MaxLen)||(Event.keyCode == 8 ||Event.keyCode==46||(Event.keyCode>=35&&Event.keyCode<=40))
+            }
+            -->
+            //]]>
+            </script>
+            <form onsubmit="return check();" name='shoutform' action="?" method="post" id="shoutform">
+              <input type="hidden" value="1" name="shout" />
+              <table class='shouttable'>
+                <tr>
+                  <td id='d1361' onmouseout="set('d1361','#ffffff');" onmouseover="set('d1361','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (19/12/11 05:09:14):</td>
+                </tr>
+                <tr>
+                  <td id='d1361b' onmouseout="set('d1361','#ffffff');" onmouseover="set('d1361','#000000');" class='shouttd'>Been killing 'Destroyer of Faith' and it hasn't dropped scythe base, but it has dropped wand base.</td>
+                </tr>
+                <tr>
+                  <td id='d1362' onmouseout="set('d1362','#ffffff');" onmouseover="set('d1362','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Linspatz</b> (19/12/11 07:22:39):</td>
+                </tr>
+                <tr>
+                  <td id='d1362b' onmouseout="set('d1362','#ffffff');" onmouseover="set('d1362','#000000');" class='shouttd'>I just got the scythe base from him 20 minutes ago</td>
+                </tr>
+                <tr>
+                  <td id='d1363' onmouseout="set('d1363','#ffffff');" onmouseover="set('d1363','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>sXNoRuL3z</b> (20/12/11 16:28:47):</td>
+                </tr>
+                <tr>
+                  <td id='d1363b' onmouseout="set('d1363','#ffffff');" onmouseover="set('d1363','#000000');" class='shouttd'>how do you make a ps3k?</td>
+                </tr>
+                <tr>
+                  <td id='d1364' onmouseout="set('d1364','#ffffff');" onmouseover="set('d1364','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (20/12/11 19:02:42):</td>
+                </tr>
+                <tr>
+                  <td id='d1364b' onmouseout="set('d1364','#ffffff');" onmouseover="set('d1364','#000000');" class='shouttd'>You can find a tutorial on the forums (www.fantasy-mm orpg.com/forums )</td>
+                </tr>
+                <tr>
+                  <td id='d1365' onmouseout="set('d1365','#ffffff');" onmouseover="set('d1365','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>joppelarius</b> (21/12/11 01:37:03):</td>
+                </tr>
+                <tr>
+                  <td id='d1365b' onmouseout="set('d1365','#ffffff');" onmouseover="set('d1365','#000000');" class='shouttd'>Hi, I just registered, 33rb ingame. I noticed the data done in FUU is missing, can I add it?</td>
+                </tr>
+                <tr>
+                  <td id='d1366' onmouseout="set('d1366','#ffffff');" onmouseover="set('d1366','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (21/12/11 02:46:18):</td>
+                </tr>
+                <tr>
+                  <td id='d1366b' onmouseout="set('d1366','#ffffff');" onmouseover="set('d1366','#000000');" class='shouttd'>can someone add to the morph skills? like what "wulf" does</td>
+                </tr>
+                <tr>
+                  <td id='d1367' onmouseout="set('d1367','#cdde44');" onmouseover="set('d1367','#000000');" style='text-shadow: #cdde44 0px 0px 3px; text-align:left;' class='shouttd'><b>Kendzi</b> (21/12/11 18:14:36):</td>
+                </tr>
+                <tr>
+                  <td id='d1367b' onmouseout="set('d1367','#cdde44');" onmouseover="set('d1367','#000000');" class='shouttd'>Dang, wrong PW when submitting 2nd fan quest. Someone else should do that.</td>
+                </tr>
+                <tr>
+                  <td id='d1368' onmouseout="set('d1368','#bb943c');" onmouseover="set('d1368','#000000');" style='text-shadow: #bb943c 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (21/12/11 21:55:03):</td>
+                </tr>
+                <tr>
+                  <td id='d1368b' onmouseout="set('d1368','#bb943c');" onmouseover="set('d1368','#000000');" class='shouttd'>Jopp: Which data do you mean? Sure,everyone can add things. Fals: Read the note.</td>
+                </tr>
+                <tr>
+                  <td id='d1369' onmouseout="set('d1369','#b9eb1c');" onmouseover="set('d1369','#000000');" style='text-shadow: #b9eb1c 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (21/12/11 22:15:04):</td>
+                </tr>
+                <tr>
+                  <td id='d1369b' onmouseout="set('d1369','#b9eb1c');" onmouseover="set('d1369','#000000');" class='shouttd'>Oh the quest.. Good job on that, keep it up. I've changed it a bit, because Gamer fixed the problem.</td>
+                </tr>
+                <tr>
+                  <td class='shouttd'></td>
+                </tr>
+                <tr>
+                  <td class='shouttd'>
+                    <div style="font-size:11px; text-align:center; font-weight:bold; border-top-width:1px; border-top-color:#999; border-top-style:solid;">
+                      <b>please <a href='?menu=reg'>register</a> / <a href='?'>login</a> to shout</b>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+        <div class="myDiv lowermidright">
+          <div class="myDiv lowertopright"></div>
+          <div class="myDiv lowerbottomright"></div>
+        </div>
+      </div>
+    </div>
+    <div class="myDiv bottom"></div>
+  </div>
+</body>
+</html>

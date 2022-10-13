@@ -1,0 +1,70 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Quest Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+  body,td,th {
+        font-size: 12px;
+  }
+  -->
+  /*]]>*/
+  </style>
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; left:0px; top: 60px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <table class="maintable">
+    <thead>
+      <tr>
+        <th colspan='6'>Quest! (<a href='?'>Quest database</a>)</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan='6'><a href='?do=edit&amp;id=96'><img class='button' src="img/edit.jpg" width="47" height="19" /></a> <a href='?do=delitem&id=96'><img class='button' src='img/delete.jpg' width='66' height='19' /></a> <a href='javascript:history.back()'><img class='button' src="img/back.jpg" width="47" height="19" /></a></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td colspan='6'>&nbsp;Little Girl Hungry&nbsp;[ 2 ]</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Start NPC</td>
+        <td width='300px' colspan='2' class='val'><a href='../npc/?do=dispitem&id=52'><img title='Nicole' class='icon2' src='../npc/img.php?id=52' /></a></td>
+        <td class='attr' width='150px'>Typ</td>
+        <td width='300px' class='val' colspan='2'>collect</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Exp-gain</td>
+        <td width='300px' colspan='2' class='val'>200</td>
+        <td class='attr' width='150px'>Coin-gain</td>
+        <td width='300px' colspan='2' class='val'>10</td>
+      </tr>
+      <tr>
+        <td class='attr'>Summary</td>
+        <td colspan='5'>Feed the children. Okay, feed one child. Collect 5 turnips from your farmyard slaughter before she passes right out.</td>
+      </tr>
+      <tr>
+        <td class='attr'>Details</td>
+        <td colspan='5'>
+          Talk to <a href='../npc/?do=dispitem&id=52'><img title='Nicole' src='../npc/img.php?id=52' /></a>. She says <img style='cursor: pointer' onmouseover="SetContent('label','l`m not only allergic to bees, but l`m also a little&lt;br /&gt;hypoglycemic. My uncle Stranger says l`m a bit of a&lt;br /&gt;hypochondriac, but he`s silly.&lt;br /&gt;&lt;br /&gt;Anyway, l`d give just about anything for five little&lt;br /&gt;turnips to bring my blood sugar up to a manageable&lt;br /&gt;level. What do you say?'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />. Accept and collect five <a href='../items/?do=dispitem&id=237'><img title='Turnip' src='../items/img.php?id=237' /></a> from <a href='../bestiary/?do=dispitem&id=144'><img title='Turniphead' src='../bestiary/img.php?id=144' /></a>.<br />
+          Talk to <a href='../npc/?do=dispitem&id=52'><img title='Nicole' src='../npc/img.php?id=52' /></a> again. She thanks you (<img style='cursor: pointer' onmouseover="SetContent('label','Oh, you\'re a life saver! I just know you\'ll kill lots of big baddies in your travels ... and I\'m not just saying that because I\'m feeling lightheaded.&lt;br /&gt;&lt;br /&gt;If you\'re looking for something better than a stick, my daddy at the turnip farm might trade you something for some light work. My brother finds stuff in the fields, too, if you\'ve got the coin.'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />) and the quest is done. 
+          <script src="/content/label.js" type="text/javascript"></script>
+          <div id="label" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 1px; max-width: 300px; border-width:1px;">
+            Content goes here.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class='attr'>Note</td>
+        <td colspan='5'>-</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

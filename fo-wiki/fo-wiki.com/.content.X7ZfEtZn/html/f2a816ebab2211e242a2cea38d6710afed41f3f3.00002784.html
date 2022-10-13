@@ -1,0 +1,222 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fantasy Online - Item Ranking</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/ajax.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class='top_cont'>
+    <div class="nav_icon">
+      <img title='nav' class='nav_img' src="img/nav.png" width="32" height="32" /><a href='.'>Navigation</a>
+    </div>
+    <div class="user_div">
+      <script src="js/md5.js" type="text/javascript"></script> 
+      <script language="javascript" type="text/javascript">
+      //<![CDATA[
+
+
+                                      <!--
+                                      function converttohash() {
+                                          document.getElementById('hash').value
+                                                  = MD5(document.getElementById('pw').value);
+                                          document.getElementById('pw').value='';
+                                          
+                                          if (document.getElementById('pw').value=='') {
+                                            return true;
+                                          }
+                                          return false;
+                                      }
+                                      // -->
+      //]]>
+      </script>
+      <form onsubmit="return converttohash();" method='post' action='/ps3k/index.php?menu=search&amp;search=zutroy'>
+        <div>
+          User Name: <input value='' class='bginput' size="10" type='text' id='username' name='username' />
+        </div>
+        <div>
+          Password: <input class='bginput' size="10" type='password' id='pw' /><input type='hidden' id='hash' name='hash' />
+        </div>
+        <div>
+          <input type="submit" value="Log In" class='button' />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='menu'>
+    <table class='menu_table'>
+      <tr>
+        <td><a href='.'>Latest Uploads</a></td>
+        <td><a href='?menu=stars_total'>Top 100 (rating)</a></td>
+        <td><a href='?menu=likes_total'>Top 100 (likes abs.)</a></td>
+        <td><a href='?menu=likes'>Top 100 (likes rel.)</a></td>
+        <td><a href='?menu=browseAll'>Browse All</a></td>
+        <td><a href='?menu=ingame'>Ingame</a></td>
+        <td><a href='?menu=search'>Search</a></td>
+        <td><a href='?menu=userRanking'>User Ranking</a></td>
+        <td><a href='?menu=showLottery'>Lottery</a></td>
+        <td><a href='?menu=myCreations'>My Creations</a></td>
+        <td>Register</td>
+      </tr>
+    </table>
+  </div>
+  <div class='info_cont'>
+    <form action='?menu=search' method='get'>
+      <input type='hidden' value='search' name='menu' /><input type='text' size='50' name='search' value='zutroy' /><input type='submit' value='search' />
+    </form>
+  </div>
+  <div class='info_app_cont'>
+    <div class='title'>
+      <img class='nav_img' src='img/search.png' width='32' height='32' alt='search' />"zutroy"
+    </div>
+    <table class='itemlist'>
+      <tr class='legend'>
+        <td>Icon</td>
+        <td>Name</td>
+        <td>Rating</td>
+        <td>Likes</td>
+        <td>Posts</td>
+        <td>Set</td>
+        <td>Type</td>
+        <td>By</td>
+        <td>Created</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=329364980'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_329364980_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=329364980'>Bank Note <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:59px'></span></span></td>
+        <td class='like'>4 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.37)</span></td>
+        <td class='like'>4</td>
+        <td><a href='?menu=showItem&amp;uid=329364980'>Zutroy</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=fossile'>fossile</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=310666990'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_310666990_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=310666990'>Diving Helmet <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:70px'></span></span></td>
+        <td class='like'>11 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.04)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=310666990'>Underwater Zutroy</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=Smaland47'>Smaland47</a></td>
+        <td>18/01/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=45544266'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_45544266_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=45544266'>FUU Zutroy (Banker)</a> <a href='?menu=showItem&amp;uid=310549790'><img class='img_mid' width='32' height='32' src='img/copy.png' alt='Copy' title='Copy (click to see the original)' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:75px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>2</td>
+        <td><a href='?menu=showItem&amp;uid=45544266'>Forgotten UnderUnderground</a></td>
+        <td>NPC</td>
+        <td><a href='?menu=showUser&amp;userName=Malcolm9519'>Malcolm9519</a></td>
+        <td>04/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=735479057'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_735479057_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=735479057'>Underwater Zutroy <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a> <a href='?menu=showItem&amp;uid=457957874'><img class='img_mid' width='32' height='32' src='img/copy.png' alt='Copy' title='Copy (click to see the original)' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=735479057'>Underwater</a></td>
+        <td>NPC</td>
+        <td><a href='?menu=showUser&amp;userName=boshed'>boshed</a></td>
+        <td>01/03/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=691057489'><img width='32' height='32' src='img/blank.png' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=691057489'>Winter Zutroy <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:59px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=691057489'>Frozen North</a></td>
+        <td>NPC</td>
+        <td><a href='?menu=showUser&amp;userName=boshed'>boshed</a></td>
+        <td>23/11/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=50719322'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_50719322_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=50719322'>Zutroy Box</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:60px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.09)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=50719322'>Zutroy</a></td>
+        <td>Box</td>
+        <td><a href='?menu=showUser&amp;userName=Katara'>Katara</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=998857782'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_998857782_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=998857782'>Zutroy Head <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=998857782'>Zutroy</a></td>
+        <td>Face</td>
+        <td><a href='?menu=showUser&amp;userName=Katara'>Katara</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=540502599'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_540502599_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=540502599'>Zutroy Pants <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=540502599'>Zutroy</a></td>
+        <td>Legs</td>
+        <td><a href='?menu=showUser&amp;userName=Katara'>Katara</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=595011851'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_595011851_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=595011851'>Zutroy Push Cart <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:54px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.18)</span></td>
+        <td class='like'>4</td>
+        <td><a href='?menu=showItem&amp;uid=595011851'>Zutroy</a></td>
+        <td>Shoulder</td>
+        <td><a href='?menu=showUser&amp;userName=fossile'>fossile</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=79714379'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_79714379_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=79714379'>Zutroy Shirt <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=79714379'>Zutroy</a></td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=Katara'>Katara</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=808485523'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_808485523_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=808485523'>Zutroy Suspenders <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=808485523'>Zutroy</a></td>
+        <td>Shoulder</td>
+        <td><a href='?menu=showUser&amp;userName=Katara'>Katara</a></td>
+        <td>03/10/12</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=293063182'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_293063182_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=293063182'>Zutroy Winter Hat <img class='img_mid' width='32' height='32' src='img/ingame_small.png' alt='ingame' title='Ingame' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=293063182'>FO Banker Box</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=Malcolm9519'>Malcolm9519</a></td>
+        <td>03/10/12</td>
+      </tr>
+    </table>
+  </div>
+  <div class='bottom_cont'>
+    [14/10/12 21:11:44 | <a style='color:#fff;' target='_blank' href='priv.html'>Privacy Policy</a> ]
+  </div>
+</body>
+</html>

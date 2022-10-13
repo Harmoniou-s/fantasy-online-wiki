@@ -1,0 +1,843 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Item Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div align="center">
+    <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&tp=5&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&tp=5&d=s&c=1" width="728" height="90" border="1" /></noscript>
+  </div>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=ITname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="12">Item Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='12' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="10"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="usable item" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=usable%20item&ind=50'>51-100</a>, <a href='?desc=&by=ITname&byclass=1&do=&search=usable%20item&ind=100'>101-102</a> ] ( 3 Pages for search "usable item" )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&byclass=1&desc=1&by=ITname&ind=0&search=usable%20item'>Name</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITlvlreq&ind=0&search=usable%20item'>Lvl. req</a></th>
+          <th width="200px">Description</th>
+          <th width="60px"><a href='?do=sort&byclass=1&desc=0&by=ITuse&ind=0&search=usable%20item'>Use</a></th>
+          <th width="60px">Bonus</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITsell&ind=0&search=usable%20item'>Sell Price</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITbuy&ind=0&search=usable%20item'>Buy Price</a></th>
+          <th width="50px">Status Req.</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITdmgps&ind=0&search=usable%20item'>Dmg. / sec.</a></th>
+          <th>Dropped by</th>
+          <th>Obtained from</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="10" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="usable item" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=usable%20item&ind=50'>51-100</a>, <a href='?desc=&by=ITname&byclass=1&do=&search=usable%20item&ind=100'>101-102</a> ] ( 3 Pages for search "usable item" )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="12">Last update 24/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2201'><img class='icon' src="img.php?id=2201" /></a></td>
+          <td><a href='?do=dispitem&id=2201'>''Fun'' size candy bar</a></td>
+          <td>-</td>
+          <td>l'll bet the marketing department had a ''fun'' time coming up with that one.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>restores 50hp</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />40</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=376'><img title='Jerk-o-Lantern' class='icon2' src='../bestiary/img.php?id=376' /></a> <a href='../bestiary/?do=dispitem&id=374'><img title='Jerk-o-Lantern Guard' class='icon2' src='../bestiary/img.php?id=374' /></a> <a href='../bestiary/?do=dispitem&id=377'><img title='Great Pumpkin' class='icon2' src='../bestiary/img.php?id=377' /></a></td>
+          <td>Little Lisa quest;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2858'><img class='icon' src="img.php?id=2858" /></a></td>
+          <td><a href='?do=dispitem&id=2858'>100 Gem Note</a></td>
+          <td>-</td>
+          <td>Double-click to receive 100 Gems.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2136'><img class='icon' src="img.php?id=2136" /></a></td>
+          <td><a href='?do=dispitem&id=2136'>100 XP Note</a></td>
+          <td>-</td>
+          <td>Gives 100xp when used. DOES NOT WORK AFTER REBIRTH.By Jimmedy NOT TRADABLE</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Green Gift Box; Facebook Award;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2724'><img class='icon' src="img.php?id=2724" /></a></td>
+          <td><a href='?do=dispitem&id=2724'>10K Coin Note</a></td>
+          <td>-</td>
+          <td>A few extra coins to help you on your way.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=187'><img title='Mirabella Shop Shop' class='icon2' src='../npc/img.php?id=187' /></a> <a href='../npc/?do=dispitem&id=215'><img title='Shopkeep Jo Shop' class='icon2' src='../npc/img.php?id=215' /></a> <a href='../npc/?do=dispitem&id=211'><img title='Uber Shop' class='icon2' src='../npc/img.php?id=211' /></a> <a href='../npc/?do=dispitem&id=63'><img title='Blacksmith Mike Shop' class='icon2' src='../npc/img.php?id=63' /></a> <a href='../npc/?do=dispitem&id=135'><img title='Shopkeep Sal Shop' class='icon2' src='../npc/img.php?id=135' /></a> <a href='../npc/?do=dispitem&id=127'><img title='Opportunist Salesman Shop' class='icon2' src='../npc/img.php?id=127' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2422'><img class='icon' src="img.php?id=2422" /></a></td>
+          <td><a href='?do=dispitem&id=2422'>20 Gem Note</a></td>
+          <td>-</td>
+          <td>Double-click to receive 20 Gems.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=187'><img title='Mirabella Shop Shop' class='icon2' src='../npc/img.php?id=187' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2108'><img class='icon' src="img.php?id=2108" /></a></td>
+          <td><a href='?do=dispitem&id=2108'>400 XP Note</a></td>
+          <td>-</td>
+          <td>Gives 400xp when used. DOES NOT WORK AFTER REBIRTH. By Jimmedy NOT TRADABLE</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Green Gift Box; FB Chest;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1765'><img class='icon' src="img.php?id=1765" /></a></td>
+          <td><a href='?do=dispitem&id=1765'>5 Gem Note</a></td>
+          <td>-</td>
+          <td>Double-click to receive 5 Gems.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Green Gift Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2423'><img class='icon' src="img.php?id=2423" /></a></td>
+          <td><a href='?do=dispitem&id=2423'>50 Gem Note</a></td>
+          <td>-</td>
+          <td>Double-click to receive 50 Gems.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />50</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=187'><img title='Mirabella Shop Shop' class='icon2' src='../npc/img.php?id=187' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=990'><img class='icon' src="img.php?id=990" /></a></td>
+          <td><a href='?do=dispitem&id=990'>Actual candy bar</a></td>
+          <td>-</td>
+          <td>That's more like it. Hide this one from bullies.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>restores 150hp</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />75</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=378'><img title='Sheety Ghost' class='icon2' src='../bestiary/img.php?id=378' /></a> <a href='../bestiary/?do=dispitem&id=376'><img title='Jerk-o-Lantern' class='icon2' src='../bestiary/img.php?id=376' /></a> <a href='../bestiary/?do=dispitem&id=374'><img title='Jerk-o-Lantern Guard' class='icon2' src='../bestiary/img.php?id=374' /></a> <a href='../bestiary/?do=dispitem&id=377'><img title='Great Pumpkin' class='icon2' src='../bestiary/img.php?id=377' /></a> <a href='../bestiary/?do=dispitem&id=648'><img title='Green Imp' class='icon2' src='../bestiary/img.php?id=648' /></a></td>
+          <td><a href='../quest/?do=dispitem&id=302'>Imps being impish?</a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2374'><img class='icon' src="img.php?id=2374" /></a></td>
+          <td><a href='?do=dispitem&id=2374'>Advanced Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 3 armor pieces that require level 10 and add strength. There's also a small chance you'll get a fancy level 10 gun. By StarmanDX</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1913'><img class='icon' src="img.php?id=1913" /></a></td>
+          <td><a href='?do=dispitem&id=1913'>Alien Crab Claw</a></td>
+          <td>-</td>
+          <td>Makes you glow. By SuperNerd</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>heals 300hp</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=659'><img title='Alien Crab' class='icon2' src='../bestiary/img.php?id=659' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=288'><img title='Trader Jim' class='icon2' src='../npc/img.php?id=288' /></a> <a href='../npc/?do=dispitem&id=305'><img title='Robot Trader Shop' class='icon2' src='../npc/img.php?id=305' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2055'><img class='icon' src="img.php?id=2055" /></a></td>
+          <td><a href='?do=dispitem&id=2055'>Alien Wallet</a></td>
+          <td>-</td>
+          <td>It seems like there's something inside. By Lighterhief</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=664'><img title='Robo Eye' class='icon2' src='../bestiary/img.php?id=664' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2684'><img class='icon' src="img.php?id=2684" /></a></td>
+          <td><a href='?do=dispitem&id=2684'>Banana Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 3 Outfit pieces that make you look like a banana. By Fastlex600</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2781'><img class='icon' src="img.php?id=2781" /></a></td>
+          <td><a href='?do=dispitem&id=2781'>Bat Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 5 Outfit pieces that make you look like a bat type person. Also, there's a small chance to get a very rare boomerang. By DoomofDeath</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2927'><img class='icon' src="img.php?id=2927" /></a></td>
+          <td><a href='?do=dispitem&id=2927'>Blue Candy</a></td>
+          <td>-</td>
+          <td>Tastes like Blue. By Lighterthief (Stacks to 5)</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>casts "Ruse" on you</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=731'><img title='Headless Horseman' class='icon2' src='../bestiary/img.php?id=731' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1760'><img class='icon' src="img.php?id=1760" /></a></td>
+          <td><a href='?do=dispitem&id=1760'>Blue Egg</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>There's something in this egg. By StarmanDX</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a> Egg Dealer Shop;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2678'><img class='icon' src="img.php?id=2678" /></a></td>
+          <td><a href='?do=dispitem&id=2678'>Box o' Fun</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 silly things that go either on your head or face in the appropriate Outfit slots. By Filio1234</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2703'><img class='icon' src="img.php?id=2703" /></a></td>
+          <td><a href='?do=dispitem&id=2703'>Cake</a></td>
+          <td>-</td>
+          <td>This cake is not a lie. But it's also not a real cake, so...</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>Heals 350 HP</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elf Hater(Npc)- Elf Destruction(Quest); <a href='../quest/?do=dispitem&id=624'>Elf Destruction</a>,&nbsp;<a href='../quest/?do=dispitem&id=667'>Elf It</a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3060'><img class='icon' src="img.php?id=3060" /></a></td>
+          <td><a href='?do=dispitem&id=3060'>Caramel Apple</a></td>
+          <td>-</td>
+          <td>Mmmmmmmmmmmm! By Falcooner</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>heals 300hp</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=682'><img title='Candy Corn Devil' class='icon2' src='../bestiary/img.php?id=682' /></a> <a href='../bestiary/?do=dispitem&id=731'><img title='Headless Horseman' class='icon2' src='../bestiary/img.php?id=731' /></a> <a href='../bestiary/?do=dispitem&id=683'><img title='Swampy' class='icon2' src='../bestiary/img.php?id=683' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2774'><img class='icon' src="img.php?id=2774" /></a></td>
+          <td><a href='?do=dispitem&id=2774'>Cardboard Box</a></td>
+          <td>-</td>
+          <td>Is there something moving inside this box? WARNING: MAY NOT CONTAIN SOMETHING. By StarmanDX</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=187'><img title='Mirabella Shop Shop' class='icon2' src='../npc/img.php?id=187' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2764'><img class='icon' src="img.php?id=2764" /></a></td>
+          <td><a href='?do=dispitem&id=2764'>Cave of Despair Map</a></td>
+          <td>-</td>
+          <td>It's blank.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=215'><img title='Shopkeep Jo Shop' class='icon2' src='../npc/img.php?id=215' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2753'><img class='icon' src="img.php?id=2753" /></a></td>
+          <td><a href='?do=dispitem&id=2753'>Cave of Some Return Map</a></td>
+          <td>-</td>
+          <td>Finally, you'll know where you're going.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=127'><img title='Opportunist Salesman Shop' class='icon2' src='../npc/img.php?id=127' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2253'><img class='icon' src="img.php?id=2253" /></a></td>
+          <td><a href='?do=dispitem&id=2253'>Cloud Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 armor pieces that require level 10. There's also a small chance you'll get a fancy level 10 sword. By Lighterthief</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=541'><img class='icon' src="img.php?id=541" /></a></td>
+          <td><a href='?do=dispitem&id=541'>Crab claw</a></td>
+          <td>-</td>
+          <td>Needs melted butter. Also needs to be cooked. Eat this for an instant 20 health.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=460'><img title='Rock Crab' class='icon2' src='../bestiary/img.php?id=460' /></a> <a href='../bestiary/?do=dispitem&id=317'><img title='Spicy Red Crab' class='icon2' src='../bestiary/img.php?id=317' /></a> <a href='../bestiary/?do=dispitem&id=307'><img title='Royal Purple Crab' class='icon2' src='../bestiary/img.php?id=307' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=829'><img class='icon' src="img.php?id=829" /></a></td>
+          <td><a href='?do=dispitem&id=829'>Crab Coast Map</a></td>
+          <td>-</td>
+          <td>Now you won't get crabs.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />125</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />250</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=62'><img title='Shopkeep Gil Shop' class='icon2' src='../npc/img.php?id=62' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1912'><img class='icon' src="img.php?id=1912" /></a></td>
+          <td><a href='?do=dispitem&id=1912'>Cyborg Crab Claw</a></td>
+          <td>-</td>
+          <td>Yes, you eat it. By StarmanDX</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>heals 320hp</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=691'><img title='Cyborg Crab' class='icon2' src='../bestiary/img.php?id=691' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=288'><img title='Trader Jim' class='icon2' src='../npc/img.php?id=288' /></a> <a href='../npc/?do=dispitem&id=305'><img title='Robot Trader Shop' class='icon2' src='../npc/img.php?id=305' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2316'><img class='icon' src="img.php?id=2316" /></a></td>
+          <td><a href='?do=dispitem&id=2316'>Dante Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 3 armor pieces that require level 10 and add to Strength, Agility, and Stamina. There's also a small chance you'll get one of two uber level 10 weapon. By Zopherus</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2592'><img class='icon' src="img.php?id=2592" /></a></td>
+          <td><a href='?do=dispitem&id=2592'>Dark Paladin Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 armor pieces that require level 30. There's also a small chance you'll get a fancy s level 30 sword. By Jman12390</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2371'><img class='icon' src="img.php?id=2371" /></a></td>
+          <td><a href='?do=dispitem&id=2371'>Dead Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 3 armor pieces that require level 10 and add to Strength, Agility, and Intellect. There's also a small chance you'll get one uber level 10 weapon. By Reaper999999</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3056'><img class='icon' src="img.php?id=3056" /></a></td>
+          <td><a href='?do=dispitem&id=3056'>Evil Army Rations</a></td>
+          <td>-</td>
+          <td>By Falcooner (Stacks to 5)</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>heals 600hp</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />300</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=717'><img title='Evil Frostthrower' class='icon2' src='../bestiary/img.php?id=717' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2731'><img class='icon' src="img.php?id=2731" /></a></td>
+          <td><a href='?do=dispitem&id=2731'>Ex Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 Outfit pieces that make you look like an augmented type person. Also, there is a small chance to get a very rare gun. By dmat</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2788'><img class='icon' src="img.php?id=2788" /></a></td>
+          <td><a href='?do=dispitem&id=2788'>Ezio Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 3 Outfit pieces that make you look like Ezio. Also, there is a small chance to get a very rare weapon. By meenee</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2854'><img class='icon' src="img.php?id=2854" /></a></td>
+          <td><a href='?do=dispitem&id=2854'>Face Potion</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Use this potion and you will receive 1 permanent stat point. Max: 10 By AmY</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>purchase 1200gems;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2630'><img class='icon' src="img.php?id=2630" /></a></td>
+          <td><a href='?do=dispitem&id=2630'>Farmer Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 Outfit pieces that make you look like a farmer. Also, there is a small chance to get a very rare weapon. By Fastlex600</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1911'><img class='icon' src="img.php?id=1911" /></a></td>
+          <td><a href='?do=dispitem&id=1911'>Forgotten Under Underground Map</a></td>
+          <td>-</td>
+          <td>There's something evil about this map.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=305'><img title='Robot Trader Shop' class='icon2' src='../npc/img.php?id=305' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1785'><img class='icon' src="img.php?id=1785" /></a></td>
+          <td><a href='?do=dispitem&id=1785'>Forgotten Underground Map</a></td>
+          <td>-</td>
+          <td>Ew, it's got alien goo on it.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=288'><img title='Trader Jim' class='icon2' src='../npc/img.php?id=288' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1508'><img class='icon' src="img.php?id=1508" /></a></td>
+          <td><a href='?do=dispitem&id=1508'>Forgotten Wasteland Map</a></td>
+          <td>-</td>
+          <td>A map is a map is a map is a map.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=252'><img title='Desert Survival Shop' class='icon2' src='../npc/img.php?id=252' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3040'><img class='icon' src="img.php?id=3040" /></a></td>
+          <td><a href='?do=dispitem&id=3040'>Frozen North Map</a></td>
+          <td>-</td>
+          <td>Be careful! It might brake!</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=437'><img title='Icy Shop' class='icon2' src='../npc/img.php?id=437' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2556'><img class='icon' src="img.php?id=2556" /></a></td>
+          <td><a href='?do=dispitem&id=2556'>G Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 armor pieces that require level 10 and add to Strength, Agility, and Stamina. There's also a small chance you'll get one of two uber level 10 weapon. By dmat3889</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2739'><img class='icon' src="img.php?id=2739" /></a></td>
+          <td><a href='?do=dispitem&id=2739'>Gangster Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 Outfit pieces that make you look like a gangster. Also, there is a small chance to get a very rare gun.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2890'><img class='icon' src="img.php?id=2890" /></a></td>
+          <td><a href='?do=dispitem&id=2890'>Green Candy</a></td>
+          <td>-</td>
+          <td>Tastes like Green. By Lighterthief (Stacks to 5)</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=683'><img title='Swampy' class='icon2' src='../bestiary/img.php?id=683' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1723'><img class='icon' src="img.php?id=1723" /></a></td>
+          <td><a href='?do=dispitem&id=1723'>Green Gift Box</a></td>
+          <td>-</td>
+          <td>Oh, what could be inside. By Jman</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fb chest;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2883'><img class='icon' src="img.php?id=2883" /></a></td>
+          <td><a href='?do=dispitem&id=2883'>Haunted Forest Map</a></td>
+          <td>-</td>
+          <td>A clarifying view of the darkness.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=406'><img title='Witchy' class='icon2' src='../npc/img.php?id=406' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2103'><img class='icon' src="img.php?id=2103" /></a></td>
+          <td><a href='?do=dispitem&id=2103'>Ichigo Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 armor pieces that require level 10. There's also a small chance you'll get a fancy level 10 sword. By Jman12390</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2202'><img class='icon' src="img.php?id=2202" /></a></td>
+          <td><a href='?do=dispitem&id=2202'>Jug of Rum</a></td>
+          <td>-</td>
+          <td>YoHoHo Brand. Looks like it might make you go blind, but on the bright side it might make a good musical instrument when you're done.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>Heals 20 HP</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />50</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />50</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=482'><img title='Noob Treasure Hunter' class='icon2' src='../bestiary/img.php?id=482' /></a> <a href='../bestiary/?do=dispitem&id=458'><img title='Wood Imp' class='icon2' src='../bestiary/img.php?id=458' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=108'><img title='Pirate Trader Shop' class='icon2' src='../npc/img.php?id=108' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1102'><img class='icon' src="img.php?id=1102" /></a></td>
+          <td><a href='?do=dispitem&id=1102'>Jumbo Crab Claw</a></td>
+          <td>-</td>
+          <td>This thing is high-end buffet quality. Eat for 50 health.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=461'><img title='King Crab' class='icon2' src='../bestiary/img.php?id=461' /></a></td>
+          <td>Daily Potion;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3052'><img class='icon' src="img.php?id=3052" /></a></td>
+          <td><a href='?do=dispitem&id=3052'>Jumbo XP Boost</a></td>
+          <td>-</td>
+          <td>Adds a lot to the experience you gain for 30 minutes. Rest decrease stays the same.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=122'><img title='Salesman Wynn Shop' class='icon2' src='../npc/img.php?id=122' /></a> <a href='../npc/?do=dispitem&id=406'><img title='Witchy' class='icon2' src='../npc/img.php?id=406' /></a> <a href='../npc/?do=dispitem&id=288'><img title='Trader Jim' class='icon2' src='../npc/img.php?id=288' /></a> <a href='../npc/?do=dispitem&id=215'><img title='Shopkeep Jo Shop' class='icon2' src='../npc/img.php?id=215' /></a> <a href='../npc/?do=dispitem&id=124'><img title='Salesman Skip Shop' class='icon2' src='../npc/img.php?id=124' /></a> <a href='../npc/?do=dispitem&id=123'><img title='Salesman Ducky Shop' class='icon2' src='../npc/img.php?id=123' /></a> <a href='../npc/?do=dispitem&id=135'><img title='Shopkeep Sal Shop' class='icon2' src='../npc/img.php?id=135' /></a> <a href='../npc/?do=dispitem&id=152'><img title='Pirate Pawn Shop' class='icon2' src='../npc/img.php?id=152' /></a> <a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a> <a href='../npc/?do=dispitem&id=127'><img title='Opportunist Salesman Shop' class='icon2' src='../npc/img.php?id=127' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2418'><img class='icon' src="img.php?id=2418" /></a></td>
+          <td><a href='?do=dispitem&id=2418'>Kage Box</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Contains 1 of 4 armor pieces that require level 10. There's also a small chance you'll get a fancy level 10 sword. By Jman12390</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2855'><img class='icon' src="img.php?id=2855" /></a></td>
+          <td><a href='?do=dispitem&id=2855'>Kong Potion</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Use this potion and you will receive 1 permanent stat point. Max: 10 By AmY</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Purchase 1200 gems;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1325'><img class='icon' src="img.php?id=1325" /></a></td>
+          <td><a href='?do=dispitem&id=1325'>Large Rest Boost</a></td>
+          <td>-</td>
+          <td>Gives a 30% rest boost.</td>
+          <td><a href='?search=usable%20item&byclass=1'>usable item</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

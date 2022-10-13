@@ -1,0 +1,333 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="This is a Fansite for the game Fantasy Online." />
+  <meta name="keywords" content="Fantasy Online, Database, Map, Monster Database, Item Database, Skill Database, NPC Database, Fanpage, Quest Database, Fantasy, Online, MMORPG, Multiplayer, Logger, AmY" />
+  <title>Fantasy Online Fansite</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="./content/trasfade.js" type="text/javascript"></script>
+  <script src="./content/hideshow.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+  //<![CDATA[
+  <!--
+        cursor = new Array("img/background-menu-btn1-active.jpg",
+                                           "img/background-menu-btn2-active.jpg",
+                                           "img/background-menu-btn3-active.jpg",
+                                           "img/background-menu-btn4-active.jpg",
+                                           "img/background-menu-btn5-active.jpg");
+  function preload(images) {
+        var i = 0;
+        var imageObj = new Array();
+        for(i=0; i != images.length; i+=1) {
+                        imageObj[i]= new Image();
+            imageObj[i].src=images[i];
+        }}
+  preload(cursor);
+  -->
+  //]]>
+  </script>
+  <div class="center">
+    <div class='myDiv sur'>
+      <div class='myDiv top'></div>
+      <div class='myDiv menuleft'></div>
+      <div class='myDiv menuleftin'></div>
+      <div class='myDiv menubtn1'>
+        <a href="?" class="blank"><img id='btn1' onmouseover="FadeOpacity('btn1',0,100,300,20);" onmouseout="FadeOpacity('btn1',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn1-active.jpg" width="91" height="30" name="btn1" /></a>
+      </div>
+      <div class='myDiv menubtn2'>
+        <a href="?menu=database" class="blank"><img id='btn2' onmouseover="FadeOpacity('btn2',0,100,300,20);" onmouseout="FadeOpacity('btn2',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn2-active.jpg" width="144" height="30" name="btn2" /></a>
+      </div>
+      <div class='myDiv menubtn3'>
+        <a href="?menu=logger" class="blank"><img id='btn3' onmouseover="FadeOpacity('btn3',0,100,300,20);" onmouseout="FadeOpacity('btn3',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn3-active.jpg" width="116" height="30" name="btn3" /></a>
+      </div>
+      <div class='myDiv menubtn4'>
+        <a href="?menu=map" class="blank"><img id='btn4' onmouseover="FadeOpacity('btn4',0,100,300,20);" onmouseout="FadeOpacity('btn4',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn4-active.jpg" width="75" height="30" name="btn4" /></a>
+      </div>
+      <div class='myDiv menubtn5'>
+        <a href="?menu=help" class="blank"><img id='btn5' onmouseover="FadeOpacity('btn5',0,100,300,20);" onmouseout="FadeOpacity('btn5',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn5-active.jpg" width="99" height="30" name="btn5" /></a>
+      </div>
+      <div class='myDiv menurightin'></div>
+      <div class='myDiv menumid'></div>
+      <div class='myDiv aboveshoutbox'></div>
+      <div class='myDiv menuright'></div>
+    </div>
+    <div class='myDiv sur2'>
+      <div style="overflow:hidden;">
+        <div class="myDiv lowermidleft">
+          <div class="myDiv lowertopleft"></div>
+          <div class="myDiv lowerbottomleft"></div>
+        </div>
+        <div class="myDiv paintleft" align="left">
+          <div style="margin:10px;">
+            <script language="javascript">
+            <![CDATA[
+            <!--
+            function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+
+            if (expires)
+            expires = expires * 1000 * 60;
+
+            var expires_date = new Date(today.getTime() + expires);
+
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+            }
+
+            var vc_freq_cap = 15; // Frequency cap in minutes
+
+            var vc_rand = Math.floor(Math.random() * 7777);
+
+            // Used to verify that we can set cookies
+            //
+            document.cookie = 'h2=o; path=/;';
+
+            // Get the current window size to ensure we can view our ad
+            //
+            var vc_window_wt = 0;
+            var vc_window_ht = 0;
+            if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+            }
+            else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+            }
+            else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+
+            if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+            }
+            }
+
+            if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+            }
+            // -->
+            ]]>
+            </script>
+            <div align="center">
+              <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=s&c=1" width="468" height="60" border="1" /></noscript>
+            </div>
+            <script src="./content/md5.js" type="text/javascript"></script> 
+            <script src="./content/sha256.js" type="text/javascript"></script> 
+            <script language="javascript">
+            <![CDATA[
+
+
+            <!--
+            function converttomd5() {
+            document.getElementById('md5id').value=MD5(document.getElementById('pwid').value);
+            document.getElementById('sha256id').value=SHA256(document.getElementById('pwid').value); 
+            document.getElementById('pwid').value='';
+
+            if (document.getElementById('pwid').value=='') {
+            return true;
+            }
+            return false;
+
+            }
+            // -->
+            ]]>
+            </script>
+            <p style="width:600px"><b>Important:</b> Be sure only to provide your in-game password to trustworthy sites. Here it is safe to do so (the password itself is not even send to the web server, only the hash) and the site has been approved by the developer of fantasy online. If you want a confirmation, feel free to ask in the forum.</p>
+            <form action="?menu=reg2" onsubmit="return converttomd5();" method="post" enctype="multipart/form-data">
+              <fieldset style="background-color:#D1E6CA">
+                <legend style="font-weight:bold">Registration - please enter your ingame login</legend>
+                <table style="width:400px">
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">Make sure your login and password are correct. <b>Be careful about upper and lower case!</b> If you enter wrong data you'll have to wait to avoid flooding! Thank you for your understanding.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Login:</td>
+                    <td><input name="login" type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td>Password*:</td>
+                    <td><input id="pwid" type="password" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td><input name="email" size="40" type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="hidden" name="md5" id="md5id" /><input type="hidden" name="sha256" id="sha256id" /><input name="" type="submit" value="register" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">
+                      <hr />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="font-size:9px;">*The password is never transferred in the clear. Only the md5 hash and the sha256 hash are sent. The md5 hash is used for registration purpose and the sha256 hash is stored to confirm login.</td>
+                  </tr>
+                </table>
+              </fieldset>
+            </form>
+            <p style="width:600px">Note: If you only played the game through facebook, you will need to create a new account here and use that to register on this site. This is because facebook user don't have a password.</p>
+            <div align="right" style="bottom:0; left:735px; position:absolute; padding-top:20px; padding-bottom:10px;">
+              <a href='?menu=privacypolicy'>Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="myDiv lowermidmid">
+          <div class="myDiv lowertopmid"></div>
+          <div class="myDiv lowerbottommid"></div>
+        </div>
+        <div class="myDiv paintright">
+          <div style="margin:10px">
+            <script type="text/javascript">
+            //<![CDATA[
+            <!--
+            function check() {
+                if (document.shoutform.shouttext.value == '') {
+                        alert('Please enter a message!');
+                        return false;
+                } 
+                if (document.shoutform.shoutname.value == '') {
+                        alert('Please enter your name!');
+                        return false;
+                }
+                if (document.shoutform.shouttext.value.length > 100) {
+                        alert('Your text is to long!');
+                        return false;
+                }
+                if (document.shoutform.shoutname.value.length > 15) {
+                        alert('Your name is to long!');
+                        return false;
+                }
+            }
+
+            function set(id,col)
+            {
+            //document.getElementById(id).style.color=col;
+            <!-- document.getElementById(id+'b').style.color=col; //-->
+            if (col=="#000000") {
+            document.getElementById(id).style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            document.getElementById(id+'b').style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            } else {
+            document.getElementById(id).style.backgroundColor='';   
+            document.getElementById(id+'b').style.backgroundColor='';       
+            }
+            }
+
+            function imposeMaxLength(Event, Object, MaxLen)
+            {
+            return (Object.value.length < MaxLen)||(Event.keyCode == 8 ||Event.keyCode==46||(Event.keyCode>=35&&Event.keyCode<=40))
+            }
+            -->
+            //]]>
+            </script>
+            <form onsubmit="return check();" name='shoutform' action="?" method="post" id="shoutform">
+              <input type="hidden" value="1" name="shout" />
+              <table class='shouttable'>
+                <tr>
+                  <td id='d1378' onmouseout="set('d1378','#ffffff');" onmouseover="set('d1378','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (23/12/11 01:39:10):</td>
+                </tr>
+                <tr>
+                  <td id='d1378b' onmouseout="set('d1378','#ffffff');" onmouseover="set('d1378','#000000');" class='shouttd'>Someone add the slots to rf bag and rf satchel?</td>
+                </tr>
+                <tr>
+                  <td id='d1379' onmouseout="set('d1379','#ffffff');" onmouseover="set('d1379','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (24/12/11 07:21:12):</td>
+                </tr>
+                <tr>
+                  <td id='d1379b' onmouseout="set('d1379','#ffffff');" onmouseover="set('d1379','#000000');" class='shouttd'>kongslime needs added</td>
+                </tr>
+                <tr>
+                  <td id='d1380' onmouseout="set('d1380','#ffffff');" onmouseover="set('d1380','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>4503579968</b> (26/12/11 04:00:11):</td>
+                </tr>
+                <tr>
+                  <td id='d1380b' onmouseout="set('d1380','#ffffff');" onmouseover="set('d1380','#000000');" class='shouttd'>someone can add uber and mega pearl?</td>
+                </tr>
+                <tr>
+                  <td id='d1381' onmouseout="set('d1381','#ffffff');" onmouseover="set('d1381','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (26/12/11 08:21:27):</td>
+                </tr>
+                <tr>
+                  <td id='d1381b' onmouseout="set('d1381','#ffffff');" onmouseover="set('d1381','#000000');" class='shouttd'>inverse xmas hat needs added</td>
+                </tr>
+                <tr>
+                  <td id='d1382' onmouseout="set('d1382','#ffffff');" onmouseover="set('d1382','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (26/12/11 21:11:22):</td>
+                </tr>
+                <tr>
+                  <td id='d1382b' onmouseout="set('d1382','#ffffff');" onmouseover="set('d1382','#000000');" class='shouttd'>You can do it yourself, it's very easy.</td>
+                </tr>
+                <tr>
+                  <td id='d1383' onmouseout="set('d1383','#ffffff');" onmouseover="set('d1383','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Kendzi</b> (28/12/11 09:38:10):</td>
+                </tr>
+                <tr>
+                  <td id='d1383b' onmouseout="set('d1383','#ffffff');" onmouseover="set('d1383','#000000');" class='shouttd'>I'd say everything non-premium has been added to Holiday Isle. Anyone objects? Something missing?</td>
+                </tr>
+                <tr>
+                  <td id='d1384' onmouseout="set('d1384','#ffffff');" onmouseover="set('d1384','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Blackyish</b> (28/12/11 23:43:11):</td>
+                </tr>
+                <tr>
+                  <td id='d1384b' onmouseout="set('d1384','#ffffff');" onmouseover="set('d1384','#000000');" class='shouttd'>Aeon stuff needs added</td>
+                </tr>
+                <tr>
+                  <td id='d1385' onmouseout="set('d1385','#ffffff');" onmouseover="set('d1385','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>dofoo</b> (29/12/11 02:55:11):</td>
+                </tr>
+                <tr>
+                  <td id='d1385b' onmouseout="set('d1385','#ffffff');" onmouseover="set('d1385','#000000');" class='shouttd'>buying dark templar helm 125k</td>
+                </tr>
+                <tr>
+                  <td id='d1386' onmouseout="set('d1386','#b6b589');" onmouseover="set('d1386','#000000');" style='text-shadow: #b6b589 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (29/12/11 18:56:39):</td>
+                </tr>
+                <tr>
+                  <td id='d1386b' onmouseout="set('d1386','#b6b589');" onmouseover="set('d1386','#000000');" class='shouttd'>^ Wrong place for buying/selling. Post on the forums, please.</td>
+                </tr>
+                <tr>
+                  <td class='shouttd'></td>
+                </tr>
+                <tr>
+                  <td class='shouttd'>
+                    <div style="font-size:11px; text-align:center; font-weight:bold; border-top-width:1px; border-top-color:#999; border-top-style:solid;">
+                      <b>please <a href='?menu=reg'>register</a> / <a href='?'>login</a> to shout</b>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+        <div class="myDiv lowermidright">
+          <div class="myDiv lowertopright"></div>
+          <div class="myDiv lowerbottomright"></div>
+        </div>
+      </div>
+    </div>
+    <div class="myDiv bottom"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO NPC Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=sort&desc=1&by=NPCname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="6">NPC Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='6' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="4"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=1&by=NPCname&search='+document.getElementById('search1').value;" alt="Search" />[ <span class='active'>1-50</span>, <a href='?desc=1&by=NPCname&byclass=&do=sort&search=&ind=50'>51-100</a>, <a href='?desc=1&by=NPCname&byclass=&do=sort&search=&ind=100'>101-150</a>, <a href='?desc=1&by=NPCname&byclass=&do=sort&search=&ind=150'>151-200</a> ] ( 4 Pages )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addnpc.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=NPCname&amp;ind=0&amp;search='>Name</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=NPCtyp&amp;ind=0&amp;search='>Typ</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=NPCpurpose&amp;ind=0&amp;search='>Purpose</a></th>
+          <th width="60px">Coords</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="4" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=1&by=NPCname&search='+document.getElementById('search2').value;" alt="Search" />[ <span class='active'>1-50</span>, <a href='?desc=1&by=NPCname&byclass=&do=sort&search=&ind=50'>51-100</a>, <a href='?desc=1&by=NPCname&byclass=&do=sort&search=&ind=100'>101-150</a>, <a href='?desc=1&by=NPCname&byclass=&do=sort&search=&ind=150'>151-200</a> ] ( 4 Pages )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addnpc.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="6">Last update 06/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=378'><img class='icon2' src="img.php?id=378" /></a></td>
+          <td><a href='?do=dispitem&id=378'>Zutroy</a></td>
+          <td><a href='?search=storage&byclass=1'>storage</a></td>
+          <td>&nbsp;</td>
+          <td>(102,245); (442,430); (650,110)</td>
+          <td>pay 40 gems to have unlimited access to storage (117 slots) Pay 20 more gems for another 117 slots, up to 819 slots (7 tabs). Total cost for all slots is: 120 gems.</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=406'><img class='icon2' src="img.php?id=406" /></a></td>
+          <td><a href='?do=dispitem&id=406'>Witchy</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=2877'><img title='Witch Hat' class='icon' src='../items/img.php?id=2877' /></a>&nbsp;<a href='../items/?do=dispitem&id=2881'><img title='Skill Potion' class='icon' src='../items/img.php?id=2881' /></a>&nbsp;<a href='../items/?do=dispitem&id=2882'><img title='Jumbo XP Boost' class='icon' src='../items/img.php?id=2882' /></a>&nbsp;<a href='../items/?do=dispitem&id=2883'><img title='Haunted Forest Map' class='icon' src='../items/img.php?id=2883' /></a>&nbsp;&nbsp;</td>
+          <td>(649,1105);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=316'><img class='icon2' src="img.php?id=316" /></a></td>
+          <td><a href='?do=dispitem&id=316'>Warrior Hero Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=2035'><img title='War Armor' class='icon' src='../items/img.php?id=2035' /></a>&nbsp;<a href='../items/?do=dispitem&id=2036'><img title='War Helm' class='icon' src='../items/img.php?id=2036' /></a>&nbsp;<a href='../items/?do=dispitem&id=2037'><img title='Warrior Starter Box' class='icon' src='../items/img.php?id=2037' /></a>&nbsp;<a href='../items/?do=dispitem&id=2039'><img title='War Legs' class='icon' src='../items/img.php?id=2039' /></a>&nbsp;<a href='../items/?do=dispitem&id=2040'><img title='Blades of Import' class='icon' src='../items/img.php?id=2040' /></a>&nbsp;&nbsp;</td>
+          <td>(79,425)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=404'><img class='icon2' src="img.php?id=404" /></a></td>
+          <td><a href='?do=dispitem&id=404'>Wanderer</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(681,1095);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=310'><img class='icon2' src="img.php?id=310" /></a></td>
+          <td><a href='?do=dispitem&id=310'>Unknown Unknown</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=619'>What</a>,&nbsp;<a href='../quest/?do=dispitem&id=645'>The Crab Threat</a>&nbsp;</td>
+          <td>(290,795)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=319'><img class='icon2' src="img.php?id=319" /></a></td>
+          <td><a href='?do=dispitem&id=319'>Unknown Taco</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=668'>Kill It</a>&nbsp;</td>
+          <td>(431,777)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=303'><img class='icon2' src="img.php?id=303" /></a></td>
+          <td><a href='?do=dispitem&id=303'>Unknown Soldier</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=609'>Complexion</a>,&nbsp;<a href='../quest/?do=dispitem&id=615'>Hygiene</a>&nbsp;</td>
+          <td>(440,880);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=308'><img class='icon2' src="img.php?id=308" /></a></td>
+          <td><a href='?do=dispitem&id=308'>Unknown Master</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=655'>Kill Alrahur</a>&nbsp;</td>
+          <td>(404,881)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=312'><img class='icon2' src="img.php?id=312" /></a></td>
+          <td><a href='?do=dispitem&id=312'>Unknown Leader</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=638'>The Darkness</a>,&nbsp;<a href='../quest/?do=dispitem&id=658'>The Light</a>&nbsp;</td>
+          <td>(395,793)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=390'><img class='icon2' src="img.php?id=390" /></a></td>
+          <td><a href='?do=dispitem&id=390'>Unknown Known</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=632'>Eyes On Me</a>,&nbsp;<a href='../quest/?do=dispitem&id=639'>Robo Rocks</a>&nbsp;</td>
+          <td>(324,796)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=309'><img class='icon2' src="img.php?id=309" /></a></td>
+          <td><a href='?do=dispitem&id=309'>Unknown Elder</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=618'>One of Us</a>,&nbsp;<a href='../quest/?do=dispitem&id=656'>Join Forces</a>&nbsp;</td>
+          <td>(350,851)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=343'><img class='icon2' src="img.php?id=343" /></a></td>
+          <td><a href='?do=dispitem&id=343'>Unknown</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=547'>Hello</a>,&nbsp;<a href='../quest/?do=dispitem&id=608'>The League</a>&nbsp;</td>
+          <td>(467,850)</td>
+          <td>FUU</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=389'><img class='icon2' src="img.php?id=389" /></a></td>
+          <td><a href='?do=dispitem&id=389'>Underground Transport</a></td>
+          <td><a href='?search=travel-guide&byclass=1'>travel-guide</a></td>
+          <td>&nbsp;</td>
+          <td>(287,463); (387,747)</td>
+          <td>Requires lvl 36 and 40 Gems to enter</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=211'><img class='icon2' src="img.php?id=211" /></a></td>
+          <td><a href='?do=dispitem&id=211'>Uber Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=1255'><img title='Dark Knight Mask' class='icon' src='../items/img.php?id=1255' /></a>&nbsp;<a href='../items/?do=dispitem&id=1587'><img title='Dragon Mask' class='icon' src='../items/img.php?id=1587' /></a>&nbsp;<a href='../items/?do=dispitem&id=1594'><img title='Mage Necklace ' class='icon' src='../items/img.php?id=1594' /></a>&nbsp;<a href='../items/?do=dispitem&id=2724'><img title='10K Coin Note' class='icon' src='../items/img.php?id=2724' /></a>&nbsp;&nbsp;</td>
+          <td>(390,278)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=221'><img class='icon2' src="img.php?id=221" /></a></td>
+          <td><a href='?do=dispitem&id=221'>Uber Girl</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=444'>Help For Sister</a>&nbsp;</td>
+          <td>(297,1080)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=255'><img class='icon2' src="img.php?id=255" /></a></td>
+          <td><a href='?do=dispitem&id=255'>Tremor Hunter</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=451'>More Snakes</a>,&nbsp;<a href='../quest/?do=dispitem&id=461'>Kill Snakes Plz</a>&nbsp;</td>
+          <td>(321,402)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=295'><img class='icon2' src="img.php?id=295" /></a></td>
+          <td><a href='?do=dispitem&id=295'>Trapped Girl</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=1795'><img title='Letter To Mom' class='icon' src='../items/img.php?id=1795' /></a>&nbsp;<a href='../quest/?do=dispitem&id=599'>Cyclops Escape</a>,&nbsp;<a href='../quest/?do=dispitem&id=601'>Cyclops Killer</a>,&nbsp;<a href='../quest/?do=dispitem&id=602'>Cyclops Letter</a>&nbsp;</td>
+          <td>(454,733)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=323'><img class='icon2' src="img.php?id=323" /></a></td>
+          <td><a href='?do=dispitem&id=323'>Traitor</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(218,400)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=288'><img class='icon2' src="img.php?id=288" /></a></td>
+          <td><a href='?do=dispitem&id=288'>Trader Jim</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=1785'><img title='Forgotten Underground Map' class='icon' src='../items/img.php?id=1785' /></a>&nbsp;<a href='../items/?do=dispitem&id=1825'><img title='Miner Top' class='icon' src='../items/img.php?id=1825' /></a>&nbsp;<a href='../items/?do=dispitem&id=1912'><img title='Cyborg Crab Claw' class='icon' src='../items/img.php?id=1912' /></a>&nbsp;<a href='../items/?do=dispitem&id=1913'><img title='Alien Crab Claw' class='icon' src='../items/img.php?id=1913' /></a>&nbsp;<a href='../items/?do=dispitem&id=2354'><img title='XP Boost' class='icon' src='../items/img.php?id=2354' /></a>&nbsp;<a href='../items/?do=dispitem&id=2882'><img title='Jumbo XP Boost' class='icon' src='../items/img.php?id=2882' /></a>&nbsp;&nbsp;</td>
+          <td>(386,738)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=331'><img class='icon2' src="img.php?id=331" /></a></td>
+          <td><a href='?do=dispitem&id=331'>Timmeh Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=219'><img title='Pointy stick' class='icon' src='../items/img.php?id=219' /></a>&nbsp;<a href='../items/?do=dispitem&id=2264'><img title='Toy Wand' class='icon' src='../items/img.php?id=2264' /></a>&nbsp;<a href='../items/?do=dispitem&id=2265'><img title='Toy Bow' class='icon' src='../items/img.php?id=2265' /></a>&nbsp;<a href='../items/?do=dispitem&id=2266'><img title='Toy Sword' class='icon' src='../items/img.php?id=2266' /></a>&nbsp;&nbsp;</td>
+          <td>(70,504)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=263'><img class='icon2' src="img.php?id=263" /></a></td>
+          <td><a href='?do=dispitem&id=263'>Teleport Tim</a></td>
+          <td><a href='?search=travel-guide&byclass=1'>travel-guide</a></td>
+          <td>&nbsp;</td>
+          <td>(357,400)</td>
+          <td>teleports you to Mirabella Cove</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=370'><img class='icon2' src="img.php?id=370" /></a></td>
+          <td><a href='?do=dispitem&id=370'>Teleport (Mirky Woods)</a></td>
+          <td><a href='?search=travel-guide&byclass=1'>travel-guide</a></td>
+          <td>&nbsp;</td>
+          <td>(385,272); (639,113);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=380'><img class='icon2' src="img.php?id=380" /></a></td>
+          <td><a href='?do=dispitem&id=380'>Summer Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=2540'><img title='Jar of Dirt' class='icon' src='../items/img.php?id=2540' /></a>&nbsp;<a href='../items/?do=dispitem&id=2541'><img title='Floaties' class='icon' src='../items/img.php?id=2541' /></a>&nbsp;<a href='../items/?do=dispitem&id=2542'><img title='Beach Ball' class='icon' src='../items/img.php?id=2542' /></a>&nbsp;<a href='../items/?do=dispitem&id=2543'><img title='Zapper' class='icon' src='../items/img.php?id=2543' /></a>&nbsp;<a href='../items/?do=dispitem&id=2544'><img title='Super Soaker 5000' class='icon' src='../items/img.php?id=2544' /></a>&nbsp;<a href='../items/?do=dispitem&id=2545'><img title='FOBoy' class='icon' src='../items/img.php?id=2545' /></a>&nbsp;<a href='../items/?do=dispitem&id=2546'><img title='Pirate Slime Hat' class='icon' src='../items/img.php?id=2546' /></a>&nbsp;<a href='../items/?do=dispitem&id=2547'><img title='Lifeguard Float' class='icon' src='../items/img.php?id=2547' /></a>&nbsp;<a href='../items/?do=dispitem&id=2548'><img title='Hoff Hair' class='icon' src='../items/img.php?id=2548' /></a>&nbsp;<a href='../items/?do=dispitem&id=2549'><img title='Crab Crab Hat' class='icon' src='../items/img.php?id=2549' /></a>&nbsp;<a href='../items/?do=dispitem&id=2550'><img title='Propeller Head' class='icon' src='../items/img.php?id=2550' /></a>&nbsp;<a href='../items/?do=dispitem&id=2551'><img title='Hot Head' class='icon' src='../items/img.php?id=2551' /></a>&nbsp;&nbsp;</td>
+          <td>/</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=423'><img class='icon2' src="img.php?id=423" /></a></td>
+          <td><a href='?do=dispitem&id=423'>Spider Crab</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(693,990);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=359'><img class='icon2' src="img.php?id=359" /></a></td>
+          <td><a href='?do=dispitem&id=359'>Skinny Slim</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=654'>It's Come To This</a>,&nbsp;<a href='../quest/?do=dispitem&id=659'>Oh Oops</a>&nbsp;</td>
+          <td>(723,35)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=379'><img class='icon2' src="img.php?id=379" /></a></td>
+          <td><a href='?do=dispitem&id=379'>Skill Trainer Zambo</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=268'><img title='Left Hook' class='icon' src='../skills/img.php?id=268' /></a>&nbsp;<a href='../skills/?do=dispitem&id=269'><img title='Arrow Barrage' class='icon' src='../skills/img.php?id=269' /></a>&nbsp;<a href='../skills/?do=dispitem&id=270'><img title='Energy Orbs' class='icon' src='../skills/img.php?id=270' /></a>&nbsp;<a href='../skills/?do=dispitem&id=271'><img title='Nerd Rage' class='icon' src='../skills/img.php?id=271' /></a>&nbsp;<a href='../skills/?do=dispitem&id=272'><img title='l33t Skillz' class='icon' src='../skills/img.php?id=272' /></a>&nbsp;<a href='../skills/?do=dispitem&id=273'><img title='Self-Motivated' class='icon' src='../skills/img.php?id=273' /></a>&nbsp;<a href='../skills/?do=dispitem&id=275'><img title='Relishaeish' class='icon' src='../skills/img.php?id=275' /></a>&nbsp;<a href='../skills/?do=dispitem&id=276'><img title='Mr Roboto' class='icon' src='../skills/img.php?id=276' /></a>&nbsp;<a href='../skills/?do=dispitem&id=277'><img title='Wulf' class='icon' src='../skills/img.php?id=277' /></a>&nbsp;<a href='../skills/?do=dispitem&id=291'><img title='Mirky Woods Teleport' class='icon' src='../skills/img.php?id=291' /></a>&nbsp;&nbsp;</td>
+          <td>(622,115)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=276'><img class='icon2' src="img.php?id=276" /></a></td>
+          <td><a href='?do=dispitem&id=276'>Skill Trainer Wallace Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=115'><img title='Thick Skin' class='icon' src='../skills/img.php?id=115' /></a>&nbsp;<a href='../skills/?do=dispitem&id=116'><img title='That&#039;s The Stuff' class='icon' src='../skills/img.php?id=116' /></a>&nbsp;<a href='../skills/?do=dispitem&id=119'><img title='Nerd Rage' class='icon' src='../skills/img.php?id=119' /></a>&nbsp;<a href='../skills/?do=dispitem&id=120'><img title='Left Hook' class='icon' src='../skills/img.php?id=120' /></a>&nbsp;<a href='../skills/?do=dispitem&id=121'><img title='Boom! Headshot!' class='icon' src='../skills/img.php?id=121' /></a>&nbsp;<a href='../skills/?do=dispitem&id=125'><img title='l33t Skillz' class='icon' src='../skills/img.php?id=125' /></a>&nbsp;<a href='../skills/?do=dispitem&id=128'><img title='Gotta Go' class='icon' src='../skills/img.php?id=128' /></a>&nbsp;<a href='../skills/?do=dispitem&id=136'><img title='Fireball' class='icon' src='../skills/img.php?id=136' /></a>&nbsp;<a href='../skills/?do=dispitem&id=164'><img title='Mirabella Cove Teleport' class='icon' src='../skills/img.php?id=164' /></a>&nbsp;&nbsp;</td>
+          <td>(376,281);</td>
+          <td>In Mirabella Cove</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=421'><img class='icon2' src="img.php?id=421" /></a></td>
+          <td><a href='?do=dispitem&id=421'>Skill Trainer Spooky Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=293'><img title='Mr. Squishy' class='icon' src='../skills/img.php?id=293' /></a>&nbsp;<a href='../skills/?do=dispitem&id=296'><img title='Get Batty' class='icon' src='../skills/img.php?id=296' /></a>&nbsp;&nbsp;</td>
+          <td>(562,1122);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=387'><img class='icon2' src="img.php?id=387" /></a></td>
+          <td><a href='?do=dispitem&id=387'>Skill Trainer Remo Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=42'><img title='Thick Skin' class='icon' src='../skills/img.php?id=42' /></a>&nbsp;<a href='../skills/?do=dispitem&id=92'><img title='Nerd Rage' class='icon' src='../skills/img.php?id=92' /></a>&nbsp;<a href='../skills/?do=dispitem&id=93'><img title='Fireball' class='icon' src='../skills/img.php?id=93' /></a>&nbsp;<a href='../skills/?do=dispitem&id=94'><img title='Twilightning Bolt' class='icon' src='../skills/img.php?id=94' /></a>&nbsp;<a href='../skills/?do=dispitem&id=95'><img title='l33t Skillz' class='icon' src='../skills/img.php?id=95' /></a>&nbsp;<a href='../skills/?do=dispitem&id=106'><img title='Feelin Crabby' class='icon' src='../skills/img.php?id=106' /></a>&nbsp;<a href='../skills/?do=dispitem&id=163'><img title='Crab Coast Teleport' class='icon' src='../skills/img.php?id=163' /></a>&nbsp;<a href='../skills/?do=dispitem&id=165'><img title='Noob Island Teleport' class='icon' src='../skills/img.php?id=165' /></a>&nbsp;<a href='../skills/?do=dispitem&id=166'><img title='Pirate Shores Teleport' class='icon' src='../skills/img.php?id=166' /></a>&nbsp;<a href='../skills/?do=dispitem&id=191'><img title='Self-Motivated' class='icon' src='../skills/img.php?id=191' /></a>&nbsp;<a href='../skills/?do=dispitem&id=280'><img title='Illuminate' class='icon' src='../skills/img.php?id=280' /></a>&nbsp;&nbsp;</td>
+          <td>(118,261)</td>
+          <td>He is in Crab Coast.</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=74'><img class='icon2' src="img.php?id=74" /></a></td>
+          <td><a href='?do=dispitem&id=74'>Skill Trainer Miyagi Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=283'><img title='l33t Skillz' class='icon' src='../skills/img.php?id=283' /></a>&nbsp;<a href='../skills/?do=dispitem&id=284'><img title='Left Hook' class='icon' src='../skills/img.php?id=284' /></a>&nbsp;<a href='../skills/?do=dispitem&id=285'><img title='Self-Motivated' class='icon' src='../skills/img.php?id=285' /></a>&nbsp;<a href='../skills/?do=dispitem&id=286'><img title='Nerd Rage' class='icon' src='../skills/img.php?id=286' /></a>&nbsp;<a href='../skills/?do=dispitem&id=287'><img title='Lick Your Wounds' class='icon' src='../skills/img.php?id=287' /></a>&nbsp;<a href='../skills/?do=dispitem&id=288'><img title='Fireball' class='icon' src='../skills/img.php?id=288' /></a>&nbsp;<a href='../skills/?do=dispitem&id=289'><img title='Boom! Headshot!' class='icon' src='../skills/img.php?id=289' /></a>&nbsp;<a href='../skills/?do=dispitem&id=290'><img title='Thick Skin' class='icon' src='../skills/img.php?id=290' /></a>&nbsp;&nbsp;</td>
+          <td>(88,425)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=386'><img class='icon2' src="img.php?id=386" /></a></td>
+          <td><a href='?do=dispitem&id=386'>Skill Trainer Lamar Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=69'><img title='That&#039;s The Stuff' class='icon' src='../skills/img.php?id=69' /></a>&nbsp;<a href='../skills/?do=dispitem&id=99'><img title='Yo&#039; Mama!' class='icon' src='../skills/img.php?id=99' /></a>&nbsp;<a href='../skills/?do=dispitem&id=162'><img title='Cave of Some Return Teleport' class='icon' src='../skills/img.php?id=162' /></a>&nbsp;<a href='../skills/?do=dispitem&id=181'><img title='Boom! Headshot!' class='icon' src='../skills/img.php?id=181' /></a>&nbsp;<a href='../skills/?do=dispitem&id=282'><img title='Self-Motivated' class='icon' src='../skills/img.php?id=282' /></a>&nbsp;&nbsp;</td>
+          <td>(92,602)</td>
+          <td>He is in the back of Cave of Some Return.</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=381'><img class='icon2' src="img.php?id=381" /></a></td>
+          <td><a href='?do=dispitem&id=381'>Skill Trainer Kapono Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=73'><img title='Thick Skin' class='icon' src='../skills/img.php?id=73' /></a>&nbsp;<a href='../skills/?do=dispitem&id=85'><img title='Spider-Guy' class='icon' src='../skills/img.php?id=85' /></a>&nbsp;<a href='../skills/?do=dispitem&id=123'><img title='L33t Skillz' class='icon' src='../skills/img.php?id=123' /></a>&nbsp;<a href='../skills/?do=dispitem&id=127'><img title='Nerd Rage' class='icon' src='../skills/img.php?id=127' /></a>&nbsp;<a href='../skills/?do=dispitem&id=137'><img title='Stop! Ogre-Time!' class='icon' src='../skills/img.php?id=137' /></a>&nbsp;<a href='../skills/?do=dispitem&id=157'><img title='Spider-Guy' class='icon' src='../skills/img.php?id=157' /></a>&nbsp;<a href='../skills/?do=dispitem&id=158'><img title='Like a Rock' class='icon' src='../skills/img.php?id=158' /></a>&nbsp;<a href='../skills/?do=dispitem&id=167'><img title='Swamp Grotto Teleport' class='icon' src='../skills/img.php?id=167' /></a>&nbsp;<a href='../skills/?do=dispitem&id=240'><img title='Twilightning Bolt' class='icon' src='../skills/img.php?id=240' /></a>&nbsp;&nbsp;</td>
+          <td>(45,844)</td>
+          <td>At the end of Swamp Grotto.</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=388'><img class='icon2' src="img.php?id=388" /></a></td>
+          <td><a href='?do=dispitem&id=388'>Skill Trainer Jo Shop</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=140'><img title='Lick Your Wounds' class='icon' src='../skills/img.php?id=140' /></a>&nbsp;<a href='../skills/?do=dispitem&id=161'><img title='Cave of Despair Teleport' class='icon' src='../skills/img.php?id=161' /></a>&nbsp;<a href='../skills/?do=dispitem&id=177'><img title='Lick Your Wounds' class='icon' src='../skills/img.php?id=177' /></a>&nbsp;<a href='../skills/?do=dispitem&id=280'><img title='Illuminate' class='icon' src='../skills/img.php?id=280' /></a>&nbsp;<a href='../skills/?do=dispitem&id=281'><img title='Self-Motivated' class='icon' src='../skills/img.php?id=281' /></a>&nbsp;&nbsp;</td>
+          <td>(347,1085)</td>
+          <td>He is in the front of the Cave of Despair.</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=251'><img class='icon2' src="img.php?id=251" /></a></td>
+          <td><a href='?do=dispitem&id=251'>Skill Trainer Jeb</a></td>
+          <td><a href='?search=skill-shop&byclass=1'>skill-shop</a></td>
+          <td><a href='../skills/?do=dispitem&id=148'><img title='Forgotten Wasteland Teleport' class='icon' src='../skills/img.php?id=148' /></a>&nbsp;<a href='../skills/?do=dispitem&id=150'><img title='Arrow Barrage' class='icon' src='../skills/img.php?id=150' /></a>&nbsp;<a href='../skills/?do=dispitem&id=152'><img title='Energy Orbs' class='icon' src='../skills/img.php?id=152' /></a>&nbsp;<a href='../skills/?do=dispitem&id=186'><img title='Rage' class='icon' src='../skills/img.php?id=186' /></a>&nbsp;&nbsp;</td>
+          <td>(420,420)</td>
+          <td>Wasteland.</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=411'><img class='icon2' src="img.php?id=411" /></a></td>
+          <td><a href='?do=dispitem&id=411'>Skele Salesman</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(557,1111);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=374'><img class='icon2' src="img.php?id=374" /></a></td>
+          <td><a href='?do=dispitem&id=374'>Skele Assasin</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=2504'><img title='Skele Helm' class='icon' src='../items/img.php?id=2504' /></a>&nbsp;&nbsp;</td>
+          <td>(388,282)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=135'><img class='icon2' src="img.php?id=135" /></a></td>
+          <td><a href='?do=dispitem&id=135'>Shopkeep Sal Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=536'><img title='Pants' class='icon' src='../items/img.php?id=536' /></a>&nbsp;<a href='../items/?do=dispitem&id=710'><img title='Magic Stick' class='icon' src='../items/img.php?id=710' /></a>&nbsp;<a href='../items/?do=dispitem&id=824'><img title='Noob Island Map' class='icon' src='../items/img.php?id=824' /></a>&nbsp;<a href='../items/?do=dispitem&id=2193'><img title='Small Energy Potion' class='icon' src='../items/img.php?id=2193' /></a>&nbsp;<a href='../items/?do=dispitem&id=2194'><img title='Small Health Potion' class='icon' src='../items/img.php?id=2194' /></a>&nbsp;<a href='../items/?do=dispitem&id=2237'><img title='Wanderer&#039;s Cloak' class='icon' src='../items/img.php?id=2237' /></a>&nbsp;<a href='../items/?do=dispitem&id=2238'><img title='Dull Wooden Sword' class='icon' src='../items/img.php?id=2238' /></a>&nbsp;<a href='../items/?do=dispitem&id=2239'><img title='Small Basic Bow' class='icon' src='../items/img.php?id=2239' /></a>&nbsp;<a href='../items/?do=dispitem&id=2354'><img title='XP Boost' class='icon' src='../items/img.php?id=2354' /></a>&nbsp;<a href='../items/?do=dispitem&id=2675'><img title='Fanny Pack' class='icon' src='../items/img.php?id=2675' /></a>&nbsp;<a href='../items/?do=dispitem&id=2724'><img title='10K Coin Note' class='icon' src='../items/img.php?id=2724' /></a>&nbsp;<a href='../items/?do=dispitem&id=2882'><img title='Jumbo XP Boost' class='icon' src='../items/img.php?id=2882' /></a>&nbsp;&nbsp;</td>
+          <td>(60,441)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=215'><img class='icon2' src="img.php?id=215" /></a></td>
+          <td><a href='?do=dispitem&id=215'>Shopkeep Jo Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=1897'><img title='Regen Potion' class='icon' src='../items/img.php?id=1897' /></a>&nbsp;<a href='../items/?do=dispitem&id=2354'><img title='XP Boost' class='icon' src='../items/img.php?id=2354' /></a>&nbsp;<a href='../items/?do=dispitem&id=2724'><img title='10K Coin Note' class='icon' src='../items/img.php?id=2724' /></a>&nbsp;<a href='../items/?do=dispitem&id=2754'><img title='Small Torch' class='icon' src='../items/img.php?id=2754' /></a>&nbsp;<a href='../items/?do=dispitem&id=2755'><img title='Medium Health Potion' class='icon' src='../items/img.php?id=2755' /></a>&nbsp;<a href='../items/?do=dispitem&id=2756'><img title='Medium Energy Potion' class='icon' src='../items/img.php?id=2756' /></a>&nbsp;<a href='../items/?do=dispitem&id=2758'><img title='Standard Pickaxe' class='icon' src='../items/img.php?id=2758' /></a>&nbsp;<a href='../items/?do=dispitem&id=2764'><img title='Cave of Despair Map' class='icon' src='../items/img.php?id=2764' /></a>&nbsp;<a href='../items/?do=dispitem&id=2882'><img title='Jumbo XP Boost' class='icon' src='../items/img.php?id=2882' /></a>&nbsp;&nbsp;</td>
+          <td>(348,1085)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=62'><img class='icon2' src="img.php?id=62" /></a></td>
+          <td><a href='?do=dispitem&id=62'>Shopkeep Gil Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=677'><img title='Amateur Magician&#039;s Cloak' class='icon' src='../items/img.php?id=677' /></a>&nbsp;<a href='../items/?do=dispitem&id=829'><img title='Crab Coast Map' class='icon' src='../items/img.php?id=829' /></a>&nbsp;<a href='../items/?do=dispitem&id=1340'><img title='Basic Magic Staff' class='icon' src='../items/img.php?id=1340' /></a>&nbsp;<a href='../items/?do=dispitem&id=1610'><img title='Standard Bow' class='icon' src='../items/img.php?id=1610' /></a>&nbsp;<a href='../items/?do=dispitem&id=2193'><img title='Small Energy Potion' class='icon' src='../items/img.php?id=2193' /></a>&nbsp;<a href='../items/?do=dispitem&id=2194'><img title='Small Health Potion' class='icon' src='../items/img.php?id=2194' /></a>&nbsp;<a href='../items/?do=dispitem&id=2215'><img title='Wooden Staff' class='icon' src='../items/img.php?id=2215' /></a>&nbsp;<a href='../items/?do=dispitem&id=2216'><img title='Basic Leather Body Armor' class='icon' src='../items/img.php?id=2216' /></a>&nbsp;<a href='../items/?do=dispitem&id=2217'><img title='Basic Leather Leg Armor' class='icon' src='../items/img.php?id=2217' /></a>&nbsp;<a href='../items/?do=dispitem&id=2354'><img title='XP Boost' class='icon' src='../items/img.php?id=2354' /></a>&nbsp;<a href='../items/?do=dispitem&id=2707'><img title='Satchel' class='icon' src='../items/img.php?id=2707' /></a>&nbsp;<a href='../items/?do=dispitem&id=2757'><img title='Standard Lockpick' class='icon' src='../items/img.php?id=2757' /></a>&nbsp;&nbsp;</td>
+          <td>(100,244)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=226'><img class='icon2' src="img.php?id=226" /></a></td>
+          <td><a href='?do=dispitem&id=226'>Shopkeep Boshed Shop</a></td>
+          <td><a href='?search=weapon-shop&byclass=1'>weapon-shop</a></td>
+          <td><a href='../items/?do=dispitem&id=1331'><img title='Sleeping Cap' class='icon' src='../items/img.php?id=1331' /></a>&nbsp;<a href='../items/?do=dispitem&id=1332'><img title='Orange' class='icon' src='../items/img.php?id=1332' /></a>&nbsp;<a href='../items/?do=dispitem&id=1333'><img title='Afro' class='icon' src='../items/img.php?id=1333' /></a>&nbsp;<a href='../items/?do=dispitem&id=1334'><img title='Mask of Truth' class='icon' src='../items/img.php?id=1334' /></a>&nbsp;<a href='../items/?do=dispitem&id=1335'><img title='K Hat' class='icon' src='../items/img.php?id=1335' /></a>&nbsp;<a href='../items/?do=dispitem&id=1336'><img title='Snowboard' class='icon' src='../items/img.php?id=1336' /></a>&nbsp;<a href='../items/?do=dispitem&id=1337'><img title='Crab Suit' class='icon' src='../items/img.php?id=1337' /></a>&nbsp;<a href='../items/?do=dispitem&id=1338'><img title='Tuxedo' class='icon' src='../items/img.php?id=1338' /></a>&nbsp;<a href='../items/?do=dispitem&id=1339'><img title='Tutu' class='icon' src='../items/img.php?id=1339' /></a>&nbsp;&nbsp;</td>
+          <td>(126,239)</td>
+          <td>Foreclosed</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=293'><img class='icon2' src="img.php?id=293" /></a></td>
+          <td><a href='?do=dispitem&id=293'>Scully</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=614'>Shipping Crate Threat</a>,&nbsp;<a href='../quest/?do=dispitem&id=617'>Shipping Crate Are...</a>&nbsp;</td>
+          <td>(398,642)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=315'><img class='icon2' src="img.php?id=315" /></a></td>
+          <td><a href='?do=dispitem&id=315'>Scout Thompson</a></td>
+          <td><a href='?search=travel-guide&byclass=1'>travel-guide</a></td>
+          <td>&nbsp;</td>
+          <td>(229,236); (50,915); (113,253)</td>
+          <td>Brings you into 'the Swamp Grotto', if you reached level 18.</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=272'><img class='icon2' src="img.php?id=272" /></a></td>
+          <td><a href='?do=dispitem&id=272'>Scout McNeal</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=312'>Lower the morale</a>,&nbsp;<a href='../quest/?do=dispitem&id=432'>A Thrilling Discovery</a>&nbsp;</td>
+          <td>(421,276)</td>
+          <td>Level 27 required</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=83'><img class='icon2' src="img.php?id=83" /></a></td>
+          <td><a href='?do=dispitem&id=83'>Scout</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=213'><img title='Evil Army Membership Card' class='icon' src='../items/img.php?id=213' /></a>&nbsp;<a href='../quest/?do=dispitem&id=179'>Show Your ID</a>,&nbsp;<a href='../quest/?do=dispitem&id=137'>Find the Scout</a>&nbsp;</td>
+          <td>(168,406)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=322'><img class='icon2' src="img.php?id=322" /></a></td>
+          <td><a href='?do=dispitem&id=322'>Scientist Ted</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=633'>Research</a>,&nbsp;<a href='../quest/?do=dispitem&id=657'>Destroy The Eyes</a> &nbsp;</td>
+          <td>(370,795)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=342'><img class='icon2' src="img.php?id=342" /></a></td>
+          <td><a href='?do=dispitem&id=342'>Scared Scientist</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=604'>Data, Data, Data</a>&nbsp;</td>
+          <td>(445,632)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=258'><img class='icon2' src="img.php?id=258" /></a></td>
+          <td><a href='?do=dispitem&id=258'>Scared Ogre</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=457'>Way too many spiders</a>,&nbsp;<a href='../quest/?do=dispitem&id=591'>Silver Crabs 1</a>&nbsp;</td>
+          <td>347,1061</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=216'><img class='icon2' src="img.php?id=216" /></a></td>
+          <td><a href='?do=dispitem&id=216'>Scared Miner</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=433'>Clear the lost skeles</a>,&nbsp;<a href='../quest/?do=dispitem&id=437'>Evil Skeles Be Gone</a>&nbsp;</td>
+          <td>(357,1087)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=225'><img class='icon2' src="img.php?id=225" /></a></td>
+          <td><a href='?do=dispitem&id=225'>Scared Captain</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=438'>Kill The Ogres</a>,&nbsp;<a href='../quest/?do=dispitem&id=439'>Too many Ogres</a>&nbsp;</td>
+          <td>(428,1082)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=214'><img class='icon2' src="img.php?id=214" /></a></td>
+          <td><a href='?do=dispitem&id=214'>Scared Boy</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=440'>Clear the bats</a>,&nbsp;<a href='../quest/?do=dispitem&id=445'>Help for brother</a>&nbsp;</td>
+          <td>(337,1090)</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

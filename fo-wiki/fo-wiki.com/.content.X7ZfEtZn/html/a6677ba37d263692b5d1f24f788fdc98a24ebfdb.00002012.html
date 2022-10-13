@@ -1,0 +1,869 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Item Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;">
+    <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=3&tp=3&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=3&tp=3&d=s&c=1" width="120" height="600" border="1" /></noscript>
+  </div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=ITname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="12">Item Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='12' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="10"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="two-hand-weapon" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=two-hand-weapon&ind=50'>51-77</a> ] ( 2 Pages for search "two-hand-weapon" )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&byclass=1&desc=1&by=ITname&ind=0&search=two-hand-weapon'>Name</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITlvlreq&ind=0&search=two-hand-weapon'>Lvl. req</a></th>
+          <th width="200px">Description</th>
+          <th width="60px"><a href='?do=sort&byclass=1&desc=0&by=ITuse&ind=0&search=two-hand-weapon'>Use</a></th>
+          <th width="60px">Bonus</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITsell&ind=0&search=two-hand-weapon'>Sell Price</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITbuy&ind=0&search=two-hand-weapon'>Buy Price</a></th>
+          <th width="50px">Status Req.</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITdmgps&ind=0&search=two-hand-weapon'>Dmg. / sec.</a></th>
+          <th>Dropped by</th>
+          <th>Obtained from</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="10" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="two-hand-weapon" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=two-hand-weapon&ind=50'>51-77</a> ] ( 2 Pages for search "two-hand-weapon" )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="12">Last update 30/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2473'><img class='icon' src="img.php?id=2473" /></a></td>
+          <td><a href='?do=dispitem&id=2473'>Amethyst Blade</a></td>
+          <td>40</td>
+          <td>Death comes quickly. By YukiCha</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>Str: 200</td>
+          <td>175</td>
+          <td><a href='../bestiary/?do=dispitem&id=689'><img title='Gamer&#039;s Head' class='icon2' src='../bestiary/img.php?id=689' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2179'><img class='icon' src="img.php?id=2179" /></a></td>
+          <td><a href='?do=dispitem&id=2179'>Anime Sword</a></td>
+          <td>24</td>
+          <td>OK, that's borderline ridiculous.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Str +1 Def +250</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>Sta: 34, Str: 46</td>
+          <td>30.4</td>
+          <td>-</td>
+          <td><a href='../quest/?do=dispitem&id=473'>Evil McBadguy Redux</a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1036'><img class='icon' src="img.php?id=1036" /></a></td>
+          <td><a href='?do=dispitem&id=1036'>Axe of Murdering</a></td>
+          <td>21</td>
+          <td>There's really no question about its use.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>Str: 38</td>
+          <td>13.4</td>
+          <td><a href='../bestiary/?do=dispitem&id=649'><img title='Pre-Teen Wolf' class='icon2' src='../bestiary/img.php?id=649' /></a> <a href='../bestiary/?do=dispitem&id=650'><img title='Teen Wolf' class='icon2' src='../bestiary/img.php?id=650' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2830'><img class='icon' src="img.php?id=2830" /></a></td>
+          <td><a href='?do=dispitem&id=2830'>Batarang</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>It's a boomerang shaped like a bat. By DoomofDeath</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Luck +5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>40</td>
+          <td>-</td>
+          <td>Bat Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2672'><img class='icon' src="img.php?id=2672" /></a></td>
+          <td><a href='?do=dispitem&id=2672'>Battle Axe of the Wild</a></td>
+          <td>56</td>
+          <td>The power of the wild flows through you.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +20,<br />
+          Agi +8,<br />
+          Str +20,<br />
+          Int +8,<br />
+          Def +800,<br />
+          Luck +5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 300</td>
+          <td>295</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=373'><img title='Crafting (Mirky Woods)' class='icon2' src='../npc/img.php?id=373' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2553'><img class='icon' src="img.php?id=2553" /></a></td>
+          <td><a href='?do=dispitem&id=2553'>Beam Saber</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Even on Christmas someone gets stuck working. By dmat3889</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>35</td>
+          <td>-</td>
+          <td>G Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2977'><img class='icon' src="img.php?id=2977" /></a></td>
+          <td><a href='?do=dispitem&id=2977'>Bearserker Hammer of Doom</a></td>
+          <td>60</td>
+          <td>BADGER SMASH!!! By monstrowhale (Req. Dark Elf Destroyers: Glorified)</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 340</td>
+          <td>310</td>
+          <td><a href='../bestiary/?do=dispitem&id=633'><img title='Badger King' class='icon2' src='../bestiary/img.php?id=633' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1859'><img class='icon' src="img.php?id=1859" /></a></td>
+          <td><a href='?do=dispitem&id=1859'>BFG</a></td>
+          <td>40</td>
+          <td>Wow, that's big. By Anikk</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Agi: 200</td>
+          <td>130</td>
+          <td><a href='../bestiary/?do=dispitem&id=689'><img title='Gamer&#039;s Head' class='icon2' src='../bestiary/img.php?id=689' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2377'><img class='icon' src="img.php?id=2377" /></a></td>
+          <td><a href='?do=dispitem&id=2377'>Blade of the Forgotten</a></td>
+          <td>42</td>
+          <td>You thought I forgot. By Lighterthief</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +16,<br />
+          Agi +4,<br />
+          Str +16,<br />
+          Int +4,<br />
+          Def +400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 240</td>
+          <td>270</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1627'><img class='icon' src="img.php?id=1627" /></a></td>
+          <td><a href='?do=dispitem&id=1627'>Blades of Exile</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>30</td>
+          <td>Do you feel like a God now?</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>+4 Stamina +4 Strength</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />40</td>
+          <td>Str: 100</td>
+          <td>35.8</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2040'><img class='icon' src="img.php?id=2040" /></a></td>
+          <td><a href='?do=dispitem&id=2040'>Blades of Import</a></td>
+          <td>8</td>
+          <td>Do you feel like pie now? By mdccxxvii</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Str +2</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>9.6</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=316'><img title='Warrior Hero Shop' class='icon2' src='../npc/img.php?id=316' /></a> Warrior Starter Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1075'><img class='icon' src="img.php?id=1075" /></a></td>
+          <td><a href='?do=dispitem&id=1075'>Brutal Axe</a></td>
+          <td>16</td>
+          <td>When killing something with a regular axe just isn't brutal enough...</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Str +1</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />150</td>
+          <td>-</td>
+          <td>Str: 36</td>
+          <td>12.9</td>
+          <td><a href='../bestiary/?do=dispitem&id=309'><img title='Skele Champion' class='icon2' src='../bestiary/img.php?id=309' /></a> <a href='../bestiary/?do=dispitem&id=396'><img title='Unliving Dead Guard' class='icon2' src='../bestiary/img.php?id=396' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2554'><img class='icon' src="img.php?id=2554" /></a></td>
+          <td><a href='?do=dispitem&id=2554'>Buster Rifle</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Life is cheap, especially mine. By dmat3889</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>G Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1789'><img class='icon' src="img.php?id=1789" /></a></td>
+          <td><a href='?do=dispitem&id=1789'>Crystal Sword</a></td>
+          <td>40</td>
+          <td>It cuts through anything. By YukiCha</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>Str: 140</td>
+          <td>80</td>
+          <td><a href='../bestiary/?do=dispitem&id=655'><img title='Cyclops' class='icon2' src='../bestiary/img.php?id=655' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3167'><img class='icon' src="img.php?id=3167" /></a></td>
+          <td><a href='?do=dispitem&id=3167'>Curved Hand Axe</a></td>
+          <td>60</td>
+          <td>What happens when you hit something very hard with something made of silly putty? Now you know. By Falcooner, req. Frozen Alliance: Glorified</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Luck +20</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>Str: 400</td>
+          <td>150.5</td>
+          <td><a href='../bestiary/?do=dispitem&id=733'><img title='Evil Ice Skater' class='icon2' src='../bestiary/img.php?id=733' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2699'><img class='icon' src="img.php?id=2699" /></a></td>
+          <td><a href='?do=dispitem&id=2699'>Dark Elf Sword</a></td>
+          <td>50</td>
+          <td>Harness the power of the Dark Elf side. By Lighterthief</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +20,<br />
+          Luck +10</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>Str: 300</td>
+          <td>240</td>
+          <td><a href='../bestiary/?do=dispitem&id=702'><img title='Dark Elf Warrior' class='icon2' src='../bestiary/img.php?id=702' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2009'><img class='icon' src="img.php?id=2009" /></a></td>
+          <td><a href='?do=dispitem&id=2009'>Dark Rapier</a></td>
+          <td>40</td>
+          <td>Rebirth comes quickly. By YukiCha</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 200</td>
+          <td>175</td>
+          <td><a href='../bestiary/?do=dispitem&id=689'><img title='Gamer&#039;s Head' class='icon2' src='../bestiary/img.php?id=689' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2127'><img class='icon' src="img.php?id=2127" /></a></td>
+          <td><a href='?do=dispitem&id=2127'>Death Scythe</a></td>
+          <td>42</td>
+          <td>Death comes early for your foes. By Lighterthief</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +16,<br />
+          Agi +16</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Agi: 240</td>
+          <td>190</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2838'><img class='icon' src="img.php?id=2838" /></a></td>
+          <td><a href='?do=dispitem&id=2838'>Death's Scythe</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Slices and dices. By meenee</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Luck +6</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>19.5</td>
+          <td>-</td>
+          <td>Reaper Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1386'><img class='icon' src="img.php?id=1386" /></a></td>
+          <td><a href='?do=dispitem&id=1386'>Deathbringer</a></td>
+          <td>32</td>
+          <td>Only the most skilled warriors can wield this blade forged by the Grim Reaper itself.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +8,<br />
+          Str +8,<br />
+          Def +200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 120</td>
+          <td>62.5</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=248'><img title='Crafting (CoD)' class='icon2' src='../npc/img.php?id=248' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1349'><img class='icon' src="img.php?id=1349" /></a></td>
+          <td><a href='?do=dispitem&id=1349'>Dragon Scythe</a></td>
+          <td>32</td>
+          <td>It's said that those who posses a Dragon Scythe wield the power to summon a Dragon of their own.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +8,<br />
+          Agi +8</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Agi: 120</td>
+          <td>60</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=248'><img title='Crafting (CoD)' class='icon2' src='../npc/img.php?id=248' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2319'><img class='icon' src="img.php?id=2319" /></a></td>
+          <td><a href='?do=dispitem&id=2319'>Ebony and Ivory</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>And the rest is silence. By Zopherus</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>Dante Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2256'><img class='icon' src="img.php?id=2256" /></a></td>
+          <td><a href='?do=dispitem&id=2256'>First Tsurugi</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Are sins... ever forgiven? By Lighterthief</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>35</td>
+          <td>-</td>
+          <td>Cloud Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2247'><img class='icon' src="img.php?id=2247" /></a></td>
+          <td><a href='?do=dispitem&id=2247'>Flag of Independence</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>The land of the kinda free. By Jman12390 (only available on the 4th July)</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +2</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>0.8</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1685'><img class='icon' src="img.php?id=1685" /></a></td>
+          <td><a href='?do=dispitem&id=1685'>Flowers</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>The perfect gift for any occasion. By StarmanDX</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +1000</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />12</td>
+          <td>-</td>
+          <td>1.5</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1202'><img class='icon' src="img.php?id=1202" /></a></td>
+          <td><a href='?do=dispitem&id=1202'>Forest Hammer</a></td>
+          <td>23</td>
+          <td>That is to say it's a rock tied to a stick.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>+1 Sta,<br />
+          +3 Int</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>Sta: 25, Str: 42</td>
+          <td>17.2</td>
+          <td><a href='../bestiary/?do=dispitem&id=406'><img title='War Ogre' class='icon2' src='../bestiary/img.php?id=406' /></a> <a href='../bestiary/?do=dispitem&id=650'><img title='Teen Wolf' class='icon2' src='../bestiary/img.php?id=650' /></a> <a href='../bestiary/?do=dispitem&id=451'><img title='Ogre Thug' class='icon2' src='../bestiary/img.php?id=451' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2736'><img class='icon' src="img.php?id=2736" /></a></td>
+          <td><a href='?do=dispitem&id=2736'>FR-27</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Perfect for those times you don't want to smack someone in the face. By dmat</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>Ex Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1567'><img class='icon' src="img.php?id=1567" /></a></td>
+          <td><a href='?do=dispitem&id=1567'>Gem of the Desert</a></td>
+          <td>50</td>
+          <td>Carefully crafted by expert Skele Blacksmiths.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>Str: 180</td>
+          <td>100</td>
+          <td><a href='../bestiary/?do=dispitem&id=582'><img title='Knight of the Dead' class='icon2' src='../bestiary/img.php?id=582' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2184'><img class='icon' src="img.php?id=2184" /></a></td>
+          <td><a href='?do=dispitem&id=2184'>Getsuga Tenshou</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Feel the wrath of my blade. By Jman12390</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>35</td>
+          <td>-</td>
+          <td>Ichigo Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1957'><img class='icon' src="img.php?id=1957" /></a></td>
+          <td><a href='?do=dispitem&id=1957'>Gladion Sword</a></td>
+          <td>46</td>
+          <td>It's great for hair cutting as well as death dealing. DoomofDeath</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 200</td>
+          <td>100</td>
+          <td><a href='../bestiary/?do=dispitem&id=634'><img title='Robot Sentry' class='icon2' src='../bestiary/img.php?id=634' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1699'><img class='icon' src="img.php?id=1699" /></a></td>
+          <td><a href='?do=dispitem&id=1699'>Guardsman's Axe</a></td>
+          <td>10</td>
+          <td>You'd think these guys would have maybe offered you one, seeing as how you're doing all their work.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Agi -1,<br />
+          Def +50</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />125</td>
+          <td>-</td>
+          <td>Str: 32</td>
+          <td>9.7</td>
+          <td><a href='../bestiary/?do=dispitem&id=538'><img title='Skelechop' class='icon2' src='../bestiary/img.php?id=538' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=947'><img class='icon' src="img.php?id=947" /></a></td>
+          <td><a href='?do=dispitem&id=947'>Hardcore Staff</a></td>
+          <td>20</td>
+          <td>Show off your awesome skills.Try not to hit the furniture or end up on YouTube.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +200</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />300</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />12000</td>
+          <td>Agi: 44</td>
+          <td>15.4</td>
+          <td><a href='../bestiary/?do=dispitem&id=670'><img title='Ex Miner Pitboss' class='icon2' src='../bestiary/img.php?id=670' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=124'><img title='Salesman Skip Shop' class='icon2' src='../npc/img.php?id=124' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1352'><img class='icon' src="img.php?id=1352" /></a></td>
+          <td><a href='?do=dispitem&id=1352'>Hell's Reaper</a></td>
+          <td>32</td>
+          <td>Property of the Underworld. By Sendoo</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +8,<br />
+          Agi +1,<br />
+          Str +8,<br />
+          Int +1,<br />
+          Def +200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 120</td>
+          <td>64</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=248'><img title='Crafting (CoD)' class='icon2' src='../npc/img.php?id=248' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3110'><img class='icon' src="img.php?id=3110" /></a></td>
+          <td><a href='?do=dispitem&id=3110'>Ice Hammer</a></td>
+          <td>60</td>
+          <td>Using it is like hitting people with a really hard snowball that never breaks! (Req. Frozen Alliance: Glorified)</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Luck +20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 340</td>
+          <td>420</td>
+          <td><a href='../bestiary/?do=dispitem&id=730'><img title='Frost Fire' class='icon2' src='../bestiary/img.php?id=730' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3136'><img class='icon' src="img.php?id=3136" /></a></td>
+          <td><a href='?do=dispitem&id=3136'>KameHameHaa!</a></td>
+          <td>-</td>
+          <td>I'll do it slowly, so you can watch me better. By Jman12390</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Luck +40</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>40</td>
+          <td>-</td>
+          <td>Goku Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1847'><img class='icon' src="img.php?id=1847" /></a></td>
+          <td><a href='?do=dispitem&id=1847'>Keyblade</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>It was supposed to be a chainsaw. By Led66Pepper</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>27.5</td>
+          <td>-</td>
+          <td>Red Egg;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3152'><img class='icon' src="img.php?id=3152" /></a></td>
+          <td><a href='?do=dispitem&id=3152'>Kongreblades</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>The power of Kongregate flows through these blades.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>Str: 30</td>
+          <td>13</td>
+          <td>-</td>
+          <td>Playing Mushroom Madness 3 and completing 25 quests there;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2368'><img class='icon' src="img.php?id=2368" /></a></td>
+          <td><a href='?do=dispitem&id=2368'>L96A1</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Who knew that a Str build could pew pew? By Jman12390</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>13.3</td>
+          <td>-</td>
+          <td>Advanced Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2547'><img class='icon' src="img.php?id=2547" /></a></td>
+          <td><a href='?do=dispitem&id=2547'>Lifeguard Float</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Enables beach bullet-time. By Lighterthief</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>12.5</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=380'><img title='Summer Shop' class='icon2' src='../npc/img.php?id=380' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1966'><img class='icon' src="img.php?id=1966" /></a></td>
+          <td><a href='?do=dispitem&id=1966'>Light Swords</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>4</td>
+          <td>It's like pew pew in stick form. By FailCard</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Agi +2,<br />
+          Str +4</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />60</td>
+          <td>-</td>
+          <td>19</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a> Hero Weapon Shop;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2261'><img class='icon' src="img.php?id=2261" /></a></td>
+          <td><a href='?do=dispitem&id=2261'>Link Sword</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>The flow of time is always cruel... its speed seems different for each person, but no one can change it... A thing that does not change with time is a memory of younger days... By Jman12390</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>16.7</td>
+          <td>-</td>
+          <td>Link Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=295'><img class='icon' src="img.php?id=295" /></a></td>
+          <td><a href='?do=dispitem&id=295'>Lockjaw</a></td>
+          <td>8</td>
+          <td>Really, all the rust just makes it look more badass.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Str +3,<br />
+          Agi -3</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>Str: 32</td>
+          <td>10.2</td>
+          <td><a href='../bestiary/?do=dispitem&id=297'><img title='Failed Spider Hunter' class='icon2' src='../bestiary/img.php?id=297' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2380'><img class='icon' src="img.php?id=2380" /></a></td>
+          <td><a href='?do=dispitem&id=2380'>Masamune</a> &nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>30</td>
+          <td>The swords of Masamune have a reputation for superior beauty and quality, remarkable in a period where the steel necessary for swords was often impure. By Bango</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>60</td>
+          <td>-</td>
+          <td>Samurai Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3053'><img class='icon' src="img.php?id=3053" /></a></td>
+          <td><a href='?do=dispitem&id=3053'>Master Sword</a></td>
+          <td>10</td>
+          <td>A great sword for the beginning warrior. By StarmanDX</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>Str: 30</td>
+          <td>32.5</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=63'><img title='Blacksmith Mike Shop' class='icon2' src='../npc/img.php?id=63' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2117'><img class='icon' src="img.php?id=2117" /></a></td>
+          <td><a href='?do=dispitem&id=2117'>Mist Sword</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>A Kage is the leader of one of the five most powerful Hidden Villages. By Jman12390</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Agi +4,<br />
+          Int +4,<br />
+          Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>27.5</td>
+          <td>-</td>
+          <td>Kage Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2844'><img class='icon' src="img.php?id=2844" /></a></td>
+          <td><a href='?do=dispitem&id=2844'>Ninja Staff</a></td>
+          <td>28</td>
+          <td>No, not a bow. No one wants to see your bow skills. This is a badass black staff with a blade on it.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Agi +4,<br />
+          Str -4 Def +100</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />2000</td>
+          <td>Agi: 50</td>
+          <td>19.6</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=187'><img title='Mirabella Shop Shop' class='icon2' src='../npc/img.php?id=187' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1992'><img class='icon' src="img.php?id=1992" /></a></td>
+          <td><a href='?do=dispitem&id=1992'>Nuke Destroyer</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>20</td>
+          <td>You wanna dance? By Lighterthief</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>40</td>
+          <td>-</td>
+          <td>Nuke Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1014'><img class='icon' src="img.php?id=1014" /></a></td>
+          <td><a href='?do=dispitem&id=1014'>Pike</a></td>
+          <td>21</td>
+          <td>Not a fish.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>+300 Def</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />275</td>
+          <td>-</td>
+          <td>Sta: 24, Str: 28, Agi: 40</td>
+          <td>14.7</td>
+          <td><a href='../bestiary/?do=dispitem&id=527'><img title='Unliving Dead Footman' class='icon2' src='../bestiary/img.php?id=527' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2708'><img class='icon' src="img.php?id=2708" /></a></td>
+          <td><a href='?do=dispitem&id=2708'>Pincer Beetle Staff</a></td>
+          <td>56</td>
+          <td>A staff of the forest with all its power.</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>Sta +20,<br />
+          Agi +20,<br />
+          Luck +5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Agi: 300</td>
+          <td>215</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=373'><img title='Crafting (Mirky Woods)' class='icon2' src='../npc/img.php?id=373' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2633'><img class='icon' src="img.php?id=2633" /></a></td>
+          <td><a href='?do=dispitem&id=2633'>Pitchfork</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Perfect for tending to the crops and fighting off Zombeets. By lord1999</td>
+          <td><a href='?search=two-hand-weapon&byclass=1'>two-hand-weapon</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>16</td>
+          <td>-</td>
+          <td>Farmer Box;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

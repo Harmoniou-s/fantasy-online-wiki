@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Quest Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+  body,td,th {
+        font-size: 12px;
+  }
+  -->
+  /*]]>*/
+  </style>
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; left:0px; top: 60px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <table class="maintable">
+    <thead>
+      <tr>
+        <th colspan='6'>Quest! (<a href='?'>Quest database</a>)</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan='6'><a href='?do=edit&amp;id=138'><img class='button' src="img/edit.jpg" width="47" height="19" /></a> <a href='?do=delitem&id=138'><img class='button' src='img/delete.jpg' width='66' height='19' /></a> <a href='javascript:history.back()'><img class='button' src="img/back.jpg" width="47" height="19" /></a></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td colspan='6'>&nbsp;The Annoying Skeles&nbsp;[ 5 ]</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Start NPC</td>
+        <td width='300px' colspan='2' class='val'><a href='../npc/?do=dispitem&id=58'><img title='Guardsman Phil' class='icon2' src='../npc/img.php?id=58' /></a></td>
+        <td class='attr' width='150px'>Typ</td>
+        <td width='300px' class='val' colspan='2'>kill</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Exp-gain</td>
+        <td width='300px' colspan='2' class='val'>200</td>
+        <td class='attr' width='150px'>Coin-gain</td>
+        <td width='300px' colspan='2' class='val'>15</td>
+      </tr>
+      <tr>
+        <td class='attr'>Summary</td>
+        <td colspan='5'>Kill 10 Annoyed Skeles. You know... the ones that keep attacking you.</td>
+      </tr>
+      <tr>
+        <td class='attr'>Details</td>
+        <td colspan='5'>
+          Talk to Guardsman Phil near the town, who tells you <img style='cursor: pointer' onmouseover="SetContent('label','Well, hello there! I\'ve heard a lot about you and your little exploits! Word travels fast when it comes to... talent.&lt;br /&gt;&lt;br /&gt;So, here\'s the deal. Some of these skeles decided to branch out and form their own little happy club just northwest of this town. I think that taking care of ten of them should be right up your alley. Careful, though; these ones have a temper.'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />.<br />
+          <br />
+          The <a href='../bestiary/?do=dispitem&id=139'><img title='Annoyed Skele' src='../bestiary/img.php?id=139' /></a>s can be found in the northwest and the southwest,<br />
+          south of where the <a href='../bestiary/?do=dispitem&id=141'><img title='Armed Skele' src='../bestiary/img.php?id=141' /></a>s are. Kill 10 of them and report back to <a href='../npc/?do=dispitem&id=58'><img title='Guardsman Phil' src='../npc/img.php?id=58' /></a>.<br />
+          <br />
+          <a href='../npc/?do=dispitem&id=58'><img title='Guardsman Phil' src='../npc/img.php?id=58' /></a> will reward you with a <a href='../items/?do=dispitem&id=194'><img title='Dull Wooden Sword' src='../items/img.php?id=194' /></a>. 
+          <script src="/content/label.js" type="text/javascript"></script>
+          <div id="label" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 1px; max-width: 300px; border-width:1px;">
+            Content goes here.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class='attr'>Note</td>
+        <td colspan='5'>-</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

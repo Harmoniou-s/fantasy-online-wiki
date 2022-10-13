@@ -1,0 +1,242 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fantasy Online - Item Ranking</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/ajax.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class='top_cont'>
+    <div class="nav_icon">
+      <img title='nav' class='nav_img' src="img/nav.png" width="32" height="32" /><a href='.'>Navigation</a>
+    </div>
+    <div class="user_div">
+      <script src="js/md5.js" type="text/javascript"></script> 
+      <script language="javascript" type="text/javascript">
+      //<![CDATA[
+
+
+                                      <!--
+                                      function converttohash() {
+                                          document.getElementById('hash').value
+                                                  = MD5(document.getElementById('pw').value);
+                                          document.getElementById('pw').value='';
+                                          
+                                          if (document.getElementById('pw').value=='') {
+                                            return true;
+                                          }
+                                          return false;
+                                      }
+                                      // -->
+      //]]>
+      </script>
+      <form onsubmit="return converttohash();" method='post' action='/ps3k/index.php?menu=showUser&amp;userName=isolation'>
+        <div>
+          User Name: <input value='' class='bginput' size="10" type='text' id='username' name='username' />
+        </div>
+        <div>
+          Password: <input class='bginput' size="10" type='password' id='pw' /><input type='hidden' id='hash' name='hash' />
+        </div>
+        <div>
+          <input type="submit" value="Log In" class='button' />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='menu'>
+    <table class='menu_table'>
+      <tr>
+        <td><a href='.'>Top 50 (rating)</a></td>
+        <td><a href='?menu=likes'>Top 50 (likes)</a></td>
+        <td><a href='?menu=latestUploads'>Latest Uploads</a></td>
+        <td><a href='?menu=browseAll'>Browse All</a></td>
+        <td><a href='?menu=ingame'>Ingame</a></td>
+        <td><a href='?menu=search'>Search</a></td>
+        <td><a href='?menu=userRanking'>User Ranking</a></td>
+        <td><a href='?menu=myCreations'>My Creations</a></td>
+        <td>Register</td>
+      </tr>
+    </table>
+  </div>
+  <div class='info_cont'>
+    <div class='title'>
+      <img class='nav_img' src='img/user.png' width='32' height='32' alt='user' />isolation
+    </div>
+    <table class='itemlist'>
+      <tr class='legend'>
+        <td>Icon</td>
+        <td>Name</td>
+        <td>Rating</td>
+        <td>Likes</td>
+        <td>Set</td>
+        <td>Type</td>
+        <td>By</td>
+        <td>Created</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=241060616'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_241060616_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=241060616'>Beta Halo</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:51px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.36)</span></td>
+        <td><a href='?menu=showItem&amp;uid=241060616'>What?</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>22/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=56937076'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_56937076_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=56937076'>Mother Rocker</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:59px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.36)</span></td>
+        <td><a href='?menu=showItem&amp;uid=56937076'>Loot = Egg (pet rock?)</a></td>
+        <td>Enemy</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>22/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=587986542'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_587986542_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=587986542'>Black T-Shirt</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:28px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.21)</span></td>
+        <td><a href='?menu=showItem&amp;uid=587986542'>Desert Area Quest Reward?</a></td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>21/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=833698678'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_833698678_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=833698678'>Epic Crown</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>6 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.4)</span></td>
+        <td><a href='?menu=showItem&amp;uid=833698678'>Luxury Items</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>21/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=946126714'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_946126714_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=946126714'>Masamune Icon</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:56px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.19)</span></td>
+        <td><a href='?menu=showItem&amp;uid=946126714'>Samurai</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>20/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=822355271'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_822355271_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=822355271'>Desert Ogre</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:65px'></span></span></td>
+        <td class='like'>14 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.88)</span></td>
+        <td><a href='?menu=showItem&amp;uid=822355271'>Desert Monster</a></td>
+        <td>Enemy</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>20/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=520419474'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_520419474_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=520419474'>Superior Guild Stone</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:53px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.19)</span></td>
+        <td><a href='?menu=showItem&amp;uid=520419474'>Guild Stuff</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>09/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=193760771'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_193760771_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=193760771'>Guild Stone</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:58px'></span></span></td>
+        <td class='like'>6 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.23)</span></td>
+        <td><a href='?menu=showItem&amp;uid=193760771'>Guild Stuff</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>09/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=198238409'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_198238409_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=198238409'>Grandpa Bat Lure V2</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:16px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.11)</span></td>
+        <td><a href='?menu=showItem&amp;uid=198238409'>Bat Pet</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>08/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=283133020'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_283133020_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=283133020'>Bat Lure V2 (Hillyman's)</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:16px'></span></span></td>
+        <td class='like'>4 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.14)</span></td>
+        <td><a href='?menu=showItem&amp;uid=283133020'>Bat Pet</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>08/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=984673014'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_984673014_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=984673014'>Grandpa Bat V2</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:37px'></span></span></td>
+        <td class='like'>4 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.14)</span></td>
+        <td><a href='?menu=showItem&amp;uid=984673014'>Bat Pet</a></td>
+        <td>Pet</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>08/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=469834169'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_469834169_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=469834169'>Bat V2 (Hillyman's)</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.18)</span></td>
+        <td><a href='?menu=showItem&amp;uid=469834169'>Bat Pet</a></td>
+        <td>Pet</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>08/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=628326300'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_628326300_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=628326300'>Lolwat?</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:50px'></span></span></td>
+        <td class='like'>9 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.26)</span></td>
+        <td><a href='?menu=showItem&amp;uid=628326300'>Elves</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>01/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=909302596'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_909302596_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=909302596'>Guardian of Noob Island</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:60px'></span></span></td>
+        <td class='like'>20 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.45)</span></td>
+        <td><a href='?menu=showItem&amp;uid=909302596'>Built by Noobs 4 Sol</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>22/01/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=961747737'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_961747737_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=961747737'>Crate</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>4 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.08)</span></td>
+        <td><a href='?menu=showItem&amp;uid=961747737'>What could be inside?</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>18/01/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=541303381'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_541303381_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=541303381'>Pawprint Crate of Mystery</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:51px'></span></span></td>
+        <td class='like'>4 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.08)</span></td>
+        <td><a href='?menu=showItem&amp;uid=541303381'>What could be inside?</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>15/01/11</td>
+      </tr>
+    </table>
+  </div>
+  <div class='bottom_cont'>
+    [ 08/03/11 02:15:33 ]
+  </div>
+</body>
+</html>

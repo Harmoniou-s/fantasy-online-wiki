@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Example</title>
+  <style>
+  <![CDATA[
+  BODY    {
+        font-family: Tahoma,Arial,Verdana,sans-serif;
+        font-size: 12px;
+        background-color: #3D5066;
+        }
+  ]]>
+  </style>
+</head>
+<body>
+  <br />
+  <div style="background-color:#CCC;">
+    <br />
+    [TEXT]Content goes here.[/TEXT] = <img style='cursor: pointer' onmouseover="SetContent('label','Content goes here.'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' /><br />
+    [NPC]Mysterious Stranger[/NPC] = &lt;linked pic of npc (if existent)&gt;<br />
+    [MONS]Forest Whelp[/MONS] = &lt;linked pic of monster (if existent)&gt;<br />
+    [ITEM]Tighty Off-Whities[/ITEM] = &lt;linked pic of item (if existent)&gt;<br />
+    [QUEST]Little Girl Lost[/QUEST] = &lt;linked quest name (if existent)&gt;<br />
+    <br />
+  </div>
+  <script src="/content/label.js" type="text/javascript"></script>
+  <div id="label" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 1px; max-width: 300px; border-width:1px;">
+    Content goes here.
+  </div>
+</body>
+</html>

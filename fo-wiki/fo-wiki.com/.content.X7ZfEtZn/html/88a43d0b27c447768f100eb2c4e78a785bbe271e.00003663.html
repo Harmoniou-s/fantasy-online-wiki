@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Quest Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+  body,td,th {
+        font-size: 12px;
+  }
+  -->
+  /*]]>*/
+  </style>
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; left:0px; top: 60px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <table class="maintable">
+    <thead>
+      <tr>
+        <th colspan='6'>Quest! (<a href='?'>Quest database</a>)</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan='6'><a href='?do=edit&amp;id=97'><img class='button' src="img/edit.jpg" width="47" height="19" /></a> <a href='?do=delitem&id=97'><img class='button' src='img/delete.jpg' width='66' height='19' /></a> <a href='javascript:history.back()'><img class='button' src="img/back.jpg" width="47" height="19" /></a></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td colspan='6'>&nbsp;Night of The Turnips&nbsp;[ 2 ]</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Start NPC</td>
+        <td width='300px' colspan='2' class='val'><a href='../npc/?do=dispitem&id=51'><img title='Farmer Ted' class='icon2' src='../npc/img.php?id=51' /></a></td>
+        <td class='attr' width='150px'>Typ</td>
+        <td width='300px' class='val' colspan='2'>kill</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Exp-gain</td>
+        <td width='300px' colspan='2' class='val'>300</td>
+        <td class='attr' width='150px'>Coin-gain</td>
+        <td width='300px' colspan='2' class='val'>20</td>
+      </tr>
+      <tr>
+        <td class='attr'>Summary</td>
+        <td colspan='5'>Kill 10 Turnip Heads for farmer Ted. Hey, that kinda rhymes! Get on that, Shakespeare.</td>
+      </tr>
+      <tr>
+        <td class='attr'>Details</td>
+        <td colspan='5'>
+          Talk to <a href='../npc/?do=dispitem&id=51'><img title='Farmer Ted' src='../npc/img.php?id=51' /></a>, he tells you <img style='cursor: pointer' onmouseover="SetContent('label','Welcome to my farm! l used to grow the sweetest,&lt;br /&gt;most delicious produce you`ve ever tasted but,&lt;br /&gt;after a bloody battle was fought on my little plot&lt;br /&gt;not so long ago, this dirt now creates the nastiest,&lt;br /&gt;most evil veggies you`ve ever fought! &lt;br /&gt;&lt;br /&gt;lf you could take care of, say, 10 of these Turnip &lt;br /&gt;Heads, l`d be most grateful!'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' /><br />
+          <br />
+          Kill 10 <a href='../bestiary/?do=dispitem&id=144'><img title='Turniphead' src='../bestiary/img.php?id=144' /></a>s and talk to <a href='../npc/?do=dispitem&id=51'><img title='Farmer Ted' src='../npc/img.php?id=51' /></a> again (<img style='cursor: pointer' onmouseover="SetContent('label','Thank you ever so! l haven`t much to offer you in&lt;br /&gt;return, but maybe this will help...&lt;br /&gt;&lt;br /&gt;Oh, and this was accidentally dropped in my&lt;br /&gt;mailbox. lt`s addressed to a general in the town just&lt;br /&gt;north of here. l`d deliver it myself, but l can`t really&lt;br /&gt;leave Timmeh. He`s a bit... special, if you get my &lt;br /&gt;drift.'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />).<br />
+          He rewards you for your trouble with a<br />
+          <a href='../items/?do=dispitem&id=185'><img title='Barrel Lid' src='../items/img.php?id=185' /></a> and the <a href='../items/?do=dispitem&id=188'><img title='Letter to the General' src='../items/img.php?id=188' /></a>, an item for the <a href='../quest/?do=dispitem&id=186'>Letter to the General</a> quest. 
+          <script src="/content/label.js" type="text/javascript"></script>
+          <div id="label" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 1px; max-width: 300px; border-width:1px;">
+            Content goes here.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class='attr'>Note</td>
+        <td colspan='5'>-</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

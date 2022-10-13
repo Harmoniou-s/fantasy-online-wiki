@@ -1,0 +1,902 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Item Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=ITname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="12">Item Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='12' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="10"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="face" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=face&ind=50'>51-62</a> ] ( 2 Pages for search "face" )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&byclass=1&desc=1&by=ITname&ind=0&search=face'>Name</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITlvlreq&ind=0&search=face'>Lvl. req</a></th>
+          <th width="200px">Description</th>
+          <th width="60px"><a href='?do=sort&byclass=1&desc=0&by=ITuse&ind=0&search=face'>Use</a></th>
+          <th width="60px">Bonus</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITsell&ind=0&search=face'>Sell Price</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITbuy&ind=0&search=face'>Buy Price</a></th>
+          <th width="50px">Status Req.</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITdmgps&ind=0&search=face'>Dmg. / sec.</a></th>
+          <th>Dropped by</th>
+          <th>Obtained from</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="10" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="face" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=face&ind=50'>51-62</a> ] ( 2 Pages for search "face" )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="12">Last update 25/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2088'><img class='icon' src="img.php?id=2088" /></a></td>
+          <td><a href='?do=dispitem&id=2088'>Ancient Dragon Mask</a></td>
+          <td>50</td>
+          <td>Ancient fire breathes life into new heroes. By Lighterthief</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +2,<br />
+          Agi +18,<br />
+          Def +800</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Agi: 240</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2003'><img class='icon' src="img.php?id=2003" /></a></td>
+          <td><a href='?do=dispitem&id=2003'>Ancient Mage Pendulum</a></td>
+          <td>40</td>
+          <td>The ancients from above crafted this. By Lighterthief</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +6,<br />
+          Int +22,<br />
+          Def +600</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Int: 240</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2078'><img class='icon' src="img.php?id=2078" /></a></td>
+          <td><a href='?do=dispitem&id=2078'>Ancient Templar Guise</a></td>
+          <td>50</td>
+          <td>Let the power run through you. By Lighterthief</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +10,<br />
+          Str +26,<br />
+          Def +1600</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 240</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2782'><img class='icon' src="img.php?id=2782" /></a></td>
+          <td><a href='?do=dispitem&id=2782'>Bat Face</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Paleness scares criminals. By DoomofDeath (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Bat Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2458'><img class='icon' src="img.php?id=2458" /></a></td>
+          <td><a href='?do=dispitem&id=2458'>Bearserker Mask</a></td>
+          <td>50</td>
+          <td>Unleash your inner bear. By Lighterthief</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +17,<br />
+          Agi +10,<br />
+          Str +10,<br />
+          Int +10,<br />
+          Def +400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=632'><img title='Bearserker' class='icon2' src='../bestiary/img.php?id=632' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1753'><img class='icon' src="img.php?id=1753" /></a></td>
+          <td><a href='?do=dispitem&id=1753'>Big Glasses</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Those are huge. By StarmanDX</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Yellow Egg;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2768'><img class='icon' src="img.php?id=2768" /></a></td>
+          <td><a href='?do=dispitem&id=2768'>Big Shades</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>The bigger the better.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Def +75</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2769'><img class='icon' src="img.php?id=2769" /></a></td>
+          <td><a href='?do=dispitem&id=2769'>Big Shades (Red)</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>The bigger the better. And redder.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Def +75</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2770'><img class='icon' src="img.php?id=2770" /></a></td>
+          <td><a href='?do=dispitem&id=2770'>Black Bandana</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Yeah, yeah, you're a badass, we know.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +1,<br />
+          Agi +2,<br />
+          Def +50</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />25</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2786'><img class='icon' src="img.php?id=2786" /></a></td>
+          <td><a href='?do=dispitem&id=2786'>Blue Bandana</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Sorry, people will still know who you are, because when they click on you it shows your name.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +1,<br />
+          Agi +1,<br />
+          Def +50</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=923'><img class='icon' src="img.php?id=923" /></a></td>
+          <td><a href='?do=dispitem&id=923'>Bronze Medal for Marathon Running</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>6</td>
+          <td>An Olympic medal! Except I'm pretty sure "Olympic" is spelled with a "C." And their medals probably aren't made of wood.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +1</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />50</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2737'><img class='icon' src="img.php?id=2737" /></a></td>
+          <td><a href='?do=dispitem&id=2737'>Candy Cig</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>They still sell these? By meenee (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Gangster Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2471'><img class='icon' src="img.php?id=2471" /></a></td>
+          <td><a href='?do=dispitem&id=2471'>Crab Face</a></td>
+          <td>10</td>
+          <td>Make your mug an elf mug. By Lighterthief (Outfit Face/ Req. Crab Crusaders: Decorated)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />3000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=385'><img title='Crab Faction Shop' class='icon2' src='../npc/img.php?id=385' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2680'><img class='icon' src="img.php?id=2680" /></a></td>
+          <td><a href='?do=dispitem&id=2680'>Creeper Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>You are now a creeper. By Muffinmanife (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Box o\' Fun;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2714'><img class='icon' src="img.php?id=2714" /></a></td>
+          <td><a href='?do=dispitem&id=2714'>Dark Alien Mouth</a></td>
+          <td>40</td>
+          <td>All the better to eat you with. Zaniya.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +8,<br />
+          Agi +6,<br />
+          Str +6,<br />
+          Def +400</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=665'><img title='Dark Robot' class='icon2' src='../bestiary/img.php?id=665' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2491'><img class='icon' src="img.php?id=2491" /></a></td>
+          <td><a href='?do=dispitem&id=2491'>Dark Elf Mask</a></td>
+          <td>40</td>
+          <td>Make your mug an elf mug. By Lighterthief (Outfit Face/ Req. Dark Elf Destroyers: Decorated)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=365'><img title='Dark Elf Shop' class='icon2' src='../npc/img.php?id=365' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1255'><img class='icon' src="img.php?id=1255" /></a></td>
+          <td><a href='?do=dispitem&id=1255'>Dark Knight Mask</a></td>
+          <td>30</td>
+          <td>Embrace the darkness. By Sendoo</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Str +6,<br />
+          Def +200</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>Str: 110</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=211'><img title='Uber Shop' class='icon2' src='../npc/img.php?id=211' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2590'><img class='icon' src="img.php?id=2590" /></a></td>
+          <td><a href='?do=dispitem&id=2590'>Dark Paladin Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>30</td>
+          <td>Become the protector of evil. By crab</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +2,<br />
+          Agi +7,<br />
+          Str +7,<br />
+          Int +7,<br />
+          Def +400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Dark Paladin Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1504'><img class='icon' src="img.php?id=1504" /></a></td>
+          <td><a href='?do=dispitem&id=1504'>Dark Templar Guise</a></td>
+          <td>40</td>
+          <td>Embrace the darkness. By Sendoo</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Str +12,<br />
+          Def +400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Str: 140</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=245'><img title='Crafting (Wasteland)' class='icon2' src='../npc/img.php?id=245' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2681'><img class='icon' src="img.php?id=2681" /></a></td>
+          <td><a href='?do=dispitem&id=2681'>Domo Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Domo? By Monky7151 (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Box o\' Fun;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1587'><img class='icon' src="img.php?id=1587" /></a></td>
+          <td><a href='?do=dispitem&id=1587'>Dragon Mask</a></td>
+          <td>30</td>
+          <td>Be one with the dragon. By Xdre</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +6,<br />
+          Def +100</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>Agi: 110</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=211'><img title='Uber Shop' class='icon2' src='../npc/img.php?id=211' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1585'><img class='icon' src="img.php?id=1585" /></a></td>
+          <td><a href='?do=dispitem&id=1585'>Dragon Master Guise</a></td>
+          <td>40</td>
+          <td>Be one with the dragon. By Xdre</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +12,<br />
+          Def +200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Agi: 140</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=245'><img title='Crafting (Wasteland)' class='icon2' src='../npc/img.php?id=245' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1728'><img class='icon' src="img.php?id=1728" /></a></td>
+          <td><a href='?do=dispitem&id=1728'>Epic Mage Pendant</a></td>
+          <td>40</td>
+          <td>Let the energy flow through you. By Sendoo</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +4,<br />
+          Int +12,<br />
+          Def +200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Int: 140</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=245'><img title='Crafting (Wasteland)' class='icon2' src='../npc/img.php?id=245' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2732'><img class='icon' src="img.php?id=2732" /></a></td>
+          <td><a href='?do=dispitem&id=2732'>Ex Face</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Morpheus would be jealous. By dmat (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Ex Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2976'><img class='icon' src="img.php?id=2976" /></a></td>
+          <td><a href='?do=dispitem&id=2976'>Excessive Moustache</a></td>
+          <td>-</td>
+          <td>For the sophisticated crab killer. By boshed (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />600000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=392'><img title='Eccentric Shop' class='icon2' src='../npc/img.php?id=392' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=785'><img class='icon' src="img.php?id=785" /></a></td>
+          <td><a href='?do=dispitem&id=785'>Eye Patch</a></td>
+          <td>-</td>
+          <td>Much cheaper than a glass eye, and as a bonus it doesn't actually require that you remove your eye.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Def +50</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a> <a href='../quest/?do=dispitem&id=223'>Booty Camp</a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2974'><img class='icon' src="img.php?id=2974" /></a></td>
+          <td><a href='?do=dispitem&id=2974'>Ga Glasses</a></td>
+          <td>-</td>
+          <td>Now you can be a pop star too! By meenee (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />600000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=392'><img title='Eccentric Shop' class='icon2' src='../npc/img.php?id=392' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1761'><img class='icon' src="img.php?id=1761" /></a></td>
+          <td><a href='?do=dispitem&id=1761'>Gas Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Protects you from boshed's rancid gas. By Jman12390</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +10,<br />
+          Agi +6,<br />
+          Str +6,<br />
+          Int +6,<br />
+          Def +200</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Blue Egg;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2948'><img class='icon' src="img.php?id=2948" /></a></td>
+          <td><a href='?do=dispitem&id=2948'>Halloween Elf Mask</a></td>
+          <td>-</td>
+          <td>Infused with the soul of the Great Pumpkin. By Jaylvan2010 (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=415'><img title='Four Horseman Shop' class='icon2' src='../npc/img.php?id=415' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=964'><img class='icon' src="img.php?id=964" /></a></td>
+          <td><a href='?do=dispitem&id=964'>Hockey Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Because you've always wanted to be the famous 1950s Montreal Canadiens goaltender Jacque Plante for Halloween.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Str +3,<br />
+          Def +200</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />30</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2185'><img class='icon' src="img.php?id=2185" /></a></td>
+          <td><a href='?do=dispitem&id=2185'>Ichigo Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>Feel the wrath of my blade. By Jman12390</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +4,<br />
+          Str +4,<br />
+          Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Ichigo Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1962'><img class='icon' src="img.php?id=1962" /></a></td>
+          <td><a href='?do=dispitem&id=1962'>Jack Face</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>With this face you'll be able to command an army of pirates. By crab</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +10,<br />
+          Agi +10,<br />
+          Str +10,<br />
+          Int +10,<br />
+          Def +100</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Pirate Chest;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2777'><img class='icon' src="img.php?id=2777" /></a></td>
+          <td><a href='?do=dispitem&id=2777'>Killinator Shades</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>You just can't go around killing people!</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Str +1,<br />
+          Def +25</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2778'><img class='icon' src="img.php?id=2778" /></a></td>
+          <td><a href='?do=dispitem&id=2778'>Killinator Shades (Red)</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>You just can't go around killing people!</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Str +1,<br />
+          Def +25</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1384'><img class='icon' src="img.php?id=1384" /></a></td>
+          <td><a href='?do=dispitem&id=1384'>Love Struck</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>You're in love... with someone.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +2,<br />
+          Agi +2,<br />
+          Str +2,<br />
+          Int +2,<br />
+          Def +2</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />12</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1702'><img class='icon' src="img.php?id=1702" /></a></td>
+          <td><a href='?do=dispitem&id=1702'>Madara Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>By Jman12390</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +2,<br />
+          Str +2</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1594'><img class='icon' src="img.php?id=1594" /></a></td>
+          <td><a href='?do=dispitem&id=1594'>Mage Necklace</a></td>
+          <td>30</td>
+          <td>Let the energy flow through you. By Sendoo</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +2,<br />
+          Int +6,<br />
+          Def +100</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>Int: 110</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=211'><img title='Uber Shop' class='icon2' src='../npc/img.php?id=211' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1334'><img class='icon' src="img.php?id=1334" /></a></td>
+          <td><a href='?do=dispitem&id=1334'>Mask of Truth</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>8</td>
+          <td>Look into the mask to find the truth. By Hokage4354</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Int +2,<br />
+          Def +100</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />12</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=226'><img title='Shopkeep Boshed Shop' class='icon2' src='../npc/img.php?id=226' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2511'><img class='icon' src="img.php?id=2511" /></a></td>
+          <td><a href='?do=dispitem&id=2511'>Monocle</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Now you're classy. By Fastlex600 (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2794'><img class='icon' src="img.php?id=2794" /></a></td>
+          <td><a href='?do=dispitem&id=2794'>Morpheus Shades</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Woah.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +1,<br />
+          Def +25</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2793'><img class='icon' src="img.php?id=2793" /></a></td>
+          <td><a href='?do=dispitem&id=2793'>Morpheus Shades (Red)</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Woah. Red pill.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +1,<br />
+          Def +25</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2792'><img class='icon' src="img.php?id=2792" /></a></td>
+          <td><a href='?do=dispitem&id=2792'>Nerd Specs</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>No tape on these! Yet.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Int +1,<br />
+          Def +50</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2987'><img class='icon' src="img.php?id=2987" /></a></td>
+          <td><a href='?do=dispitem&id=2987'>Nude Face</a></td>
+          <td>-</td>
+          <td>No makeup? By boshed (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />40</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=422'><img title='Nude Shop' class='icon2' src='../npc/img.php?id=422' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2359'><img class='icon' src="img.php?id=2359" /></a></td>
+          <td><a href='?do=dispitem&id=2359'>Nuke Shades</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>20</td>
+          <td>Have you seen my rubber...duckie? By Lighterthief</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +10,<br />
+          Str +10,<br />
+          Def +400</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />8000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Nuke Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2640'><img class='icon' src="img.php?id=2640" /></a></td>
+          <td><a href='?do=dispitem&id=2640'>Pirate Face</a></td>
+          <td>14</td>
+          <td>Arr what a mug. By Lighterthief (Outfit Face/ Req. Pirate Order: Decorated)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=377'><img title='Pirate Order' class='icon2' src='../npc/img.php?id=377' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2840'><img class='icon' src="img.php?id=2840" /></a></td>
+          <td><a href='?do=dispitem&id=2840'>Reaper Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Death is coming for you. By meenee (Outfit Face)</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Reaper Box;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2822'><img class='icon' src="img.php?id=2822" /></a></td>
+          <td><a href='?do=dispitem&id=2822'>Red Bandana</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Sorry, people will still know who you are, because when they click on you it shows your name.</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +1,<br />
+          Str +1,<br />
+          Def +50</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1931'><img class='icon' src="img.php?id=1931" /></a></td>
+          <td><a href='?do=dispitem&id=1931'>Robo Face</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>10</td>
+          <td>I remember you. You're dead. We killed you. By monstrowhale</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Def +1000</td>
+          <td>-</td>
+          <td><img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=186'><img title='Gem Shop' class='icon2' src='../npc/img.php?id=186' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2385'><img class='icon' src="img.php?id=2385" /></a></td>
+          <td><a href='?do=dispitem&id=2385'>Samurai Mask</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>30</td>
+          <td>If the enemy thinks of the mountains, attack like the sea; and if he thinks of the sea, attack like the mountains. By Jman12390</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Agi +7,<br />
+          Str +7,<br />
+          Int +7,<br />
+          Def +400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Samurai Box;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2805'><img class='icon' src="img.php?id=2805" /></a></td>
+          <td><a href='?do=dispitem&id=2805'>Scrap Face</a></td>
+          <td>30</td>
+          <td>This may or may not mangle your face. By StarmanDX</td>
+          <td><a href='?search=face&byclass=1'>face</a></td>
+          <td>Sta +4,<br />
+          Agi +4,<br />
+          Str +4,<br />
+          Int +4,<br />
+          Def +400</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=692'><img title='Cybender' class='icon2' src='../bestiary/img.php?id=692' /></a></td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

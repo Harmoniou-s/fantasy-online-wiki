@@ -1,0 +1,534 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO NPC Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=NPCname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="6">NPC Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='6' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="4"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="quest" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=NPCname&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=&desc=&by=NPCname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=NPCname&byclass=1&do=&search=quest&ind=50'>51-100</a>, <a href='?desc=&by=NPCname&byclass=1&do=&search=quest&ind=100'>101-137</a> ] ( 3 Pages for search "quest" )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addnpc.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&amp;byclass=1&amp;desc=1&amp;by=NPCname&amp;ind=0&amp;search=quest'>Name</a></th>
+          <th><a href='?do=sort&amp;byclass=1&amp;desc=0&amp;by=NPCtyp&amp;ind=0&amp;search=quest'>Typ</a></th>
+          <th><a href='?do=sort&amp;byclass=1&amp;desc=0&amp;by=NPCpurpose&amp;ind=0&amp;search=quest'>Purpose</a></th>
+          <th width="60px">Coords</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="4" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="quest" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=NPCname&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=&desc=&by=NPCname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=NPCname&byclass=1&do=&search=quest&ind=50'>51-100</a>, <a href='?desc=&by=NPCname&byclass=1&do=&search=quest&ind=100'>101-137</a> ] ( 3 Pages for search "quest" )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addnpc.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="6">Last update 27/12/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=482'><img class='icon2' src="img.php?id=482" /></a></td>
+          <td><a href='?do=dispitem&id=482'>Agent Croc</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=723'>Nom nom</a>,&nbsp;<a href='../quest/?do=dispitem&id=726'>Nom nom nom</a>&nbsp;</td>
+          <td>(593,745);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=298'><img class='icon2' src="img.php?id=298" /></a></td>
+          <td><a href='?do=dispitem&id=298'>Agent J</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=612'>Cyborg crabs... ?</a>,&nbsp;<a href='../quest/?do=dispitem&id=613'>M'F' Crabs In This M'F' Cave</a>&nbsp;</td>
+          <td>(310,664)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=160'><img class='icon2' src="img.php?id=160" /></a></td>
+          <td><a href='?do=dispitem&id=160'>Angry Al</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=204'>Fallen Arches</a>,&nbsp;<a href='../quest/?do=dispitem&id=215'>The Assistant</a>&nbsp;</td>
+          <td>(165,73)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=467'><img class='icon2' src="img.php?id=467" /></a></td>
+          <td><a href='?do=dispitem&id=467'>Angry Penguin</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=704'>Holiday Crab Claws</a>,&nbsp;<a href='../quest/?do=dispitem&id=710'>Holiday Crab Massacre</a>&nbsp;</td>
+          <td>(584,495);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=338'><img class='icon2' src="img.php?id=338" /></a></td>
+          <td><a href='?do=dispitem&id=338'>Area 51 Tom</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=517'>The Alien Invasion</a>,&nbsp;<a href='../quest/?do=dispitem&id=610'>The Alien Extinction</a>&nbsp;</td>
+          <td>(425,718)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=429'><img class='icon2' src="img.php?id=429" /></a></td>
+          <td><a href='?do=dispitem&id=429'>Axe Hun Ter</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=686'>Ice Mage Spawn of Frozen Hell</a>,&nbsp;<a href='../quest/?do=dispitem&id=688'>Just In Case</a>&nbsp;</td>
+          <td>(668,622);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=354'><img class='icon2' src="img.php?id=354" /></a></td>
+          <td><a href='?do=dispitem&id=354'>Badger Ben</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=640'>Secret Agent Badger</a>,&nbsp;<a href='../quest/?do=dispitem&id=643'>Secret Agent Musroom</a>&nbsp;</td>
+          <td>(717,28)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=409'><img class='icon2' src="img.php?id=409" /></a></td>
+          <td><a href='?do=dispitem&id=409'>Barrel Cat</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(597,1085);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=440'><img class='icon2' src="img.php?id=440" /></a></td>
+          <td><a href='?do=dispitem&id=440'>Cap Tain</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=729'>Reverse Engineering</a>&nbsp;</td>
+          <td>(721,603);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=159'><img class='icon2' src="img.php?id=159" /></a></td>
+          <td><a href='?do=dispitem&id=159'>Captain Crunch</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=270'>Scorpion Report</a>,&nbsp;<a href='../quest/?do=dispitem&id=479'>Scorpion Extermination</a>&nbsp;</td>
+          <td>(162,70)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=71'><img class='icon2' src="img.php?id=71" /></a></td>
+          <td><a href='?do=dispitem&id=71'>Captain Morgan</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=3173'><img title='Large Sword' class='icon' src='../items/img.php?id=3173' /></a>&nbsp;<a href='../quest/?do=dispitem&id=354'>Who's the Boss?</a>,&nbsp;<a href='../quest/?do=dispitem&id=452'>Captain Morgan's Slimy Sword</a>&nbsp;</td>
+          <td>(53,233)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=256'><img class='icon2' src="img.php?id=256" /></a></td>
+          <td><a href='?do=dispitem&id=256'>Charlie</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=387'>Sick of Scorpions</a>,&nbsp;<a href='../quest/?do=dispitem&id=398'>Die!</a>&nbsp;</td>
+          <td>(408,485)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=198'><img class='icon2' src="img.php?id=198" /></a></td>
+          <td><a href='?do=dispitem&id=198'>Clambake Willy</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=305'>Gathering Clam Guts for Cats?</a>,&nbsp;<a href='../quest/?do=dispitem&id=595'>Kill Big Clams (Daily)</a>&nbsp;</td>
+          <td>(362,329)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=360'><img class='icon2' src="img.php?id=360" /></a></td>
+          <td><a href='?do=dispitem&id=360'>Crazy Pie Maker</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=627'>Lost Pie Key</a>,&nbsp;<a href='../quest/?do=dispitem&id=630'>Poor Squirrel</a>&nbsp;</td>
+          <td>(661,130)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=324'><img class='icon2' src="img.php?id=324" /></a></td>
+          <td><a href='?do=dispitem&id=324'>Crazy Scientist</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=494'>Crab For Science</a>&nbsp;</td>
+          <td>(205,351)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=470'><img class='icon2' src="img.php?id=470" /></a></td>
+          <td><a href='?do=dispitem&id=470'>Daddy Elfie</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(632,511);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=408'><img class='icon2' src="img.php?id=408" /></a></td>
+          <td><a href='?do=dispitem&id=408'>Dark Jester</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(616,1095);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=424'><img class='icon2' src="img.php?id=424" /></a></td>
+          <td><a href='?do=dispitem&id=424'>Decap Dan</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=3004'><img title='Crab Demon' class='icon' src='../items/img.php?id=3004' /></a>&nbsp;&nbsp;</td>
+          <td>(665,996)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=413'><img class='icon2' src="img.php?id=413" /></a></td>
+          <td><a href='?do=dispitem&id=413'>Dracula</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(544,1121);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=438'><img class='icon2' src="img.php?id=438" /></a></td>
+          <td><a href='?do=dispitem&id=438'>Drow Ning</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=715'>We Must Know the Enemy</a>,&nbsp;<a href='../quest/?do=dispitem&id=716'>Wet Ice</a>&nbsp;</td>
+          <td>(718,627);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=367'><img class='icon2' src="img.php?id=367" /></a></td>
+          <td><a href='?do=dispitem&id=367'>Elf Hater</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=624'>Elf Destruction</a>,&nbsp;<a href='../quest/?do=dispitem&id=667'>Elf It</a>&nbsp;</td>
+          <td>(623,133)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=459'><img class='icon2' src="img.php?id=459" /></a></td>
+          <td><a href='?do=dispitem&id=459'>Elfie</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=693'>Thieving Nutcrackers</a>,&nbsp;<a href='../quest/?do=dispitem&id=694'>Nutcracker Revenge</a>&nbsp;</td>
+          <td>(642,512);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=430'><img class='icon2' src="img.php?id=430" /></a></td>
+          <td><a href='?do=dispitem&id=430'>Eski Mo</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=683'>Whaling... In a Lake</a>,&nbsp;<a href='../quest/?do=dispitem&id=685'>Getting sick of Fish Sticks</a>&nbsp;</td>
+          <td>(591,638);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=70'><img class='icon2' src="img.php?id=70" /></a></td>
+          <td><a href='?do=dispitem&id=70'>Farmer Clooney</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=642'><img title='Spicy Manhattan Crab Chowder' class='icon' src='../items/img.php?id=642' /></a>&nbsp;<a href='../quest/?do=dispitem&id=371'>Man Rings</a>,&nbsp;<a href='../quest/?do=dispitem&id=476'>That's a Spicy Crabmeat!</a>,&nbsp;<a href='../quest/?do=dispitem&id=556'>Attack of the Killer Tomatoes</a>&nbsp;</td>
+          <td>(122,225)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=140'><img class='icon2' src="img.php?id=140" /></a></td>
+          <td><a href='?do=dispitem&id=140'>Farmer Gunter</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=455'>Farming Pumpkins</a>&nbsp;</td>
+          <td>(56,412)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=273'><img class='icon2' src="img.php?id=273" /></a></td>
+          <td><a href='?do=dispitem&id=273'>Farmer John</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=324'>Farming potatoes (Daily)</a>&nbsp;</td>
+          <td>(454,217)</td>
+          <td>Level 29 required</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=66'><img class='icon2' src="img.php?id=66" /></a></td>
+          <td><a href='?do=dispitem&id=66'>Farmer Otis</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=192'>Zombeet for Charlie</a>,&nbsp;<a href='../quest/?do=dispitem&id=286'>Zombeet Marathon</a>,&nbsp;<a href='../quest/?do=dispitem&id=347'>Night of the Zombeets</a>&nbsp;</td>
+          <td>(124,303)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=134'><img class='icon2' src="img.php?id=134" /></a></td>
+          <td><a href='?do=dispitem&id=134'>Farmer Ted</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=188'><img title='Letter to the General' class='icon' src='../items/img.php?id=188' /></a>&nbsp;<a href='../items/?do=dispitem&id=528'><img title='Barrel Lid' class='icon' src='../items/img.php?id=528' /></a>&nbsp;<a href='../quest/?do=dispitem&id=186'>Letter to the General</a>,&nbsp;<a href='../quest/?do=dispitem&id=327'>Night of The Turnips</a>,&nbsp;<a href='../quest/?do=dispitem&id=329'>Witch's Brew</a>&nbsp;</td>
+          <td>(78,502)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=297'><img class='icon2' src="img.php?id=297" /></a></td>
+          <td><a href='?do=dispitem&id=297'>FBI Head</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=606'>Aliens</a>,&nbsp;<a href='../quest/?do=dispitem&id=616'>I Said Aliens</a>&nbsp;</td>
+          <td>(466,644)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=433'><img class='icon2' src="img.php?id=433" /></a></td>
+          <td><a href='?do=dispitem&id=433'>Fi Sher</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=680'>Figure Skaters Abound!</a>,&nbsp;<a href='../quest/?do=dispitem&id=681'>Hot Chocolate Doesn't Satisfy</a>&nbsp;</td>
+          <td>(618,680);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=55'><img class='icon2' src="img.php?id=55" /></a></td>
+          <td><a href='?do=dispitem&id=55'>Fisherman Gorton</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=202'><img title='Note for little girl' class='icon' src='../items/img.php?id=202' /></a>&nbsp;<a href='../items/?do=dispitem&id=852'><img title='Tighty Off-Whities' class='icon' src='../items/img.php?id=852' /></a>&nbsp;<a href='../items/?do=dispitem&id=3031'><img title='Dirty Undershirt' class='icon' src='../items/img.php?id=3031' /></a>&nbsp;<a href='../quest/?do=dispitem&id=95'>Little Girl Lost</a>,&nbsp;<a href='../quest/?do=dispitem&id=325'>The Nudening</a>,&nbsp;<a href='../quest/?do=dispitem&id=560'>Beat The Hay Out of Him</a>&nbsp;</td>
+          <td>(34,547)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=73'><img class='icon2' src="img.php?id=73" /></a></td>
+          <td><a href='?do=dispitem&id=73'>Fisherman Santiago</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=342'>Peanut Butter Jelly Time</a>,&nbsp;<a href='../quest/?do=dispitem&id=344'>Kill the King Crab</a>&nbsp;</td>
+          <td>(184,358)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=114'><img class='icon2' src="img.php?id=114" /></a></td>
+          <td><a href='?do=dispitem&id=114'>Foreman Elliot</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=322'>Jonas is done with mining</a>&nbsp;</td>
+          <td>(195,730)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=442'><img class='icon2' src="img.php?id=442" /></a></td>
+          <td><a href='?do=dispitem&id=442'>Fro Zen Sold</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=691'>Reanimated Fortress Builders</a>,&nbsp;<a href='../quest/?do=dispitem&id=692'>We Need More Ice!</a>&nbsp;</td>
+          <td>(688,609);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=358'><img class='icon2' src="img.php?id=358" /></a></td>
+          <td><a href='?do=dispitem&id=358'>Furry Warrior</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=646'>The Knights of Badger</a>,&nbsp;<a href='../quest/?do=dispitem&id=647'>The Knights of Badger 2</a>&nbsp;</td>
+          <td>(715,33)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=441'><img class='icon2' src="img.php?id=441" /></a></td>
+          <td><a href='?do=dispitem&id=441'>Gene Ral</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(717,603);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=242'><img class='icon2' src="img.php?id=242" /></a></td>
+          <td><a href='?do=dispitem&id=242'>General Cloud</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=391'>Desert Skele Destruction</a>,&nbsp;<a href='../quest/?do=dispitem&id=515'>Desert Skele Implosion</a>&nbsp;</td>
+          <td>(442, 509)</td>
+          <td>Wasteland</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=271'><img class='icon2' src="img.php?id=271" /></a></td>
+          <td><a href='?do=dispitem&id=271'>General Ike</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=323'>Gathering of War Ogres</a>,&nbsp;<a href='../quest/?do=dispitem&id=473'>Evil McBadguy Redux</a>&nbsp;</td>
+          <td>(443,338)</td>
+          <td>level 29 required</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=91'><img class='icon2' src="img.php?id=91" /></a></td>
+          <td><a href='?do=dispitem&id=91'>General Quixote</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=359'>We Are the Champions!</a>,&nbsp;<a href='../quest/?do=dispitem&id=540'>Letter to Don Quixote</a>&nbsp;</td>
+          <td>(134,227)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=235'><img class='icon2' src="img.php?id=235" /></a></td>
+          <td><a href='?do=dispitem&id=235'>General Sergeant</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=429'>The Skele Threat</a>,&nbsp;<a href='../quest/?do=dispitem&id=542'>The Skele Threat 2</a>&nbsp;</td>
+          <td>(467,447)</td>
+          <td>Wasteland</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=56'><img class='icon2' src="img.php?id=56" /></a></td>
+          <td><a href='?do=dispitem&id=56'>General Unrest</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=333'>The Annoying Skeles</a>&nbsp;</td>
+          <td>(97,426)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=286'><img class='icon2' src="img.php?id=286" /></a></td>
+          <td><a href='?do=dispitem&id=286'>Great One</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=605'>Like Funnies</a>,&nbsp;<a href='../quest/?do=dispitem&id=607'>Make Internets</a>&nbsp;</td>
+          <td>(382,741)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=403'><img class='icon2' src="img.php?id=403" /></a></td>
+          <td><a href='?do=dispitem&id=403'>Grey</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td>&nbsp;</td>
+          <td>(698,1084);</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=57'><img class='icon2' src="img.php?id=57" /></a></td>
+          <td><a href='?do=dispitem&id=57'>Guard Captain Bill</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=189'><img title='Orders for Scout' class='icon' src='../items/img.php?id=189' /></a>&nbsp;<a href='../items/?do=dispitem&id=2646'><img title='License To Kill' class='icon' src='../items/img.php?id=2646' /></a>&nbsp;<a href='../quest/?do=dispitem&id=179'>Show Your ID</a>,&nbsp;<a href='../quest/?do=dispitem&id=137'>Find the Scout</a>,&nbsp;<a href='../quest/?do=dispitem&id=186'>Letter to the General</a>&nbsp;</td>
+          <td>(96,427)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=82'><img class='icon2' src="img.php?id=82" /></a></td>
+          <td><a href='?do=dispitem&id=82'>Guard Captain Pete</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=161'>Evil McBadGuy</a>,&nbsp;<a href='../quest/?do=dispitem&id=340'>Evil Swordsmen Massacre</a>&nbsp;</td>
+          <td>(198,497)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=196'><img class='icon2' src="img.php?id=196" /></a></td>
+          <td><a href='?do=dispitem&id=196'>Guard Captain Yannis</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=310'>Destroy the Cat-apults</a>,&nbsp;<a href='../quest/?do=dispitem&id=425'>Cat food for Yannis</a>&nbsp;</td>
+          <td>(401,307)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=75'><img class='icon2' src="img.php?id=75" /></a></td>
+          <td><a href='?do=dispitem&id=75'>Guardsman Bob</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../items/?do=dispitem&id=344'><img title='Letter to General Quixote' class='icon' src='../items/img.php?id=344' /></a>&nbsp;<a href='../items/?do=dispitem&id=3054'><img title='Metal Shield' class='icon' src='../items/img.php?id=3054' /></a>&nbsp;<a href='../quest/?do=dispitem&id=356'>Skeleguard Skulls</a>,&nbsp;<a href='../quest/?do=dispitem&id=357'>The Skele Elite</a>,&nbsp;<a href='../quest/?do=dispitem&id=540'>Letter to Don Quixote</a>&nbsp;</td>
+          <td>(184,274)</td>
+          <td>offers quest "The Skele Elite"</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=90'><img class='icon2' src="img.php?id=90" /></a></td>
+          <td><a href='?do=dispitem&id=90'>Guardsman Charlie</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=192'>Zombeet for Charlie</a>,&nbsp;<a href='../quest/?do=dispitem&id=349'>Sometimes you fail</a>&nbsp;</td>
+          <td>(73,245)</td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=136'><img class='icon2' src="img.php?id=136" /></a></td>
+          <td><a href='?do=dispitem&id=136'>Guardsman Chuck</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=287'>Where's his shield?</a>&nbsp;</td>
+          <td>129,877</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=86'><img class='icon2' src="img.php?id=86" /></a></td>
+          <td><a href='?do=dispitem&id=86'>Guardsman Dan</a></td>
+          <td><a href='?search=quest&byclass=1'>quest</a></td>
+          <td><a href='../quest/?do=dispitem&id=351'>Enemy at the Gates</a>,&nbsp;<a href='../quest/?do=dispitem&id=352'>What About Bob?</a>&nbsp;</td>
+          <td>(140,239)</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

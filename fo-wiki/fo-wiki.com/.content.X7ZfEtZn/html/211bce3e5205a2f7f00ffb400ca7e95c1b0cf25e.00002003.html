@@ -1,0 +1,840 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Item Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=ITname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="12">Item Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='12' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="10"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="crafting" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=crafting&ind=50'>51-94</a> ] ( 2 Pages for search "crafting" )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&byclass=1&desc=1&by=ITname&ind=0&search=crafting'>Name</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITlvlreq&ind=0&search=crafting'>Lvl. req</a></th>
+          <th width="200px">Description</th>
+          <th width="60px"><a href='?do=sort&byclass=1&desc=0&by=ITuse&ind=0&search=crafting'>Use</a></th>
+          <th width="60px">Bonus</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITsell&ind=0&search=crafting'>Sell Price</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITbuy&ind=0&search=crafting'>Buy Price</a></th>
+          <th width="50px">Status Req.</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITdmgps&ind=0&search=crafting'>Dmg. / sec.</a></th>
+          <th>Dropped by</th>
+          <th>Obtained from</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="10" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="crafting" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=crafting&ind=50'>51-94</a> ] ( 2 Pages for search "crafting" )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="12">Last update 23/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2993'><img class='icon' src="img.php?id=2993" /></a></td>
+          <td><a href='?do=dispitem&id=2993'>1 Billion Dollars</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Due to the current exchange rate of the US dollar, this isn't worth much. By FailCard NOT TRADABLE.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fb gift;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2358'><img class='icon' src="img.php?id=2358" /></a></td>
+          <td><a href='?do=dispitem&id=2358'>Alien DNA</a></td>
+          <td>-</td>
+          <td>It's the code to our future. By JayIvan2010</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=604'><img title='Alien' class='icon2' src='../bestiary/img.php?id=604' /></a></td>
+          <td><a href='../quest/?do=dispitem&id=607'>Make Internets</a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2352'><img class='icon' src="img.php?id=2352" /></a></td>
+          <td><a href='?do=dispitem&id=2352'>Alien Tracker</a></td>
+          <td>-</td>
+          <td>Who was tracking this alien? By BassGS</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=659'><img title='Alien Crab' class='icon2' src='../bestiary/img.php?id=659' /></a> <a href='../bestiary/?do=dispitem&id=604'><img title='Alien' class='icon2' src='../bestiary/img.php?id=604' /></a></td>
+          <td><a href='../quest/?do=dispitem&id=605'>Like Funnies</a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2870'><img class='icon' src="img.php?id=2870" /></a></td>
+          <td><a href='?do=dispitem&id=2870'>Bacon Pops</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>The ultimate popsicle. By FailCard</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fb gift;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1634'><img class='icon' src="img.php?id=1634" /></a></td>
+          <td><a href='?do=dispitem&id=1634'>Base Magician Book</a></td>
+          <td>-</td>
+          <td>The pages are blank.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=252'><img title='Desert Survival Shop' class='icon2' src='../npc/img.php?id=252' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1633'><img class='icon' src="img.php?id=1633" /></a></td>
+          <td><a href='?do=dispitem&id=1633'>Base Ranger Book</a></td>
+          <td>-</td>
+          <td>The pages are blank.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=252'><img title='Desert Survival Shop' class='icon2' src='../npc/img.php?id=252' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1632'><img class='icon' src="img.php?id=1632" /></a></td>
+          <td><a href='?do=dispitem&id=1632'>Base Warrior Book</a></td>
+          <td>-</td>
+          <td>The pages are blank.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=252'><img title='Desert Survival Shop' class='icon2' src='../npc/img.php?id=252' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1791'><img class='icon' src="img.php?id=1791" /></a></td>
+          <td><a href='?do=dispitem&id=1791'>Battery Cell</a></td>
+          <td>-</td>
+          <td>Who knew Cyclopses ran on batteries? By Jaylvan2010</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=655'><img title='Cyclops' class='icon2' src='../bestiary/img.php?id=655' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2821'><img class='icon' src="img.php?id=2821" /></a></td>
+          <td><a href='?do=dispitem&id=2821'>Blue Skull</a></td>
+          <td>-</td>
+          <td>It's a skull and it's blue. By Lighterthief</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=640'><img title='Skele Ghoul' class='icon2' src='../bestiary/img.php?id=640' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2851'><img class='icon' src="img.php?id=2851" /></a></td>
+          <td><a href='?do=dispitem&id=2851'>Body Armor Blueprints</a></td>
+          <td>-</td>
+          <td>A vague set of steps that seems to missing something. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />5000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=249'><img title='Crafting Supplies Shop' class='icon2' src='../npc/img.php?id=249' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2847'><img class='icon' src="img.php?id=2847" /></a></td>
+          <td><a href='?do=dispitem&id=2847'>Body Mold</a></td>
+          <td>-</td>
+          <td>A mold used to form body armor. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />5000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=249'><img title='Crafting Supplies Shop' class='icon2' src='../npc/img.php?id=249' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2996'><img class='icon' src="img.php?id=2996" /></a></td>
+          <td><a href='?do=dispitem&id=2996'>Book of Like</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Tells the thrilling story of the like button. By DoomofDeath</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fb gift;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2598'><img class='icon' src="img.php?id=2598" /></a></td>
+          <td><a href='?do=dispitem&id=2598'>Bow Base</a></td>
+          <td>-</td>
+          <td>The base of what could be an epic bow.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=588'><img title='Destroyer of Faith' class='icon2' src='../bestiary/img.php?id=588' /></a> <a href='../bestiary/?do=dispitem&id=586'><img title='Destroyer of Will' class='icon2' src='../bestiary/img.php?id=586' /></a> <a href='../bestiary/?do=dispitem&id=587'><img title='Destroyer of Mind' class='icon2' src='../bestiary/img.php?id=587' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2922'><img class='icon' src="img.php?id=2922" /></a></td>
+          <td><a href='?do=dispitem&id=2922'>Candy Plate</a></td>
+          <td>-</td>
+          <td>WARNING: Loss of teeth probable. By Lighterthief</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=412'><img title='Crafting (Haunted Forest)' class='icon2' src='../npc/img.php?id=412' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2920'><img class='icon' src="img.php?id=2920" /></a></td>
+          <td><a href='?do=dispitem&id=2920'>Candy Stone</a></td>
+          <td>-</td>
+          <td>WARNING: Loss of teeth possible. By Lighterthief</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=412'><img title='Crafting (Haunted Forest)' class='icon2' src='../npc/img.php?id=412' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2995'><img class='icon' src="img.php?id=2995" /></a></td>
+          <td><a href='?do=dispitem&id=2995'>Chocolate Salty Balls</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Mmmm. By minWild</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fb gift;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2602'><img class='icon' src="img.php?id=2602" /></a></td>
+          <td><a href='?do=dispitem&id=2602'>Cloth</a></td>
+          <td>-</td>
+          <td>A usable piece of cloth. By Ruffian (Note: Requires 2k coins, lvl 20, and 2 stacks of Worn Cloth to craft)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=395'><img title='Crafting (Mirabella Cove)' class='icon2' src='../npc/img.php?id=395' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3008'><img class='icon' src="img.php?id=3008" /></a></td>
+          <td><a href='?do=dispitem&id=3008'>Cowbell</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Not sure if you need more. By Reaper999999 NOT TRADABLE (Stack to 5)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=426'><img title='Crafting (Facebook)' class='icon2' src='../npc/img.php?id=426' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1981'><img class='icon' src="img.php?id=1981" /></a></td>
+          <td><a href='?do=dispitem&id=1981'>Dark Knight Body Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine armor. By Ruffian (Note: Requires 1 Body Armor Blueprint and 1 Onyx to craft.)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1980'><img class='icon' src="img.php?id=1980" /></a></td>
+          <td><a href='?do=dispitem&id=1980'>Dark Knight Helm Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine armor. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1979'><img class='icon' src="img.php?id=1979" /></a></td>
+          <td><a href='?do=dispitem&id=1979'>Dark Knight Leg Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine armor. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1525'><img class='icon' src="img.php?id=1525" /></a></td>
+          <td><a href='?do=dispitem&id=1525'>Death Ring Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine jewelry.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=252'><img title='Desert Survival Shop' class='icon2' src='../npc/img.php?id=252' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2025'><img class='icon' src="img.php?id=2025" /></a></td>
+          <td><a href='?do=dispitem&id=2025'>Death Ring Mold</a></td>
+          <td>-</td>
+          <td>A mold used to form a ring.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=265'><img title='Crafting (Wasteland2)' class='icon2' src='../npc/img.php?id=265' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2362'><img class='icon' src="img.php?id=2362" /></a></td>
+          <td><a href='?do=dispitem&id=2362'>Diamond</a></td>
+          <td>-</td>
+          <td>Diamonds are thought to first have been recognized and mined in India.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=572'><img title='Alien Chest' class='icon2' src='../bestiary/img.php?id=572' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2125'><img class='icon' src="img.php?id=2125" /></a></td>
+          <td><a href='?do=dispitem&id=2125'>Diamond Plate</a></td>
+          <td>-</td>
+          <td>Tastes like butter.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1978'><img class='icon' src="img.php?id=1978" /></a></td>
+          <td><a href='?do=dispitem&id=1978'>Dragon Body Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine armor. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1977'><img class='icon' src="img.php?id=1977" /></a></td>
+          <td><a href='?do=dispitem&id=1977'>Dragon Helm Blueprints</a></td>
+          <td>-</td>
+          <td>All the steps need to create some fine armor. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1698'><img class='icon' src="img.php?id=1698" /></a></td>
+          <td><a href='?do=dispitem&id=1698'>Dragon Master Leg Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine armor. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1526'><img class='icon' src="img.php?id=1526" /></a></td>
+          <td><a href='?do=dispitem&id=1526'>Dragon Ring Blueprint</a></td>
+          <td>-</td>
+          <td>All the steps needed to create some fine jewelry.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=252'><img title='Desert Survival Shop' class='icon2' src='../npc/img.php?id=252' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2026'><img class='icon' src="img.php?id=2026" /></a></td>
+          <td><a href='?do=dispitem&id=2026'>Dragon Ring Mold</a></td>
+          <td>-</td>
+          <td>A mold used to form a ring.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=265'><img title='Crafting (Wasteland2)' class='icon2' src='../npc/img.php?id=265' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2807'><img class='icon' src="img.php?id=2807" /></a></td>
+          <td><a href='?do=dispitem&id=2807'>Ectoplasm</a></td>
+          <td>-</td>
+          <td>When you spread it on your forhead it gives you a craving for nachos. By Bamboozle</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=659'><img title='Alien Crab' class='icon2' src='../bestiary/img.php?id=659' /></a></td>
+          <td><a href='../quest/?do=dispitem&id=605'>Like Funnies</a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2361'><img class='icon' src="img.php?id=2361" /></a></td>
+          <td><a href='?do=dispitem&id=2361'>Emerald</a></td>
+          <td>-</td>
+          <td>Emeralds in antiquity were mined by the Egyptians and in India and Austria.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=572'><img title='Alien Chest' class='icon2' src='../bestiary/img.php?id=572' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2119'><img class='icon' src="img.php?id=2119" /></a></td>
+          <td><a href='?do=dispitem&id=2119'>Emerald Plate</a></td>
+          <td>-</td>
+          <td>A plate infused with various minerals. By monstrowhale</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=306'><img title='Crafting (FUU)' class='icon2' src='../npc/img.php?id=306' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2621'><img class='icon' src="img.php?id=2621" /></a></td>
+          <td><a href='?do=dispitem&id=2621'>Faceplate</a></td>
+          <td>1</td>
+          <td>Use to craft something. By XRougeX (Stack to 4)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fb gift;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2983'><img class='icon' src="img.php?id=2983" /></a></td>
+          <td><a href='?do=dispitem&id=2983'>Gold Ore</a></td>
+          <td>-</td>
+          <td>A tiny bit of gold that needs to be further processed. By monstrowhale</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=503'><img title='Gold Vein' class='icon2' src='../bestiary/img.php?id=503' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2337'><img class='icon' src="img.php?id=2337" /></a></td>
+          <td><a href='?do=dispitem&id=2337'>Gold Ore Chunk</a></td>
+          <td>-</td>
+          <td>A large piece of gold that needs a bit more refinement. By monstrowhale</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=503'><img title='Gold Vein' class='icon2' src='../bestiary/img.php?id=503' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=245'><img title='Crafting (Wasteland)' class='icon2' src='../npc/img.php?id=245' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2335'><img class='icon' src="img.php?id=2335" /></a></td>
+          <td><a href='?do=dispitem&id=2335'>Gold Plate</a></td>
+          <td>-</td>
+          <td>A useful piece of refined gold. By monstrowhale (To create a Gold Plate you must combine a Gold Slab with a Gold Slab)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=245'><img title='Crafting (Wasteland)' class='icon2' src='../npc/img.php?id=245' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3000'><img class='icon' src="img.php?id=3000" /></a></td>
+          <td><a href='?do=dispitem&id=3000'>Gold Slab</a></td>
+          <td>-</td>
+          <td>A well formed piece of gold that a blacksmith can work with. By monstrowhale</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />600</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=503'><img title='Gold Vein' class='icon2' src='../bestiary/img.php?id=503' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=245'><img title='Crafting (Wasteland)' class='icon2' src='../npc/img.php?id=245' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2850'><img class='icon' src="img.php?id=2850" /></a></td>
+          <td><a href='?do=dispitem&id=2850'>Helm Blueprints</a></td>
+          <td>-</td>
+          <td>A vague set of steps that seems to missing something. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=249'><img title='Crafting Supplies Shop' class='icon2' src='../npc/img.php?id=249' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2848'><img class='icon' src="img.php?id=2848" /></a></td>
+          <td><a href='?do=dispitem&id=2848'>Helmet Mold</a></td>
+          <td>-</td>
+          <td>A mold used to form a helmet. By Ruffian</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=249'><img title='Crafting Supplies Shop' class='icon2' src='../npc/img.php?id=249' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3065'><img class='icon' src="img.php?id=3065" /></a></td>
+          <td><a href='?do=dispitem&id=3065'>Ice Crystal</a></td>
+          <td>-</td>
+          <td>The essence of ice. By Lighterthief (Stacks to 10)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=727'><img title='Ice Vein' class='icon2' src='../bestiary/img.php?id=727' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3064'><img class='icon' src="img.php?id=3064" /></a></td>
+          <td><a href='?do=dispitem&id=3064'>Icemite Chunk</a></td>
+          <td>-</td>
+          <td>An incredible blend of elements. By Lighterthief (Stacks to 5)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Crafting (Frozen North);</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2603'><img class='icon' src="img.php?id=2603" /></a></td>
+          <td><a href='?do=dispitem&id=2603'>Infused Cloth</a></td>
+          <td>-</td>
+          <td>Cloth infused with magic. (Note: Requires 4k coins, lvl 20, 1 Cloth and 1 Pearl to craft)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=395'><img title='Crafting (Mirabella Cove)' class='icon2' src='../npc/img.php?id=395' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1468'><img class='icon' src="img.php?id=1468" /></a></td>
+          <td><a href='?do=dispitem&id=1468'>Iron Body Shell</a></td>
+          <td>-</td>
+          <td>This almost looks like a piece of iron armor. By boshed</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1469'><img class='icon' src="img.php?id=1469" /></a></td>
+          <td><a href='?do=dispitem&id=1469'>Iron Helm Shell</a></td>
+          <td>-</td>
+          <td>This almost looks like a piece of iron armor. By boshed</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1470'><img class='icon' src="img.php?id=1470" /></a></td>
+          <td><a href='?do=dispitem&id=1470'>Iron Legs Shell</a></td>
+          <td>-</td>
+          <td>This almost looks like a piece of iron armor. By boshed</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2963'><img class='icon' src="img.php?id=2963" /></a></td>
+          <td><a href='?do=dispitem&id=2963'>Iron Ore</a></td>
+          <td>-</td>
+          <td>A tiny bit of iron that needs to be further processed. By monstrowhale</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=653'><img title='Iron Vein' class='icon2' src='../bestiary/img.php?id=653' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=416'><img title='Crafting (Crab Coast2)' class='icon2' src='../npc/img.php?id=416' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2964'><img class='icon' src="img.php?id=2964" /></a></td>
+          <td><a href='?do=dispitem&id=2964'>Iron Ore Chunk</a></td>
+          <td>-</td>
+          <td>A large piece of iron that needs a bit more refinement. By monstrowhale (Note: Requires 2 stacks of 5 iron ores to craft.)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=653'><img title='Iron Vein' class='icon2' src='../bestiary/img.php?id=653' /></a></td>
+          <td><a href='../npc/?do=dispitem&id=416'><img title='Crafting (Crab Coast2)' class='icon2' src='../npc/img.php?id=416' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2967'><img class='icon' src="img.php?id=2967" /></a></td>
+          <td><a href='?do=dispitem&id=2967'>Iron Plate</a></td>
+          <td>-</td>
+          <td>A useful piece of refined iron. By monstrowhale (Note: Requires 2 Iron Slabs to craft)</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=416'><img title='Crafting (Crab Coast2)' class='icon2' src='../npc/img.php?id=416' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1473'><img class='icon' src="img.php?id=1473" /></a></td>
+          <td><a href='?do=dispitem&id=1473'>Iron Silver Body Shell</a></td>
+          <td>-</td>
+          <td>This is a strong material.</td>
+          <td><a href='?search=crafting&byclass=1'>crafting</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=247'><img title='Crafting (Crab Coast)' class='icon2' src='../npc/img.php?id=247' /></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

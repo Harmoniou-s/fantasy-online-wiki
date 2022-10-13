@@ -1,0 +1,786 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Skill Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=sort&desc=0&by=SKILLbuyprice&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="10">Skill Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='10' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="8"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=0&by=SKILLbuyprice&search='+document.getElementById('search1').value;" alt="Search" />[ <span class='active'>1-50</span>, <a href='?desc=0&by=SKILLbuyprice&byclass=&do=sort&search=&ind=50'>51-99</a> ] ( 2 Pages )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addskill.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=SKILLname&amp;ind=0&amp;search='>Name</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=SKILLtyp&amp;ind=0&amp;search='>Typ</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=SKILLmindmg&amp;ind=0&amp;search='>Dmg</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=SKILLlvlreg&amp;ind=0&amp;search='>Req</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=SKILLrank&amp;ind=0&amp;search='>Rank</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=0&amp;by=SKILLspcost&amp;ind=0&amp;search='>Sp cost</a></th>
+          <th><a href='?do=sort&amp;byclass=&amp;desc=1&amp;by=SKILLbuyprice&amp;ind=0&amp;search='>Buy Price</a></th>
+          <th width="230px">Description</th>
+          <th>Obtained from</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="8" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=sort&desc=0&by=SKILLbuyprice&search='+document.getElementById('search2').value;" alt="Search" />[ <span class='active'>1-50</span>, <a href='?desc=0&by=SKILLbuyprice&byclass=&do=sort&search=&ind=50'>51-99</a> ] ( 2 Pages )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addskill.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="10">Last update 27/10/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=56'><img class='icon2' src="img.php?id=56" /></a></td>
+          <td><a href='?do=dispitem&id=56'>Lick Your Wounds</a></td>
+          <td><a href='?search=heal&byclass=1'>heal</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>1</td>
+          <td>18</td>
+          <td>-</td>
+          <td>Heals for 10-20 Health. You can also lick the wounds of others. We won't judge.</td>
+          <td>Basic;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=57'><img class='icon2' src="img.php?id=57" /></a></td>
+          <td><a href='?do=dispitem&id=57'>Sucker Punch</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>8-12</td>
+          <td>-</td>
+          <td>1</td>
+          <td>16</td>
+          <td>-</td>
+          <td>When you're attacking, use this to give 'em a quick pop for 8-12 damage. They had it coming.</td>
+          <td>Basic;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=106'><img class='icon2' src="img.php?id=106" /></a></td>
+          <td><a href='?do=dispitem&id=106'>Feelin Crabby</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 10</td>
+          <td>1</td>
+          <td>100</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Put your Crabface on.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=148'><img class='icon2' src="img.php?id=148" /></a></td>
+          <td><a href='?do=dispitem&id=148'>Forgotten Wasteland Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 32</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Return to to the desert in an instant.</td>
+          <td><a href='../npc/?do=dispitem&id=251'><img title='Skill Trainer Jeb' class='icon2' src='../npc/img.php?id=251' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=161'><img class='icon2' src="img.php?id=161" /></a></td>
+          <td><a href='?do=dispitem&id=161'>Cave of Despair Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 30</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Return to the cave in an instant.</td>
+          <td><a href='../npc/?do=dispitem&id=388'><img title='Skill Trainer Jo Shop' class='icon2' src='../npc/img.php?id=388' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=162'><img class='icon2' src="img.php?id=162" /></a></td>
+          <td><a href='?do=dispitem&id=162'>Cave of Some Return Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 16</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Return to the cave in an instant.</td>
+          <td><a href='../npc/?do=dispitem&id=386'><img title='Skill Trainer Lamar Shop' class='icon2' src='../npc/img.php?id=386' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=163'><img class='icon2' src="img.php?id=163" /></a></td>
+          <td><a href='?do=dispitem&id=163'>Crab Coast Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 10</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Back to Crab Land.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=164'><img class='icon2' src="img.php?id=164" /></a></td>
+          <td><a href='?do=dispitem&id=164'>Mirabella Cove Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>The cat is waiting.</td>
+          <td><a href='../npc/?do=dispitem&id=276'><img title='Skill Trainer Wallace Shop' class='icon2' src='../npc/img.php?id=276' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=165'><img class='icon2' src="img.php?id=165" /></a></td>
+          <td><a href='?do=dispitem&id=165'>Noob Island Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 10</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Fly away to your nooby roots.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a> <a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=166'><img class='icon2' src="img.php?id=166" /></a></td>
+          <td><a href='?do=dispitem&id=166'>Pirate Shores Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 12</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Arr back to ye isle o' pirates</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=167'><img class='icon2' src="img.php?id=167" /></a></td>
+          <td><a href='?do=dispitem&id=167'>Swamp Grotto Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 18</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>The grotto is calling you.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=171'><img class='icon2' src="img.php?id=171" /></a></td>
+          <td><a href='?do=dispitem&id=171'>Forgotten Underground Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 36</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Return to the crash site quick.</td>
+          <td><a href='../npc/?do=dispitem&id=290'><img title='Odd Skill Trainer' class='icon2' src='../npc/img.php?id=290' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=180'><img class='icon2' src="img.php?id=180" /></a></td>
+          <td><a href='?do=dispitem&id=180'>Forgotten Under Underground Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 40</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Meep, meep.</td>
+          <td><a href='../npc/?do=dispitem&id=304'><img title='Robot Skill Trainer' class='icon2' src='../npc/img.php?id=304' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=222'><img class='icon2' src="img.php?id=222" /></a></td>
+          <td><a href='?do=dispitem&id=222'>Nyan Cat</a></td>
+          <td><a href='?search=pet&byclass=1'>pet</a></td>
+          <td>-</td>
+          <td>Sta 1 Agi 1 Str 1 Int 1<br />
+          Lvl 10</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>nyan, nyan, nyan, nyan, nyan, nyan, nyan, nyan, nyan, nyan, nyan, nyan... By Jaman12390</td>
+          <td><a href='../npc/?do=dispitem&id=329'><img title='Professor Pets (Crab Coast)' class='icon2' src='../npc/img.php?id=329' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=259'><img class='icon2' src="img.php?id=259" /></a></td>
+          <td><a href='?do=dispitem&id=259'>Goldfish</a></td>
+          <td><a href='?search=pet&byclass=1'>pet</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 10</td>
+          <td>0</td>
+          <td>1</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Now you can take your pet goldfish everywhere you go. By StarmanDX</td>
+          <td><a href='../npc/?do=dispitem&id=328'><img title='Professor Pets (Noob Island)' class='icon2' src='../npc/img.php?id=328' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=280'><img class='icon2' src="img.php?id=280" /></a></td>
+          <td><a href='?do=dispitem&id=280'>Illuminate</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 16</td>
+          <td>1</td>
+          <td>0</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>You become enlightened.</td>
+          <td><a href='../npc/?do=dispitem&id=388'><img title='Skill Trainer Jo Shop' class='icon2' src='../npc/img.php?id=388' /></a> <a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=283'><img class='icon2' src="img.php?id=283" /></a></td>
+          <td><a href='?do=dispitem&id=283'>l33t Skillz</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Agi 26<br />
+          Lvl 5</td>
+          <td>1</td>
+          <td>36</td>
+          <td>10 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>An extra 2% chance of a critical hit for 10 minutes.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=286'><img class='icon2' src="img.php?id=286" /></a></td>
+          <td><a href='?do=dispitem&id=286'>Nerd Rage</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Str 26<br />
+          Lvl 5</td>
+          <td>1</td>
+          <td>36</td>
+          <td>10 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Allows you to go all medieval up in here by adding 10 to ATK Power for 10 minutes</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=287'><img class='icon2' src="img.php?id=287" /></a></td>
+          <td><a href='?do=dispitem&id=287'>Lick Your Wounds</a></td>
+          <td><a href='?search=heal&byclass=1'>heal</a></td>
+          <td>-</td>
+          <td>Int 32<br />
+          Lvl 5</td>
+          <td>2</td>
+          <td>38</td>
+          <td>10 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Heals for 22-46 Hitpoints. Try it on your friends as well. But get their permission first.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=290'><img class='icon2' src="img.php?id=290" /></a></td>
+          <td><a href='?do=dispitem&id=290'>Thick Skin</a></td>
+          <td><a href='?search=def-boost&byclass=1'>def-boost</a></td>
+          <td>-</td>
+          <td>Sta 26<br />
+          Lvl 5</td>
+          <td>1</td>
+          <td>0</td>
+          <td>10 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Adds 150 Armor for 20 minutes. And makes you less of a wuss.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=291'><img class='icon2' src="img.php?id=291" /></a></td>
+          <td><a href='?do=dispitem&id=291'>Mirky Woods Teleport</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 46</td>
+          <td>1</td>
+          <td>400</td>
+          <td>10 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Are you feeling elvish?</td>
+          <td><a href='../npc/?do=dispitem&id=379'><img title='Skill Trainer Zambo' class='icon2' src='../npc/img.php?id=379' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=275'><img class='icon2' src="img.php?id=275" /></a></td>
+          <td><a href='?do=dispitem&id=275'>Relishaeish</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Agi 300<br />
+          Lvl 40</td>
+          <td>1</td>
+          <td>1000</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Kwkfjasdarewig. By Lighterthief</td>
+          <td><a href='../npc/?do=dispitem&id=379'><img title='Skill Trainer Zambo' class='icon2' src='../npc/img.php?id=379' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=276'><img class='icon2' src="img.php?id=276" /></a></td>
+          <td><a href='?do=dispitem&id=276'>Mr Roboto</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Int 300<br />
+          Lvl 40</td>
+          <td>1</td>
+          <td>1000</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Domo! By Lighterthief</td>
+          <td><a href='../npc/?do=dispitem&id=379'><img title='Skill Trainer Zambo' class='icon2' src='../npc/img.php?id=379' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=277'><img class='icon2' src="img.php?id=277" /></a></td>
+          <td><a href='?do=dispitem&id=277'>Wulf</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Str 300<br />
+          Lvl 40</td>
+          <td>1</td>
+          <td>1000</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Rawr. By Lighterthief</td>
+          <td><a href='../npc/?do=dispitem&id=379'><img title='Skill Trainer Zambo' class='icon2' src='../npc/img.php?id=379' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=285'><img class='icon2' src="img.php?id=285" /></a></td>
+          <td><a href='?do=dispitem&id=285'>Self-Motivated</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>Int 36<br />
+          Lvl 6</td>
+          <td>1</td>
+          <td>120</td>
+          <td>20 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>You can DOO EET! Psych yourself up for an extra 5 energy every 5 seconds.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=288'><img class='icon2' src="img.php?id=288" /></a></td>
+          <td><a href='?do=dispitem&id=288'>Fireball</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>20-40</td>
+          <td>Int 36<br />
+          Lvl 6</td>
+          <td>1</td>
+          <td>40</td>
+          <td>20 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Deals 20-40 damage. The awesome thing is that you have to shout "Fireball!" every time you use it.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=289'><img class='icon2' src="img.php?id=289" /></a></td>
+          <td><a href='?do=dispitem&id=289'>Boom! Headshot!</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>30-70</td>
+          <td>Agi 30<br />
+          Lvl 6</td>
+          <td>1</td>
+          <td>32</td>
+          <td>20 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Damages an enemy for 30-70 HP. In the head. Boom.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=293'><img class='icon2' src="img.php?id=293" /></a></td>
+          <td><a href='?do=dispitem&id=293'>Mr. Squishy</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Watch out, someone might step on you. Adds +2 to all stats.</td>
+          <td><a href='../npc/?do=dispitem&id=421'><img title='Skill Trainer Spooky Shop' class='icon2' src='../npc/img.php?id=421' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=294'><img class='icon2' src="img.php?id=294" /></a></td>
+          <td><a href='?do=dispitem&id=294'>Mr. Pumpkin</a></td>
+          <td><a href='?search=pet&byclass=1'>pet</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>A little smushy buddy. +2 to all stats. By Jaylvan2010</td>
+          <td><a href='../npc/?do=dispitem&id=419'><img title='Professor Pets (Haunted Forest)' class='icon2' src='../npc/img.php?id=419' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=295'><img class='icon2' src="img.php?id=295" /></a></td>
+          <td><a href='?do=dispitem&id=295'>Little Sister</a></td>
+          <td><a href='?search=pet&byclass=1'>pet</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>I recommend not harvesting her. +2 to all stats. By Jaylvan2010</td>
+          <td><a href='../npc/?do=dispitem&id=419'><img title='Professor Pets (Haunted Forest)' class='icon2' src='../npc/img.php?id=419' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=296'><img class='icon2' src="img.php?id=296" /></a></td>
+          <td><a href='?do=dispitem&id=296'>Get Batty</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>20 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Purple Bats are the deadliest. Adds +2 to all stats.</td>
+          <td><a href='../npc/?do=dispitem&id=421'><img title='Skill Trainer Spooky Shop' class='icon2' src='../npc/img.php?id=421' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=137'><img class='icon2' src="img.php?id=137" /></a></td>
+          <td><a href='?do=dispitem&id=137'>Stop! Ogre-Time!</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>-<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>30 <img title="Gems" class="currencyIcon" src="../img/gems.gif" width="10" height="8" /></td>
+          <td>Duum dum dum dum, da dum, da dum. Please Ogre, don't hurt'em! Gives +2 to all stats for 30 seconds.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=284'><img class='icon2' src="img.php?id=284" /></a></td>
+          <td><a href='?do=dispitem&id=284'>Left Hook</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>20-40</td>
+          <td>Str 30<br />
+          Lvl 6</td>
+          <td>1</td>
+          <td>40</td>
+          <td>30 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Float like a butterfly, sting like a butterfly... with a stinger. A stinger that does 20-40 damage.</td>
+          <td><a href='../npc/?do=dispitem&id=74'><img title='Skill Trainer Miyagi Shop' class='icon2' src='../npc/img.php?id=74' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=42'><img class='icon2' src="img.php?id=42" /></a></td>
+          <td><a href='?do=dispitem&id=42'>Thick Skin</a></td>
+          <td><a href='?search=def-boost&byclass=1'>def-boost</a></td>
+          <td>-</td>
+          <td>Sta 30<br />
+          Lvl 8</td>
+          <td>2</td>
+          <td>40</td>
+          <td>300 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Adds 300 Armor for 20 minutes. Protip: Use both levels for maximum awesomeness.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=191'><img class='icon2' src="img.php?id=191" /></a></td>
+          <td><a href='?do=dispitem&id=191'>Self-Motivated</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>Int 42<br />
+          Lvl 11</td>
+          <td>2</td>
+          <td>180</td>
+          <td>500 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Get 40 energy every 10 seconds for 10 minutes.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=92'><img class='icon2' src="img.php?id=92" /></a></td>
+          <td><a href='?do=dispitem&id=92'>Nerd Rage</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Str 32<br />
+          Lvl 9</td>
+          <td>2</td>
+          <td>50</td>
+          <td>600 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Allows you to go all medieval up in here by adding 20 to your ATK Power for 10 minutes.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=94'><img class='icon2' src="img.php?id=94" /></a></td>
+          <td><a href='?do=dispitem&id=94'>Twilightning Bolt</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>30-30</td>
+          <td>Int 42<br />
+          Lvl 9</td>
+          <td>1</td>
+          <td>35</td>
+          <td>600 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Steals 30 health from your target. Doesn't make you sparkle in the sunlight.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=95'><img class='icon2' src="img.php?id=95" /></a></td>
+          <td><a href='?do=dispitem&id=95'>l33t Skillz</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Agi 40<br />
+          Lvl 10</td>
+          <td>2</td>
+          <td>60</td>
+          <td>600 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>An extra 3% chance of a critical hit, plus a bonus 5 to attack power.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=93'><img class='icon2' src="img.php?id=93" /></a></td>
+          <td><a href='?do=dispitem&id=93'>Fireball</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>40-70</td>
+          <td>Int 44<br />
+          Lvl 12</td>
+          <td>2</td>
+          <td>50</td>
+          <td>700 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>C'mon, louder! "Fireball!" Deals 40-70 damage each time.</td>
+          <td><a href='../npc/?do=dispitem&id=387'><img title='Skill Trainer Remo Shop' class='icon2' src='../npc/img.php?id=387' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=99'><img class='icon2' src="img.php?id=99" /></a></td>
+          <td><a href='?do=dispitem&id=99'>Yo' Mama!</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>20-40</td>
+          <td>Str 36<br />
+          Lvl 14</td>
+          <td>1</td>
+          <td>60</td>
+          <td>1500 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Insult an enemy so that they attack you. Can offend at great distances... like yo' mama's stink! Zi</td>
+          <td><a href='../npc/?do=dispitem&id=386'><img title='Skill Trainer Lamar Shop' class='icon2' src='../npc/img.php?id=386' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=181'><img class='icon2' src="img.php?id=181" /></a></td>
+          <td><a href='?do=dispitem&id=181'>Boom! Headshot!</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>60-150</td>
+          <td>Agi 40<br />
+          Lvl 16</td>
+          <td>2</td>
+          <td>60</td>
+          <td>1500 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Damages enemy for 60-150HP.</td>
+          <td><a href='../npc/?do=dispitem&id=386'><img title='Skill Trainer Lamar Shop' class='icon2' src='../npc/img.php?id=386' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=282'><img class='icon2' src="img.php?id=282" /></a></td>
+          <td><a href='?do=dispitem&id=282'>Self-Motivated</a></td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>Int 50<br />
+          Lvl 18</td>
+          <td>3</td>
+          <td>400</td>
+          <td>1500 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Get 80 energy every 5 seconds for 5 minutes, and boosts attack power by 5.</td>
+          <td><a href='../npc/?do=dispitem&id=386'><img title='Skill Trainer Lamar Shop' class='icon2' src='../npc/img.php?id=386' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=69'><img class='icon2' src="img.php?id=69" /></a></td>
+          <td><a href='?do=dispitem&id=69'>That's The Stuff</a></td>
+          <td><a href='?search=heal&byclass=1'>heal</a></td>
+          <td>-</td>
+          <td>Int 48<br />
+          Lvl 16</td>
+          <td>1</td>
+          <td>100</td>
+          <td>2500 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Ahhh that's the stuff. Heal 5-20 every 5 seconds for 3 minutes.</td>
+          <td><a href='../npc/?do=dispitem&id=386'><img title='Skill Trainer Lamar Shop' class='icon2' src='../npc/img.php?id=386' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=240'><img class='icon2' src="img.php?id=240" /></a></td>
+          <td><a href='?do=dispitem&id=240'>Twilightning Bolt</a></td>
+          <td><a href='?search=attack&byclass=1'>attack</a></td>
+          <td>50-50</td>
+          <td>Int 46<br />
+          Lvl 20</td>
+          <td>2</td>
+          <td>50</td>
+          <td>4000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Steals 50 health from your target.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=73'><img class='icon2' src="img.php?id=73" /></a></td>
+          <td><a href='?do=dispitem&id=73'>Thick Skin</a></td>
+          <td><a href='?search=def-boost&byclass=1'>def-boost</a></td>
+          <td>-</td>
+          <td>38 Sta<br />
+          Lvl 20</td>
+          <td>3</td>
+          <td>80</td>
+          <td>5000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Adds 1200 to armor for 20 minutes. Protip: Be awesome.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=123'><img class='icon2' src="img.php?id=123" /></a></td>
+          <td><a href='?do=dispitem&id=123'>L33t Skillz</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>48 Agi<br />
+          Lvl 20</td>
+          <td>3</td>
+          <td>120</td>
+          <td>5000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>An extra 4% of a critical hit, plus a bonus 10 to attack power</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=127'><img class='icon2' src="img.php?id=127" /></a></td>
+          <td><a href='?do=dispitem&id=127'>Nerd Rage</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Str 48<br />
+          Lvl 20</td>
+          <td>3</td>
+          <td>120</td>
+          <td>5000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Allows you to go all medieval up in here by adding 30 to your ATK Power for 10 minutes.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=85'><img class='icon2' src="img.php?id=85" /></a></td>
+          <td><a href='?do=dispitem&id=85'>Spider-Guy</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>50 Agi<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Does whatever a Spider-Guy can. Adds 30 to your ATK Power for 45 seconds.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td align='center' width='40px'><a href='?do=dispitem&id=135'><img class='icon2' src="img.php?id=135" /></a></td>
+          <td><a href='?do=dispitem&id=135'>Like a Rock</a></td>
+          <td><a href='?search=def-boost&byclass=1'>def-boost</a></td>
+          <td>-</td>
+          <td>Str 50<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>200</td>
+          <td>10000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Or maybe like a truck. Or like Bob Seger. Adds 3000 armor for 30 seconds.</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+        <tr class="c2">
+          <td align='center' width='40px'><a href='?do=dispitem&id=157'><img class='icon2' src="img.php?id=157" /></a></td>
+          <td><a href='?do=dispitem&id=157'>Spider-Guy</a></td>
+          <td><a href='?search=stat-boost&byclass=1'>stat-boost</a></td>
+          <td>-</td>
+          <td>Int 52<br />
+          Lvl 20</td>
+          <td>1</td>
+          <td>250</td>
+          <td>10000 <img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" /></td>
+          <td>Does whatever a Spider-Guy can. (Special INT version lasts 50% longer)</td>
+          <td><a href='../npc/?do=dispitem&id=381'><img title='Skill Trainer Kapono Shop' class='icon2' src='../npc/img.php?id=381' /></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

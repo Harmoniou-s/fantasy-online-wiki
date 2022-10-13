@@ -1,0 +1,362 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="This is a Fansite for the game Fantasy Online." />
+  <meta name="keywords" content="Fantasy Online, Database, Map, Monster Database, Item Database, Skill Database, NPC Database, Fanpage, Quest Database, Fantasy, Online, MMORPG, Multiplayer, Logger, AmY" />
+  <title>Fantasy Online Fansite</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="./content/trasfade.js" type="text/javascript"></script>
+  <script src="./content/hideshow.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+  //<![CDATA[
+  <!--
+        cursor = new Array("img/background-menu-btn1-active.jpg",
+                                           "img/background-menu-btn2-active.jpg",
+                                           "img/background-menu-btn3-active.jpg",
+                                           "img/background-menu-btn4-active.jpg",
+                                           "img/background-menu-btn5-active.jpg");
+  function preload(images) {
+        var i = 0;
+        var imageObj = new Array();
+        for(i=0; i != images.length; i+=1) {
+                        imageObj[i]= new Image();
+            imageObj[i].src=images[i];
+        }}
+  preload(cursor);
+  -->
+  //]]>
+  </script>
+  <div class="center">
+    <div class='myDiv sur'>
+      <div class='myDiv top'></div>
+      <div class='myDiv menuleft'></div>
+      <div class='myDiv menuleftin'></div>
+      <div class='myDiv menubtn1'>
+        <a href="?" class="blank"><img id='btn1' onmouseover="FadeOpacity('btn1',0,100,300,20);" onmouseout="FadeOpacity('btn1',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn1-active.jpg" width="91" height="30" name="btn1" /></a>
+      </div>
+      <div class='myDiv menubtn2'>
+        <a href="?menu=database" class="blank"><img id='btn2' onmouseover="FadeOpacity('btn2',0,100,300,20);" onmouseout="FadeOpacity('btn2',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn2-active.jpg" width="144" height="30" name="btn2" /></a>
+      </div>
+      <div class='myDiv menubtn3'>
+        <a href="?menu=logger" class="blank"><img id='btn3' onmouseover="FadeOpacity('btn3',0,100,300,20);" onmouseout="FadeOpacity('btn3',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn3-active.jpg" width="116" height="30" name="btn3" /></a>
+      </div>
+      <div class='myDiv menubtn4'>
+        <a href="?menu=map" class="blank"><img id='btn4' onmouseover="FadeOpacity('btn4',0,100,300,20);" onmouseout="FadeOpacity('btn4',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn4-active.jpg" width="75" height="30" name="btn4" /></a>
+      </div>
+      <div class='myDiv menubtn5'>
+        <a href="?menu=help" class="blank"><img id='btn5' onmouseover="FadeOpacity('btn5',0,100,300,20);" onmouseout="FadeOpacity('btn5',100,0,300,20);" style="filter:alpha(opacity=0); opacity: 0; -moz-opacity:0;" alt="" src="img/background-menu-btn5-active.jpg" width="99" height="30" name="btn5" /></a>
+      </div>
+      <div class='myDiv menurightin'></div>
+      <div class='myDiv menumid'></div>
+      <div class='myDiv aboveshoutbox'></div>
+      <div class='myDiv menuright'></div>
+    </div>
+    <div class='myDiv sur2'>
+      <div style="overflow:hidden;">
+        <div class="myDiv lowermidleft">
+          <div class="myDiv lowertopleft"></div>
+          <div class="myDiv lowerbottomleft"></div>
+        </div>
+        <div class="myDiv paintleft" align="left">
+          <div style="margin:10px;">
+            <script language="javascript">
+            <![CDATA[
+            <!--
+            function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+
+            if (expires)
+            expires = expires * 1000 * 60;
+
+            var expires_date = new Date(today.getTime() + expires);
+
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+            }
+
+            var vc_freq_cap = 15; // Frequency cap in minutes
+
+            var vc_rand = Math.floor(Math.random() * 7777);
+
+            // Used to verify that we can set cookies
+            //
+            document.cookie = 'h2=o; path=/;';
+
+            // Get the current window size to ensure we can view our ad
+            //
+            var vc_window_wt = 0;
+            var vc_window_ht = 0;
+            if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+            }
+            else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+            }
+            else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+
+            if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+            }
+            }
+
+            if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+            }
+            // -->
+            ]]>
+            </script>
+            <div align="center">
+              <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=1&tp=1&d=s&c=1" width="468" height="60" border="1" /></noscript>
+            </div>
+            <div align="center">
+              <strong>The Logger</strong>
+            </div><br />
+            <b><font color="DarkRed">I'm not supporting this program any more. Sorry</font></b><br />
+            <br />
+            <b>Screenshots</b>
+            <ul>
+              <li><a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_img_main1_jpg');" href="/logger/img/main1.jpg" target="_blank">main menu</a></li>
+            </ul><br />
+            <b>How to get started</b>
+            <ul>
+              <li>1. <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_menu_reg');" href="/?menu=reg" target="_blank">Register</a> on this site! You will need your game login. <u>Be very careful about lower/upper case!</u></li>
+              <li>2. Download this <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_folog_zip');" href="/logger/folog.zip" target="_blank">file</a>.</li>
+              <li>3. Extract it to a seperate folder!</li>
+              <li>4. Run the update.exe and wait until it says &quot;update complete&quot;.</li>
+              <li>5. Start the logger.exe and enter your login details for this site!</li>
+              <li>6. There should be a help window, follow instructions, you're almost done!</li>
+              <li>7. Once everything is working fine, the symbol (bottom right) should turn green.</li>
+              <li>Note: The Logger only works under Windows!</li>
+            </ul><b>If you have any problems, please post on the forum, send a bug report or msg me with a pm ingame/forum! Same goes if you have suggestions! This will help to improve things!</b><br />
+            <br />
+            <br />
+            The Logger is a program that has many functions to support your game play. It was originally developed to help balancing the game. However, its functionality has grown and currently it supports:
+            <ul>
+              <li>display exp tnl, exp per kill, kills tnl</li>
+              <li>one-click item upload to fo-wiki.com</li>
+              <li>Autoupdater</li>
+              <li>Minimap</li>
+              <li>External Chat</li>
+              <li>Keeping track of you game play and character development.</li>
+              <li>Visualizing this development</li>
+              <li>Logging all chat and saving it to &quot;chatlog.txt&quot;</li>
+              <li>Converting your item and skill icons to *.jpg (for item and skill db)</li>
+              <li>Read NPC chat text (when window is open) and save it to npc_text.txt</li>
+              <li>Record map screen shots, align them and combine them to one big map</li>
+              <li>Upload your character so that you can compare it with other players</li>
+              <li>Recording game play videos (<a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_example_rar');" href="/logger/example.rar" target="_blank">example</a>)</li>
+            </ul><b>External Chat</b><br />
+            <div style='display:none' id='x1'>
+              <blockquote>
+                <ul>
+                  <li>use an interface to chat, you can leave the fo window somewhere in the background (dont minimize it though)</li>
+                  <li>whispers are sticky, so just select all the ppl you talked to so far from a drop down menu (and delete them hitting backspace)</li>
+                  <li>large chat window, so you can still see whats going on, even when the chat moves fast</li>
+                </ul>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('1')" id='1'>show</span><br />
+            <b>Character Upload</b><br />
+            <div style='display:none' id='x2'>
+              <blockquote>
+                <ul>
+                  <li>just click &quot;Upload char&quot; while the logger is &quot;green&quot;</li>
+                  <li>note that the logger will need to access the Internet at this point!</li>
+                  <li>the ranking can be found <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_char');" href="/char" target="_blank">here</a>.</li>
+                </ul>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('2')" id='2'>show</span><br />
+            <b>Map Creation</b><br />
+            <div style='display:none' id='x3'>
+              <blockquote>
+                <ul>
+                  <li>click &quot;Start map snapshot&quot; and start walking through the map</li>
+                  <li>click &quot;Stop map snapshot&quot;</li>
+                  <li>start FineAlign.exe and click &quot;Start&quot;. wait till finished.</li>
+                  <li>start MapIt.exe and click &quot;create_map&quot;. wait till finished.</li>
+                  <li>the map should now be in your the same folder called &quot;map.bmp&quot;, be aware that previous &quot;map.bmp&quot; will be overwritten!</li>
+                  <li>note: delete the screen shots from the map folder if you wanna start over!</li>
+                </ul>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('3')" id='3'>show</span><br />
+            <b>Game Log</b><br />
+            <div style='display:none' id='x4'>
+              <blockquote>
+                <ul>
+                  <li>The logger only &quot;records&quot; your game log as a txt file (log.txt). To get a visualization use the LogtoBmp.exe</li>
+                </ul>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('4')" id='4'>show</span><br />
+            <b>Video recording</b><br />
+            <div style='display:none' id='x5'>
+              <blockquote>
+                <ul>
+                  <li>The logger only &quot;records&quot; your video as screen shots (/vid folder). So you'll need to convert those using the BmpToVideo.exe. Because BmpToVideo is a evaluation version there might be problems (Evaluation Time Over) with large videos. If so, use virtualdub to convert the bitmaps to avi. For the frame rate use the value that you find in /vid/fps.txt. A nice tutorial how to do it can be found here</li>
+                  <li>The length of your video is limited by your free ram</li>
+                  <li>Keep in mind that the result video is not compressed. You'll have to use a tool of your choice to compress it (i can recommend virtualdub). For codecs just search for a codec pack (&quot;codecs virtual dub&quot;) @ google.<br />
+                  In the <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_example_rar');" href="/logger/example.rar" target="_blank">example</a> I'm using the Xvid MPEG-4 Codec. To select the Codec Click Video-&gt;Compression in Virtualdub. Then click File-&gt;Save as AVI</li>
+                </ul>
+              </blockquote>
+            </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('5')" id='5'>show</span><br />
+            <br />
+            The Logger can be downloaded from <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_folog_zip');" href="/logger/folog.zip" target="_blank">here</a>.<br />
+            <b>Important Note:</b>
+            <ul>
+              <li>You can only use it if you play the game through <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_');" href="/logger/" target="_blank">this link</a>.</li>
+              <li>If the link doesnt work try to load the main page first (wait untill its loaded but don't log in) and then open <a onclick="pageTracker._trackPageview ('/outgoing/http_fo_wiki_com_logger_');" href="/logger/" target="_blank">the link</a> in <b>the same</b> tab!</li>
+              <li>If you still have trouble there is a more complicated way of fixing this (for Firefox): Get the Add-On Firebug for Firefox. Go to the fantasy-mmorpg.com homepage and delete the line
+                <div style='display:none' id='x6'>
+                  <blockquote>
+                    &lt;param value=&quot;opaque&quot; name=&quot;wmode&quot;&gt;
+                  </blockquote>
+                </div><span style='cursor:pointer; color:#069; font-weight:bold; font-size:12px;' onmousedown="hideshow('6')" id='6'>show</span><br />
+                There are nice tutorials out there how to use firebug!
+              </li>
+            </ul><i>Latest Version: 5.20 Beta (31.05.10)</i>
+            <p style='color:#777777'>Last update 07/12/10 00:24:02 by AmY</p>
+            <div align="right" style="bottom:0; left:735px; position:absolute; padding-top:20px; padding-bottom:10px;">
+              <a href='?menu=privacypolicy'>Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="myDiv lowermidmid">
+          <div class="myDiv lowertopmid"></div>
+          <div class="myDiv lowerbottommid"></div>
+        </div>
+        <div class="myDiv paintright">
+          <div style="margin:10px">
+            <script type="text/javascript">
+            //<![CDATA[
+            <!--
+            function check() {
+                if (document.shoutform.shouttext.value == '') {
+                        alert('Please enter a message!');
+                        return false;
+                } 
+                if (document.shoutform.shoutname.value == '') {
+                        alert('Please enter your name!');
+                        return false;
+                }
+                if (document.shoutform.shouttext.value.length > 100) {
+                        alert('Your text is to long!');
+                        return false;
+                }
+                if (document.shoutform.shoutname.value.length > 15) {
+                        alert('Your name is to long!');
+                        return false;
+                }
+            }
+
+            function set(id,col)
+            {
+            //document.getElementById(id).style.color=col;
+            <!-- document.getElementById(id+'b').style.color=col; //-->
+            if (col=="#000000") {
+            document.getElementById(id).style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            document.getElementById(id+'b').style.backgroundColor='#A6BF7F';/*'#D6E8EB'*/
+            } else {
+            document.getElementById(id).style.backgroundColor='';   
+            document.getElementById(id+'b').style.backgroundColor='';       
+            }
+            }
+
+            function imposeMaxLength(Event, Object, MaxLen)
+            {
+            return (Object.value.length < MaxLen)||(Event.keyCode == 8 ||Event.keyCode==46||(Event.keyCode>=35&&Event.keyCode<=40))
+            }
+            -->
+            //]]>
+            </script>
+            <form onsubmit="return check();" name='shoutform' action="?" method="post" id="shoutform">
+              <input type="hidden" value="1" name="shout" />
+              <table class='shouttable'>
+                <tr>
+                  <td id='d1378' onmouseout="set('d1378','#ffffff');" onmouseover="set('d1378','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (23/12/11 01:39:10):</td>
+                </tr>
+                <tr>
+                  <td id='d1378b' onmouseout="set('d1378','#ffffff');" onmouseover="set('d1378','#000000');" class='shouttd'>Someone add the slots to rf bag and rf satchel?</td>
+                </tr>
+                <tr>
+                  <td id='d1379' onmouseout="set('d1379','#ffffff');" onmouseover="set('d1379','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (24/12/11 07:21:12):</td>
+                </tr>
+                <tr>
+                  <td id='d1379b' onmouseout="set('d1379','#ffffff');" onmouseover="set('d1379','#000000');" class='shouttd'>kongslime needs added</td>
+                </tr>
+                <tr>
+                  <td id='d1380' onmouseout="set('d1380','#ffffff');" onmouseover="set('d1380','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>4503579968</b> (26/12/11 04:00:11):</td>
+                </tr>
+                <tr>
+                  <td id='d1380b' onmouseout="set('d1380','#ffffff');" onmouseover="set('d1380','#000000');" class='shouttd'>someone can add uber and mega pearl?</td>
+                </tr>
+                <tr>
+                  <td id='d1381' onmouseout="set('d1381','#ffffff');" onmouseover="set('d1381','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Falsfate</b> (26/12/11 08:21:27):</td>
+                </tr>
+                <tr>
+                  <td id='d1381b' onmouseout="set('d1381','#ffffff');" onmouseover="set('d1381','#000000');" class='shouttd'>inverse xmas hat needs added</td>
+                </tr>
+                <tr>
+                  <td id='d1382' onmouseout="set('d1382','#ffffff');" onmouseover="set('d1382','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (26/12/11 21:11:22):</td>
+                </tr>
+                <tr>
+                  <td id='d1382b' onmouseout="set('d1382','#ffffff');" onmouseover="set('d1382','#000000');" class='shouttd'>You can do it yourself, it's very easy.</td>
+                </tr>
+                <tr>
+                  <td id='d1383' onmouseout="set('d1383','#ffffff');" onmouseover="set('d1383','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Kendzi</b> (28/12/11 09:38:10):</td>
+                </tr>
+                <tr>
+                  <td id='d1383b' onmouseout="set('d1383','#ffffff');" onmouseover="set('d1383','#000000');" class='shouttd'>I'd say everything non-premium has been added to Holiday Isle. Anyone objects? Something missing?</td>
+                </tr>
+                <tr>
+                  <td id='d1384' onmouseout="set('d1384','#ffffff');" onmouseover="set('d1384','#000000');" style='text-shadow: #ffffff 0px 0px 3px; text-align:left;' class='shouttd'><b>Blackyish</b> (28/12/11 23:43:11):</td>
+                </tr>
+                <tr>
+                  <td id='d1384b' onmouseout="set('d1384','#ffffff');" onmouseover="set('d1384','#000000');" class='shouttd'>Aeon stuff needs added</td>
+                </tr>
+                <tr>
+                  <td id='d1385' onmouseout="set('d1385','#ffe7ec');" onmouseover="set('d1385','#000000');" style='text-shadow: #ffe7ec 0px 0px 3px; text-align:left;' class='shouttd'><b>dofoo</b> (29/12/11 02:55:11):</td>
+                </tr>
+                <tr>
+                  <td id='d1385b' onmouseout="set('d1385','#ffe7ec');" onmouseover="set('d1385','#000000');" class='shouttd'>buying dark templar helm 125k</td>
+                </tr>
+                <tr>
+                  <td id='d1386' onmouseout="set('d1386','#b023cc');" onmouseover="set('d1386','#000000');" style='text-shadow: #b023cc 0px 0px 3px; text-align:left;' class='shouttd'><b>Jimmedy</b> (29/12/11 18:56:39):</td>
+                </tr>
+                <tr>
+                  <td id='d1386b' onmouseout="set('d1386','#b023cc');" onmouseover="set('d1386','#000000');" class='shouttd'>^ Wrong place for buying/selling. Post on the forums, please.</td>
+                </tr>
+                <tr>
+                  <td class='shouttd'></td>
+                </tr>
+                <tr>
+                  <td class='shouttd'>
+                    <div style="font-size:11px; text-align:center; font-weight:bold; border-top-width:1px; border-top-color:#999; border-top-style:solid;">
+                      <b>please <a href='?menu=reg'>register</a> / <a href='?'>login</a> to shout</b>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+        <div class="myDiv lowermidright">
+          <div class="myDiv lowertopright"></div>
+          <div class="myDiv lowerbottomright"></div>
+        </div>
+      </div>
+    </div>
+    <div class="myDiv bottom"></div>
+  </div>
+</body>
+</html>

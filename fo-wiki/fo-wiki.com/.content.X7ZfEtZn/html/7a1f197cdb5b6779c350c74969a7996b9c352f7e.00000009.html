@@ -1,0 +1,891 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Monster Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;"></div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=MOname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="13">Monster Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='13' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="11"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=MOname&search='+document.getElementById('search1').value;" alt="Search" />[ <a href='?desc=&by=MOname&byclass=&do=&search=&ind=0'>1-50</a>, <a href='?desc=&by=MOname&byclass=&do=&search=&ind=50'>51-100</a>, <span class='active'>101-150</span>, <a href='?desc=&by=MOname&byclass=&do=&search=&ind=150'>151-159</a> ] ( 4 Pages )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addmons.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&byclass=&desc=1&by=MOname&ind=100&search='>Name</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOlevel&ind=100&search='>Level</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOhp&ind=100&search='>HP</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOsp&ind=100&search='>SP</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOexpgain&ind=100&search='>XP</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOrespawn&ind=100&search='>Spawntime</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOBossmonster&ind=100&search='>Boss</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOAggressive&ind=100&search='>Aggro</a></th>
+          <th width="50px"><a href='?do=sort&byclass=&desc=0&by=MOrace&ind=100&search='>Race</a></th>
+          <th><a href='?do=sort&byclass=&desc=0&by=MOdamage&ind=100&search='>Dmg</a></th>
+          <th>Coords</th>
+          <th>Drops</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="11" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=MOname&search='+document.getElementById('search2').value;" alt="Search" />[ <a href='?desc=&by=MOname&byclass=&do=&search=&ind=0'>1-50</a>, <a href='?desc=&by=MOname&byclass=&do=&search=&ind=50'>51-100</a>, <span class='active'>101-150</span>, <a href='?desc=&by=MOname&byclass=&do=&search=&ind=150'>151-159</a> ] ( 4 Pages )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/addmons.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="13">Last update 06/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=380'><img class='icon' src="img.php?id=380" /></a></td>
+          <td><a href='?do=dispitem&id=380'>Red Slime</a> <span title='incomplete'>*</span></td>
+          <td>19</td>
+          <td>700</td>
+          <td>0</td>
+          <td>140</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=slime'>slime</a></td>
+          <td>-</td>
+          <td>(153,874)</td>
+          <td><a href='../items/?do=dispitem&id=618'><img title='Small Ring of Endurance' class='icon2' src='../items/img.php?id=618' /></a>&nbsp;<a href='../items/?do=dispitem&id=1210'><img title='Small Red Goo' class='icon2' src='../items/img.php?id=1210' /></a>&nbsp;<a href='../items/?do=dispitem&id=2277'><img title='Goo-Covered Wooden Shield' class='icon2' src='../items/img.php?id=2277' /></a>&nbsp;<a href='../items/?do=dispitem&id=2755'><img title='Medium Health Potion' class='icon2' src='../items/img.php?id=2755' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=647'><img class='icon' src="img.php?id=647" /></a></td>
+          <td><a href='?do=dispitem&id=647'>Relishaeish</a> <span title='incomplete'>*</span></td>
+          <td>40</td>
+          <td>2000</td>
+          <td>0</td>
+          <td>245</td>
+          <td>16 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=alien'>alien</a></td>
+          <td>-</td>
+          <td>(451,863)</td>
+          <td><a href='../items/?do=dispitem&id=1906'><img title='Alien Skin' class='icon2' src='../items/img.php?id=1906' /></a>&nbsp;<a href='../items/?do=dispitem&id=2069'><img title='Alien Toothbrush' class='icon2' src='../items/img.php?id=2069' /></a>&nbsp;<a href='../items/?do=dispitem&id=2340'><img title='Tesla Canon' class='icon2' src='../items/img.php?id=2340' /></a>&nbsp;<a href='../items/?do=dispitem&id=2811'><img title='Russian Hat' class='icon2' src='../items/img.php?id=2811' /></a>&nbsp;<a href='../quest/?do=dispitem&id=547'>Hello</a>,&nbsp;<a href='../quest/?do=dispitem&id=608'>The League</a>,&nbsp;<a href='../quest/?do=dispitem&id=609'>Complexion</a>,&nbsp;<a href='../quest/?do=dispitem&id=615'>Hygiene</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=664'><img class='icon' src="img.php?id=664" /></a></td>
+          <td><a href='?do=dispitem&id=664'>Robo Eye</a> <span title='incomplete'>*</span></td>
+          <td>46</td>
+          <td>4000</td>
+          <td>0</td>
+          <td>275</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(343,803)</td>
+          <td><a href='../items/?do=dispitem&id=2055'><img title='Alien Wallet' class='icon2' src='../items/img.php?id=2055' /></a>&nbsp;<a href='../items/?do=dispitem&id=2056'><img title='Alien Book' class='icon2' src='../items/img.php?id=2056' /></a>&nbsp;<a href='../items/?do=dispitem&id=2162'><img title='Ice Staff' class='icon2' src='../items/img.php?id=2162' /></a>&nbsp;<a href='../items/?do=dispitem&id=2414'><img title='Asteroid Rock' class='icon2' src='../items/img.php?id=2414' /></a>&nbsp;<a href='../quest/?do=dispitem&id=632'>Eyes On Me</a>,&nbsp;<a href='../quest/?do=dispitem&id=633'>Research</a>,&nbsp;<a href='../quest/?do=dispitem&id=639'>Robo Rocks</a>,&nbsp;<a href='../quest/?do=dispitem&id=657'>Destroy The Eyes</a> &nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=634'><img class='icon' src="img.php?id=634" /></a></td>
+          <td><a href='?do=dispitem&id=634'>Robot Sentry</a> <span title='incomplete'>*</span></td>
+          <td>44</td>
+          <td>3000</td>
+          <td>0</td>
+          <td>265</td>
+          <td>30 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(282,808)</td>
+          <td><a href='../items/?do=dispitem&id=1957'><img title='Gladion Sword' class='icon2' src='../items/img.php?id=1957' /></a>&nbsp;<a href='../items/?do=dispitem&id=1958'><img title='Epic Ring' class='icon2' src='../items/img.php?id=1958' /></a>&nbsp;<a href='../items/?do=dispitem&id=1959'><img title='Alien Family Picture' class='icon2' src='../items/img.php?id=1959' /></a>&nbsp;<a href='../items/?do=dispitem&id=2813'><img title='Alien Deodorant' class='icon2' src='../items/img.php?id=2813' /></a>&nbsp;<a href='../quest/?do=dispitem&id=619'>What</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=460'><img class='icon' src="img.php?id=460" /></a></td>
+          <td><a href='?do=dispitem&id=460'>Rock Crab</a></td>
+          <td>9</td>
+          <td>400</td>
+          <td>0</td>
+          <td>90</td>
+          <td>9 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>11</td>
+          <td>(107,356), (173,354)</td>
+          <td><a href='../items/?do=dispitem&id=383'><img title='Crab Leg Armor' class='icon2' src='../items/img.php?id=383' /></a>&nbsp;<a href='../items/?do=dispitem&id=384'><img title='Crab Body Armor' class='icon2' src='../items/img.php?id=384' /></a>&nbsp;<a href='../items/?do=dispitem&id=541'><img title='Crab claw' class='icon2' src='../items/img.php?id=541' /></a>&nbsp;<a href='../items/?do=dispitem&id=1597'><img title='Crab Helmet' class='icon2' src='../items/img.php?id=1597' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=441'><img class='icon' src="img.php?id=441" /></a></td>
+          <td><a href='?do=dispitem&id=441'>Rotten Potato</a> <span title='incomplete'>*</span></td>
+          <td>30</td>
+          <td>750</td>
+          <td>0</td>
+          <td>195</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=vegetable'>vegetable</a></td>
+          <td>-</td>
+          <td>(463,225);</td>
+          <td><a href='../items/?do=dispitem&id=1009'><img title='Scalloped Potatoes' class='icon2' src='../items/img.php?id=1009' /></a>&nbsp;<a href='../quest/?do=dispitem&id=324'>Farming potatoes (Daily)</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=307'><img class='icon' src="img.php?id=307" /></a></td>
+          <td><a href='?do=dispitem&id=307'>Royal Purple Crab</a></td>
+          <td>8</td>
+          <td>280</td>
+          <td>0</td>
+          <td>85</td>
+          <td>21 sec</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>11</td>
+          <td>(39,346)</td>
+          <td><a href='../items/?do=dispitem&id=541'><img title='Crab claw' class='icon2' src='../items/img.php?id=541' /></a>&nbsp;<a href='../items/?do=dispitem&id=800'><img title='Royal Crab Jelly Clump' class='icon2' src='../items/img.php?id=800' /></a>&nbsp;<a href='../quest/?do=dispitem&id=342'>Peanut Butter Jelly Time</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=352'><img class='icon' src="img.php?id=352" /></a></td>
+          <td><a href='?do=dispitem&id=352'>Scarecrab</a> <span title='incomplete'>*</span></td>
+          <td>1</td>
+          <td>50</td>
+          <td>0</td>
+          <td>50</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(45,546), (48,488)</td>
+          <td><a href='../quest/?do=dispitem&id=560'>Beat The Hay Out of Him</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=308'><img class='icon' src="img.php?id=308" /></a></td>
+          <td><a href='?do=dispitem&id=308'>Scorpion</a></td>
+          <td>13</td>
+          <td>500</td>
+          <td>0</td>
+          <td>110</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>20</td>
+          <td>(58,128), (123,69)</td>
+          <td><a href='../quest/?do=dispitem&id=478'>Scorpions on the Plains</a>,&nbsp;<a href='../quest/?do=dispitem&id=479'>Scorpion Extermination</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=693'><img class='icon' src="img.php?id=693" /></a></td>
+          <td><a href='?do=dispitem&id=693'>Sheety Crab</a> <span title='incomplete'>*</span></td>
+          <td>20</td>
+          <td>400</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>-</td>
+          <td>(604,1009);</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=378'><img class='icon' src="img.php?id=378" /></a></td>
+          <td><a href='?do=dispitem&id=378'>Sheety Ghost</a> <span title='incomplete'>*</span></td>
+          <td>22</td>
+          <td>600</td>
+          <td>0</td>
+          <td>155</td>
+          <td>-</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=ghost'>ghost</a></td>
+          <td>-</td>
+          <td>(171,1041)</td>
+          <td><a href='../items/?do=dispitem&id=990'><img title='Actual candy bar' class='icon2' src='../items/img.php?id=990' /></a>&nbsp;<a href='../items/?do=dispitem&id=3017'><img title='Orange Belt' class='icon2' src='../items/img.php?id=3017' /></a>&nbsp;<a href='../items/?do=dispitem&id=3018'><img title='Witch Costume' class='icon2' src='../items/img.php?id=3018' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=481'><img class='icon' src="img.php?id=481" /></a></td>
+          <td><a href='?do=dispitem&id=481'>Silver Crab</a> <span title='incomplete'>*</span></td>
+          <td>36</td>
+          <td>1200</td>
+          <td>0</td>
+          <td>225</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>-</td>
+          <td>(335,1040)</td>
+          <td><a href='../items/?do=dispitem&id=1747'><img title='Dark Shield' class='icon2' src='../items/img.php?id=1747' /></a>&nbsp;<a href='../quest/?do=dispitem&id=457'>Way too many spiders</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=667'><img class='icon' src="img.php?id=667" /></a></td>
+          <td><a href='?do=dispitem&id=667'>Silver Vein</a> <span title='incomplete'>*</span></td>
+          <td>1</td>
+          <td>10</td>
+          <td>0</td>
+          <td>-</td>
+          <td>10:00 min</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=rock'>rock</a></td>
+          <td>-</td>
+          <td>(139,907), (62,841), (114,881), (159,860), (153,827), (127,816), (84,857), (317,1035), (357,1030), (388,1028), (416,1044), (399,1075), (423,1084), (403,1079), (407,1083), (289,1054), (287,1084), (302,1090),</td>
+          <td><a href='../items/?do=dispitem&id=2138'><img title='Sapphire' class='icon2' src='../items/img.php?id=2138' /></a>&nbsp;<a href='../items/?do=dispitem&id=2761'><img title='Onyx' class='icon2' src='../items/img.php?id=2761' /></a>&nbsp;<a href='../items/?do=dispitem&id=2958'><img title='Silver Ore' class='icon2' src='../items/img.php?id=2958' /></a>&nbsp;<a href='../items/?do=dispitem&id=2959'><img title='Silver Ore Chunk' class='icon2' src='../items/img.php?id=2959' /></a>&nbsp;<a href='../items/?do=dispitem&id=2961'><img title='Silver Slab' class='icon2' src='../items/img.php?id=2961' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=288'><img class='icon' src="img.php?id=288" /></a></td>
+          <td><a href='?do=dispitem&id=288'>Skele</a></td>
+          <td>4</td>
+          <td>90</td>
+          <td>0</td>
+          <td>65</td>
+          <td>22 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>6</td>
+          <td>(130,481)</td>
+          <td><a href='../items/?do=dispitem&id=548'><img title='Skull' class='icon2' src='../items/img.php?id=548' /></a>&nbsp;<a href='../items/?do=dispitem&id=2895'><img title='Bone Dust' class='icon2' src='../items/img.php?id=2895' /></a>&nbsp;<a href='../quest/?do=dispitem&id=333'>The Annoying Skeles</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=309'><img class='icon' src="img.php?id=309" /></a></td>
+          <td><a href='?do=dispitem&id=309'>Skele Champion</a></td>
+          <td>16</td>
+          <td>1500</td>
+          <td>0</td>
+          <td>125</td>
+          <td>1:43 min</td>
+          <td>yes</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>68</td>
+          <td>(209,216)</td>
+          <td><a href='../items/?do=dispitem&id=1075'><img title='Brutal Axe' class='icon2' src='../items/img.php?id=1075' /></a>&nbsp;<a href='../items/?do=dispitem&id=2194'><img title='Small Health Potion' class='icon2' src='../items/img.php?id=2194' /></a>&nbsp;<a href='../items/?do=dispitem&id=2214'><img title='Heavy Metal Leg Armor' class='icon2' src='../items/img.php?id=2214' /></a>&nbsp;<a href='../items/?do=dispitem&id=2743'><img title='Steel Staff' class='icon2' src='../items/img.php?id=2743' /></a>&nbsp;<a href='../quest/?do=dispitem&id=359'>We Are the Champions!</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=310'><img class='icon' src="img.php?id=310" /></a></td>
+          <td><a href='?do=dispitem&id=310'>Skele Elite</a></td>
+          <td>14</td>
+          <td>500</td>
+          <td>0</td>
+          <td>115</td>
+          <td>53 sec</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>27</td>
+          <td>(210,227)</td>
+          <td><a href='../items/?do=dispitem&id=278'><img title='Long Metal Sword' class='icon2' src='../items/img.php?id=278' /></a>&nbsp;<a href='../items/?do=dispitem&id=929'><img title='Quality Metal Shield' class='icon2' src='../items/img.php?id=929' /></a>&nbsp;<a href='../items/?do=dispitem&id=673'><img title='Blue Steel' class='icon2' src='../items/img.php?id=673' /></a>&nbsp;<a href='../items/?do=dispitem&id=1076'><img title='Bash Shield' class='icon2' src='../items/img.php?id=1076' /></a>&nbsp;<a href='../quest/?do=dispitem&id=357'>The Skele Elite</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=640'><img class='icon' src="img.php?id=640" /></a></td>
+          <td><a href='?do=dispitem&id=640'>Skele Ghoul</a> <span title='incomplete'>*</span></td>
+          <td>48</td>
+          <td>6000</td>
+          <td>0</td>
+          <td>285</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(565,146)</td>
+          <td><a href='../items/?do=dispitem&id=2450'><img title='Lost Diary' class='icon2' src='../items/img.php?id=2450' /></a>&nbsp;<a href='../items/?do=dispitem&id=2452'><img title='Elf Ring' class='icon2' src='../items/img.php?id=2452' /></a>&nbsp;<a href='../items/?do=dispitem&id=2820'><img title='Blue Fire' class='icon2' src='../items/img.php?id=2820' /></a>&nbsp;<a href='../items/?do=dispitem&id=2821'><img title='Blue Skull' class='icon2' src='../items/img.php?id=2821' /></a>&nbsp;<a href='../quest/?do=dispitem&id=625'>The Lost Diary</a>,&nbsp;<a href='../quest/?do=dispitem&id=628'>Kill Them</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=564'><img class='icon' src="img.php?id=564" /></a></td>
+          <td><a href='?do=dispitem&id=564'>Skele Overlord</a> <span title='incomplete'>*</span></td>
+          <td>40</td>
+          <td>2200</td>
+          <td>0</td>
+          <td>245</td>
+          <td>5:00 min</td>
+          <td>yes</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>-</td>
+          <td>(325,532)</td>
+          <td><a href='../items/?do=dispitem&id=1571'><img title='Solar Wand' class='icon2' src='../items/img.php?id=1571' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=462'><img class='icon' src="img.php?id=462" /></a></td>
+          <td><a href='?do=dispitem&id=462'>Skeleblock</a></td>
+          <td>11</td>
+          <td>400</td>
+          <td>0</td>
+          <td>100</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>13</td>
+          <td>(168,251)</td>
+          <td><a href='../items/?do=dispitem&id=2188'><img title='Very Rusty Body Armor' class='icon2' src='../items/img.php?id=2188' /></a>&nbsp;<a href='../items/?do=dispitem&id=2189'><img title='Rusty Body Armor' class='icon2' src='../items/img.php?id=2189' /></a>&nbsp;<a href='../items/?do=dispitem&id=2192'><img title='Round Wooden Shield' class='icon2' src='../items/img.php?id=2192' /></a>&nbsp;<a href='../quest/?do=dispitem&id=352'>What About Bob?</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=538'><img class='icon' src="img.php?id=538" /></a></td>
+          <td><a href='?do=dispitem&id=538'>Skelechop</a></td>
+          <td>11</td>
+          <td>290</td>
+          <td>0</td>
+          <td>100</td>
+          <td>16 sec</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>27</td>
+          <td>(162,235)</td>
+          <td><a href='../items/?do=dispitem&id=1699'><img title='Guardsman&#039;s Axe' class='icon2' src='../items/img.php?id=1699' /></a>&nbsp;<a href='../items/?do=dispitem&id=2187'><img title='Very Rusty Leg Armor' class='icon2' src='../items/img.php?id=2187' /></a>&nbsp;<a href='../items/?do=dispitem&id=2191'><img title='Rusty Leg Armor' class='icon2' src='../items/img.php?id=2191' /></a>&nbsp;<a href='../quest/?do=dispitem&id=351'>Enemy at the Gates</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=523'><img class='icon' src="img.php?id=523" /></a></td>
+          <td><a href='?do=dispitem&id=523'>Skeleguard</a></td>
+          <td>13</td>
+          <td>600</td>
+          <td>0</td>
+          <td>110</td>
+          <td>5 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>20</td>
+          <td>(208,256)</td>
+          <td><a href='../items/?do=dispitem&id=334'><img title='Skeleguard Skull' class='icon2' src='../items/img.php?id=334' /></a>&nbsp;<a href='../items/?do=dispitem&id=2189'><img title='Rusty Body Armor' class='icon2' src='../items/img.php?id=2189' /></a>&nbsp;<a href='../items/?do=dispitem&id=2204'><img title='Rust Never Sleeps (Body)' class='icon2' src='../items/img.php?id=2204' /></a>&nbsp;<a href='../items/?do=dispitem&id=2205'><img title='The Crusader' class='icon2' src='../items/img.php?id=2205' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=679'><img class='icon' src="img.php?id=679" /></a></td>
+          <td><a href='?do=dispitem&id=679'>Skelekin</a> <span title='incomplete'>*</span></td>
+          <td>50</td>
+          <td>10000</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(648,1036)</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=327'><img class='icon' src="img.php?id=327" /></a></td>
+          <td><a href='?do=dispitem&id=327'>Skelestab</a></td>
+          <td>12</td>
+          <td>300</td>
+          <td>0</td>
+          <td>105</td>
+          <td>16 sec</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=skeleton'>skeleton</a></td>
+          <td>15</td>
+          <td>(214,273)</td>
+          <td><a href='../items/?do=dispitem&id=329'><img title='Johnny Rotten' class='icon2' src='../items/img.php?id=329' /></a>&nbsp;<a href='../items/?do=dispitem&id=284'><img title='Rust Never Sleeps (Legs)' class='icon2' src='../items/img.php?id=284' /></a>&nbsp;<a href='../items/?do=dispitem&id=1191'><img title='Rusty Sword' class='icon2' src='../items/img.php?id=1191' /></a>&nbsp;<a href='../items/?do=dispitem&id=2191'><img title='Rusty Leg Armor' class='icon2' src='../items/img.php?id=2191' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=518'><img class='icon' src="img.php?id=518" /></a></td>
+          <td><a href='?do=dispitem&id=518'>Skelpion</a> <span title='incomplete'>*</span></td>
+          <td>36</td>
+          <td>1600</td>
+          <td>0</td>
+          <td>225</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>-</td>
+          <td>(437,500)</td>
+          <td><a href='../items/?do=dispitem&id=1557'><img title='Straw hat' class='icon2' src='../items/img.php?id=1557' /></a>&nbsp;<a href='../items/?do=dispitem&id=1559'><img title='Certificate of Adventuring' class='icon2' src='../items/img.php?id=1559' /></a>&nbsp;<a href='../items/?do=dispitem&id=2876'><img title='Ring of Suffering' class='icon2' src='../items/img.php?id=2876' /></a>&nbsp;<a href='../quest/?do=dispitem&id=449'>Skelpion Evil</a>,&nbsp;<a href='../quest/?do=dispitem&id=528'>Skelpion Threat</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=361'><img class='icon' src="img.php?id=361" /></a></td>
+          <td><a href='?do=dispitem&id=361'>Small Cave Scorp</a> <span title='incomplete'>*</span></td>
+          <td>21</td>
+          <td>400</td>
+          <td>0</td>
+          <td>150</td>
+          <td>1:00 min</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>-</td>
+          <td>(170,857), (175,900)</td>
+          <td><a href='../items/?do=dispitem&id=617'><img title='Quality Large Sword' class='icon2' src='../items/img.php?id=617' /></a>&nbsp;<a href='../items/?do=dispitem&id=909'><img title='Small Magical Shield Ring' class='icon2' src='../items/img.php?id=909' /></a>&nbsp;<a href='../items/?do=dispitem&id=1042'><img title='Quality Longbow' class='icon2' src='../items/img.php?id=1042' /></a>&nbsp;<a href='../items/?do=dispitem&id=1461'><img title='Scorpion Guts' class='icon2' src='../items/img.php?id=1461' /></a>&nbsp;<a href='../items/?do=dispitem&id=1817'><img title='Small Scorpion Claw' class='icon2' src='../items/img.php?id=1817' /></a>&nbsp;<a href='../quest/?do=dispitem&id=273'>Too many scorps</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=509'><img class='icon' src="img.php?id=509" /></a></td>
+          <td><a href='?do=dispitem&id=509'>Small Clam</a> <span title='incomplete'>*</span></td>
+          <td>26</td>
+          <td>400</td>
+          <td>0</td>
+          <td>175</td>
+          <td>35 sec</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>-</td>
+          <td>(366,347), (409,270)</td>
+          <td><a href='../items/?do=dispitem&id=978'><img title='Clam Gut' class='icon2' src='../items/img.php?id=978' /></a>&nbsp;<a href='../items/?do=dispitem&id=1026'><img title='Clam Leg Armor' class='icon2' src='../items/img.php?id=1026' /></a>&nbsp;<a href='../items/?do=dispitem&id=1028'><img title='Clam Body Armor' class='icon2' src='../items/img.php?id=1028' /></a>&nbsp;<a href='../items/?do=dispitem&id=1192'><img title='Clam Helmet' class='icon2' src='../items/img.php?id=1192' /></a>&nbsp;<a href='../items/?do=dispitem&id=2288'><img title='Pearl' class='icon2' src='../items/img.php?id=2288' /></a>&nbsp;<a href='../quest/?do=dispitem&id=305'>Gathering Clam Guts for Cats?</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=365'><img class='icon' src="img.php?id=365" /></a></td>
+          <td><a href='?do=dispitem&id=365'>Small Red Slime</a> <span title='incomplete'>*</span></td>
+          <td>18</td>
+          <td>270</td>
+          <td>0</td>
+          <td>135</td>
+          <td>-</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=slime'>slime</a></td>
+          <td>-</td>
+          <td>(98,920), (147,878)</td>
+          <td><a href='../items/?do=dispitem&id=1033'><img title='Crimson Cloak' class='icon2' src='../items/img.php?id=1033' /></a>&nbsp;<a href='../items/?do=dispitem&id=1210'><img title='Small Red Goo' class='icon2' src='../items/img.php?id=1210' /></a>&nbsp;<a href='../items/?do=dispitem&id=2755'><img title='Medium Health Potion' class='icon2' src='../items/img.php?id=2755' /></a>&nbsp;<a href='../quest/?do=dispitem&id=262'>Kill 30 Red Slimes</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=314'><img class='icon' src="img.php?id=314" /></a></td>
+          <td><a href='?do=dispitem&id=314'>Small Treasure Chest</a> <span title='incomplete'>*</span></td>
+          <td>1</td>
+          <td>5</td>
+          <td>0</td>
+          <td>-</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=chest'>chest</a></td>
+          <td>-</td>
+          <td>(96,155)</td>
+          <td><a href='../items/?do=dispitem&id=792'><img title='Triploon' class='icon2' src='../items/img.php?id=792' /></a>&nbsp;<a href='../items/?do=dispitem&id=2228'><img title='Gold Ring' class='icon2' src='../items/img.php?id=2228' /></a>&nbsp;<a href='../quest/?do=dispitem&id=223'>Booty Camp</a>,&nbsp;<a href='../quest/?do=dispitem&id=663'>Booty Call</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=534'><img class='icon' src="img.php?id=534" /></a></td>
+          <td><a href='?do=dispitem&id=534'>Smallish Ogre</a></td>
+          <td>7</td>
+          <td>250</td>
+          <td>0</td>
+          <td>80</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=troll-family'>troll-family</a></td>
+          <td>10</td>
+          <td>(169,452)</td>
+          <td><a href='../items/?do=dispitem&id=2290'><img title='Woodsman&#039;s Axe' class='icon2' src='../items/img.php?id=2290' /></a>&nbsp;<a href='../quest/?do=dispitem&id=336'>What's that smell?</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=347'><img class='icon' src="img.php?id=347" /></a></td>
+          <td><a href='?do=dispitem&id=347'>Soft Shelled Crab</a></td>
+          <td>1</td>
+          <td>41</td>
+          <td>0</td>
+          <td>50</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>2</td>
+          <td>(56,535)</td>
+          <td><a href='../items/?do=dispitem&id=515'><img title='Adult Diapers' class='icon2' src='../items/img.php?id=515' /></a>&nbsp;<a href='../items/?do=dispitem&id=711'><img title='Class Ring' class='icon2' src='../items/img.php?id=711' /></a>&nbsp;<a href='../items/?do=dispitem&id=1818'><img title='Tiny Crab Claw' class='icon2' src='../items/img.php?id=1818' /></a>&nbsp;<a href='../items/?do=dispitem&id=2265'><img title='Toy Bow' class='icon2' src='../items/img.php?id=2265' /></a>&nbsp;<a href='../quest/?do=dispitem&id=325'>The Nudening</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=317'><img class='icon' src="img.php?id=317" /></a></td>
+          <td><a href='?do=dispitem&id=317'>Spicy Red Crab</a></td>
+          <td>7</td>
+          <td>140</td>
+          <td>0</td>
+          <td>80</td>
+          <td>10 sec</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>3</td>
+          <td>(164,346), (105,347)</td>
+          <td><a href='../items/?do=dispitem&id=541'><img title='Crab claw' class='icon2' src='../items/img.php?id=541' /></a>&nbsp;<a href='../items/?do=dispitem&id=801'><img title='Spicy Crab Meat Chunk' class='icon2' src='../items/img.php?id=801' /></a>&nbsp;<a href='../items/?do=dispitem&id=1597'><img title='Crab Helmet' class='icon2' src='../items/img.php?id=1597' /></a>&nbsp;<a href='../quest/?do=dispitem&id=341'>Crab meat for Little Jimmy</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=671'><img class='icon' src="img.php?id=671" /></a></td>
+          <td><a href='?do=dispitem&id=671'>Stone</a></td>
+          <td>18</td>
+          <td>800</td>
+          <td>0</td>
+          <td>135</td>
+          <td>3:10 min</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=rock'>rock</a></td>
+          <td>72</td>
+          <td>(202,602), (152, 618),</td>
+          <td><a href='../items/?do=dispitem&id=930'><img title='Stone Hammer' class='icon2' src='../items/img.php?id=930' /></a>&nbsp;<a href='../items/?do=dispitem&id=626'><img title='The Rock' class='icon2' src='../items/img.php?id=626' /></a>&nbsp;<a href='../items/?do=dispitem&id=1173'><img title='Stone Boots' class='icon2' src='../items/img.php?id=1173' /></a>&nbsp;<a href='../items/?do=dispitem&id=1193'><img title='Gold Nugget' class='icon2' src='../items/img.php?id=1193' /></a>&nbsp;<a href='../quest/?do=dispitem&id=320'>Got the Stones for it?</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=683'><img class='icon' src="img.php?id=683" /></a></td>
+          <td><a href='?do=dispitem&id=683'>Swampy</a> <span title='incomplete'>*</span></td>
+          <td>26</td>
+          <td>600</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(587,1025);</td>
+          <td><a href='../items/?do=dispitem&id=2890'><img title='Green Candy' class='icon2' src='../items/img.php?id=2890' /></a>&nbsp;<a href='../items/?do=dispitem&id=2893'><img title='Plant Tooth' class='icon2' src='../items/img.php?id=2893' /></a>&nbsp;<a href='../items/?do=dispitem&id=2904'><img title='Caramel Apple' class='icon2' src='../items/img.php?id=2904' /></a>&nbsp;<a href='../items/?do=dispitem&id=2924'><img title='Garlic' class='icon2' src='../items/img.php?id=2924' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=673'><img class='icon' src="img.php?id=673" /></a></td>
+          <td><a href='?do=dispitem&id=673'>Taunting Tree</a> <span title='incomplete'>*</span></td>
+          <td>35</td>
+          <td>4000</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(591,1046);</td>
+          <td><a href='../items/?do=dispitem&id=2897'><img title='Wooden Stake' class='icon2' src='../items/img.php?id=2897' /></a>&nbsp;<a href='../items/?do=dispitem&id=2898'><img title='Tree Trunk Suit' class='icon2' src='../items/img.php?id=2898' /></a>&nbsp;<a href='../items/?do=dispitem&id=3016'><img title='Witch Broom' class='icon2' src='../items/img.php?id=3016' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=650'><img class='icon' src="img.php?id=650" /></a></td>
+          <td><a href='?do=dispitem&id=650'>Teen Wolf</a> <span title='incomplete'>*</span></td>
+          <td>29</td>
+          <td>800</td>
+          <td>0</td>
+          <td>190</td>
+          <td>55 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>-</td>
+          <td>(291,288);</td>
+          <td><a href='../items/?do=dispitem&id=1034'><img title='Heavy Ring' class='icon2' src='../items/img.php?id=1034' /></a>&nbsp;<a href='../items/?do=dispitem&id=1036'><img title='Axe of Murdering' class='icon2' src='../items/img.php?id=1036' /></a>&nbsp;<a href='../items/?do=dispitem&id=1202'><img title='Forest Hammer' class='icon2' src='../items/img.php?id=1202' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=603'><img class='icon' src="img.php?id=603" /></a></td>
+          <td><a href='?do=dispitem&id=603'>The Stuff of Nightmares</a> <span title='incomplete'>*</span></td>
+          <td>44</td>
+          <td>100000</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>yes</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(432,800)</td>
+          <td><a href='../items/?do=dispitem&id=2174'><img title='Robot Alien Heart' class='icon2' src='../items/img.php?id=2174' /></a>&nbsp;<a href='../items/?do=dispitem&id=2712'><img title='Sunset' class='icon2' src='../items/img.php?id=2712' /></a>&nbsp;<a href='../items/?do=dispitem&id=2729'><img title='Dark Alien Sword' class='icon2' src='../items/img.php?id=2729' /></a>&nbsp;<a href='../items/?do=dispitem&id=2730'><img title='Dark Alien Shield' class='icon2' src='../items/img.php?id=2730' /></a>&nbsp;<a href='../quest/?do=dispitem&id=668'>Kill It</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=112'><img class='icon' src="img.php?id=112" /></a></td>
+          <td><a href='?do=dispitem&id=112'>The Unliving Dead</a> <span title='incomplete'>*</span></td>
+          <td>8</td>
+          <td>250</td>
+          <td>0</td>
+          <td>85</td>
+          <td>12 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>11</td>
+          <td><img src="../img/removed.gif" title="removed" style="border:none;" /></td>
+          <td><a href='../items/?do=dispitem&id=515'><img title='Adult Diapers' class='icon2' src='../items/img.php?id=515' /></a>&nbsp;<a href='../items/?do=dispitem&id=618'><img title='Small Ring of Endurance' class='icon2' src='../items/img.php?id=618' /></a>&nbsp;<a href='../items/?do=dispitem&id=2290'><img title='Woodsman&#039;s Axe' class='icon2' src='../items/img.php?id=2290' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=318'><img class='icon' src="img.php?id=318" /></a></td>
+          <td><a href='?do=dispitem&id=318'>Treasure Chest</a> <span title='incomplete'>*</span></td>
+          <td>1</td>
+          <td>20</td>
+          <td>0</td>
+          <td>-</td>
+          <td>25 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=chest'>chest</a></td>
+          <td>-</td>
+          <td>(167,118)</td>
+          <td><a href='../items/?do=dispitem&id=670'><img title='Mo Mo Booty' class='icon2' src='../items/img.php?id=670' /></a>&nbsp;<a href='../items/?do=dispitem&id=792'><img title='Triploon' class='icon2' src='../items/img.php?id=792' /></a>&nbsp;<a href='../items/?do=dispitem&id=1370'><img title='Mo Booty' class='icon2' src='../items/img.php?id=1370' /></a>&nbsp;<a href='../items/?do=dispitem&id=2228'><img title='Gold Ring' class='icon2' src='../items/img.php?id=2228' /></a>&nbsp;<a href='../quest/?do=dispitem&id=662'>Mo' Better Booty</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=539'><img class='icon' src="img.php?id=539" /></a></td>
+          <td><a href='?do=dispitem&id=539'>Treasure Chest Mirage</a> <span title='incomplete'>*</span></td>
+          <td>1</td>
+          <td>10</td>
+          <td>0</td>
+          <td>-</td>
+          <td>16 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=chest'>chest</a></td>
+          <td>-</td>
+          <td>(64,142)</td>
+          <td><a href='../items/?do=dispitem&id=853'><img title='Lost Treasure' class='icon2' src='../items/img.php?id=853' /></a>&nbsp;<a href='../quest/?do=dispitem&id=661'>The Mirage</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=521'><img class='icon' src="img.php?id=521" /></a></td>
+          <td><a href='?do=dispitem&id=521'>Tremor</a></td>
+          <td>40</td>
+          <td>2200</td>
+          <td>0</td>
+          <td>245</td>
+          <td>1:00 min</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=animal'>animal</a></td>
+          <td>200</td>
+          <td>(319,440)</td>
+          <td><a href='../items/?do=dispitem&id=1606'><img title='A Box' class='icon2' src='../items/img.php?id=1606' /></a>&nbsp;<a href='../items/?do=dispitem&id=1622'><img title='Bone Bow' class='icon2' src='../items/img.php?id=1622' /></a>&nbsp;<a href='../items/?do=dispitem&id=1667'><img title='Sparkling Water' class='icon2' src='../items/img.php?id=1667' /></a>&nbsp;<a href='../quest/?do=dispitem&id=451'>More Snakes</a>,&nbsp;<a href='../quest/?do=dispitem&id=461'>Kill Snakes Plz</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=354'><img class='icon' src="img.php?id=354" /></a></td>
+          <td><a href='?do=dispitem&id=354'>Troll Companion</a> <span title='incomplete'>*</span></td>
+          <td>3</td>
+          <td>400</td>
+          <td>0</td>
+          <td>60</td>
+          <td>3:00 min</td>
+          <td>yes</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=troll-family'>troll-family</a></td>
+          <td>3</td>
+          <td><img src="../img/removed.gif" title="removed" style="border:none;" /></td>
+          <td><a href='../items/?do=dispitem&id=515'><img title='Adult Diapers' class='icon2' src='../items/img.php?id=515' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=348'><img class='icon' src="img.php?id=348" /></a></td>
+          <td><a href='?do=dispitem&id=348'>Turniphead</a></td>
+          <td>2</td>
+          <td>56</td>
+          <td>0</td>
+          <td>55</td>
+          <td>6 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=vegetable'>vegetable</a></td>
+          <td>2</td>
+          <td>(62,489)</td>
+          <td><a href='../items/?do=dispitem&id=237'><img title='Turnip' class='icon2' src='../items/img.php?id=237' /></a>&nbsp;<a href='../items/?do=dispitem&id=2266'><img title='Toy Sword' class='icon2' src='../items/img.php?id=2266' /></a>&nbsp;<a href='../quest/?do=dispitem&id=326'>Little Girl Hungry</a>,&nbsp;<a href='../quest/?do=dispitem&id=327'>Night of The Turnips</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=656'><img class='icon' src="img.php?id=656" /></a></td>
+          <td><a href='?do=dispitem&id=656'>UFO</a> <span title='incomplete'>*</span></td>
+          <td>38</td>
+          <td>3200</td>
+          <td>0</td>
+          <td>235</td>
+          <td>35 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=other'>other</a></td>
+          <td>-</td>
+          <td>(447,640)</td>
+          <td><a href='../items/?do=dispitem&id=1808'><img title='CD.' class='icon2' src='../items/img.php?id=1808' /></a>&nbsp;<a href='../items/?do=dispitem&id=2357'><img title='Computer Chip' class='icon2' src='../items/img.php?id=2357' /></a>&nbsp;<a href='../items/?do=dispitem&id=2808'><img title='Servo' class='icon2' src='../items/img.php?id=2808' /></a>&nbsp;<a href='../items/?do=dispitem&id=2810'><img title='Cyborg Prosthetic' class='icon2' src='../items/img.php?id=2810' /></a>&nbsp;<a href='../quest/?do=dispitem&id=517'>The Alien Invasion</a>,&nbsp;<a href='../quest/?do=dispitem&id=604'>Data, Data, Data</a>,&nbsp;<a href='../quest/?do=dispitem&id=607'>Make Internets</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=561'><img class='icon' src="img.php?id=561" /></a></td>
+          <td><a href='?do=dispitem&id=561'>Undead Archaeologist</a></td>
+          <td>15</td>
+          <td>600</td>
+          <td>0</td>
+          <td>120</td>
+          <td>20 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>30</td>
+          <td>(186,52)</td>
+          <td><a href='../items/?do=dispitem&id=792'><img title='Triploon' class='icon2' src='../items/img.php?id=792' /></a>&nbsp;<a href='../items/?do=dispitem&id=2203'><img title='Standard Cutlass' class='icon2' src='../items/img.php?id=2203' /></a>&nbsp;<a href='../items/?do=dispitem&id=2228'><img title='Gold Ring' class='icon2' src='../items/img.php?id=2228' /></a>&nbsp;<a href='../quest/?do=dispitem&id=204'>Fallen Arches</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=356'><img class='icon' src="img.php?id=356" /></a></td>
+          <td><a href='?do=dispitem&id=356'>Undead Assistant</a></td>
+          <td>15</td>
+          <td>580</td>
+          <td>0</td>
+          <td>120</td>
+          <td>10 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>30</td>
+          <td>(180,50)</td>
+          <td><a href='../items/?do=dispitem&id=792'><img title='Triploon' class='icon2' src='../items/img.php?id=792' /></a>&nbsp;<a href='../items/?do=dispitem&id=2228'><img title='Gold Ring' class='icon2' src='../items/img.php?id=2228' /></a>&nbsp;<a href='../items/?do=dispitem&id=2896'><img title='Skele Doll' class='icon2' src='../items/img.php?id=2896' /></a>&nbsp;<a href='../quest/?do=dispitem&id=215'>The Assistant</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=562'><img class='icon' src="img.php?id=562" /></a></td>
+          <td><a href='?do=dispitem&id=562'>Undead Scallywag</a> <span title='incomplete'>*</span></td>
+          <td>18</td>
+          <td>1200</td>
+          <td>0</td>
+          <td>135</td>
+          <td>35 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>-</td>
+          <td>(184,35)</td>
+          <td><a href='../items/?do=dispitem&id=792'><img title='Triploon' class='icon2' src='../items/img.php?id=792' /></a>&nbsp;<a href='../items/?do=dispitem&id=1034'><img title='Heavy Ring' class='icon2' src='../items/img.php?id=1034' /></a>&nbsp;<a href='../items/?do=dispitem&id=1101'><img title='Big Gold Ring' class='icon2' src='../items/img.php?id=1101' /></a>&nbsp;&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=447'><img class='icon' src="img.php?id=447" /></a></td>
+          <td><a href='?do=dispitem&id=447'>Unliving Backup Dancer</a> <span title='incomplete'>*</span></td>
+          <td>28</td>
+          <td>600</td>
+          <td>0</td>
+          <td>185</td>
+          <td>35 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>-</td>
+          <td>(413,245)</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=443'><img class='icon' src="img.php?id=443" /></a></td>
+          <td><a href='?do=dispitem&id=443'>Unliving Dancer</a> <span title='incomplete'>*</span></td>
+          <td>29</td>
+          <td>650</td>
+          <td>0</td>
+          <td>190</td>
+          <td>30 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>-</td>
+          <td>(424,245)</td>
+          <td><a href='../items/?do=dispitem&id=1052'><img title='Tunic of Thematic Appropriateness' class='icon2' src='../items/img.php?id=1052' /></a>&nbsp;<a href='../items/?do=dispitem&id=1389'><img title='Sapphire Wand' class='icon2' src='../items/img.php?id=1389' /></a>&nbsp;<a href='../items/?do=dispitem&id=2579'><img title='Worn Cloth' class='icon2' src='../items/img.php?id=2579' /></a>&nbsp;<a href='../quest/?do=dispitem&id=312'>Lower the morale</a>&nbsp;</td>
+        </tr>
+        <tr class="c1">
+          <td align='center'><a href='?do=dispitem&id=527'><img class='icon' src="img.php?id=527" /></a></td>
+          <td><a href='?do=dispitem&id=527'>Unliving Dead Footman</a> <span title='incomplete'>*</span></td>
+          <td>26</td>
+          <td>600</td>
+          <td>0</td>
+          <td>175</td>
+          <td>35 sec</td>
+          <td>no</td>
+          <td>no</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>-</td>
+          <td>(330,300);</td>
+          <td><a href='../items/?do=dispitem&id=1014'><img title='Pike' class='icon2' src='../items/img.php?id=1014' /></a>&nbsp;<a href='../items/?do=dispitem&id=1020'><img title='Man Ring' class='icon2' src='../items/img.php?id=1020' /></a>&nbsp;<a href='../items/?do=dispitem&id=1611'><img title='Unliving Bow' class='icon2' src='../items/img.php?id=1611' /></a>&nbsp;<a href='../items/?do=dispitem&id=2284'><img title='Quality Small Sword' class='icon2' src='../items/img.php?id=2284' /></a>&nbsp;<a href='../items/?do=dispitem&id=2287'><img title='Unliving Sword' class='icon2' src='../items/img.php?id=2287' /></a>&nbsp;<a href='../quest/?do=dispitem&id=301'>Army of the Unliving Dead</a>,&nbsp;<a href='../quest/?do=dispitem&id=470'>The Army That's Dead (Daily)</a>&nbsp;</td>
+        </tr>
+        <tr class="c2">
+          <td align='center'><a href='?do=dispitem&id=396'><img class='icon' src="img.php?id=396" /></a></td>
+          <td><a href='?do=dispitem&id=396'>Unliving Dead Guard</a> <span title='incomplete'>*</span></td>
+          <td>32</td>
+          <td>800</td>
+          <td>0</td>
+          <td>205</td>
+          <td>-</td>
+          <td>no</td>
+          <td>yes</td>
+          <td><a href='?byclass=1&search=undead'>undead</a></td>
+          <td>-</td>
+          <td>(474,334);</td>
+          <td><a href='../items/?do=dispitem&id=1075'><img title='Brutal Axe' class='icon2' src='../items/img.php?id=1075' /></a>&nbsp;<a href='../items/?do=dispitem&id=1611'><img title='Unliving Bow' class='icon2' src='../items/img.php?id=1611' /></a>&nbsp;<a href='../items/?do=dispitem&id=1650'><img title='Forest Light Leg Armor' class='icon2' src='../items/img.php?id=1650' /></a>&nbsp;<a href='../items/?do=dispitem&id=2287'><img title='Unliving Sword' class='icon2' src='../items/img.php?id=2287' /></a>&nbsp;&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

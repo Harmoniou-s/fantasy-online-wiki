@@ -1,0 +1,311 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fantasy Online - Item Ranking</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/ajax.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class='top_cont'>
+    <div class="nav_icon">
+      <img title='nav' class='nav_img' src="img/nav.png" width="32" height="32" /><a href='.'>Navigation</a>
+    </div>
+    <div class="user_div">
+      <script src="js/md5.js" type="text/javascript"></script> 
+      <script language="javascript" type="text/javascript">
+      //<![CDATA[
+
+
+                                      <!--
+                                      function converttohash() {
+                                          document.getElementById('hash').value
+                                                  = MD5(document.getElementById('pw').value);
+                                          document.getElementById('pw').value='';
+                                          
+                                          if (document.getElementById('pw').value=='') {
+                                            return true;
+                                          }
+                                          return false;
+                                      }
+                                      // -->
+      //]]>
+      </script>
+      <form onsubmit="return converttohash();" method='post' action='/ps3k/index.php?menu=likes_total'>
+        <div>
+          User Name: <input value='' class='bginput' size="10" type='text' id='username' name='username' />
+        </div>
+        <div>
+          Password: <input class='bginput' size="10" type='password' id='pw' /><input type='hidden' id='hash' name='hash' />
+        </div>
+        <div>
+          <input type="submit" value="Log In" class='button' />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='menu'>
+    <table class='menu_table'>
+      <tr>
+        <td><a href='.'>Latest Uploads</a></td>
+        <td><a href='?menu=stars_total'>Top 100 (rating)</a></td>
+        <td><a href='?menu=likes_total'>Top 100 (likes abs.)</a></td>
+        <td><a href='?menu=likes'>Top 100 (likes rel.)</a></td>
+        <td><a href='?menu=browseAll'>Browse All</a></td>
+        <td><a href='?menu=ingame'>Ingame</a></td>
+        <td><a href='?menu=search'>Search</a></td>
+        <td><a href='?menu=userRanking'>User Ranking</a></td>
+        <td><a href='?menu=showLottery'>Lottery</a></td>
+        <td><a href='?menu=myCreations'>My Creations</a></td>
+        <td>Register</td>
+      </tr>
+    </table>
+  </div>
+  <div class='info_cont'>
+    <div class='title'>
+      <img class='nav_img' src='img/top50.png' width='32' height='32' alt='top100' />Top 100 (likes total)
+    </div>
+    <div>
+      [ Page 1 of 5 ] <a href='?menu=likes_total&amp;start=20'><img class='nav_img' src='img/forward.png' width='32' height='32' alt='forward' /></a>
+    </div>
+    <table class='itemlist'>
+      <tr class='legend'>
+        <td>Icon</td>
+        <td>Name</td>
+        <td>Rating</td>
+        <td>Likes</td>
+        <td>Posts</td>
+        <td>Set</td>
+        <td>Type</td>
+        <td>By</td>
+        <td>Created</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=518798575'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_518798575_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=518798575'>Heal Group</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:74px'></span></span></td>
+        <td class='like'>230 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.84)</span></td>
+        <td class='like'>37</td>
+        <td><a href='?menu=showItem&amp;uid=518798575'>INT</a></td>
+        <td>Skill</td>
+        <td><a href='?menu=showUser&amp;userName=Bloodylips'>Bloodylips</a></td>
+        <td>15/05/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=478397587'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_478397587_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=478397587'>Totoro</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:74px'></span></span></td>
+        <td class='like'>96 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.54)</span></td>
+        <td class='like'>18</td>
+        <td><a href='?menu=showItem&amp;uid=478397587'>Totoro</a></td>
+        <td>Pet</td>
+        <td><a href='?menu=showUser&amp;userName=Falcooner'>Falcooner</a></td>
+        <td>19/08/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=511148947'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_511148947_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=511148947'>mummy finished</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:71px'></span></span></td>
+        <td class='like'>81 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.23)</span></td>
+        <td class='like'>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=Xdre'>Xdre</a></td>
+        <td>20/02/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=915910115'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_915910115_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=915910115'>Golden stick of Pointiness</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:67px'></span></span></td>
+        <td class='like'>77 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.34)</span></td>
+        <td class='like'>20</td>
+        <td>-</td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>30/06/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=924063262'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_924063262_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=924063262'>Ancient Archer V3</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:73px'></span></span></td>
+        <td class='like'>72 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.31)</span></td>
+        <td class='like'>14</td>
+        <td><a href='?menu=showItem&amp;uid=924063262'>Armor drafts</a></td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=Lighterthief'>Lighterthief</a></td>
+        <td>26/06/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=822355271'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_822355271_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=822355271'>Desert Ogre</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:70px'></span></span></td>
+        <td class='like'>68 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.19)</span></td>
+        <td class='like'>3</td>
+        <td><a href='?menu=showItem&amp;uid=822355271'>Monsters</a></td>
+        <td>Enemy</td>
+        <td><a href='?menu=showUser&amp;userName=isolation'>isolation</a></td>
+        <td>20/02/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=84904222'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_84904222_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=84904222'>Angel Wings</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:73px'></span></span></td>
+        <td class='like'>65 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.41)</span></td>
+        <td class='like'>9</td>
+        <td><a href='?menu=showItem&amp;uid=84904222'>Wing progress</a></td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>09/09/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=228257511'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_228257511_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=228257511'>Breast Cancer Awareness</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:72px'></span></span></td>
+        <td class='like'>62 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.43)</span></td>
+        <td class='like'>9</td>
+        <td><a href='?menu=showItem&amp;uid=228257511'>support the cause</a></td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=dmat'>dmat</a></td>
+        <td>23/09/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=952575186'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_952575186_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=952575186'>Lionheart</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:70px'></span></span></td>
+        <td class='like'>58 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.17)</span></td>
+        <td class='like'>0</td>
+        <td><a href='?menu=showItem&amp;uid=952575186'>Rebecca</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=YukiCha'>YukiCha</a></td>
+        <td>13/03/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=274453415'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_274453415_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=274453415'>Sexy Minotaur</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:68px'></span></span></td>
+        <td class='like'>57 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.15)</span></td>
+        <td class='like'>1</td>
+        <td><a href='?menu=showItem&amp;uid=274453415'>Ghastly Little Things</a></td>
+        <td>Enemy</td>
+        <td><a href='?menu=showUser&amp;userName=monstrowhale'>monstrowhale</a></td>
+        <td>09/02/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=469884598'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_469884598_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=469884598'>Wings</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:69px'></span></span></td>
+        <td class='like'>57 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.24)</span></td>
+        <td class='like'>8</td>
+        <td><a href='?menu=showItem&amp;uid=469884598'>doodles</a></td>
+        <td>Shoulder</td>
+        <td><a href='?menu=showUser&amp;userName=AmY'>AmY</a></td>
+        <td>20/06/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=330379997'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_330379997_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=330379997'>Magik Body</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:70px'></span></span></td>
+        <td class='like'>50 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.13)</span></td>
+        <td class='like'>3</td>
+        <td>-</td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=Jman12390'>Jman12390</a></td>
+        <td>01/02/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=813983948'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_813983948_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=813983948'>Gold Level 60 Chest</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:71px'></span></span></td>
+        <td class='like'>50 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.2)</span></td>
+        <td class='like'>4</td>
+        <td><a href='?menu=showItem&amp;uid=813983948'>Next Area Loots</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=Hillyman'>Hillyman</a></td>
+        <td>04/06/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=266896519'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_266896519_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=266896519'>snowbal</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:69px'></span></span></td>
+        <td class='like'>48 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.35)</span></td>
+        <td class='like'>13</td>
+        <td>-</td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=Lighterthief'>Lighterthief</a></td>
+        <td>30/09/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=440161004'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_440161004_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=440161004'>Ghost Of Evil Mc BadGuy</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:72px'></span></span></td>
+        <td class='like'>47 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.35)</span></td>
+        <td class='like'>3</td>
+        <td>-</td>
+        <td>Enemy</td>
+        <td><a href='?menu=showUser&amp;userName=knight43234'>knight43234</a></td>
+        <td>01/10/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=711313287'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_711313287_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=711313287'>Unobtainium Pickaxe</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:69px'></span></span></td>
+        <td class='like'>46 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.19)</span></td>
+        <td class='like'>8</td>
+        <td><a href='?menu=showItem&amp;uid=711313287'>Upgrade to Golden Pickaxe</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=Benmouse'>Benmouse</a></td>
+        <td>12/06/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=512259393'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_512259393_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=512259393'>Grim</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:74px'></span></span></td>
+        <td class='like'>46 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.58)</span></td>
+        <td class='like'>9</td>
+        <td><a href='?menu=showItem&amp;uid=512259393'>Yielmo</a></td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=Jman12390'>Jman12390</a></td>
+        <td>26/11/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=347776353'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_347776353_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=347776353'>marilith finished</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:65px'></span></span></td>
+        <td class='like'>43 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.15)</span></td>
+        <td class='like'>5</td>
+        <td>-</td>
+        <td>-</td>
+        <td><a href='?menu=showUser&amp;userName=Xdre'>Xdre</a></td>
+        <td>05/05/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row0'>
+        <td><a href='?menu=showItem&amp;uid=917131363'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_917131363_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=917131363'>Holy Helm</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:73px'></span></span></td>
+        <td class='like'>43 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.19)</span></td>
+        <td class='like'>2</td>
+        <td><a href='?menu=showItem&amp;uid=917131363'>Holy</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=Jman12390'>Jman12390</a></td>
+        <td>06/07/11</td>
+      </tr>
+      <tr onmouseover='this.style.backgroundImage="url(img/highlight.png)"' onmouseout='this.style.backgroundImage=""' class='row1'>
+        <td><a href='?menu=showItem&amp;uid=927314395'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_927314395_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=927314395'>Full Red Dragon Set</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:68px'></span></span></td>
+        <td class='like'>42 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.13)</span></td>
+        <td class='like'>2</td>
+        <td><a href='?menu=showItem&amp;uid=927314395'>Red Dragon Set</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=Rebeccca'>Rebeccca</a></td>
+        <td>23/03/11</td>
+      </tr>
+    </table>
+    <div>
+      [ Page 1 of 5 ] <a href='?menu=likes_total&amp;start=20'><img class='nav_img' src='img/forward.png' width='32' height='32' alt='forward' /></a>
+    </div>
+  </div>
+  <div class='bottom_cont'>
+    [13/02/12 23:16:52 | <a style='color:#fff;' target='_blank' href='priv.html'>Privacy Policy</a> ]
+  </div>
+</body>
+</html>

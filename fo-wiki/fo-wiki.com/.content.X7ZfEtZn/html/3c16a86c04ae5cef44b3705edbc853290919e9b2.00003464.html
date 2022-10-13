@@ -1,0 +1,72 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Quest Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+  body,td,th {
+        font-size: 12px;
+  }
+  -->
+  /*]]>*/
+  </style>
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; left:0px; top: 60px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <table class="maintable">
+    <thead>
+      <tr>
+        <th colspan='6'>Quest! (<a href='?'>Quest database</a>)</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan='6'><a href='?do=edit&amp;id=177'><img class='button' src="img/edit.jpg" width="47" height="19" /></a> <a href='?do=delitem&id=177'><img class='button' src='img/delete.jpg' width='66' height='19' /></a> <a href='javascript:history.back()'><img class='button' src="img/back.jpg" width="47" height="19" /></a></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td colspan='6'>&nbsp;Witch's Brew&nbsp;[ 4 ]</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Start NPC</td>
+        <td width='300px' colspan='2' class='val'><a href='../npc/?do=dispitem&id=77'><img title='Lori Formergoth' class='icon2' src='../npc/img.php?id=77' /></a></td>
+        <td class='attr' width='150px'>Typ</td>
+        <td width='300px' class='val' colspan='2'>collect</td>
+      </tr>
+      <tr>
+        <td class='attr' width='150px'>Exp-gain</td>
+        <td width='300px' colspan='2' class='val'>300</td>
+        <td class='attr' width='150px'>Coin-gain</td>
+        <td width='300px' colspan='2' class='val'>30</td>
+      </tr>
+      <tr>
+        <td class='attr'>Summary</td>
+        <td colspan='5'>Collect Five Skele Skulls</td>
+      </tr>
+      <tr>
+        <td class='attr'>Details</td>
+        <td colspan='5'>
+          Talk to <a href='../npc/?do=dispitem&id=77'><img title='Lori Formergoth ' src='../npc/img.php?id=77' /></a> east of <a href='../npc/?do=dispitem&id=51'><img title='Farmer Ted' src='../npc/img.php?id=51' /></a>'s farm. (She's on the other side of those trees. Go South as soon as you exit the town north of the farm.)<br />
+          She asks you to collect five <a href='../items/?do=dispitem&id=231'><img title='Skull' src='../items/img.php?id=231' /></a>s (<img style='cursor: pointer' onmouseover="SetContent('label','Say... you didn`t happen to pick up anything while&lt;br /&gt;you were fighting those Skeles, did you? l\'m&lt;br /&gt;cooking up a pretty potent spell, and l need some&lt;br /&gt;skele skulls... five should do the trick... but no dwarf&lt;br /&gt;skulls! l need \'em full sized.&lt;br /&gt;'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />).<br />
+          After collecting the <a href='../items/?do=dispitem&id=231'><img title='Skull' src='../items/img.php?id=231' /></a>s, talk to <a href='../npc/?do=dispitem&id=77'><img title='Lori Formergoth' src='../npc/img.php?id=77' /></a> again.<br />
+          She rewards you and says <img style='cursor: pointer' onmouseover="SetContent('label','Ah... now l can make my coveted brew and teleport&lt;br /&gt;out of this terrible land! No offense, devs.&lt;br /&gt;'); SetColor('label','#AACAD5')" onmousemove="ShowContent('label'); return true;" onmouseout="HideContent('label'); return true;" src='img/chatbox.gif' />. 
+          <script src="/content/label.js" type="text/javascript"></script>
+          <div id="label" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 1px; max-width: 300px; border-width:1px;">
+            Content goes here.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class='attr'>Note</td>
+        <td colspan='5'>-</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

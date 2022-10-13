@@ -1,0 +1,288 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fantasy Online - Item Ranking</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/ajax.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class='top_cont'>
+    <div class="nav_icon">
+      <img title='nav' class='nav_img' src="img/nav.png" width="32" height="32" /><a href='.'>Navigation</a>
+    </div>
+    <div class="user_div">
+      <script src="js/md5.js" type="text/javascript"></script> 
+      <script language="javascript" type="text/javascript">
+      //<![CDATA[
+
+
+                                      <!--
+                                      function converttohash() {
+                                          document.getElementById('hash').value
+                                                  = MD5(document.getElementById('pw').value);
+                                          document.getElementById('pw').value='';
+                                          
+                                          if (document.getElementById('pw').value=='') {
+                                            return true;
+                                          }
+                                          return false;
+                                      }
+                                      // -->
+      //]]>
+      </script>
+      <form onsubmit="return converttohash();" method='post' action='/ps3k/index.php?menu=showUser&amp;userName=FailCard'>
+        <div>
+          User Name: <input value='' class='bginput' size="10" type='text' id='username' name='username' />
+        </div>
+        <div>
+          Password: <input class='bginput' size="10" type='password' id='pw' /><input type='hidden' id='hash' name='hash' />
+        </div>
+        <div>
+          <input type="submit" value="Log In" class='button' />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='menu'>
+    <table class='menu_table'>
+      <tr>
+        <td><a href='.'>Top 50 (rating)</a></td>
+        <td><a href='?menu=likes'>Top 50 (likes)</a></td>
+        <td><a href='?menu=latestUploads'>Latest Uploads</a></td>
+        <td><a href='?menu=browseAll'>Browse All</a></td>
+        <td><a href='?menu=ingame'>Ingame</a></td>
+        <td><a href='?menu=search'>Search</a></td>
+        <td><a href='?menu=userRanking'>User Ranking</a></td>
+        <td><a href='?menu=myCreations'>My Creations</a></td>
+        <td>Register</td>
+      </tr>
+    </table>
+  </div>
+  <div class='info_cont'>
+    <div class='title'>
+      <img class='nav_img' src='img/user.png' width='32' height='32' alt='user' />FailCard
+    </div>
+    <div>
+      [ Page 1 of 4 ] <a href='?menu=showUser&amp;userName=FailCard&amp;start=20'><img class='nav_img' src='img/forward.png' width='32' height='32' alt='forward' /></a>
+    </div>
+    <table class='itemlist'>
+      <tr class='legend'>
+        <td>Icon</td>
+        <td>Name</td>
+        <td>Rating</td>
+        <td>Likes</td>
+        <td>Set</td>
+        <td>Type</td>
+        <td>By</td>
+        <td>Created</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=532474674'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_532474674_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=532474674'>Dual Lightsabers (Blue) <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:0px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td><a href='?menu=showItem&amp;uid=532474674'>The Awesome stuff.</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>08/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=791473551'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_791473551_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=791473551'>Cowboy Hat <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:35px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;10)</span></td>
+        <td><a href='?menu=showItem&amp;uid=791473551'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>07/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=545290008'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_545290008_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=545290008'>Leprechaun hat <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:32px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;2.55)</span></td>
+        <td><a href='?menu=showItem&amp;uid=545290008'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>06/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=255559117'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_255559117_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=255559117'>Robot Disg. Falling Apart <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:16px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;1.6)</span></td>
+        <td><a href='?menu=showItem&amp;uid=255559117'>The Awesome stuff.</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>06/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=583091464'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_583091464_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=583091464'>Devil Wings n Black Shirt <img class='img_mid' width='32' height='19' src='img/new.png' alt='new' title='New' /></a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:42px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;2.39)</span></td>
+        <td><a href='?menu=showItem&amp;uid=583091464'>The Awesome stuff.</a></td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>06/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=830325445'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_830325445_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=830325445'>Dual Lightsabers</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:48px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;2.35)</span></td>
+        <td>-</td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>05/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=459710084'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_459710084_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=459710084'>Panda hat updated icon</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:60px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.73)</span></td>
+        <td><a href='?menu=showItem&amp;uid=459710084'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>03/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=302912663'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_302912663_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=302912663'>Rabbit earz 2.0 NOT BUNNY!</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:48px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.41)</span></td>
+        <td><a href='?menu=showItem&amp;uid=302912663'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>03/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=668218324'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_668218324_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=668218324'>Rabbit earz. NO NOT BUNNY!</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:37px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.41)</span></td>
+        <td><a href='?menu=showItem&amp;uid=668218324'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>03/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=219981485'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_219981485_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=219981485'>Link</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:16px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td><a href='?menu=showItem&amp;uid=219981485'>The Awesome stuff.</a></td>
+        <td>Other</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>03/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=405391396'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_405391396_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=405391396'>CatPhones icon</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:37px'></span></span></td>
+        <td class='like'>2 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.4)</span></td>
+        <td><a href='?menu=showItem&amp;uid=405391396'>The Awesome stuff.</a></td>
+        <td>Backpack</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>03/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=832991513'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_832991513_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=832991513'>Catfro</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:43px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.6)</span></td>
+        <td><a href='?menu=showItem&amp;uid=832991513'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>03/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=622357988'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_622357988_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=622357988'>Holy Grail 2.0</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:37px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td><a href='?menu=showItem&amp;uid=622357988'>The Awesome stuff.</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>02/03/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=694994720'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_694994720_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=694994720'>Holy Grail</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:40px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.49)</span></td>
+        <td><a href='?menu=showItem&amp;uid=694994720'>The Awesome stuff.</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>01/03/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=934853161'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_934853161_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=934853161'>twitter shirt</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:35px'></span></span></td>
+        <td class='like'>3 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.34)</span></td>
+        <td><a href='?menu=showItem&amp;uid=934853161'>The Awesome stuff.</a></td>
+        <td>Body</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>27/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=835540959'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_835540959_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=835540959'>Splitter Pals Smiley Face</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:53px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.54)</span></td>
+        <td><a href='?menu=showItem&amp;uid=835540959'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>26/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=36830655'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_36830655_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=36830655'>Legendary Blades Upd.</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:54px'></span></span></td>
+        <td class='like'>5 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.45)</span></td>
+        <td><a href='?menu=showItem&amp;uid=36830655'>The Awesome stuff.</a></td>
+        <td>Weapon</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>24/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=226418372'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_226418372_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=226418372'>Nike headband</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:32px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td><a href='?menu=showItem&amp;uid=226418372'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>24/02/11</td>
+      </tr>
+      <tr class='row0'>
+        <td><a href='?menu=showItem&amp;uid=24099289'><img width='32' height='32' src='http://unfine.de/tmp/ps3k_24099289_icon.png' alt='icon' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=24099289'>Cell Phone</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:30px'></span></span></td>
+        <td class='like'>0 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0)</span></td>
+        <td><a href='?menu=showItem&amp;uid=24099289'>The Awesome stuff.</a></td>
+        <td>Item</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>24/02/11</td>
+      </tr>
+      <tr class='row1'>
+        <td><a href='?menu=showItem&amp;uid=339315921'><img width='24' height='32' src='http://unfine.de/tmp/ps3k_339315921_anim.gif' alt='animated' /></a></td>
+        <td><a href='?menu=showItem&amp;uid=339315921'>Ripped Paperbag</a></td>
+        <td><span class='rating_bg_small'><span class='rating_small' style='width:43px'></span></span></td>
+        <td class='like'>1 <img width='16' height='16' src='img/likes.png' alt='likes' /><span class='black_small'>(&#8960;0.09)</span></td>
+        <td><a href='?menu=showItem&amp;uid=339315921'>The Awesome stuff.</a></td>
+        <td>Head</td>
+        <td><a href='?menu=showUser&amp;userName=FailCard'>FailCard</a></td>
+        <td>24/02/11</td>
+      </tr>
+    </table>
+    <div>
+      [ Page 1 of 4 ] <a href='?menu=showUser&amp;userName=FailCard&amp;start=20'><img class='nav_img' src='img/forward.png' width='32' height='32' alt='forward' /></a>
+    </div>
+  </div>
+  <div class='bottom_cont'>
+    [ 08/03/11 01:45:30 ]
+  </div>
+</body>
+</html>

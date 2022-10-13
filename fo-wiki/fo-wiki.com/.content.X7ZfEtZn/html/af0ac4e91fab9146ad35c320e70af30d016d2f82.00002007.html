@@ -1,0 +1,870 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FO Item Database</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../content/trasfade.js" type="text/javascript"></script>
+</head>
+<body>
+  <script language="javascript">
+  <![CDATA[
+    <!--
+    function vc_sc(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+    
+            if (expires)
+            expires = expires * 1000 * 60;
+    
+            var expires_date = new Date(today.getTime() + expires);
+    
+            document.cookie = name + "=" + escape(value) +
+            ((expires) ? ";expires=" + expires_date.toGMTString() : "") + 
+            ((path) ? ";path=" + path : "" ) + 
+            ((domain) ? ";domain=" + domain : "" ) +
+            ((secure) ? ";secure" : "" );
+    }
+    
+    var vc_freq_cap = 15; // Frequency cap in minutes
+    
+    var vc_rand = Math.floor(Math.random() * 7777);
+    
+    // Used to verify that we can set cookies
+    //
+    document.cookie = 'h2=o; path=/;';
+    
+    // Get the current window size to ensure we can view our ad
+    //
+    var vc_window_wt = 0;
+    var vc_window_ht = 0;
+    if (window.innerWidth && window.innerHeight) {
+            vc_window_wt = window.innerWidth;
+            vc_window_ht = window.innerHeight;
+    }
+    else if (document.documentElement.clientWidth > 0 && document.documentElement.clientHeight > 0) {
+            vc_window_wt = document.documentElement.clientWidth;
+            vc_window_ht = document.documentElement.clientHeight;
+    }
+    else {
+            vc_window_wt = document.body.clientWidth;
+            vc_window_ht = document.body.clientHeight;
+    
+    if (vc_window_ht > 1024) {
+            vc_window_ht = 1024;
+    }
+    }
+    
+    if (document.cookie.indexOf('n=vue') <= 0 && document.cookie.indexOf('2=o') > 0 && document.cookie.indexOf('vccap=1') <= 0) {
+            vc_sc('vccap', '1', vc_freq_cap, '/', null, null);
+            document.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+            document.write('/w/get.media?sid=57795&tm=12&m=4&tp=4&c=' + vc_rand);
+            document.write('&window_ht=' + vc_window_ht + '&window_wt=' + vc_window_wt + '"><\/scr'+'ipt>');
+    }
+    // -->
+  ]]>
+  </script> 
+  <script language="javascript">
+  <![CDATA[
+
+  <!--
+    var dc=document; var date_ob=new Date();
+    dc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+    if(dc.cookie.indexOf('e=llo') <= 0 && dc.cookie.indexOf('2=o') > 0){
+    dc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+    dc.write('/w/pop.cgi?sid=57795&m=2&tp=2&v=1.8&c='+bust+'"><\/scr'+'ipt>');
+    date_ob.setTime(date_ob.getTime()+14400000);
+    dc.cookie='he=llo; path=/; expires='+ date_ob.toGMTString();} // -->
+  ]]>
+  </script>
+  <div style="position:absolute; left:0px; top:0px;">
+    <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=57795&m=3&tp=3&d=j&t=n"></script> <noscript><img src="http://media.fastclick.net/w/get.media?sid=57795&m=3&tp=3&d=s&c=1" width="120" height="600" border="1" /></noscript>
+  </div>
+  <div id='homes' onmouseover="FadeOpacity('homes',30,100,300,20);" onmouseout="FadeOpacity('homes',100,30,300,20);" style="position:absolute; right:0px; top:20px; filter:alpha(opacity=30); opacity: 0.3; -moz-opacity:0.3;">
+    <a href="../"><img src="../img/home_button.jpg" width="71" height="335" /></a>
+  </div>
+  <div style="margin-left:125px; margin-right:125px">
+    <script type="text/javascript">
+    //<![CDATA[
+                                                                var cur='';
+                                                                function sele(seainp) {
+                                                                if (cur!=seainp.id) {
+                                                                        seainp.select(); cur=seainp.id;
+                                                                        }
+                                                                }
+                                function subsearch(eventr,tid) {
+                                                                        if (eventr && (eventr.keyCode == 13)) {
+                                                                                window.location.href='?do=&desc=&by=ITname&search='+document.getElementById(tid).value;
+                                                                        }
+                                                                }
+    //]]>
+    </script>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th colspan="12">Item Database (<a href="../?menu=database">Main Page</a>)</th>
+        </tr>
+        <tr>
+          <th colspan='12' style="padding:3px;"><a href="../items/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/items.jpg" width="91" height="26" /></a> <a href="../bestiary/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/monster.jpg" width="91" height="26" /></a> <a href="../npc/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/npcs.jpg" width="91" height="26" /></a> <a href="../quest/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/quests.jpg" width="91" height="26" /></a> <a href="../skills/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/skills.jpg" width="91" height="26" /></a> <a href="../char/"><img style="border-color:#3567B1; border-style:solid; border-width:1px;" onmouseover="this.style.borderColor='#F86E00'" onmouseout="this.style.borderColor='#3567B1'" alt="" src="../img/ranking.jpg" width="91" height="26" /></a></th>
+        </tr>
+        <tr>
+          <th class='toleft' colspan="10"><input name="" type="text" id="search1" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="other" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search1').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=other&ind=50'>51-64</a> ] ( 2 Pages for search "other" )</th>
+          <th colspan="2" class='toright'><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr class="c0">
+          <th>Icon</th>
+          <th><a href='?do=sort&byclass=1&desc=1&by=ITname&ind=0&search=other'>Name</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITlvlreq&ind=0&search=other'>Lvl. req</a></th>
+          <th width="200px">Description</th>
+          <th width="60px"><a href='?do=sort&byclass=1&desc=0&by=ITuse&ind=0&search=other'>Use</a></th>
+          <th width="60px">Bonus</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITsell&ind=0&search=other'>Sell Price</a></th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITbuy&ind=0&search=other'>Buy Price</a></th>
+          <th width="50px">Status Req.</th>
+          <th><a href='?do=sort&byclass=1&desc=0&by=ITdmgps&ind=0&search=other'>Dmg. / sec.</a></th>
+          <th>Dropped by</th>
+          <th>Obtained from</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="10" class='toleft'><input name="" type="text" id="search2" onclick="sele(this);" onkeypress="subsearch(event,this.id);" value="other" /><input name="" class="button" type="image" src="img/search.jpg" onmousedown="window.location.href='?do=&desc=&by=ITname&search='+document.getElementById('search2').value;" alt="Search" /><a href='?do=&desc=&by=ITname'><img class='button' src='img/showall.jpg' width='66' height='19' /></a> [ <span class='active'>1-50</span>, <a href='?desc=&by=ITname&byclass=1&do=&search=other&ind=50'>51-64</a> ] ( 2 Pages for search "other" )</th>
+          <th class='toright' colspan="2"><a href='?do=admin'><img class='button' src='img/admin.jpg' width='48' height='19' /></a> <a href='?do=insert'><img class='button' src='img/additem.jpg' width='66' height='19' /></a></th>
+        </tr>
+        <tr>
+          <th class="bottomnote" colspan="12">Last update 24/11/11</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2813'><img class='icon' src="img.php?id=2813" /></a></td>
+          <td><a href='?do=dispitem&id=2813'>Alien Deodorant</a></td>
+          <td>-</td>
+          <td>No wonder they smell so minty fresh. By kgykjhg</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=634'><img title='Robot Sentry' class='icon2' src='../bestiary/img.php?id=634' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1959'><img class='icon' src="img.php?id=1959" /></a></td>
+          <td><a href='?do=dispitem&id=1959'>Alien Family Picture</a></td>
+          <td>-</td>
+          <td>Awww, aren't they cute. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=634'><img title='Robot Sentry' class='icon2' src='../bestiary/img.php?id=634' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2812'><img class='icon' src="img.php?id=2812" /></a></td>
+          <td><a href='?do=dispitem&id=2812'>Alien Horn</a></td>
+          <td>-</td>
+          <td>It's so pointy.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=596'><img title='Ralaia' class='icon2' src='../bestiary/img.php?id=596' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2815'><img class='icon' src="img.php?id=2815" /></a></td>
+          <td><a href='?do=dispitem&id=2815'>Alien Sigs</a></td>
+          <td>-</td>
+          <td>If you try to smoke these you'll most likely die. Don't smoke kids.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Alien Wallet;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2388'><img class='icon' src="img.php?id=2388" /></a></td>
+          <td><a href='?do=dispitem&id=2388'>Alien Soap</a></td>
+          <td>-</td>
+          <td>They do like really clean, don't they?</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=596'><img title='Ralaia' class='icon2' src='../bestiary/img.php?id=596' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1004'><img class='icon' src="img.php?id=1004" /></a></td>
+          <td><a href='?do=dispitem&id=1004'>Ant Gut</a></td>
+          <td>-</td>
+          <td>As advertised.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=446'><img title='Wood Ant' class='icon2' src='../bestiary/img.php?id=446' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2911'><img class='icon' src="img.php?id=2911" /></a></td>
+          <td><a href='?do=dispitem&id=2911'>Bat Wings</a></td>
+          <td>-</td>
+          <td>Fly you fiend! By meenee (Outfit Shoulder)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=680'><img title='Flashing Dracula' class='icon2' src='../bestiary/img.php?id=680' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2820'><img class='icon' src="img.php?id=2820" /></a></td>
+          <td><a href='?do=dispitem&id=2820'>Blue Fire</a></td>
+          <td>-</td>
+          <td>It's a jar full of blue fire. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=640'><img title='Skele Ghoul' class='icon2' src='../bestiary/img.php?id=640' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2895'><img class='icon' src="img.php?id=2895" /></a></td>
+          <td><a href='?do=dispitem&id=2895'>Bone Dust</a></td>
+          <td>-</td>
+          <td>High in calcium. And dustiness.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=674'><img title='Grave Robber' class='icon2' src='../bestiary/img.php?id=674' /></a> <a href='../bestiary/?do=dispitem&id=535'><img title='Angry Skele' class='icon2' src='../bestiary/img.php?id=535' /></a> <a href='../bestiary/?do=dispitem&id=288'><img title='Skele' class='icon2' src='../bestiary/img.php?id=288' /></a> <a href='../bestiary/?do=dispitem&id=290'><img title='Armed Skele' class='icon2' src='../bestiary/img.php?id=290' /></a> <a href='../bestiary/?do=dispitem&id=293'><img title='Dwarf Skele' class='icon2' src='../bestiary/img.php?id=293' /></a> <a href='../bestiary/?do=dispitem&id=115'><img title='Dwarf Skele (christmas)' class='icon2' src='../bestiary/img.php?id=115' /></a> <a href='../bestiary/?do=dispitem&id=536'><img title='Giant Skele' class='icon2' src='../bestiary/img.php?id=536' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2929'><img class='icon' src="img.php?id=2929" /></a></td>
+          <td><a href='?do=dispitem&id=2929'>Bowl o Candy</a></td>
+          <td>-</td>
+          <td>It's a bowl o candy. By Lighterthief (Stacks to 20)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=704'><img title='Badger Archer' class='icon2' src='../bestiary/img.php?id=704' /></a> <a href='../bestiary/?do=dispitem&id=706'><img title='Badger Warrior' class='icon2' src='../bestiary/img.php?id=706' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3019'><img class='icon' src="img.php?id=3019" /></a></td>
+          <td><a href='?do=dispitem&id=3019'>Candy corn</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Maybe someone else will want it.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />25</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=376'><img title='Jerk-o-Lantern' class='icon2' src='../bestiary/img.php?id=376' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2827'><img class='icon' src="img.php?id=2827" /></a></td>
+          <td><a href='?do=dispitem&id=2827'>Cobweb</a></td>
+          <td>-</td>
+          <td>Freshly spun. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=708'><img title='Forest Spider' class='icon2' src='../bestiary/img.php?id=708' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2357'><img class='icon' src="img.php?id=2357" /></a></td>
+          <td><a href='?do=dispitem&id=2357'>Computer Chip</a></td>
+          <td>-</td>
+          <td>It looks to be from the early 1200's. By Necrohydro</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=656'><img title='UFO' class='icon2' src='../bestiary/img.php?id=656' /></a></td>
+          <td><a href='../quest/?do=dispitem&id=607'>Make Internets</a></td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2505'><img class='icon' src="img.php?id=2505" /></a></td>
+          <td><a href='?do=dispitem&id=2505'>Crab Stone</a></td>
+          <td>10</td>
+          <td>Crabs are pretty lucky. By Lighterthief (Socket/ Req. Crab crusader: Glorified)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +2,<br />
+          Agi +2,<br />
+          Str +2,<br />
+          Int +2,<br />
+          Luck +5</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />10000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=385'><img title='Crab Faction Shop' class='icon2' src='../npc/img.php?id=385' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2810'><img class='icon' src="img.php?id=2810" /></a></td>
+          <td><a href='?do=dispitem&id=2810'>Cyborg Prosthetic</a></td>
+          <td>-</td>
+          <td>The label reads "Aperture Science." By Bamboozle</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=656'><img title='UFO' class='icon2' src='../bestiary/img.php?id=656' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2489'><img class='icon' src="img.php?id=2489" /></a></td>
+          <td><a href='?do=dispitem&id=2489'>Dark Elf Stone</a></td>
+          <td>40</td>
+          <td>The power of the Dark Elves is in this stone. By Lighterthief (Socket/ Req. Dark Elf Destroyers: Glorified)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +5,<br />
+          Agi +4,<br />
+          Str +4,<br />
+          Int +4,<br />
+          Luck +10</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=365'><img title='Dark Elf Shop' class='icon2' src='../npc/img.php?id=365' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1459'><img class='icon' src="img.php?id=1459" /></a></td>
+          <td><a href='?do=dispitem&id=1459'>Dead Canary</a></td>
+          <td>-</td>
+          <td>Ewww.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=445'><img title='Lost Treasure Chest' class='icon2' src='../bestiary/img.php?id=445' /></a> <a href='../bestiary/?do=dispitem&id=724'><img title='Ex Miner' class='icon2' src='../bestiary/img.php?id=724' /></a> <a href='../bestiary/?do=dispitem&id=454'><img title='Ex Digger' class='icon2' src='../bestiary/img.php?id=454' /></a> <a href='../bestiary/?do=dispitem&id=669'><img title='Disgruntled Ex Miner' class='icon2' src='../bestiary/img.php?id=669' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2886'><img class='icon' src="img.php?id=2886" /></a></td>
+          <td><a href='?do=dispitem&id=2886'>Ectoplasm 2</a></td>
+          <td>-</td>
+          <td>Ew. (Stacks to 3)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=685'><img title='Disturbed Ghost' class='icon2' src='../bestiary/img.php?id=685' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2667'><img class='icon' src="img.php?id=2667" /></a></td>
+          <td><a href='?do=dispitem&id=2667'>Elf Flute</a></td>
+          <td>-</td>
+          <td>Some punks like to play classical music. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=639'><img title='Dark Elf Punk' class='icon2' src='../bestiary/img.php?id=639' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2427'><img class='icon' src="img.php?id=2427" /></a></td>
+          <td><a href='?do=dispitem&id=2427'>Elf Pottery</a></td>
+          <td>-</td>
+          <td>It seems to be crafted by an elf that is mostly blind in both eyes. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=635'><img title='Dark Elf' class='icon2' src='../bestiary/img.php?id=635' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3055'><img class='icon' src="img.php?id=3055" /></a></td>
+          <td><a href='?do=dispitem&id=3055'>Evil Army Blanket</a></td>
+          <td>-</td>
+          <td>Keeps you warm with the heat of a hundred tortured souls... or the electric element. The tag says to "use the electric element if running low on tortured souls." Huh. By Falcooner</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />2000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=717'><img title='Evil Frostthrower' class='icon2' src='../bestiary/img.php?id=717' /></a> <a href='../bestiary/?do=dispitem&id=716'><img title='Evil Snow Soldier' class='icon2' src='../bestiary/img.php?id=716' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3037'><img class='icon' src="img.php?id=3037" /></a></td>
+          <td><a href='?do=dispitem&id=3037'>Evil Electric Army Blanket</a></td>
+          <td>-</td>
+          <td>So evil, yet so warm. By Falcooner (Stacks to 10)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />500</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=733'><img title='Evil Ice Skater' class='icon2' src='../bestiary/img.php?id=733' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2533'><img class='icon' src="img.php?id=2533" /></a></td>
+          <td><a href='?do=dispitem&id=2533'>Facebook Stone</a></td>
+          <td>-</td>
+          <td>An actual stone from the Facebook building. By Lighterthief (Socket)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +6,<br />
+          Agi +6,<br />
+          Str +6,<br />
+          Int +6,<br />
+          Luck +20,<br />
+          Def +100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>pruchase 1200gem pack on fb;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2818'><img class='icon' src="img.php?id=2818" /></a></td>
+          <td><a href='?do=dispitem&id=2818'>Flower of Power</a></td>
+          <td>-</td>
+          <td>A strange amount of power runs through this little flower. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=635'><img title='Dark Elf' class='icon2' src='../bestiary/img.php?id=635' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=3039'><img class='icon' src="img.php?id=3039" /></a></td>
+          <td><a href='?do=dispitem&id=3039'>Frozen Fish</a></td>
+          <td>-</td>
+          <td>It's a fish and it smells. By Lighterthief (Stacks to 5)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=715'><img title='Innocent Penguin' class='icon2' src='../bestiary/img.php?id=715' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1193'><img class='icon' src="img.php?id=1193" /></a></td>
+          <td><a href='?do=dispitem&id=1193'>Gold Nugget</a></td>
+          <td>-</td>
+          <td>Gold l tells ya!</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />60</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=724'><img title='Ex Miner' class='icon2' src='../bestiary/img.php?id=724' /></a> <a href='../bestiary/?do=dispitem&id=454'><img title='Ex Digger' class='icon2' src='../bestiary/img.php?id=454' /></a> <a href='../bestiary/?do=dispitem&id=668'><img title='Boulder Colorado' class='icon2' src='../bestiary/img.php?id=668' /></a> <a href='../bestiary/?do=dispitem&id=672'><img title='Pebble' class='icon2' src='../bestiary/img.php?id=672' /></a> <a href='../bestiary/?do=dispitem&id=670'><img title='Ex Miner Pitboss' class='icon2' src='../bestiary/img.php?id=670' /></a> <a href='../bestiary/?do=dispitem&id=669'><img title='Disgruntled Ex Miner' class='icon2' src='../bestiary/img.php?id=669' /></a> <a href='../bestiary/?do=dispitem&id=671'><img title='Stone' class='icon2' src='../bestiary/img.php?id=671' /></a> <a href='../bestiary/?do=dispitem&id=368'><img title='Lost Treasure (Swamp Grotto)' class='icon2' src='../bestiary/img.php?id=368' /></a> <a href='../bestiary/?do=dispitem&id=648'><img title='Green Imp' class='icon2' src='../bestiary/img.php?id=648' /></a> <a href='../bestiary/?do=dispitem&id=529'><img title='Chest' class='icon2' src='../bestiary/img.php?id=529' /></a></td>
+          <td><a href='../quest/?do=dispitem&id=664'>Spiders Everywhere</a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=925'><img class='icon' src="img.php?id=925" /></a></td>
+          <td><a href='?do=dispitem&id=925'>Gold Skull Chunk (Left Side)</a></td>
+          <td>-</td>
+          <td>lt looks like the left side of a skull, only it's made of gold. l guess you could use it as some sort of spoon?</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />300</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=445'><img title='Lost Treasure Chest' class='icon2' src='../bestiary/img.php?id=445' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=636'><img class='icon' src="img.php?id=636" /></a></td>
+          <td><a href='?do=dispitem&id=636'>Gold Skull Chunk (Nose)</a></td>
+          <td>-</td>
+          <td>It looks like a golden nose. Tycho Brahe may be around here somewhere...</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=445'><img title='Lost Treasure Chest' class='icon2' src='../bestiary/img.php?id=445' /></a> <a href='../bestiary/?do=dispitem&id=302'><img title='Large Treasure Chest' class='icon2' src='../bestiary/img.php?id=302' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=945'><img class='icon' src="img.php?id=945" /></a></td>
+          <td><a href='?do=dispitem&id=945'>Gold Skull Chunk (Right Side)</a></td>
+          <td>-</td>
+          <td>Looks like the right side of a golden skull.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />250</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=946'><img class='icon' src="img.php?id=946" /></a></td>
+          <td><a href='?do=dispitem&id=946'>Gold Skull Jawbone</a></td>
+          <td>-</td>
+          <td>That's some underbite. Some of the people around here could probably use the teeth, though. No Noob lsland school of dentistry, l guess.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />350</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=445'><img title='Lost Treasure Chest' class='icon2' src='../bestiary/img.php?id=445' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=948'><img class='icon' src="img.php?id=948" /></a></td>
+          <td><a href='?do=dispitem&id=948'>Henching for Dummies</a></td>
+          <td>-</td>
+          <td>Table of Contents includes such gems as ''Uniform Coordination'' and ''Attacking One at a Time.''</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />30</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=94'><img title='Evil Soldier' class='icon2' src='../bestiary/img.php?id=94' /></a> <a href='../bestiary/?do=dispitem&id=533'><img title='Intern of Evil' class='icon2' src='../bestiary/img.php?id=533' /></a> <a href='../bestiary/?do=dispitem&id=531'><img title='Evil Guard' class='icon2' src='../bestiary/img.php?id=531' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2931'><img class='icon' src="img.php?id=2931" /></a></td>
+          <td><a href='?do=dispitem&id=2931'>Herbs</a></td>
+          <td>-</td>
+          <td>Wacky herbs. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=708'><img title='Forest Spider' class='icon2' src='../bestiary/img.php?id=708' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2534'><img class='icon' src="img.php?id=2534" /></a></td>
+          <td><a href='?do=dispitem&id=2534'>Kongregate Stone</a></td>
+          <td>-</td>
+          <td>A stone from the Kong HQ. By Lighterthief (Socket)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +6,<br />
+          Agi +6,<br />
+          Str +6,<br />
+          Int +6,<br />
+          Luck +20,<br />
+          Def +100,<br /></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>purchase 1200gem pack on kong;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2819'><img class='icon' src="img.php?id=2819" /></a></td>
+          <td><a href='?do=dispitem&id=2819'>Mirky Lumber</a></td>
+          <td>-</td>
+          <td>Some hastily chopped and processed wood. By Jman12390</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=641'><img title='Dark Elf Archer' class='icon2' src='../bestiary/img.php?id=641' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2928'><img class='icon' src="img.php?id=2928" /></a></td>
+          <td><a href='?do=dispitem&id=2928'>Moldy Bread</a></td>
+          <td>-</td>
+          <td>Nasty. By Lighterthief (Stacks to 10)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=704'><img title='Badger Archer' class='icon2' src='../bestiary/img.php?id=704' /></a> <a href='../bestiary/?do=dispitem&id=706'><img title='Badger Warrior' class='icon2' src='../bestiary/img.php?id=706' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2828'><img class='icon' src="img.php?id=2828" /></a></td>
+          <td><a href='?do=dispitem&id=2828'>Mushroom Mushroom</a></td>
+          <td>-</td>
+          <td>SNAKE SNAKE OH THERE'S A SNAKE! By Jman12390</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />200</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=701'><img title='Mossra' class='icon2' src='../bestiary/img.php?id=701' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2809'><img class='icon' src="img.php?id=2809" /></a></td>
+          <td><a href='?do=dispitem&id=2809'>Oil Can</a></td>
+          <td>-</td>
+          <td>Cyborg crabs run on... oil? By StarmanDX</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=691'><img title='Cyborg Crab' class='icon2' src='../bestiary/img.php?id=691' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3035'><img class='icon' src="img.php?id=3035" /></a></td>
+          <td><a href='?do=dispitem&id=3035'>Penguin Egg</a></td>
+          <td>-</td>
+          <td>Do you see what you've done now? You killed an expecting father. Now hurry up and sell it for a profit before the Frozen Norths Humane Society finds it on you and sues you. By Lighterthief (Stacks to 5)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=715'><img title='Innocent Penguin' class='icon2' src='../bestiary/img.php?id=715' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2814'><img class='icon' src="img.php?id=2814" /></a></td>
+          <td><a href='?do=dispitem&id=2814'>Pesticide</a></td>
+          <td>-</td>
+          <td>Tastes like butter.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Alien Wallet;</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2642'><img class='icon' src="img.php?id=2642" /></a></td>
+          <td><a href='?do=dispitem&id=2642'>Pirate Sock</a></td>
+          <td>14</td>
+          <td>Arrr this be one smelly sock. By Ligterthief (Socket/ Req. Pirate Order: Glorified)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +4,<br />
+          Agi +4,<br />
+          Str +4,<br />
+          Int +4,<br />
+          Luck +5</td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../npc/?do=dispitem&id=377'><img title='Pirate Order' class='icon2' src='../npc/img.php?id=377' /></a></td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2893'><img class='icon' src="img.php?id=2893" /></a></td>
+          <td><a href='?do=dispitem&id=2893'>Plant Tooth</a></td>
+          <td>-</td>
+          <td>I wonder how much these are worth to a tooth fairy. By Lighterthief (Stacks to 5)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />100</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=683'><img title='Swampy' class='icon2' src='../bestiary/img.php?id=683' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3005'><img class='icon' src="img.php?id=3005" /></a></td>
+          <td><a href='?do=dispitem&id=3005'>Pocket Watch</a>&nbsp;<img title="Removed" src="../img/removed.gif" /></td>
+          <td>-</td>
+          <td>Jolly good day, the time is.. By Falcooner (Pocket)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +8,<br />
+          Agi +8,<br />
+          Str +8,<br />
+          Int +8,<br />
+          Luck +10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>purchase 1600gem pack on fb/ kong;</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2914'><img class='icon' src="img.php?id=2914" /></a></td>
+          <td><a href='?do=dispitem&id=2914'>Pumpkin Body</a></td>
+          <td>40</td>
+          <td>Looks flimsy and smells terrible. By Jaylvan2010 (Outfit Body)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />600</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=684'><img title='Mr Trick o&#039;,&lt;br&gt;Treat' class='icon2' src='../bestiary/img.php?id=684' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2915'><img class='icon' src="img.php?id=2915" /></a></td>
+          <td><a href='?do=dispitem&id=2915'>Pumpkin Head</a></td>
+          <td>40</td>
+          <td>Tag reads: "Do not carve while wearing." By Lighterthief (Outfit Head)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />800</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=684'><img title='Mr Trick o&#039;,&lt;br&gt;Treat' class='icon2' src='../bestiary/img.php?id=684' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2913'><img class='icon' src="img.php?id=2913" /></a></td>
+          <td><a href='?do=dispitem&id=2913'>Pumpkin Legs</a></td>
+          <td>40</td>
+          <td>Makes a squishing sound at all times. By Jaylvan2010 (Outfit Legs)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />400</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=684'><img title='Mr Trick o&#039;,&lt;br&gt;Treat' class='icon2' src='../bestiary/img.php?id=684' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=3062'><img class='icon' src="img.php?id=3062" /></a></td>
+          <td><a href='?do=dispitem&id=3062'>Rare Frozen Bird Eggs</a></td>
+          <td>-</td>
+          <td>Incubating them, hatching then, and then caring for them with a mothers love is one option, but so is an omelette. By Lighterthief</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=719'><img title='Arctic Wolf' class='icon2' src='../bestiary/img.php?id=719' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=2663'><img class='icon' src="img.php?id=2663" /></a></td>
+          <td><a href='?do=dispitem&id=2663'>Relic</a></td>
+          <td>-</td>
+          <td>This has been passed down through several generations. By Lighterthief (Socket)</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>Sta +1,<br />
+          Agi +1,<br />
+          Int +1</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />1000</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=701'><img title='Mossra' class='icon2' src='../bestiary/img.php?id=701' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=1009'><img class='icon' src="img.php?id=1009" /></a></td>
+          <td><a href='?do=dispitem&id=1009'>Scalloped Potatoes</a></td>
+          <td>-</td>
+          <td>Scalloped Potatoes</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=441'><img title='Rotten Potato' class='icon2' src='../bestiary/img.php?id=441' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c1">
+          <td><a href='?do=dispitem&id=1461'><img class='icon' src="img.php?id=1461" /></a></td>
+          <td><a href='?do=dispitem&id=1461'>Scorpion Guts</a></td>
+          <td>-</td>
+          <td>Yup, just what you'd expect to find inside one.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td><img title="Coins" class="currencyIcon" src="../img/coins.gif" width="8" height="8" />3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=361'><img title='Small Cave Scorp' class='icon2' src='../bestiary/img.php?id=361' /></a> <a href='../bestiary/?do=dispitem&id=362'><img title='Enraged Cave Scorp' class='icon2' src='../bestiary/img.php?id=362' /></a></td>
+          <td>-</td>
+        </tr>
+        <tr class="c2">
+          <td><a href='?do=dispitem&id=2487'><img class='icon' src="img.php?id=2487" /></a></td>
+          <td><a href='?do=dispitem&id=2487'>Scythe Base</a></td>
+          <td>-</td>
+          <td>The base of what could be an epic scythe.</td>
+          <td><a href='?search=other&byclass=1'>other</a></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td><a href='../bestiary/?do=dispitem&id=588'><img title='Destroyer of Faith' class='icon2' src='../bestiary/img.php?id=588' /></a></td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
