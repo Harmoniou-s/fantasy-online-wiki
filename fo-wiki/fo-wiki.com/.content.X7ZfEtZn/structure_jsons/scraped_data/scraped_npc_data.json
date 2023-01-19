@@ -1,0 +1,1596 @@
+{
+    "npcs": [
+        {
+            "id": "1",
+            "name": "Lieutenant Dan",
+            "coordinates": "0",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "6",
+            "name": "Lieutenant Phil",
+            "coordinates": "0",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "7",
+            "name": "Sergeant Fox",
+            "coordinates": "0",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "29",
+            "name": "Army Man",
+            "coordinates": "0",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "49",
+            "name": "The Timmeh Shop",
+            "coordinates": "(89,494)",
+            "drops": [{ "id": "219", "name": "Pointy stick" }, { "id": "216", "name": "Toy Sword" }, { "id": "392", "name": "Toy Bow" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "51",
+            "name": "Farmer Ted",
+            "coordinates": "(78,504)",
+            "drops": [{ "id": "185", "name": "Barrel Lid" }, { "id": "188", "name": "Letter to the General" }],
+            "quests": [{ "id": "177", "name": "Witch's Brew" }, { "id": "97", "name": "Night of The Turnips" }, { "id": "186", "name": "Letter to the General" }],
+            "note": "-"
+        },
+        {
+            "id": "52",
+            "name": "Nicole",
+            "coordinates": "(79,506)",
+            "drops": [],
+            "quests": [{ "id": "95", "name": "Little Girl Lost" }, { "id": "96", "name": "Little Girl Hungry" }],
+            "note": "-"
+        },
+        {
+            "id": "60",
+            "name": "The Skill Trainer Remo Shop",
+            "coordinates": "(118,261)",
+            "drops": [{ "id": "42", "name": "Thick Skin" }, { "id": "45", "name": "l33t Skillz" }, { "id": "47", "name": "Nerd Rage" }, { "id": "59", "name": "Fireball" }, { "id": "62", "name": "Twilightning Bolt" }, { "id": "70", "name": "Self-Motivated" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "53",
+            "name": "Old Lady",
+            "coordinates": "(52,438)",
+            "drops": [],
+            "quests": [{ "id": "264", "name": "Get off my lawn!" }, { "id": "288", "name": "Pretty Fly for a Fly Guy" }, { "id": "331", "name": "Dead (Pumpkin) Rising" }],
+            "note": "-"
+        },
+        {
+            "id": "55",
+            "name": "Fisherman Gorton",
+            "coordinates": "(34,547)",
+            "drops": [{ "id": "202", "name": "Note for little girl" }, { "id": "561", "name": "Dirty Undershirt" }, { "id": "852", "name": "Tighty Off-Whities" }],
+            "quests": [{ "id": "95", "name": "Little Girl Lost" }, { "id": "325", "name": "The Nudening" }, { "id": "560", "name": "Beat The Hay Out of Him" }],
+            "note": "-"
+        },
+        {
+            "id": "56",
+            "name": "General Unrest",
+            "coordinates": "(97,426)",
+            "drops": [],
+            "quests": [{ "id": "333", "name": "The Annoying Skeles" }],
+            "note": "-"
+        },
+        {
+            "id": "57",
+            "name": "Guard Captain Bill",
+            "coordinates": "(96,427)",
+            "drops": [{ "id": "189", "name": "Orders for Scout" }, { "id": "2646", "name": "License To Kill" }],
+            "quests": [{ "id": "179", "name": "Show Your ID" }, { "id": "137", "name": "Find the Scout" }, { "id": "186", "name": "Letter to the General" }],
+            "note": "-"
+        },
+        {
+            "id": "58",
+            "name": "Guardsman Phil",
+            "coordinates": "(95,431)",
+            "drops": [],
+            "quests": [{ "id": "328", "name": "The Skeleton Closet" }, { "id": "399", "name": "Right To Boney Arms" }],
+            "note": "-"
+        },
+        {
+            "id": "62",
+            "name": "Shopkeep Gil Shop",
+            "coordinates": "(100,244)",
+            "drops": [{ "id": "677", "name": "Amateur Magician's Cloak" }, { "id": "829", "name": "Crab Coast Map" }, { "id": "1340", "name": "Basic Magic Staff" }, { "id": "1610", "name": "Standard Bow" }, { "id": "2193", "name": "Small Energy Potion" }, { "id": "2194", "name": "Small Health Potion" }, { "id": "2215", "name": "Wooden Staff" }, { "id": "2216", "name": "Basic Leather Body Armor" }, { "id": "2217", "name": "Basic Leather Leg Armor" }, { "id": "2354", "name": "XP Boost" }, { "id": "2707", "name": "Satchel" }, { "id": "2757", "name": "Standard Lockpick" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "63",
+            "name": "Blacksmith Mike Shop",
+            "coordinates": "(106,243)",
+            "drops": [{ "id": "278", "name": "Long Metal Sword" }, { "id": "591", "name": "Big Metal Shield" }, { "id": "2211", "name": "Tin Man Torso" }, { "id": "2212", "name": "Tin Man Legs" }, { "id": "2213", "name": "Heavy Metal Armor" }, { "id": "2214", "name": "Heavy Metal Leg Armor" }, { "id": "2724", "name": "10K Coin Note" }, { "id": "2744", "name": "Ranger Bow" }, { "id": "2745", "name": "Star Wand" }, { "id": "2757", "name": "Standard Lockpick" }, { "id": "2758", "name": "Standard Pickaxe" }, { "id": "3053", "name": "Master Sword" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "64",
+            "name": "Marksman Mccoy",
+            "coordinates": "(87,270)",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "65",
+            "name": "Jen",
+            "coordinates": "(75,247)",
+            "drops": [],
+            "quests": [{ "id": "346", "name": "She Hates Spiders" }, { "id": "350", "name": "She REALLY Hates Spiders" }],
+            "note": "-"
+        },
+        {
+            "id": "66",
+            "name": "Farmer Otis",
+            "coordinates": "(124,303)",
+            "drops": [],
+            "quests": [{ "id": "192", "name": "Zombeet for Charlie" }, { "id": "286", "name": "Zombeet Marathon" }, { "id": "347", "name": "Night of the Zombeets" }],
+            "note": "-"
+        },
+        {
+            "id": "70",
+            "name": "Farmer Clooney",
+            "coordinates": "(122,225)",
+            "drops": [{ "id": "642", "name": "Spicy Manhattan Crab Chowder" }],
+            "quests": [{ "id": "371", "name": "Man Rings" }, { "id": "476", "name": "That's a Spicy Crabmeat!" }, { "id": "556", "name": "Attack of the Killer Tomatoes" }],
+            "note": "-"
+        },
+        {
+            "id": "71",
+            "name": "Captain Morgan",
+            "coordinates": "(53,233)",
+            "drops": [{ "id": "833", "name": "Large Sword" }],
+            "quests": [{ "id": "354", "name": "Who's the Boss?" }, { "id": "452", "name": "Captain Morgan's Slimy Sword" }],
+            "note": "-"
+        },
+        {
+            "id": "72",
+            "name": "Little Jimmy",
+            "coordinates": "(76,340)",
+            "drops": [],
+            "quests": [{ "id": "341", "name": "Crab meat for Little Jimmy" }, { "id": "343", "name": "Undeath isn't just for people" }, { "id": "476", "name": "That's a Spicy Crabmeat!" }],
+            "note": "-"
+        },
+        {
+            "id": "73",
+            "name": "Fisherman Santiago",
+            "coordinates": "(184,358)",
+            "drops": [],
+            "quests": [{ "id": "342", "name": "Peanut Butter Jelly Time" }, { "id": "344", "name": "Kill the King Crab" }],
+            "note": "-"
+        },
+        {
+            "id": "79",
+            "name": "The Shopkeep Sal Shop",
+            "coordinates": "(61,442)",
+            "drops": [{ "id": "179", "name": "Basic Bow" }, { "id": "181", "name": "Pants" }, { "id": "182", "name": "Wanderer's Cloak" }, { "id": "194", "name": "Dull Wooden Sword" }, { "id": "207", "name": "Woodsman's Axe" }, { "id": "395", "name": "Magic Stick" }, { "id": "414", "name": "Small Energy Potion" }, { "id": "415", "name": "Small Health Potion" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "74",
+            "name": "Skill Trainer Miyagi Shop",
+            "coordinates": "(88,425)",
+            "drops": [{ "id": "283", "name": "l33t Skillz" }, { "id": "284", "name": "Left Hook" }, { "id": "286", "name": "Nerd Rage" }, { "id": "287", "name": "Lick Your Wounds" }, { "id": "288", "name": "Fireball" }, { "id": "289", "name": "Boom! Headshot!" }, { "id": "290", "name": "Thick Skin" }, { "id": "299", "name": "Self-Motivated" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "75",
+            "name": "Guardsman Bob",
+            "coordinates": "(184,274)",
+            "drops": [{ "id": "344", "name": "Letter to General Quixote" }, { "id": "1344", "name": "Metal Shield" }],
+            "quests": [{ "id": "356", "name": "Skeleguard Skulls" }, { "id": "357", "name": "The Skele Elite" }, { "id": "540", "name": "Letter to Don Quixote" }],
+            "note": "offers quest \"The Skele Elite\""
+        },
+        {
+            "id": "77",
+            "name": "Lori Formergoth",
+            "coordinates": "(111,491)",
+            "drops": [],
+            "quests": [{ "id": "329", "name": "Witch's Brew" }, { "id": "335", "name": "Giant Skele Skull" }],
+            "note": "-"
+        },
+        {
+            "id": "78",
+            "name": "Guardsman Paul",
+            "coordinates": "(117,494)",
+            "drops": [],
+            "quests": [{ "id": "336", "name": "What's that smell?" }, { "id": "337", "name": "Angry Angry Skeles" }],
+            "note": "not sure which quest are linked to this guy..."
+        },
+        {
+            "id": "80",
+            "name": "The Salesman Wynn Shop",
+            "coordinates": "(189,513)",
+            "drops": [{ "id": "350", "name": "Standard Sword" }, { "id": "82", "name": "Big Axe" }, { "id": "79", "name": "Basic Body Armor" }, { "id": "149", "name": "Basic Leg Armor" }, { "id": "166", "name": "Bow of Arrowness" }, { "id": "211", "name": "Wand" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "81",
+            "name": "Guardsman Warren",
+            "coordinates": "(193,504)",
+            "drops": [],
+            "quests": [{ "id": "338", "name": "The Evil Army" }, { "id": "339", "name": "Thinning the Ranks" }],
+            "note": "-"
+        },
+        {
+            "id": "82",
+            "name": "Guard Captain Pete",
+            "coordinates": "(198,497)",
+            "drops": [],
+            "quests": [{ "id": "161", "name": "Evil McBadGuy" }, { "id": "340", "name": "Evil Swordsmen Massacre" }],
+            "note": "-"
+        },
+        {
+            "id": "83",
+            "name": "Scout",
+            "coordinates": "(168,406)",
+            "drops": [{ "id": "213", "name": "Evil Army Membership Card" }],
+            "quests": [{ "id": "179", "name": "Show Your ID" }, { "id": "137", "name": "Find the Scout" }],
+            "note": "-"
+        },
+        {
+            "id": "86",
+            "name": "Guardsman Dan",
+            "coordinates": "(140,239)",
+            "drops": [],
+            "quests": [{ "id": "351", "name": "Enemy at the Gates" }, { "id": "352", "name": "What About Bob?" }],
+            "note": "-"
+        },
+        {
+            "id": "88",
+            "name": "Storage",
+            "coordinates": "(102,245)",
+            "drops": [],
+            "quests": [],
+            "note": "pay 40 gems to have unlimited access to storage (50 slots)"
+        },
+        {
+            "id": "89",
+            "name": "Old Lady Olga",
+            "coordinates": "(128,307)",
+            "drops": [],
+            "quests": [{ "id": "353", "name": "Slimy Beet Stealers" }, { "id": "454", "name": "Zombeet Defense" }],
+            "note": "-"
+        },
+        {
+            "id": "92",
+            "name": "Captain Captain",
+            "coordinates": "(0,0)",
+            "drops": [],
+            "quests": [{ "id": "161", "name": "Evil McBadGuy" }, { "id": "160", "name": "Evil Swordsmen Massacre" }],
+            "note": "not sure where this npc now is, maybe he's now \"Guardsman Paul\"?"
+        },
+        {
+            "id": "95",
+            "name": "Booty Man",
+            "coordinates": "(195,159)",
+            "drops": [],
+            "quests": [{ "id": "222", "name": "Booty Call" }, { "id": "223", "name": "Booty Camp" }],
+            "note": "-"
+        },
+        {
+            "id": "96",
+            "name": "Pirate Pawn Shop",
+            "coordinates": "(195,152)",
+            "drops": [{ "id": "414", "name": "Small Energy Potion" }, { "id": "415", "name": "Small Health Potion" }, { "id": "416", "name": "Medium Health Potion" }, { "id": "417", "name": "Medium Energy Potion" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "97",
+            "name": "Scorpian Man",
+            "coordinates": "(62,147)",
+            "drops": [],
+            "quests": [{ "id": "224", "name": "Scorpions on the Plains" }],
+            "note": "-"
+        },
+        {
+            "id": "90",
+            "name": "Guardsman Charlie",
+            "coordinates": "(73,245)",
+            "drops": [],
+            "quests": [{ "id": "192", "name": "Zombeet for Charlie" }, { "id": "349", "name": "Sometimes you fail" }],
+            "note": "-"
+        },
+        {
+            "id": "91",
+            "name": "General Quixote",
+            "coordinates": "(134,227)",
+            "drops": [],
+            "quests": [{ "id": "359", "name": "We Are the Champions!" }, { "id": "540", "name": "Letter to Don Quixote" }],
+            "note": "-"
+        },
+        {
+            "id": "93",
+            "name": "Matey Mir",
+            "coordinates": "(198,151)",
+            "drops": [],
+            "quests": [{ "id": "592", "name": "Mo' Booty, Mo' Problems" }, { "id": "662", "name": "Mo' Better Booty" }],
+            "note": "-"
+        },
+        {
+            "id": "94",
+            "name": "Pirate Patrick",
+            "coordinates": "(201,150)",
+            "drops": [],
+            "quests": [{ "id": "291", "name": "Insert Clever n00b Pun Here" }, { "id": "660", "name": "Bad n00b Treasure Hunters" }],
+            "note": "-"
+        },
+        {
+            "id": "98",
+            "name": "Angry Arrnold",
+            "coordinates": "(169,80)",
+            "drops": [],
+            "quests": [{ "id": "204", "name": "Fallen Arches" }, { "id": "215", "name": "The Assistant" }],
+            "note": "-"
+        },
+        {
+            "id": "105",
+            "name": "Market",
+            "coordinates": "(121,242)",
+            "drops": [],
+            "quests": [],
+            "note": "auction house"
+        },
+        {
+            "id": "106",
+            "name": "Delusional Pirate",
+            "coordinates": "(44,112)",
+            "drops": [],
+            "quests": [{ "id": "220", "name": "The Mirage" }],
+            "note": "-"
+        },
+        {
+            "id": "107",
+            "name": "Pirate Navigator",
+            "coordinates": "(206,147)",
+            "drops": [],
+            "quests": [],
+            "note": "This npc will bring you back to shore!"
+        },
+        {
+            "id": "108",
+            "name": "Pirate Trader Shop",
+            "coordinates": "(46,39)",
+            "drops": [{ "id": "514", "name": "Ninja Ring" }, { "id": "1608", "name": "Quality Standard Bow" }, { "id": "2202", "name": "Jug of Rum" }, { "id": "2203", "name": "Standard Cutlass" }, { "id": "2354", "name": "XP Boost" }, { "id": "2675", "name": "Fanny Pack" }, { "id": "2757", "name": "Standard Lockpick" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "109",
+            "name": "Dillon",
+            "coordinates": "(66,44)",
+            "drops": [],
+            "quests": [{ "id": "227", "name": "Scorpion Report" }],
+            "note": "-"
+        },
+        {
+            "id": "111",
+            "name": "Captain Crunch",
+            "coordinates": "(159,72)",
+            "drops": [],
+            "quests": [{ "id": "210", "name": "SCORPION EXTERMINATION" }],
+            "note": "-"
+        },
+        {
+            "id": "113",
+            "name": "Miner Jonas",
+            "coordinates": "(143,599)",
+            "drops": [],
+            "quests": [{ "id": "322", "name": "Jonas is done with mining" }, { "id": "665", "name": "Boulder Colorado" }],
+            "note": "-"
+        },
+        {
+            "id": "114",
+            "name": "Foreman Elliot",
+            "coordinates": "(195,730)",
+            "drops": [],
+            "quests": [{ "id": "322", "name": "Jonas is done with mining" }],
+            "note": "-"
+        },
+        {
+            "id": "116",
+            "name": "Risky Salesman Shop",
+            "coordinates": "(182,614)",
+            "drops": [{ "id": "929", "name": "Quality Metal Shield" }, { "id": "930", "name": "Stone Hammer" }, { "id": "617", "name": "Quality Large Sword" }, { "id": "897", "name": "Standard Longbow" }, { "id": "933", "name": "Amateur Magician's Pants" }, { "id": "2754", "name": "Small Torch" }, { "id": "2755", "name": "Medium Health Potion" }, { "id": "2756", "name": "Medium Energy Potion" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "122",
+            "name": "Salesman Wynn Shop",
+            "coordinates": "(189,513)",
+            "drops": [{ "id": "350", "name": "Standard Sword" }, { "id": "517", "name": "Basic Body Armor" }, { "id": "518", "name": "Basic Leg Armor" }, { "id": "525", "name": "Small Bow of Arrowness" }, { "id": "1343", "name": "Wand" }, { "id": "2290", "name": "Woodsman's Axe" }, { "id": "2354", "name": "XP Boost" }, { "id": "2675", "name": "Fanny Pack" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "123",
+            "name": "Salesman Ducky Shop",
+            "coordinates": "(100,890)",
+            "drops": [{ "id": "2353", "name": "Jumbo XP Boost" }, { "id": "2354", "name": "XP Boost" }, { "id": "2754", "name": "Small Torch" }, { "id": "2755", "name": "Medium Health Potion" }, { "id": "2756", "name": "Medium Energy Potion" }, { "id": "2760", "name": "Swamp Grotto Map" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "124",
+            "name": "Salesman Skip Shop",
+            "coordinates": "(50,845)",
+            "drops": [{ "id": "901", "name": "Shiny Metal Leg Armor" }, { "id": "902", "name": "Shiny Metal Armor" }, { "id": "947", "name": "Hardcore Staff" }, { "id": "949", "name": "Hard Leather Leg Armor" }, { "id": "2278", "name": "Amateur Magician's Wand" }, { "id": "2354", "name": "XP Boost" }, { "id": "2754", "name": "Small Torch" }, { "id": "3052", "name": "Jumbo XP Boost" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "127",
+            "name": "Opportunist Salesman Shop",
+            "coordinates": "(195,730)",
+            "drops": [{ "id": "1817", "name": "Small Scorpion Claw" }, { "id": "2354", "name": "XP Boost" }, { "id": "2724", "name": "10K Coin Note" }, { "id": "2753", "name": "Cave of Some Return Map" }, { "id": "2754", "name": "Small Torch" }, { "id": "2755", "name": "Medium Health Potion" }, { "id": "2756", "name": "Medium Energy Potion" }, { "id": "2757", "name": "Standard Lockpick" }, { "id": "2758", "name": "Standard Pickaxe" }, { "id": "3052", "name": "Jumbo XP Boost" }, { "id": "3150", "name": "Small Red Goo" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "133",
+            "name": "Nicole",
+            "coordinates": "(80,504)",
+            "drops": [],
+            "quests": [{ "id": "95", "name": "Little Girl Lost" }, { "id": "326", "name": "Little Girl Hungry" }],
+            "note": "-"
+        },
+        {
+            "id": "134",
+            "name": "Farmer Ted",
+            "coordinates": "(78,502)",
+            "drops": [{ "id": "188", "name": "Letter to the General" }, { "id": "528", "name": "Barrel Lid" }],
+            "quests": [{ "id": "186", "name": "Letter to the General" }, { "id": "327", "name": "Night of The Turnips" }, { "id": "329", "name": "Witch's Brew" }],
+            "note": "-"
+        },
+        {
+            "id": "135",
+            "name": "Shopkeep Sal Shop",
+            "coordinates": "(60,441)",
+            "drops": [{ "id": "536", "name": "Pants" }, { "id": "710", "name": "Magic Stick" }, { "id": "824", "name": "Noob Island Map" }, { "id": "2193", "name": "Small Energy Potion" }, { "id": "2194", "name": "Small Health Potion" }, { "id": "2237", "name": "Wanderer's Cloak" }, { "id": "2238", "name": "Dull Wooden Sword" }, { "id": "2239", "name": "Small Basic Bow" }, { "id": "2354", "name": "XP Boost" }, { "id": "2675", "name": "Fanny Pack" }, { "id": "2724", "name": "10K Coin Note" }, { "id": "3052", "name": "Jumbo XP Boost" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "136",
+            "name": "Guardsman Chuck",
+            "coordinates": "129,877",
+            "drops": [],
+            "quests": [{ "id": "287", "name": "Where's his shield?" }],
+            "note": "-"
+        },
+        {
+            "id": "137",
+            "name": "Miner McGroot",
+            "coordinates": "173,873",
+            "drops": [],
+            "quests": [{ "id": "273", "name": "Too many scorps" }, { "id": "274", "name": "Miners? They are Ex Miners now." }],
+            "note": "-"
+        },
+        {
+            "id": "138",
+            "name": "Miner Gregori",
+            "coordinates": "102,862",
+            "drops": [],
+            "quests": [{ "id": "261", "name": "Ex Miner Pitbossy" }, { "id": "279", "name": "Ex Miners don't need skulls, Right?" }],
+            "note": "-"
+        },
+        {
+            "id": "139",
+            "name": "Guardsman Thomas",
+            "coordinates": "79,870",
+            "drops": [],
+            "quests": [{ "id": "403", "name": "Find the Scorpion Shield" }, { "id": "404", "name": "I'll show you enraged..." }],
+            "note": "-"
+        },
+        {
+            "id": "140",
+            "name": "Farmer Gunter",
+            "coordinates": "(56,412)",
+            "drops": [],
+            "quests": [{ "id": "455", "name": "Farming Pumpkins" }],
+            "note": "-"
+        },
+        {
+            "id": "141",
+            "name": "Miner Yossarian",
+            "coordinates": "(99,899)",
+            "drops": [],
+            "quests": [{ "id": "262", "name": "Kill 30 Red Slimes" }],
+            "note": "-"
+        },
+        {
+            "id": "152",
+            "name": "Pirate Pawn Shop",
+            "coordinates": "(205,148)",
+            "drops": [{ "id": "2193", "name": "Small Energy Potion" }, { "id": "2194", "name": "Small Health Potion" }, { "id": "2353", "name": "Jumbo XP Boost" }, { "id": "2354", "name": "XP Boost" }, { "id": "2755", "name": "Medium Health Potion" }, { "id": "2756", "name": "Medium Energy Potion" }, { "id": "2757", "name": "Standard Lockpick" }, { "id": "2759", "name": "Pirate Shores Map" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "153",
+            "name": "Pirate Navigator",
+            "coordinates": "(215,153); (20,333)",
+            "drops": [],
+            "quests": [],
+            "note": "This npc will bring you to pirate island or back to shore!"
+        },
+        {
+            "id": "155",
+            "name": "Pirate Josh",
+            "coordinates": "(177,155)",
+            "drops": [],
+            "quests": [{ "id": "223", "name": "Booty Camp" }, { "id": "663", "name": "Booty Call" }],
+            "note": "-"
+        },
+        {
+            "id": "156",
+            "name": "Matey Moy",
+            "coordinates": "(72,145)",
+            "drops": [],
+            "quests": [{ "id": "478", "name": "Scorpions on the Plains" }],
+            "note": "-"
+        },
+        {
+            "id": "157",
+            "name": "Pirate Harley",
+            "coordinates": "(49,106)",
+            "drops": [],
+            "quests": [{ "id": "661", "name": "The Mirage" }],
+            "note": "-"
+        },
+        {
+            "id": "159",
+            "name": "Captain Crunch",
+            "coordinates": "(162,70)",
+            "drops": [],
+            "quests": [{ "id": "270", "name": "Scorpion Report" }, { "id": "479", "name": "Scorpion Extermination" }],
+            "note": "-"
+        },
+        {
+            "id": "160",
+            "name": "Angry Al",
+            "coordinates": "(165,73)",
+            "drops": [],
+            "quests": [{ "id": "204", "name": "Fallen Arches" }, { "id": "215", "name": "The Assistant" }],
+            "note": "-"
+        },
+        {
+            "id": "163",
+            "name": "Matey Daniel",
+            "coordinates": "(66,48)",
+            "drops": [],
+            "quests": [{ "id": "270", "name": "Scorpion Report" }, { "id": "267", "name": "Scorpion Report: The Sequel" }],
+            "note": "-"
+        },
+        {
+            "id": "173",
+            "name": "Halloween Scarecrow",
+            "coordinates": "(111,253); (131,1096)",
+            "drops": [],
+            "quests": [],
+            "note": "brings you to the Halloween map (only on Halloween!)"
+        },
+        {
+            "id": "179",
+            "name": "Guild Creation",
+            "coordinates": "(117,239)",
+            "drops": [],
+            "quests": [],
+            "note": "It costs 1.000.000 to create a guild. After you create one you can't change its name again."
+        },
+        {
+            "id": "180",
+            "name": "Miner Skippy",
+            "coordinates": "(198,705)",
+            "drops": [],
+            "quests": [{ "id": "368", "name": "Creepy babies" }],
+            "note": "After finishing the quest: Thanks for helping out with those baby spiders. l didn't want to have to call my girlfriend and get her to do it."
+        },
+        {
+            "id": "184",
+            "name": "Miner Quincy",
+            "coordinates": "(150,688)",
+            "drops": [],
+            "quests": [{ "id": "321", "name": "Lost Lunch" }, { "id": "360", "name": "Coverage Rescinded" }],
+            "note": "-"
+        },
+        {
+            "id": "186",
+            "name": "Gem Shop",
+            "coordinates": "-",
+            "drops": [{ "id": "579", "name": "Chile World Cup Jersey" }, { "id": "580", "name": "England World Cup Jersey" }, { "id": "581", "name": "Germany World Cup Jersey" }, { "id": "587", "name": "USA World Cup Jersey" }, { "id": "919", "name": "Surfboard of Gnarliness" }, { "id": "679", "name": "Bikini Top (Yellow)" }, { "id": "680", "name": "Bikini Top (Red)" }, { "id": "681", "name": "Bikini Bottom (Purple)" }, { "id": "682", "name": "Bikini Bottom (Yellow)" }, { "id": "683", "name": "Bikini Bottom (Red)" }, { "id": "690", "name": "Bikini Top (Purple)" }, { "id": "691", "name": "Swim Trunks (Red)" }, { "id": "692", "name": "Swim Trunks (Blue)" }, { "id": "718", "name": "Mexico World Cup Jersey" }, { "id": "719", "name": "Netherlands World Cup Jersey" }, { "id": "720", "name": "Slovakia World Cup Jersey" }, { "id": "721", "name": "Spain World Cup Jersey" }, { "id": "722", "name": "Brazil World Cup Jersey" }, { "id": "723", "name": "Portugal World Cup Jersey" }, { "id": "724", "name": "Argentina World Cup Jersey" }, { "id": "785", "name": "Eye Patch" }, { "id": "810", "name": "Surf Shorts (Blue)" }, { "id": "811", "name": "Surf Shorts (Red)" }, { "id": "814", "name": "Toobin" }, { "id": "831", "name": "Football & Shorts" }, { "id": "964", "name": "Hockey Mask" }, { "id": "965", "name": "Witch Mask" }, { "id": "966", "name": "Miyagi Headband" }, { "id": "1058", "name": "Antlers" }, { "id": "1072", "name": "Xmas Beard" }, { "id": "1073", "name": "Xmas Hat" }, { "id": "1325", "name": "Large Rest Boost" }, { "id": "1328", "name": "Small Rest Boost" }, { "id": "1384", "name": "Love Struck" }, { "id": "1483", "name": "Medium Rest Boost" }, { "id": "1627", "name": "Blades of Exile" }, { "id": "1629", "name": "Ace Hat" }, { "id": "1630", "name": "Censored" }, { "id": "1681", "name": "Akatsuki Robes" }, { "id": "1682", "name": "Bunny Ears" }, { "id": "1683", "name": "Easter Egg" }, { "id": "1684", "name": "Egg Head" }, { "id": "1685", "name": "Flowers" }, { "id": "1686", "name": "CatPhones" }, { "id": "1687", "name": "Panda Hat" }, { "id": "1688", "name": "Pinstripe Fedora Hat" }, { "id": "1689", "name": "On Fire" }, { "id": "1691", "name": "Patty Hat" }, { "id": "1701", "name": "Four Leaf Clover" }, { "id": "1702", "name": "Madara Mask" }, { "id": "1703", "name": "Noodle Cup" }, { "id": "1760", "name": "Blue Egg" }, { "id": "1848", "name": "Red Egg" }, { "id": "1853", "name": "Pirate Chest" }, { "id": "1854", "name": "Red Race Car" }, { "id": "1855", "name": "Rock Car" }, { "id": "1856", "name": "Yellow Race Car" }, { "id": "1870", "name": "Mine Head" }, { "id": "1897", "name": "Regen Potion" }, { "id": "1921", "name": "Chell Bottom" }, { "id": "1922", "name": "Chell Top" }, { "id": "1925", "name": "K Hoodie" }, { "id": "1926", "name": "K Snowsuit" }, { "id": "1930", "name": "Robo Body" }, { "id": "1931", "name": "Robo Face" }, { "id": "1932", "name": "Robo Helm" }, { "id": "1933", "name": "Robo Legs" }, { "id": "1940", "name": "Space Box" }, { "id": "1966", "name": "Light Swords" }, { "id": "1991", "name": "Nuke Box" }, { "id": "2033", "name": "Mage Starter Box" }, { "id": "2037", "name": "Warrior Starter Box" }, { "id": "2046", "name": "Ranged Starter Box" }, { "id": "2103", "name": "Ichigo Box" }, { "id": "2141", "name": "Parrot Buddy" }, { "id": "2249", "name": "Pika Hat" }, { "id": "2250", "name": "Croc Hat" }, { "id": "2251", "name": "Crab On A Stick " }, { "id": "2253", "name": "Cloud Box" }, { "id": "2258", "name": "Link Box" }, { "id": "2300", "name": "Space Marine Box" }, { "id": "2301", "name": "Spartan Box" }, { "id": "2316", "name": "Dante Box" }, { "id": "2350", "name": "Troll Face" }, { "id": "2354", "name": "XP Boost" }, { "id": "2371", "name": "Dead Box" }, { "id": "2374", "name": "Advanced Box" }, { "id": "2382", "name": "Samurai Box" }, { "id": "2418", "name": "Kage Box" }, { "id": "2510", "name": "HP Bar" }, { "id": "2511", "name": "Monocle" }, { "id": "2556", "name": "G Box" }, { "id": "2592", "name": "Dark Paladin Box" }, { "id": "2630", "name": "Farmer Box" }, { "id": "2635", "name": "Snake Box" }, { "id": "2660", "name": "Gold Undies" }, { "id": "2661", "name": "Golden Crab Helm" }, { "id": "2674", "name": "Moo Helm" }, { "id": "2676", "name": "Pirate Crab Hat" }, { "id": "2678", "name": "Box o' Fun" }, { "id": "2684", "name": "Banana Box" }, { "id": "2731", "name": "Ex Box" }, { "id": "2739", "name": "Gangster Box" }, { "id": "2768", "name": "Big Shades" }, { "id": "2769", "name": "Big Shades (Red)" }, { "id": "2770", "name": "Black Bandana" }, { "id": "2771", "name": "Black Headband" }, { "id": "2772", "name": "Blue Headband" }, { "id": "2773", "name": "Blue Trucker Hat" }, { "id": "2775", "name": "Devil Horns" }, { "id": "2776", "name": "Green Trucker Hat" }, { "id": "2777", "name": "Killinator Shades" }, { "id": "2778", "name": "Killinator Shades (Red)" }, { "id": "2781", "name": "Bat Box" }, { "id": "2786", "name": "Blue Bandana" }, { "id": "2788", "name": "Ezio Box" }, { "id": "2791", "name": "Notruto Headband" }, { "id": "2792", "name": "Nerd Specs" }, { "id": "2793", "name": "Morpheus Shades (Red)" }, { "id": "2794", "name": "Morpheus Shades" }, { "id": "2796", "name": "Storm Box" }, { "id": "2799", "name": "Story of FO" }, { "id": "2800", "name": "War Paint" }, { "id": "2801", "name": "War Paint" }, { "id": "2802", "name": "Silver Coronet" }, { "id": "2822", "name": "Red Bandana" }, { "id": "2823", "name": "Red Headband" }, { "id": "2824", "name": "Red Trucker Hat" }, { "id": "2835", "name": "Lucky Ring" }, { "id": "2856", "name": "Pink Trucker Hat" }, { "id": "2857", "name": "Reaper Box" }, { "id": "2858", "name": "100 Gem Note" }, { "id": "2878", "name": "Scream Mask" }, { "id": "2879", "name": "Scream Robe" }, { "id": "2881", "name": "Skill Potion" }, { "id": "3041", "name": "Uber Potion" }, { "id": "3052", "name": "Jumbo XP Boost" }],
+            "quests": [],
+            "note": "It's at the top right of your screen!"
+        },
+        {
+            "id": "187",
+            "name": "Mirabella Shop Shop",
+            "coordinates": "(384,304)",
+            "drops": [{ "id": "1600", "name": "Mirabella Cove Map" }, { "id": "2268", "name": "Royal Shield" }, { "id": "2422", "name": "20 Gem Note" }, { "id": "2423", "name": "50 Gem Note" }, { "id": "2724", "name": "10K Coin Note" }, { "id": "2758", "name": "Standard Pickaxe" }, { "id": "2842", "name": "Golden Body Armor " }, { "id": "2843", "name": "Golden Leg Armor" }, { "id": "2844", "name": "Ninja Staff" }, { "id": "2845", "name": "Cat Hat" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "190",
+            "name": "Lisa's Mother",
+            "coordinates": "(294,328);",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "191",
+            "name": "Miner Patrick",
+            "coordinates": "(207,631)",
+            "drops": [],
+            "quests": [{ "id": "320", "name": "Got the Stones for it?" }, { "id": "369", "name": "Pebbles!" }],
+            "note": "Quest: Got the Stones for it?"
+        },
+        {
+            "id": "195",
+            "name": "Guardsman Markus",
+            "coordinates": "(402,311)",
+            "drops": [],
+            "quests": [{ "id": "303", "name": "Unliving Annoyance" }, { "id": "412", "name": "The ogres are hiding something..." }, { "id": "425", "name": "Cat food for Yannis" }],
+            "note": "-"
+        },
+        {
+            "id": "196",
+            "name": "Guard Captain Yannis",
+            "coordinates": "(401,307)",
+            "drops": [],
+            "quests": [{ "id": "310", "name": "Destroy the Cat-apults" }, { "id": "425", "name": "Cat food for Yannis" }],
+            "note": "-"
+        },
+        {
+            "id": "198",
+            "name": "Clambake Willy",
+            "coordinates": "(362,329)",
+            "drops": [],
+            "quests": [{ "id": "305", "name": "Gathering Clam Guts for Cats?" }, { "id": "595", "name": "Kill Big Clams (Daily)" }],
+            "note": "-"
+        },
+        {
+            "id": "199",
+            "name": "Little Lisa",
+            "coordinates": "(304,241)",
+            "drops": [],
+            "quests": [{ "id": "292", "name": "Candy from a b... baby" }, { "id": "302", "name": "Imps being impish?" }, { "id": "373", "name": "Getting Woody" }],
+            "note": "-"
+        },
+        {
+            "id": "200",
+            "name": "Guardsman Jerry",
+            "coordinates": "(362,300)",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "205",
+            "name": "Guardsman Jay",
+            "coordinates": "(316,282)",
+            "drops": [],
+            "quests": [{ "id": "301", "name": "Army of the Unliving Dead" }, { "id": "470", "name": "The Army That's Dead (Daily)" }],
+            "note": "-"
+        },
+        {
+            "id": "208",
+            "name": "Miner Dennis",
+            "coordinates": "(134,710)",
+            "drops": [],
+            "quests": [{ "id": "481", "name": "Giant skulls spiders" }, { "id": "664", "name": "Spiders Everywhere" }],
+            "note": "-"
+        },
+        {
+            "id": "211",
+            "name": "Uber Shop",
+            "coordinates": "(390,278)",
+            "drops": [{ "id": "1255", "name": "Dark Knight Mask" }, { "id": "1587", "name": "Dragon Mask" }, { "id": "1594", "name": "Mage Necklace " }, { "id": "2724", "name": "10K Coin Note" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "214",
+            "name": "Scared Boy",
+            "coordinates": "(337,1090)",
+            "drops": [],
+            "quests": [{ "id": "440", "name": "Clear the bats" }, { "id": "445", "name": "Help for brother" }],
+            "note": "-"
+        },
+        {
+            "id": "215",
+            "name": "Shopkeep Jo Shop",
+            "coordinates": "(348,1085)",
+            "drops": [{ "id": "1897", "name": "Regen Potion" }, { "id": "2354", "name": "XP Boost" }, { "id": "2724", "name": "10K Coin Note" }, { "id": "2754", "name": "Small Torch" }, { "id": "2755", "name": "Medium Health Potion" }, { "id": "2756", "name": "Medium Energy Potion" }, { "id": "2758", "name": "Standard Pickaxe" }, { "id": "2764", "name": "Cave of Despair Map" }, { "id": "3052", "name": "Jumbo XP Boost" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "216",
+            "name": "Scared Miner",
+            "coordinates": "(357,1087)",
+            "drops": [],
+            "quests": [{ "id": "433", "name": "Clear the lost skeles" }, { "id": "437", "name": "Evil Skeles Be Gone" }],
+            "note": "-"
+        },
+        {
+            "id": "217",
+            "name": "Not So Scared Boy",
+            "coordinates": "(389,1068)",
+            "drops": [],
+            "quests": [{ "id": "441", "name": "Help For Other brother" }, { "id": "445", "name": "Help for brother" }],
+            "note": "-"
+        },
+        {
+            "id": "220",
+            "name": "Not Scared Boy",
+            "coordinates": "(328,1042)",
+            "drops": [],
+            "quests": [{ "id": "441", "name": "Help For Other brother" }, { "id": "444", "name": "Help For Sister" }],
+            "note": "-"
+        },
+        {
+            "id": "221",
+            "name": "Uber Girl",
+            "coordinates": "(297,1080)",
+            "drops": [],
+            "quests": [{ "id": "444", "name": "Help For Sister" }],
+            "note": "-"
+        },
+        {
+            "id": "225",
+            "name": "Scared Captain",
+            "coordinates": "(428,1082)",
+            "drops": [],
+            "quests": [{ "id": "438", "name": "Kill The Ogres" }, { "id": "439", "name": "Too many Ogres" }],
+            "note": "-"
+        },
+        {
+            "id": "226",
+            "name": "Shopkeep Boshed Shop",
+            "coordinates": "(126,239)",
+            "drops": [{ "id": "1331", "name": "Sleeping Cap" }, { "id": "1332", "name": "Orange" }, { "id": "1333", "name": "Afro" }, { "id": "1334", "name": "Mask of Truth" }, { "id": "1335", "name": "K Hat" }, { "id": "1336", "name": "Snowboard" }, { "id": "1337", "name": "Crab Suit" }, { "id": "1338", "name": "Tuxedo" }, { "id": "1339", "name": "Tutu" }],
+            "quests": [],
+            "note": "Foreclosed"
+        },
+        {
+            "id": "228",
+            "name": "Cave Guard",
+            "coordinates": "(346,1101)",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "232",
+            "name": "Forgotten Frank",
+            "coordinates": "(383,271)",
+            "drops": [],
+            "quests": [],
+            "note": "You must be level 32 to enter the Forgotten Wasteland. Continue?"
+        },
+        {
+            "id": "235",
+            "name": "General Sergeant",
+            "coordinates": "(467,447)",
+            "drops": [],
+            "quests": [{ "id": "429", "name": "The Skele Threat" }, { "id": "542", "name": "The Skele Threat 2" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "239",
+            "name": "Mirabella Banker",
+            "coordinates": "(403,299)",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "241",
+            "name": "Recruit Tifa",
+            "coordinates": "(360, 481)",
+            "drops": [],
+            "quests": [{ "id": "407", "name": "Remove the Elder Threat" }, { "id": "426", "name": "Elder Threat Continues" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "242",
+            "name": "General Cloud",
+            "coordinates": "(442, 509)",
+            "drops": [],
+            "quests": [{ "id": "391", "name": "Desert Skele Destruction" }, { "id": "515", "name": "Desert Skele Implosion" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "243",
+            "name": "Jimmy",
+            "coordinates": "(420, 484)",
+            "drops": [],
+            "quests": [{ "id": "446", "name": "An Odd Request" }, { "id": "460", "name": "The Dead Threat" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "245",
+            "name": "Crafting (Wasteland)",
+            "coordinates": "(447,446)",
+            "drops": [{ "id": "1504", "name": "Dark Templar Guise" }, { "id": "1518", "name": "Dark Templar Helm" }, { "id": "1519", "name": "Dark Templar Body" }, { "id": "1520", "name": "Dark Templar Legs" }, { "id": "1585", "name": "Dragon Master Guise" }, { "id": "1586", "name": "Dragon Master Body!" }, { "id": "1624", "name": "Dragon Master Helm" }, { "id": "1728", "name": "Epic Mage Pendant" }, { "id": "1743", "name": "Epic Mage Helm" }, { "id": "1744", "name": "Epic Mage Legs" }, { "id": "1759", "name": "Epic Mage Cloak" }, { "id": "1868", "name": "Dragon Master Legs" }, { "id": "2335", "name": "Gold Plate" }, { "id": "2337", "name": "Gold Ore Chunk" }, { "id": "2338", "name": "Gold Slab" }],
+            "quests": [],
+            "note": "Here you can craft items from gold veins."
+        },
+        {
+            "id": "247",
+            "name": "Crafting (Crab Coast)",
+            "coordinates": "(132,271)",
+            "drops": [{ "id": "1405", "name": "Dark Knight Body" }, { "id": "1406", "name": "Dark Knight Helm" }, { "id": "1407", "name": "Dark Knight Legs" }, { "id": "1433", "name": "Silver Body Shell" }, { "id": "1434", "name": "Silver Helm Shell" }, { "id": "1435", "name": "Silver Legs Shell" }, { "id": "1468", "name": "Iron Body Shell" }, { "id": "1469", "name": "Iron Helm Shell" }, { "id": "1470", "name": "Iron Legs Shell" }, { "id": "1473", "name": "Iron Silver Body Shell" }, { "id": "1579", "name": "Iron Silver Legs Shell" }, { "id": "1588", "name": "Dragon Legs" }, { "id": "1589", "name": "Dragon Helm" }, { "id": "1590", "name": "Dragon Body" }, { "id": "1698", "name": "Dragon Master Leg Blueprint" }, { "id": "1977", "name": "Dragon Helm Blueprints" }, { "id": "1978", "name": "Dragon Body Blueprint" }, { "id": "1979", "name": "Dark Knight Leg Blueprint" }, { "id": "1980", "name": "Dark Knight Helm Blueprint" }, { "id": "1981", "name": "Dark Knight Body Blueprint" }, { "id": "2325", "name": "Silver Ore" }, { "id": "2326", "name": "Silver Ore Chunk" }, { "id": "2327", "name": "Silver Plate" }, { "id": "2328", "name": "Silver Slab" }, { "id": "2329", "name": "Reinforced Silver Plate" }, { "id": "2330", "name": "Iron Ore" }, { "id": "2331", "name": "Iron Ore Chunk" }, { "id": "2332", "name": "Iron Plate" }, { "id": "2333", "name": "Iron Slab" }, { "id": "2334", "name": "Reinforced Iron Plate" }],
+            "quests": [],
+            "note": "Here you can craft your ores and so on.."
+        },
+        {
+            "id": "248",
+            "name": "Crafting (CoD)",
+            "coordinates": "(380,1026)",
+            "drops": [{ "id": "1311", "name": "Mega Sapphire" }, { "id": "1312", "name": "Mega Onyx" }, { "id": "1313", "name": "Uber Sapphire" }, { "id": "1349", "name": "Dragon Scythe" }, { "id": "1352", "name": "Hell's Reaper" }, { "id": "1353", "name": "Uber Onyx" }, { "id": "1386", "name": "Deathbringer" }, { "id": "1665", "name": "Dragon Bow" }, { "id": "2263", "name": "Epic Pearl Wand" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "249",
+            "name": "Crafting Supplies Shop",
+            "coordinates": "(114,276)",
+            "drops": [{ "id": "2846", "name": "Leg Mold" }, { "id": "2847", "name": "Body Mold" }, { "id": "2848", "name": "Helmet Mold" }, { "id": "2849", "name": "Leg Armor Blueprint" }, { "id": "2850", "name": "Helm Blueprints" }, { "id": "2851", "name": "Body Armor Blueprints" }],
+            "quests": [],
+            "note": "Crab Coast"
+        },
+        {
+            "id": "251",
+            "name": "Skill Trainer Jeb",
+            "coordinates": "(420,420)",
+            "drops": [{ "id": "148", "name": "Forgotten Wasteland Teleport" }, { "id": "150", "name": "Arrow Barrage" }, { "id": "152", "name": "Energy Orbs" }, { "id": "186", "name": "Rage" }],
+            "quests": [],
+            "note": "Wasteland."
+        },
+        {
+            "id": "252",
+            "name": "Desert Survival Shop",
+            "coordinates": "(434,449)",
+            "drops": [{ "id": "1508", "name": "Forgotten Wasteland Map" }, { "id": "1525", "name": "Death Ring Blueprint" }, { "id": "1526", "name": "Dragon Ring Blueprint" }, { "id": "1530", "name": "Mystic Ring Blueprint" }, { "id": "1632", "name": "Base Warrior Book" }, { "id": "1633", "name": "Base Ranger Book" }, { "id": "1634", "name": "Base Magician Book" }, { "id": "1745", "name": "Radioactive Water" }, { "id": "1746", "name": "Radioiodine" }, { "id": "1768", "name": "Cactus Card" }, { "id": "2028", "name": "Ring Mold" }, { "id": "2758", "name": "Standard Pickaxe" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "255",
+            "name": "Tremor Hunter",
+            "coordinates": "(321,402)",
+            "drops": [],
+            "quests": [{ "id": "451", "name": "More Snakes" }, { "id": "461", "name": "Kill Snakes Plz" }],
+            "note": "-"
+        },
+        {
+            "id": "256",
+            "name": "Charlie",
+            "coordinates": "(408,485)",
+            "drops": [],
+            "quests": [{ "id": "387", "name": "Sick of Scorpions" }, { "id": "398", "name": "Die!" }],
+            "note": "-"
+        },
+        {
+            "id": "258",
+            "name": "Scared Ogre",
+            "coordinates": "347,1061",
+            "drops": [],
+            "quests": [{ "id": "457", "name": "Way too many spiders" }, { "id": "591", "name": "Silver Crabs 1" }],
+            "note": "-"
+        },
+        {
+            "id": "261",
+            "name": "Little Girl",
+            "coordinates": "(377,407)",
+            "drops": [],
+            "quests": [{ "id": "382", "name": "Little Girl Thirsty" }, { "id": "459", "name": "Little Girl Sick" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "262",
+            "name": "Loyd",
+            "coordinates": "(441,486)",
+            "drops": [],
+            "quests": [{ "id": "449", "name": "Skelpion Evil" }, { "id": "528", "name": "Skelpion Threat" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "263",
+            "name": "Teleport Tim",
+            "coordinates": "(357,400)",
+            "drops": [],
+            "quests": [],
+            "note": "teleports you to Mirabella Cove"
+        },
+        {
+            "id": "265",
+            "name": "Crafting (Wasteland2)",
+            "coordinates": "(458,430)",
+            "drops": [{ "id": "1543", "name": "Ring of Death" }, { "id": "1584", "name": "Mystic Ring" }, { "id": "1621", "name": "Dragon Ring" }, { "id": "2025", "name": "Death Ring Mold" }, { "id": "2026", "name": "Dragon Ring Mold" }, { "id": "2027", "name": "Mystic Ring Mold" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "267",
+            "name": "Not A Cactus",
+            "coordinates": "(475,436)",
+            "drops": [],
+            "quests": [{ "id": "428", "name": "Betrayal" }, { "id": "531", "name": "Thirst for Cactus" }],
+            "note": "Wasteland"
+        },
+        {
+            "id": "272",
+            "name": "Scout McNeal",
+            "coordinates": "(421,276)",
+            "drops": [],
+            "quests": [{ "id": "312", "name": "Lower the morale" }, { "id": "432", "name": "A Thrilling Discovery" }],
+            "note": "Level 27 required"
+        },
+        {
+            "id": "271",
+            "name": "General Ike",
+            "coordinates": "(443,338)",
+            "drops": [],
+            "quests": [{ "id": "323", "name": "Gathering of War Ogres" }, { "id": "473", "name": "Evil McBadguy Redux" }],
+            "note": "level 29 required"
+        },
+        {
+            "id": "273",
+            "name": "Farmer John",
+            "coordinates": "(454,217)",
+            "drops": [],
+            "quests": [{ "id": "324", "name": "Farming potatoes (Daily)" }],
+            "note": "Level 29 required"
+        },
+        {
+            "id": "274",
+            "name": "Crafting (Wasteland3)",
+            "coordinates": "(460,450)",
+            "drops": [{ "id": "1635", "name": "Warrior Apprentice Book" }, { "id": "1636", "name": "Magician Apprentice Book" }, { "id": "1669", "name": "Ranger Apprentice Book" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "276",
+            "name": "Skill Trainer Wallace Shop",
+            "coordinates": "(376,281);",
+            "drops": [{ "id": "115", "name": "Thick Skin" }, { "id": "116", "name": "That's The Stuff" }, { "id": "119", "name": "Nerd Rage" }, { "id": "120", "name": "Left Hook" }, { "id": "121", "name": "Boom! Headshot!" }, { "id": "125", "name": "l33t Skillz" }, { "id": "128", "name": "Gotta Go" }, { "id": "136", "name": "Fireball" }, { "id": "164", "name": "Mirabella Cove Teleport" }],
+            "quests": [],
+            "note": "In Mirabella Cove"
+        },
+        {
+            "id": "278",
+            "name": "Death",
+            "coordinates": "(70,530)",
+            "drops": [],
+            "quests": [],
+            "note": "You have to reach lvl 60, then you can rebirth."
+        },
+        {
+            "id": "283",
+            "name": "Cave of Despair Entrance",
+            "coordinates": "(380,266)",
+            "drops": [],
+            "quests": [],
+            "note": "Mirabella Cove Level 30 required"
+        },
+        {
+            "id": "286",
+            "name": "Great One",
+            "coordinates": "(382,741)",
+            "drops": [],
+            "quests": [{ "id": "605", "name": "Like Funnies" }, { "id": "607", "name": "Make Internets" }],
+            "note": "-"
+        },
+        {
+            "id": "287",
+            "name": "Crafting (FU)",
+            "coordinates": "(380,741)",
+            "drops": [{ "id": "1824", "name": "Super CD" }, { "id": "1836", "name": "The Internet" }, { "id": "1929", "name": "Robot Intel Machine" }],
+            "quests": [{ "id": "605", "name": "Like Funnies" }, { "id": "607", "name": "Make Internets" }],
+            "note": "-"
+        },
+        {
+            "id": "288",
+            "name": "Trader Jim",
+            "coordinates": "(386,738)",
+            "drops": [{ "id": "1785", "name": "Forgotten Underground Map" }, { "id": "1825", "name": "Miner Top" }, { "id": "1912", "name": "Cyborg Crab Claw" }, { "id": "1913", "name": "Alien Crab Claw" }, { "id": "2354", "name": "XP Boost" }, { "id": "3052", "name": "Jumbo XP Boost" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "289",
+            "name": "Mr Freeman",
+            "coordinates": "(392,736)",
+            "drops": [],
+            "quests": [{ "id": "600", "name": "Samples For Science" }, { "id": "603", "name": "Science Rules" }],
+            "note": "-"
+        },
+        {
+            "id": "290",
+            "name": "Odd Skill Trainer",
+            "coordinates": "(388,663)",
+            "drops": [{ "id": "169", "name": "Left Hook" }, { "id": "170", "name": "That's The Stuff" }, { "id": "264", "name": "Ruse" }, { "id": "297", "name": "Forgotten Underground Teleport" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "291",
+            "name": "Mom",
+            "coordinates": "(378,664)",
+            "drops": [],
+            "quests": [{ "id": "602", "name": "Cyclops Letter" }],
+            "note": "-"
+        },
+        {
+            "id": "292",
+            "name": "Mulder",
+            "coordinates": "(355,677)",
+            "drops": [],
+            "quests": [{ "id": "598", "name": "Alien Crab Threat" }, { "id": "611", "name": "Alien Crab Takeover" }],
+            "note": "-"
+        },
+        {
+            "id": "293",
+            "name": "Scully",
+            "coordinates": "(398,642)",
+            "drops": [],
+            "quests": [{ "id": "614", "name": "Shipping Crate Threat" }, { "id": "617", "name": "Shipping Crate Are..." }],
+            "note": "-"
+        },
+        {
+            "id": "295",
+            "name": "Trapped Girl",
+            "coordinates": "(454,733)",
+            "drops": [{ "id": "1795", "name": "Letter To Mom" }],
+            "quests": [{ "id": "599", "name": "Cyclops Escape" }, { "id": "601", "name": "Cyclops Killer" }, { "id": "602", "name": "Cyclops Letter" }],
+            "note": "-"
+        },
+        {
+            "id": "297",
+            "name": "FBI Head",
+            "coordinates": "(466,644)",
+            "drops": [],
+            "quests": [{ "id": "606", "name": "Aliens" }, { "id": "616", "name": "I Said Aliens" }],
+            "note": "-"
+        },
+        {
+            "id": "298",
+            "name": "Agent J",
+            "coordinates": "(310,664)",
+            "drops": [],
+            "quests": [{ "id": "612", "name": "Cyborg crabs... ?" }, { "id": "613", "name": "M'F' Crabs In This M'F' Cave" }],
+            "note": "-"
+        },
+        {
+            "id": "303",
+            "name": "Unknown Soldier",
+            "coordinates": "(440,880);",
+            "drops": [],
+            "quests": [{ "id": "609", "name": "Complexion" }, { "id": "615", "name": "Hygiene" }],
+            "note": "-"
+        },
+        {
+            "id": "304",
+            "name": "Robot Skill Trainer",
+            "coordinates": "(443,818)",
+            "drops": [{ "id": "182", "name": "Nerd Rage" }, { "id": "183", "name": "Twilightning Bolt" }, { "id": "184", "name": "l33t Skillz" }, { "id": "185", "name": "Thick Skin" }, { "id": "298", "name": "Forgotten Under Underground Teleport" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "305",
+            "name": "Robot Trader Shop",
+            "coordinates": "(437,821)",
+            "drops": [{ "id": "1911", "name": "Forgotten Under Underground Map" }, { "id": "1912", "name": "Cyborg Crab Claw" }, { "id": "1913", "name": "Alien Crab Claw" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "306",
+            "name": "Crafting (FUU)",
+            "coordinates": "(433,823);",
+            "drops": [{ "id": "2003", "name": "Ancient Mage Pendulum" }, { "id": "2004", "name": "Ancient Mage Legs" }, { "id": "2005", "name": "Ancient Mage Helm" }, { "id": "2007", "name": "Ruby Plate" }, { "id": "2065", "name": "Ancient Templar Helm" }, { "id": "2074", "name": "Ancient Templar Legs" }, { "id": "2076", "name": "Ancient Mage Cloak" }, { "id": "2077", "name": "Ancient Templar Body" }, { "id": "2078", "name": "Ancient Templar Guise" }, { "id": "2085", "name": "Ancient Dragon Helmet" }, { "id": "2088", "name": "Ancient Dragon Mask" }, { "id": "2089", "name": "Ancient Dragon Body" }, { "id": "2090", "name": "Ancient Dragon Legs" }, { "id": "2094", "name": "Unobtainium Chunk" }, { "id": "2119", "name": "Emerald Plate" }, { "id": "2125", "name": "Diamond Plate" }, { "id": "2127", "name": "Death Scythe " }, { "id": "2129", "name": "Reaper of Souls" }, { "id": "2137", "name": "Staff of Life" }, { "id": "2176", "name": "Unobtainium Slab" }, { "id": "2177", "name": "Unobtainium Plate" }, { "id": "2364", "name": "Ancient Mystic Ring" }, { "id": "2365", "name": "Ancient Ring of Death" }, { "id": "2377", "name": "Blade of the Forgotten" }, { "id": "2398", "name": "Ranger Book" }, { "id": "2402", "name": "Warrior Book" }, { "id": "2420", "name": "Ancient Dragon Ring" }, { "id": "2474", "name": "Magician Book" }, { "id": "2868", "name": "Artemis Bow" }, { "id": "3068", "name": "Reinforced Unobtainium Plate" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "307",
+            "name": "Lost Pirate",
+            "coordinates": "(111,253);",
+            "drops": [],
+            "quests": [],
+            "note": "to Pirate Shore"
+        },
+        {
+            "id": "308",
+            "name": "Unknown Master",
+            "coordinates": "(404,881)",
+            "drops": [],
+            "quests": [{ "id": "655", "name": "Kill Alrahur" }],
+            "note": "-"
+        },
+        {
+            "id": "309",
+            "name": "Unknown Elder",
+            "coordinates": "(350,851)",
+            "drops": [],
+            "quests": [{ "id": "618", "name": "One of Us" }, { "id": "656", "name": "Join Forces" }],
+            "note": "-"
+        },
+        {
+            "id": "310",
+            "name": "Unknown Unknown",
+            "coordinates": "(290,795)",
+            "drops": [],
+            "quests": [{ "id": "619", "name": "What" }, { "id": "645", "name": "The Crab Threat" }],
+            "note": "-"
+        },
+        {
+            "id": "312",
+            "name": "Unknown Leader",
+            "coordinates": "(395,793)",
+            "drops": [],
+            "quests": [{ "id": "638", "name": "The Darkness" }, { "id": "658", "name": "The Light" }],
+            "note": "-"
+        },
+        {
+            "id": "315",
+            "name": "Scout Thompson",
+            "coordinates": "(229,236); (50,915); (113,253)",
+            "drops": [],
+            "quests": [],
+            "note": "Brings you into 'the Swamp Grotto', if you reached level 18."
+        },
+        {
+            "id": "316",
+            "name": "Warrior Hero Shop",
+            "coordinates": "(79,425)",
+            "drops": [{ "id": "2035", "name": "War Armor" }, { "id": "2036", "name": "War Helm" }, { "id": "2037", "name": "Warrior Starter Box" }, { "id": "2039", "name": "War Legs" }, { "id": "2040", "name": "Blades of Import" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "317",
+            "name": "Ranged Shop",
+            "coordinates": "(76,426)",
+            "drops": [{ "id": "2046", "name": "Ranged Starter Box" }, { "id": "2047", "name": "Sammy Legs" }, { "id": "2048", "name": "Sammy Helm" }, { "id": "2049", "name": "Sammy Gun" }, { "id": "2050", "name": "Sammy Armor" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "318",
+            "name": "Dark Mage Shop",
+            "coordinates": "(92,425)",
+            "drops": [{ "id": "2029", "name": "Apprentice Wand" }, { "id": "2030", "name": "Dark Mage Cloak" }, { "id": "2031", "name": "Dark Mage Hat" }, { "id": "2032", "name": "Dark Mage Pants" }, { "id": "2033", "name": "Mage Starter Box" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "319",
+            "name": "Unknown Taco",
+            "coordinates": "(431,777)",
+            "drops": [],
+            "quests": [{ "id": "668", "name": "Kill It" }],
+            "note": "-"
+        },
+        {
+            "id": "321",
+            "name": "Guild Shop",
+            "coordinates": "(115,238)",
+            "drops": [{ "id": "2149", "name": "Guild Horn" }, { "id": "2150", "name": "Gloves of Supreme Begger" }, { "id": "2151", "name": "Guild Pen of the Dragon" }, { "id": "2152", "name": "History of FO Volume 1" }, { "id": "2153", "name": "History of FO Volume 2" }, { "id": "2154", "name": "History of FO Volume 3" }, { "id": "2282", "name": "Guild Mirror" }, { "id": "2397", "name": "Guild Flag" }, { "id": "2700", "name": "Toy Bow Trophy" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "322",
+            "name": "Scientist Ted",
+            "coordinates": "(370,795)",
+            "drops": [],
+            "quests": [{ "id": "633", "name": "Research" }, { "id": "657", "name": "Destroy The Eyes" }],
+            "note": "-"
+        },
+        {
+            "id": "323",
+            "name": "Traitor",
+            "coordinates": "(218,400)",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "324",
+            "name": "Crazy Scientist",
+            "coordinates": "(205,351)",
+            "drops": [],
+            "quests": [{ "id": "494", "name": "Crab For Science" }],
+            "note": "-"
+        },
+        {
+            "id": "328",
+            "name": "Professor Pets (Noob Island)",
+            "coordinates": "(66,442)",
+            "drops": [{ "id": "217", "name": "Baby Ember" }, { "id": "218", "name": "Spring Turnip" }, { "id": "236", "name": "Baby Skele" }, { "id": "259", "name": "Goldfish" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "329",
+            "name": "Professor Pets (Crab Coast)",
+            "coordinates": "(125,240)",
+            "drops": [{ "id": "215", "name": "Baby Crab" }, { "id": "220", "name": "Baby Scorpion" }, { "id": "221", "name": "Baby Ribbit" }, { "id": "222", "name": "Nyan Cat" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "331",
+            "name": "Timmeh Shop",
+            "coordinates": "(70,504)",
+            "drops": [{ "id": "219", "name": "Pointy stick" }, { "id": "2264", "name": "Toy Wand" }, { "id": "2265", "name": "Toy Bow" }, { "id": "2266", "name": "Toy Sword" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "335",
+            "name": "Professor Pets (Mirabella Cove)",
+            "coordinates": "(374,306)",
+            "drops": [{ "id": "237", "name": "Baby Pengwus" }, { "id": "238", "name": "Blue Fairy" }, { "id": "239", "name": "Cloud Plant" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "336",
+            "name": "Professor Pets (Cave of Despair)",
+            "coordinates": "(342,1081)",
+            "drops": [{ "id": "250", "name": "Frog" }, { "id": "251", "name": "Ghoul" }, { "id": "252", "name": "Dark Fairy" }, { "id": "253", "name": "Baby Wyvern" }, { "id": "255", "name": "Fire Wolf" }, { "id": "260", "name": "Owl" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "338",
+            "name": "Area 51 Tom",
+            "coordinates": "(425,718)",
+            "drops": [],
+            "quests": [{ "id": "517", "name": "The Alien Invasion" }, { "id": "610", "name": "The Alien Extinction" }],
+            "note": "-"
+        },
+        {
+            "id": "339",
+            "name": "Professor Pets (Forgotten Under Underground)",
+            "coordinates": "(448,821)",
+            "drops": [{ "id": "256", "name": "Bowl Cat" }, { "id": "257", "name": "Baby Robot" }, { "id": "258", "name": "Pet Cube" }, { "id": "261", "name": "Chill Wolf" }, { "id": "262", "name": "Young Wyvern" }, { "id": "263", "name": "Wise Owl" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "340",
+            "name": "Market",
+            "coordinates": "(121,242); (376,271);",
+            "drops": [],
+            "quests": [],
+            "note": "Sell and buy items here (even gem items)."
+        },
+        {
+            "id": "341",
+            "name": "Miner Guide",
+            "coordinates": "(47,215); (194,740); (109,253)",
+            "drops": [],
+            "quests": [],
+            "note": "He will bring you to 'the Cave of Some Return'. (you have to be level 16)"
+        },
+        {
+            "id": "342",
+            "name": "Scared Scientist",
+            "coordinates": "(445,632)",
+            "drops": [],
+            "quests": [{ "id": "604", "name": "Data, Data, Data" }],
+            "note": "-"
+        },
+        {
+            "id": "343",
+            "name": "Unknown",
+            "coordinates": "(467,850)",
+            "drops": [],
+            "quests": [{ "id": "547", "name": "Hello" }, { "id": "608", "name": "The League" }],
+            "note": "FUU"
+        },
+        {
+            "id": "354",
+            "name": "Badger Ben",
+            "coordinates": "(717,28)",
+            "drops": [],
+            "quests": [{ "id": "640", "name": "Secret Agent Badger" }, { "id": "643", "name": "Secret Agent Musroom" }],
+            "note": "-"
+        },
+        {
+            "id": "357",
+            "name": "Jim Dandy",
+            "coordinates": "(713,28)",
+            "drops": [],
+            "quests": [{ "id": "641", "name": "Badger Invasion" }, { "id": "648", "name": "Badger Extinction" }],
+            "note": "-"
+        },
+        {
+            "id": "359",
+            "name": "Skinny Slim",
+            "coordinates": "(723,35)",
+            "drops": [],
+            "quests": [{ "id": "654", "name": "It's Come To This" }, { "id": "659", "name": "Oh Oops" }],
+            "note": "-"
+        },
+        {
+            "id": "358",
+            "name": "Furry Warrior",
+            "coordinates": "(715,33)",
+            "drops": [],
+            "quests": [{ "id": "646", "name": "The Knights of Badger" }, { "id": "647", "name": "The Knights of Badger 2" }],
+            "note": "-"
+        },
+        {
+            "id": "360",
+            "name": "Crazy Pie Maker",
+            "coordinates": "(661,130)",
+            "drops": [],
+            "quests": [{ "id": "627", "name": "Lost Pie Key" }, { "id": "630", "name": "Poor Squirrel" }],
+            "note": "-"
+        },
+        {
+            "id": "362",
+            "name": "Dark Elf Supply Shop",
+            "coordinates": "(647,109)",
+            "drops": [{ "id": "2430", "name": "Mirky Health Potion" }, { "id": "2432", "name": "Mirky Energy Potion" }, { "id": "2433", "name": "Mirky Mushroom Potion" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "363",
+            "name": "Mirky Guard",
+            "coordinates": "(641,109)",
+            "drops": [],
+            "quests": [{ "id": "634", "name": "Hunt The Archers" }, { "id": "637", "name": "Exterminate The Archers" }],
+            "note": "-"
+        },
+        {
+            "id": "364",
+            "name": "Scandalous Girl",
+            "coordinates": "(631,110)",
+            "drops": [],
+            "quests": [{ "id": "625", "name": "The Lost Diary" }, { "id": "628", "name": "Kill Them" }],
+            "note": "-"
+        },
+        {
+            "id": "365",
+            "name": "Dark Elf Shop",
+            "coordinates": "(628,112)",
+            "drops": [{ "id": "2440", "name": "Dark Elf Pants" }, { "id": "2441", "name": "Dark Elf Coat" }, { "id": "2444", "name": "Dark Elf Quiver " }, { "id": "2446", "name": "Ancient Mage Pauldron " }, { "id": "2447", "name": "Ancient Dragon Pauldron" }, { "id": "2488", "name": "Dark Elf Head" }, { "id": "2489", "name": "Dark Elf Stone" }, { "id": "2490", "name": "Ancient Templar Pauldron" }, { "id": "2491", "name": "Dark Elf Mask" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "366",
+            "name": "Punk Hater",
+            "coordinates": "(656,116)",
+            "drops": [],
+            "quests": [{ "id": "626", "name": "Destroy The Punks" }, { "id": "666", "name": "Obliterate the Punks" }],
+            "note": "-"
+        },
+        {
+            "id": "367",
+            "name": "Elf Hater",
+            "coordinates": "(623,133)",
+            "drops": [],
+            "quests": [{ "id": "624", "name": "Elf Destruction" }, { "id": "667", "name": "Elf It" }],
+            "note": "-"
+        },
+        {
+            "id": "370",
+            "name": "Teleport (Mirky Woods)",
+            "coordinates": "(385,272); (639,113);",
+            "drops": [],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "373",
+            "name": "Crafting (Mirky Woods)",
+            "coordinates": "(653,125)",
+            "drops": [{ "id": "2492", "name": "Red Charm" }, { "id": "2493", "name": "Blue Charm" }, { "id": "2668", "name": "Elder Dragon Bow" }, { "id": "2669", "name": "The Unstable Twin" }, { "id": "2672", "name": "Battle Axe of the Wild" }, { "id": "2708", "name": "Pincer Beetle Staff" }, { "id": "2709", "name": "Druid Nature Wand" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "374",
+            "name": "Skele Assasin",
+            "coordinates": "(388,282)",
+            "drops": [{ "id": "2504", "name": "Skele Helm" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "375",
+            "name": "Mirky Guardess",
+            "coordinates": "(638,109)",
+            "drops": [],
+            "quests": [{ "id": "644", "name": "Mossy Epidemic" }, { "id": "653", "name": "Mossy Problem" }],
+            "note": "-"
+        },
+        {
+            "id": "376",
+            "name": "Cosmetic Surgery",
+            "coordinates": "(82,492); (92,250); (378,252); (78, 434);",
+            "drops": [],
+            "quests": [],
+            "note": "Here you can change the look of your character for free."
+        },
+        {
+            "id": "377",
+            "name": "Pirate Order",
+            "coordinates": "(216,137)",
+            "drops": [{ "id": "2528", "name": "Pirate Helm" }, { "id": "2529", "name": "Pirate Legs" }, { "id": "2530", "name": "Pirate Body" }, { "id": "2640", "name": "Pirate Face" }, { "id": "2641", "name": "Pirate Shoulders" }, { "id": "2642", "name": "Pirate Sock" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "378",
+            "name": "Zutroy",
+            "coordinates": "(102,245); (442,430); (650,110)",
+            "drops": [],
+            "quests": [],
+            "note": "pay 40 gems to have unlimited access to storage (117 slots) Pay 20 more gems for another 117 slots, up to 819 slots (7 tabs). Total cost for all slots is: 120 gems."
+        },
+        {
+            "id": "379",
+            "name": "Skill Trainer Zambo",
+            "coordinates": "(622,115)",
+            "drops": [{ "id": "268", "name": "Left Hook" }, { "id": "269", "name": "Arrow Barrage" }, { "id": "270", "name": "Energy Orbs" }, { "id": "271", "name": "Nerd Rage" }, { "id": "272", "name": "l33t Skillz" }, { "id": "273", "name": "Self-Motivated" }, { "id": "275", "name": "Relishaeish" }, { "id": "276", "name": "Mr Roboto" }, { "id": "277", "name": "Wulf" }, { "id": "291", "name": "Mirky Woods Teleport" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "381",
+            "name": "Skill Trainer Kapono Shop",
+            "coordinates": "(45,844)",
+            "drops": [{ "id": "73", "name": "Thick Skin" }, { "id": "123", "name": "L33t Skillz" }, { "id": "127", "name": "Nerd Rage" }, { "id": "157", "name": "Spider-Guy" }, { "id": "158", "name": "Like a Rock" }, { "id": "167", "name": "Swamp Grotto Teleport" }, { "id": "240", "name": "Twilightning Bolt" }, { "id": "326", "name": "Stop! Ogre-Time!" }, { "id": "327", "name": "Spider-Guy" }],
+            "quests": [],
+            "note": "At the end of Swamp Grotto."
+        },
+        {
+            "id": "382",
+            "name": "Scared Banker",
+            "coordinates": "(722,87)",
+            "drops": [],
+            "quests": [{ "id": "635", "name": "SPIDERS EEK" }, { "id": "642", "name": "SPIDERS NO" }],
+            "note": "-"
+        },
+        {
+            "id": "384",
+            "name": "Crafting (Facebook)",
+            "coordinates": "(122,242)",
+            "drops": [{ "id": "2622", "name": "Samus Kitteh" }, { "id": "2657", "name": "Cowbell" }, { "id": "2695", "name": "Dual Top Hat" }, { "id": "2698", "name": "Sea Salt Ice Cream" }, { "id": "2710", "name": "Welder Mask" }, { "id": "2711", "name": "Teh Earz" }],
+            "quests": [],
+            "note": "Crab Coast"
+        },
+        {
+            "id": "385",
+            "name": "Crab Faction Shop",
+            "coordinates": "(127,224)",
+            "drops": [{ "id": "2467", "name": "Crab Hat" }, { "id": "2469", "name": "Crab Legs" }, { "id": "2470", "name": "Crab Body" }, { "id": "2471", "name": "Crab Face" }, { "id": "2472", "name": "Crab Shoulders" }, { "id": "2505", "name": "Crab Stone" }],
+            "quests": [],
+            "note": "-"
+        },
+        {
+            "id": "386",
+            "name": "Skill Trainer Lamar Shop",
+            "coordinates": "(92,602)",
+            "drops": [{ "id": "69", "name": "That's The Stuff" }, { "id": "99", "name": "Yo' Mama!" }, { "id": "162", "name": "Cave of Some Return Teleport" }, { "id": "181", "name": "Boom! Headshot!" }, { "id": "323", "name": "Self-Motivated" }],
+            "quests": [],
+            "note": "He is in the back of Cave of Some Return."
+        },
+        {
+            "id": "387",
+            "name": "Skill Trainer Remo Shop",
+            "coordinates": "(118,261)",
+            "drops": [{ "id": "42", "name": "Thick Skin" }, { "id": "92", "name": "Nerd Rage" }, { "id": "93", "name": "Fireball" }, { "id": "94", "name": "Twilightning Bolt" }, { "id": "95", "name": "l33t Skillz" }, { "id": "106", "name": "Feelin Crabby" }, { "id": "163", "name": "Crab Coast Teleport" }, { "id": "165", "name": "Noob Island Teleport" }, { "id": "166", "name": "Pirate Shores Teleport" }, { "id": "191", "name": "Self-Motivated" }, { "id": "280", "name": "Illuminate" }],
+            "quests": [],
+            "note": "He is in Crab Coast."
+        },
+        {
+            "id": "388",
+            "name": "Skill Trainer Jo Shop",
+            "coordinates": "(347,1085)",
+            "drops": [{ "id": "140", "name": "Lick Your Wounds" }, { "id": "161", "name": "Cave of Despair Teleport" }, { "id": "177", "name": "Lick Your Wounds" }, { "id": "280", "name": "Illuminate" }, { "id": "281", "name": "Self-Motivated" }],
+            "quests": [],
+            "note": "He is in the front of the Cave of Despair."
+        },
+        {
+            "id": "389",
+            "name": "Underground Transport",
+            "coordinates": "(287,463); (387,747)",
+            "drops": [],
+            "quests": [],
+            "note": "Requires lvl 36 and 40 Gems to enter"
+        },
+        {
+            "id": "390",
+            "name": "Unknown Known",
+            "coordinates": "(324,796)",
+            "drops": [],
+            "quests": [{ "id": "632", "name": "Eyes On Me" }, { "id": "639", "name": "Robo Rocks" }],
+            "note": "-"
+        },
+        {
+            "id": "391",
+            "name": "Miner Collective Shop",
+            "coordinates": "(334,1084)",
+            "drops": [],
+            "quests": [],
+            "note": "Cave of Despair"
+        },
+        {
+            "id": "392",
+            "name": "Eccentric Shop",
+            "coordinates": "(634,109)",
+            "drops": [{ "id": "2726", "name": "Conflicted" }, { "id": "2727", "name": "Crab Slippers" }, { "id": "2728", "name": "Wedding Dress" }, { "id": "2972", "name": "Joker Hat" }, { "id": "2973", "name": "King Crown" }, { "id": "2974", "name": "Ga Glasses" }, { "id": "2975", "name": "AFK Sign" }, { "id": "2976", "name": "Excessive Moustache" }],
+            "quests": [],
+            "note": "Mirky Woods"
+        },
+        {
+            "id": "393",
+            "name": "Crab Coast Teleport",
+            "coordinates": "(75,438)",
+            "drops": [],
+            "quests": [],
+            "note": "brings you to Crab Coast (Req. Level 8)"
+        },
+        {
+            "id": "394",
+            "name": "Noob Island Statue",
+            "coordinates": "(111,256)",
+            "drops": [],
+            "quests": [],
+            "note": "brings you to Noob Island"
+        },
+        {
+            "id": "395",
+            "name": "Crafting (Mirabella Cove)",
+            "coordinates": "(399,291)",
+            "drops": [{ "id": "1591", "name": "Mage Cloak" }, { "id": "1592", "name": "Mage Helm" }, { "id": "1593", "name": "Mage Legs" }, { "id": "2579", "name": "Worn Cloth" }, { "id": "2602", "name": "Cloth" }, { "id": "2603", "name": "Infused Cloth" }],
+            "quests": [],
+            "note": "This NPC crafts items for mage. You'll need torn clothes and pearls, as well as silver shells."
+        },
+        {
+            "id": "396",
+            "name": "Crafting (Mirabella Cove2)",
+            "coordinates": "(381,252)",
+            "drops": [{ "id": "2852", "name": "RF Satchel" }, { "id": "2853", "name": "RF Bag" }],
+            "quests": [],
+            "note": "-"
+        }
+    ]
+}

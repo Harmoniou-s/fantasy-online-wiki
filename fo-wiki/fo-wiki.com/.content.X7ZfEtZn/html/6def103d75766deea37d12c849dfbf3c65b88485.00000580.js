@@ -7,7 +7,7 @@
 *  Original code by Angel Marin, Paul Johnston.
 *
 **/
-<!--
+//<!--
 function SHA256(s){
  
 	var chrsz   = 8;

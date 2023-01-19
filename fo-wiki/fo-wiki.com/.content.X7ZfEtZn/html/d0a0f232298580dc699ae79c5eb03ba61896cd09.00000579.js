@@ -21,7 +21,7 @@
  */
 
 
-<!--
+//<!--
 function array(n) {
   for(i=0;i<n;i++) this[i]=0;
   this.length=n;
@@ -29,7 +29,7 @@ function array(n) {
 
 
 
-/* Einige grundlegenden Funktionen müssen wegen
+/* Einige grundlegenden Funktionen mï¿½ssen wegen
  * Javascript Fehlern umgeschrieben werden.
  * Man versuche z.B. 0xffffffff >> 4 zu berechnen..
  * Die nun verwendeten Funktionen sind zwar langsamer als die Originale,

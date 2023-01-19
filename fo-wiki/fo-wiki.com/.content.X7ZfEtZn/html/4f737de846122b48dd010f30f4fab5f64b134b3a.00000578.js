@@ -1,5 +1,5 @@
 // JavaScript Document
-<!--
+//<!--
 var cX = 0; var cY = 0; var rX = 0; var rY = 0;
 
 function getPosition(element)

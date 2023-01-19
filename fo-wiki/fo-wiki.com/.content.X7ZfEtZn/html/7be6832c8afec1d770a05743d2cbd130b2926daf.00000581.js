@@ -1,5 +1,5 @@
 // JavaScript Document
-<!--
+//<!--
 function SetOpacity(elem, opacityAsInt)
   {
      var opacityAsDecimal = opacityAsInt;

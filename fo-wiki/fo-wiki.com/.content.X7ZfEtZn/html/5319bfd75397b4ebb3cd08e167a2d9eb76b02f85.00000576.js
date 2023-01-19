@@ -1,5 +1,5 @@
 // JavaScript Document
-<!--
+//<!--
 	function hideshow(id){
 	if (document.getElementById){
 	obj = document.getElementById('x'+id);
